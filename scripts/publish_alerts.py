@@ -64,24 +64,43 @@ def _as_market(obj: dict[str, Any]) -> Market:
     )
 
 
-def _wallet_stats_from_state(state: dict[str, Any], wallet: str) -> WalletStats:
+def _wallet_stats_from_state(
+    state: dict[str, Any], wallet: str, *, min_notional: float
+) -> WalletStats:
     wallets = state.setdefault("wallets", {})
     w = wallets.setdefault(wallet, {"first_seen_ts": None, "events": [], "markets": []})
 
     events: list[list[Any]] = w.get("events") or []
-    markets: list[str] = w.get("markets") or []
+    filtered: list[list[Any]] = []
+    for e in events:
+        if not isinstance(e, list) or len(e) < 3:
+            continue
+        try:
+            if float(e[2]) >= min_notional:
+                filtered.append(e)
+        except Exception:
+            continue
+    events = filtered
 
     cutoff = _now_ts() - 7 * 24 * 60 * 60
     events_7d = [e for e in events if int(e[0]) >= cutoff]
     notional_sum = sum(float(e[2]) for e in events_7d) if events_7d else 0.0
     avg_notional_7d = notional_sum / len(events_7d) if events_7d else 0.0
 
+    markets: list[str] = w.get("markets") or []
     markets_total = set(markets)
     markets_7d = {str(e[1]) for e in events_7d}
 
+    first_seen_ts = None
+    if events:
+        try:
+            first_seen_ts = int(min(int(e[0]) for e in events))
+        except Exception:
+            first_seen_ts = None
+
     return WalletStats(
         proxy_wallet=wallet,
-        first_seen_ts=(int(w["first_seen_ts"]) if w.get("first_seen_ts") is not None else None),
+        first_seen_ts=first_seen_ts,
         trades_total=len(events),
         unique_markets_total=len(markets_total),
         trades_7d=len(events_7d),
@@ -222,7 +241,9 @@ def main(argv: list[str] | None = None) -> int:
 
         _record_wallet_event(state, trade, notional=notional)
 
-        wallet_stats = _wallet_stats_from_state(state, trade.proxy_wallet)
+        wallet_stats = _wallet_stats_from_state(
+            state, trade.proxy_wallet, min_notional=float(args.min_notional)
+        )
         market = _get_market(state, client, trade.condition_id) if trade.condition_id else None
 
         alert = build_alert(
@@ -247,6 +268,17 @@ def main(argv: list[str] | None = None) -> int:
     if not isinstance(prev_alerts, list):
         prev_alerts = []
 
+    min_notional = float(args.min_notional)
+    prev_filtered: list[dict[str, Any]] = []
+    for a in prev_alerts:
+        if not isinstance(a, dict):
+            continue
+        try:
+            if float(a.get("notional", 0.0) or 0.0) >= min_notional:
+                prev_filtered.append(a)
+        except Exception:
+            continue
+    prev_alerts = prev_filtered
     combined = prev_alerts + new_alerts
     combined_sorted = sorted(
         combined,
