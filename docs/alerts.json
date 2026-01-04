@@ -2,269 +2,52 @@
   "alerts": [
     {
       "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
+        "condition_id": "0x0ac2ffe56e0baf504292ab168e3194febb6d0904905817a0950923cbf1e30a79",
+        "liquidity_num": 257238.463,
         "outcome_prices": [
-          0.515,
-          0.485
+          0.765,
+          0.235
         ],
         "outcomes": [
-          "Up",
-          "Down"
+          "Thunder",
+          "Suns"
         ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
+        "question": "Thunder vs. Suns",
+        "slug": "nba-okc-phx-2026-01-04",
+        "volume24hr": 163706.44755099923
       },
-      "notional": 2.0,
-      "reasons": [
-        "large_trade",
-        "low_liquidity_market",
-        "large_vs_24h_volume",
-        "low_24h_volume_market",
-        "recent_trade"
-      ],
-      "score": 4,
-      "trade": {
-        "asset": "61563599863982573343424770111537335559803554842836998768451579947027930446713",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "0xad8a88FC4174e1A307e40164AF24b56Bac059d7B-1767396427041",
-        "outcome": "Up",
-        "outcome_index": 0,
-        "price": 0.4,
-        "proxy_wallet": "0xad8a88fc4174e1a307e40164af24b56bac059d7b",
-        "pseudonym": "Wealthy-Wrinkle",
-        "side": "SELL",
-        "size": 5.0,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "02f0a0a0c69d05f0b9a62f3efc22bfaac6fc0050898cd7d8c6eb46b0c2b4fced",
-        "transaction_hash": "0xbbf9441f904763ef86ca57c2529194fab0e585d8f0203290344a2b969af3fff8"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
-      "wallet_stats": {
-        "avg_notional_7d": 1.6877499999999999,
-        "first_seen_ts": 1767559183,
-        "proxy_wallet": "0xad8a88fc4174e1a307e40164af24b56bac059d7b",
-        "trades_7d": 2,
-        "trades_total": 2,
-        "unique_markets_7d": 2,
-        "unique_markets_total": 2
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
-        "outcome_prices": [
-          0.515,
-          0.485
-        ],
-        "outcomes": [
-          "Up",
-          "Down"
-        ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
-      },
-      "notional": 1.2,
+      "notional": 10509.149999,
       "reasons": [
         "large_trade",
         "new_wallet_to_system",
-        "low_liquidity_market",
-        "low_24h_volume_market",
-        "recent_trade"
+        "large_vs_liquidity",
+        "large_vs_24h_volume"
       ],
       "score": 5,
       "trade": {
-        "asset": "30641322422970057430810580646430639180104921532974304453776888491416686508690",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "0x4facC9C521516C94c57515cB2Aa39E7F8d317E4d-1767068478042",
-        "outcome": "Down",
-        "outcome_index": 1,
-        "price": 0.6,
-        "proxy_wallet": "0x4facc9c521516c94c57515cb2aa39e7f8d317e4d",
-        "pseudonym": "Popular-Toothbrush",
-        "side": "BUY",
-        "size": 2.0,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "33f3d7d6bf4902cd9a8bdd65d95fabeac209c0e2542ab6067ee9ee7f1fbee769",
-        "transaction_hash": "0x5eeb136b0c401fc5612f67801584e3cf32a802b3132ab9df4f90897c343e053e"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
-      "wallet_stats": {
-        "avg_notional_7d": 1.2,
-        "first_seen_ts": 1767563339,
-        "proxy_wallet": "0x4facc9c521516c94c57515cb2aa39e7f8d317e4d",
-        "trades_7d": 1,
-        "trades_total": 1,
-        "unique_markets_7d": 1,
-        "unique_markets_total": 1
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0x4f1d9ad2092d7a2feb4f10509f3c5800298f071e9272e87c41a5a672d3b0ba82",
-        "liquidity_num": 66692.149,
-        "outcome_prices": [
-          0.405,
-          0.595
-        ],
-        "outcomes": [
-          "Lions",
-          "Bears"
-        ],
-        "question": "Lions vs. Bears",
-        "slug": "nfl-det-chi-2026-01-04",
-        "volume24hr": 345457.854401
-      },
-      "notional": 5.199999,
-      "reasons": [
-        "large_trade",
-        "concentrated_activity_7d",
-        "recent_trade"
-      ],
-      "score": 2,
-      "trade": {
-        "asset": "27046640920714430198587189616056819275651158287779978864149976832975445376520",
-        "condition_id": "0x4f1d9ad2092d7a2feb4f10509f3c5800298f071e9272e87c41a5a672d3b0ba82",
-        "event_slug": "nfl-det-chi-2026-01-04",
-        "name": "butronnba",
-        "outcome": "Bears",
-        "outcome_index": 1,
-        "price": 0.5299999928653834,
-        "proxy_wallet": "0xc8e72bbbbb231d4fb839164a3ae3d9447a886031",
-        "pseudonym": "Jam-Packed-Consist",
-        "side": "BUY",
-        "size": 9.811319,
-        "slug": "nfl-det-chi-2026-01-04",
-        "timestamp": 1767563339,
-        "title": "Lions vs. Bears",
-        "trade_id": "351bfeee18c742db3ee8bb76bbaefb88f0064160b6cc4a5b978380b3eb8fe5c2",
-        "transaction_hash": "0xc6e6f3a006672416790720b7b669433f2e091e0353b097ba4e8dae74f37cc1b7"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/nfl-det-chi-2026-01-04",
-      "wallet_stats": {
-        "avg_notional_7d": 3.4833319999999994,
-        "first_seen_ts": 1767559203,
-        "proxy_wallet": "0xc8e72bbbbb231d4fb839164a3ae3d9447a886031",
-        "trades_7d": 3,
-        "trades_total": 3,
-        "unique_markets_7d": 3,
-        "unique_markets_total": 3
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xc67f8f9fc34b6ac2c4bd9765761e3430e489faa86230f220dadfe55810ae64d1",
-        "liquidity_num": 160555.6477,
-        "outcome_prices": [
-          0.575,
-          0.425
-        ],
-        "outcomes": [
-          "Avalanche",
-          "Panthers"
-        ],
-        "question": "Avalanche vs. Panthers",
-        "slug": "nhl-col-fla-2026-01-04",
-        "volume24hr": 75575.74892999999
-      },
-      "notional": 27.585600000000003,
-      "reasons": [
-        "large_trade",
-        "recent_trade"
-      ],
-      "score": 1,
-      "trade": {
-        "asset": "46986216932354881577155046240226774126249291762280349262651659057030411017736",
-        "condition_id": "0xc67f8f9fc34b6ac2c4bd9765761e3430e489faa86230f220dadfe55810ae64d1",
-        "event_slug": "nhl-col-fla-2026-01-04",
-        "name": "crabonly",
-        "outcome": "Panthers",
-        "outcome_index": 1,
-        "price": 0.42,
-        "proxy_wallet": "0xde80ff45599c4f39db826e67b7c5eb3a47c62612",
-        "pseudonym": "Gentle-Hotdog",
-        "side": "SELL",
-        "size": 65.68,
-        "slug": "nhl-col-fla-2026-01-04",
-        "timestamp": 1767563339,
-        "title": "Avalanche vs. Panthers",
-        "trade_id": "3ba76746a9162390bbc315c329c9b9dd902bf9d0728f8b73866af00f1cbb99c4",
-        "transaction_hash": "0xd78da9de1c97d0210417f029feafe4ca3ab3be892726e7ccefac726fae746413"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/nhl-col-fla-2026-01-04",
-      "wallet_stats": {
-        "avg_notional_7d": 14.842800000000002,
-        "first_seen_ts": 1767563337,
-        "proxy_wallet": "0xde80ff45599c4f39db826e67b7c5eb3a47c62612",
-        "trades_7d": 2,
-        "trades_total": 2,
-        "unique_markets_7d": 1,
-        "unique_markets_total": 1
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
-        "outcome_prices": [
-          0.515,
-          0.485
-        ],
-        "outcomes": [
-          "Up",
-          "Down"
-        ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
-      },
-      "notional": 5.0,
-      "reasons": [
-        "large_trade",
-        "new_wallet_to_system",
-        "low_liquidity_market",
-        "large_vs_24h_volume",
-        "low_24h_volume_market",
-        "recent_trade"
-      ],
-      "score": 6,
-      "trade": {
-        "asset": "61563599863982573343424770111537335559803554842836998768451579947027930446713",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "0xCa74d5867F09b770E5e2509Da5B848e8D4C3D2BB-1766715674784",
-        "outcome": "Up",
+        "asset": "29949249131901793756243940695774954225991136671945455213428662294763262955766",
+        "condition_id": "0x0ac2ffe56e0baf504292ab168e3194febb6d0904905817a0950923cbf1e30a79",
+        "event_slug": "nba-okc-phx-2026-01-04",
+        "name": "0xsven",
+        "outcome": "Thunder",
         "outcome_index": 0,
-        "price": 0.4,
-        "proxy_wallet": "0xca74d5867f09b770e5e2509da5b848e8d4c3d2bb",
-        "pseudonym": "Bland-Ecumenist",
+        "price": 0.777355556830913,
+        "proxy_wallet": "0x17cb6a89c4276a7403e18126957d121a34353ab8",
+        "pseudonym": "Spicy-Truth",
         "side": "BUY",
-        "size": 12.5,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "3bb10ae3dc5612a77392d1d5b94c69416463b615533fc9ad11959ce32056f8da",
-        "transaction_hash": "0x49a5b5b58982ec3265e0439935a5d5159e06f7b8ebb3306bc0b0789c7e483b7f"
+        "size": 13519.103204,
+        "slug": "nba-okc-phx-2026-01-04",
+        "timestamp": 1767567487,
+        "title": "Thunder vs. Suns",
+        "trade_id": "3b6a52342cd35a22fb7487748049f5677aaaf90f0db06f6fdf60a183b883b74d",
+        "transaction_hash": "0x17f10e1f2431ec34efbe02d5dc96bf6a0c1beee943fc8aa4ca45d4ec256289e8"
       },
       "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
+      "url": "https://polymarket.com/market/nba-okc-phx-2026-01-04",
       "wallet_stats": {
-        "avg_notional_7d": 5.0,
-        "first_seen_ts": 1767563339,
-        "proxy_wallet": "0xca74d5867f09b770e5e2509da5b848e8d4c3d2bb",
+        "avg_notional_7d": 10509.149999,
+        "first_seen_ts": 1767567487,
+        "proxy_wallet": "0x17cb6a89c4276a7403e18126957d121a34353ab8",
         "trades_7d": 1,
         "trades_total": 1,
         "unique_markets_7d": 1,
@@ -273,243 +56,21 @@
     },
     {
       "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
+        "condition_id": "0x146e007808a8f65f80d52a9f62d128690d085f9e22dedbe1d436a90bdc21642d",
+        "liquidity_num": 416.07181,
         "outcome_prices": [
-          0.515,
-          0.485
+          0.178,
+          0.822
         ],
         "outcomes": [
-          "Up",
-          "Down"
+          "Over",
+          "Under"
         ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
+        "question": "Games Total: O/U 4.5",
+        "slug": "mlbb-bg-zeta-2026-01-05-total-games-4pt5",
+        "volume24hr": 160.4017
       },
-      "notional": 2.149999,
-      "reasons": [
-        "large_trade",
-        "low_liquidity_market",
-        "large_vs_24h_volume",
-        "low_24h_volume_market",
-        "recent_trade"
-      ],
-      "score": 4,
-      "trade": {
-        "asset": "61563599863982573343424770111537335559803554842836998768451579947027930446713",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "mtm5",
-        "outcome": "Up",
-        "outcome_index": 0,
-        "price": 0.409999921813932,
-        "proxy_wallet": "0xf96c798e093b9cbea8b46006f6630ba7310e1935",
-        "pseudonym": "Quintessential-Raincoat",
-        "side": "BUY",
-        "size": 5.243901,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "3f4c9abda3e9bc2253095859435e1d9d8eda16cdb786563c9183dc5991042bc0",
-        "transaction_hash": "0x3fcbb6cf104d7120a0e3e39cde6e2a9ac1c309281912018d716d564325dae7c3"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
-      "wallet_stats": {
-        "avg_notional_7d": 1.7249995,
-        "first_seen_ts": 1767559205,
-        "proxy_wallet": "0xf96c798e093b9cbea8b46006f6630ba7310e1935",
-        "trades_7d": 2,
-        "trades_total": 2,
-        "unique_markets_7d": 2,
-        "unique_markets_total": 2
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
-        "outcome_prices": [
-          0.515,
-          0.485
-        ],
-        "outcomes": [
-          "Up",
-          "Down"
-        ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
-      },
-      "notional": 0.999999,
-      "reasons": [
-        "large_trade",
-        "new_wallet_to_system",
-        "low_liquidity_market",
-        "low_24h_volume_market",
-        "recent_trade"
-      ],
-      "score": 5,
-      "trade": {
-        "asset": "30641322422970057430810580646430639180104921532974304453776888491416686508690",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "p10xy",
-        "outcome": "Down",
-        "outcome_index": 1,
-        "price": 0.6,
-        "proxy_wallet": "0xc8fb42911118d4589bdeb253235ffda7c785ac97",
-        "pseudonym": "Rare-Sigh",
-        "side": "BUY",
-        "size": 1.666665,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "4735ac105a347d1a87cd2a1847bba7a18d22618c585269c256903b6ed7015a56",
-        "transaction_hash": "0x59fbfad88d35633507b341ef96afdf0675d8c16f3da03bff8a9c1afd8bb4f33c"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
-      "wallet_stats": {
-        "avg_notional_7d": 0.999999,
-        "first_seen_ts": 1767563339,
-        "proxy_wallet": "0xc8fb42911118d4589bdeb253235ffda7c785ac97",
-        "trades_7d": 1,
-        "trades_total": 1,
-        "unique_markets_7d": 1,
-        "unique_markets_total": 1
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
-        "outcome_prices": [
-          0.515,
-          0.485
-        ],
-        "outcomes": [
-          "Up",
-          "Down"
-        ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
-      },
-      "notional": 19.419998999999997,
-      "reasons": [
-        "large_trade",
-        "new_wallet_to_system",
-        "low_liquidity_market",
-        "large_vs_24h_volume",
-        "low_24h_volume_market",
-        "recent_trade"
-      ],
-      "score": 6,
-      "trade": {
-        "asset": "30641322422970057430810580646430639180104921532974304453776888491416686508690",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "gabagool-inv",
-        "outcome": "Down",
-        "outcome_index": 1,
-        "price": 0.6,
-        "proxy_wallet": "0xf444220e8d32f456c39b6b727e7bb5bc41d8c970",
-        "pseudonym": "Loathsome-Fang",
-        "side": "BUY",
-        "size": 32.366665,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "5bc27a6b2cf254719cc2859730b82788616cd004eaeda1213d696333fdeaaac8",
-        "transaction_hash": "0x1cb57897cf2f6c2847283d2f2fa1cec1464be47e33dc39cd889e0df2ef887ab1"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
-      "wallet_stats": {
-        "avg_notional_7d": 19.419998999999997,
-        "first_seen_ts": 1767563339,
-        "proxy_wallet": "0xf444220e8d32f456c39b6b727e7bb5bc41d8c970",
-        "trades_7d": 1,
-        "trades_total": 1,
-        "unique_markets_7d": 1,
-        "unique_markets_total": 1
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "liquidity_num": 21002.9905,
-        "outcome_prices": [
-          0.515,
-          0.485
-        ],
-        "outcomes": [
-          "Up",
-          "Down"
-        ],
-        "question": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "slug": "btc-updown-15m-1767563100",
-        "volume24hr": 39.215685
-      },
-      "notional": 11.0,
-      "reasons": [
-        "large_trade",
-        "concentrated_activity_7d",
-        "low_liquidity_market",
-        "large_vs_24h_volume",
-        "low_24h_volume_market",
-        "recent_trade"
-      ],
-      "score": 5,
-      "trade": {
-        "asset": "61563599863982573343424770111537335559803554842836998768451579947027930446713",
-        "condition_id": "0xa2ebfe0ad2e92b4ac971d0b2fd5b3683ca6caf5751849b57db6f8b148d56587b",
-        "event_slug": "btc-updown-15m-1767563100",
-        "name": "gabagool22",
-        "outcome": "Up",
-        "outcome_index": 0,
-        "price": 0.4,
-        "proxy_wallet": "0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d",
-        "pseudonym": "Grown-Cantaloupe",
-        "side": "BUY",
-        "size": 27.5,
-        "slug": "btc-updown-15m-1767563100",
-        "timestamp": 1767563339,
-        "title": "Bitcoin Up or Down - January 4, 4:45PM-5:00PM ET",
-        "trade_id": "658da176f684c5bbd2a3ed335702086f3a3b7fab1f6412183fe12dd59b5cb992",
-        "transaction_hash": "0x8d99604d27902c7226cd0b92ed1c684ee46f22273fe384e45eaaf1f816a8452a"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/btc-updown-15m-1767563100",
-      "wallet_stats": {
-        "avg_notional_7d": 7.016960869565217,
-        "first_seen_ts": 1767559173,
-        "proxy_wallet": "0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d",
-        "trades_7d": 23,
-        "trades_total": 23,
-        "unique_markets_7d": 3,
-        "unique_markets_total": 3
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xe58166a46f80df336e6276a51a9e5ba459b148d2c036561f22dc35141d67e542",
-        "liquidity_num": 11846.82339,
-        "outcome_prices": [
-          0.9855,
-          0.0145
-        ],
-        "outcomes": [
-          "Yes",
-          "No"
-        ],
-        "question": "Will the Bank of Canada announce no change at the January meeting?",
-        "slug": "will-the-bank-of-canada-announce-no-change-at-the-january-meeting",
-        "volume24hr": 500.490454
-      },
-      "notional": 400.30996000000005,
+      "notional": 2054.943,
       "reasons": [
         "large_trade",
         "new_wallet_to_system",
@@ -517,34 +78,33 @@
         "low_liquidity_market",
         "large_vs_24h_volume",
         "low_24h_volume_market",
-        "extreme_price",
-        "recent_trade"
+        "extreme_price"
       ],
       "score": 8,
       "trade": {
-        "asset": "7297178046654431460342354669410713591711436569227088937939714564422609630715",
-        "condition_id": "0xe58166a46f80df336e6276a51a9e5ba459b148d2c036561f22dc35141d67e542",
-        "event_slug": "bank-of-canada-decision-in-january",
-        "name": null,
-        "outcome": "Yes",
-        "outcome_index": 0,
-        "price": 0.9898366555963168,
-        "proxy_wallet": "0x2b366034b69b64a444406b2db7ec1ff7869c473b",
-        "pseudonym": null,
+        "asset": "50828016616874422953815806568004973886036721497187776251785555792368563278966",
+        "condition_id": "0x146e007808a8f65f80d52a9f62d128690d085f9e22dedbe1d436a90bdc21642d",
+        "event_slug": "mlbb-bg-zeta-2026-01-05",
+        "name": "bloodmaster",
+        "outcome": "Under",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x58f8f1138be2192696378629fc9aa23c7910dc70",
+        "pseudonym": "Waterlogged-Flintlock",
         "side": "BUY",
-        "size": 404.420222,
-        "slug": "will-the-bank-of-canada-announce-no-change-at-the-january-meeting",
-        "timestamp": 1767563339,
-        "title": "Will the Bank of Canada announce no change at the January meeting?",
-        "trade_id": "7631af05106029e62b5023ee0d0b7936c6de5628e3d50a2c6516feb955f8c5d9",
-        "transaction_hash": "0x7675d2b495882312349de792b1712466dcef4fa1e1841390b4883e1b3722ec7b"
+        "size": 2057.0,
+        "slug": "mlbb-bg-zeta-2026-01-05-total-games-4pt5",
+        "timestamp": 1767567465,
+        "title": "Games Total: O/U 4.5",
+        "trade_id": "ad7210c51d65f0237fb11811b013e38779e2f6f5c97179902e4a230895a982c7",
+        "transaction_hash": "0x5eccf31dd0f40de8c9ce2810b83af62854e6bf8ba902d60b959e636a845814f7"
       },
       "type": "alert",
-      "url": "https://polymarket.com/market/will-the-bank-of-canada-announce-no-change-at-the-january-meeting",
+      "url": "https://polymarket.com/market/mlbb-bg-zeta-2026-01-05-total-games-4pt5",
       "wallet_stats": {
-        "avg_notional_7d": 400.30996000000005,
-        "first_seen_ts": 1767563339,
-        "proxy_wallet": "0x2b366034b69b64a444406b2db7ec1ff7869c473b",
+        "avg_notional_7d": 2054.943,
+        "first_seen_ts": 1767567465,
+        "proxy_wallet": "0x58f8f1138be2192696378629fc9aa23c7910dc70",
         "trades_7d": 1,
         "trades_total": 1,
         "unique_markets_7d": 1,
@@ -552,7 +112,7 @@
       }
     }
   ],
-  "generated_at": 1767563388,
-  "new_alerts": 50,
-  "repo": ""
+  "generated_at": 1767567567,
+  "new_alerts": 2,
+  "repo": "strangeloopcanon/polymarket_prediction"
 }
