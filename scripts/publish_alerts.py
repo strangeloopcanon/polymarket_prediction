@@ -79,6 +79,7 @@ def _record_wallet_event(state: dict[str, Any], trade: Trade, notional: float) -
 
     if w.get("first_seen_ts") is None:
         w["first_seen_ts"] = int(trade.timestamp)
+    w["last_seen_ts"] = int(trade.timestamp)
 
     events: list[list[Any]] = w.get("events") or []
     events.append([int(trade.timestamp), trade.condition_id, float(notional)])
@@ -155,6 +156,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--max-alerts", type=int, default=200, help="Max alerts retained in public feed."
     )
+    p.add_argument(
+        "--state-keep-seconds",
+        type=int,
+        default=14 * 24 * 60 * 60,
+        help="How long to keep wallet/market/cooldown state (seconds).",
+    )
     args = p.parse_args(argv)
 
     state_path = Path(args.state)
@@ -185,6 +192,11 @@ def main(argv: list[str] | None = None) -> int:
         if len(seen_list) > max_seen:
             del seen_list[: len(seen_list) - max_seen]
             seen_set = set(seen_list)
+
+        # Keep state small: only track trades that could ever alert.
+        if notional < float(args.min_notional):
+            continue
+
         _record_wallet_event(state, trade, notional=notional)
 
         wallet_stats = _wallet_stats_from_state(state, trade.proxy_wallet)
@@ -238,6 +250,46 @@ def main(argv: list[str] | None = None) -> int:
 
     # Keep state small-ish.
     state["updated_at"] = _now_ts()
+
+    keep_wallets = {str(a.get("trade", {}).get("proxy_wallet", "")) for a in combined_sorted}
+    keep_markets = {str(a.get("trade", {}).get("condition_id", "")) for a in combined_sorted}
+    cutoff = _now_ts() - int(args.state_keep_seconds)
+
+    wallets = state.get("wallets")
+    if isinstance(wallets, dict):
+        for k in list(wallets.keys()):
+            if k in keep_wallets:
+                continue
+            w = wallets.get(k)
+            if not isinstance(w, dict):
+                wallets.pop(k, None)
+                continue
+            last_seen = w.get("last_seen_ts")
+            if last_seen is None:
+                events = w.get("events") or []
+                if isinstance(events, list) and events:
+                    try:
+                        last_seen = int(events[-1][0])
+                    except Exception:
+                        last_seen = None
+            if last_seen is None or int(last_seen) < cutoff:
+                wallets.pop(k, None)
+
+    markets = state.get("markets")
+    if isinstance(markets, dict):
+        for k in list(markets.keys()):
+            if k not in keep_markets:
+                markets.pop(k, None)
+
+    alerts = state.get("alerts")
+    if isinstance(alerts, dict):
+        for k in list(alerts.keys()):
+            try:
+                if int(alerts.get(k, 0)) < cutoff:
+                    alerts.pop(k, None)
+            except Exception:
+                alerts.pop(k, None)
+
     _atomic_write(state_path, json.dumps(state, indent=2, sort_keys=True) + "\n")
     return 0
 

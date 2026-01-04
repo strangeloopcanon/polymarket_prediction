@@ -35,6 +35,7 @@ jobs:
             --min-notional 2000 \
             --min-score 3 \
             --cooldown-seconds 21600 \
+            --state-keep-seconds 604800 \
             --max-alerts 200
 
       - name: Commit and push (if changed)
@@ -48,4 +49,3 @@ jobs:
           git add docs/ state/
           git commit -m "chore(pmwatch): publish alerts"
           git push
-
