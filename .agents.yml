@@ -1,0 +1,4 @@
+agent_mode: baseline
+coverage:
+  global_min: 0.80
+

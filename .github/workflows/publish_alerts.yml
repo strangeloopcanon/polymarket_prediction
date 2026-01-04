@@ -1,0 +1,51 @@
+name: Publish Polymarket Watch
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-alerts
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run poller
+        env:
+          PYTHONPATH: src
+        run: |
+          python scripts/publish_alerts.py \
+            --limit 500 \
+            --min-notional 2000 \
+            --min-score 3 \
+            --cooldown-seconds 21600 \
+            --max-alerts 200
+
+      - name: Commit and push (if changed)
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/ state/
+          git commit -m "chore(pmwatch): publish alerts"
+          git push
+

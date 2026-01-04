@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Polymarket Watch</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b1220;
+        --panel: #121a2b;
+        --muted: #94a3b8;
+        --text: #e5e7eb;
+        --link: #93c5fd;
+        --border: #23314d;
+        --chip: #0f223f;
+      }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        background: var(--bg);
+        color: var(--text);
+      }
+      header {
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(180deg, rgba(18, 26, 43, 1), rgba(11, 18, 32, 1));
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0 0 6px 0;
+      }
+      .sub {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 16px 20px 40px;
+      }
+      .row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 10px 0 14px;
+      }
+      .pill {
+        padding: 6px 10px;
+        border: 1px solid var(--border);
+        background: var(--panel);
+        border-radius: 999px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      thead th {
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--muted);
+        padding: 12px;
+        border-bottom: 1px solid var(--border);
+        background: rgba(15, 34, 63, 0.6);
+      }
+      tbody td {
+        padding: 12px;
+        border-bottom: 1px solid rgba(35, 49, 77, 0.7);
+        vertical-align: top;
+        font-size: 13px;
+      }
+      tbody tr:hover {
+        background: rgba(15, 34, 63, 0.35);
+      }
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace;
+        font-size: 12px;
+      }
+      .chip {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--chip);
+        color: var(--muted);
+        margin-right: 6px;
+        margin-top: 6px;
+        font-size: 11px;
+        white-space: nowrap;
+      }
+      .score {
+        font-weight: 700;
+        color: #fbbf24;
+      }
+      .money {
+        font-weight: 700;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      footer {
+        padding: 18px 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>Polymarket Watch</h1>
+        <div class="sub">
+          Public feed: <a href="./alerts.json">alerts.json</a> · <a href="./alerts.jsonl">alerts.jsonl</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <div class="row" id="meta">
+          <span class="pill">Loading…</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 160px">When</th>
+              <th style="width: 120px">Score</th>
+              <th>Trade</th>
+              <th style="width: 260px">Wallet</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        Heuristics-only. Wallet addresses and markets are public data.
+      </div>
+    </footer>
+    <script>
+      const fmtMoney = (n) =>
+        new Intl.NumberFormat(undefined, { style: "currency", currency: "USD" }).format(n || 0);
+      const fmtDate = (ts) => new Date((ts || 0) * 1000).toISOString().replace("T", " ").slice(0, 19) + " UTC";
+      const shortAddr = (a) => (a ? a.slice(0, 6) + "…" + a.slice(-4) : "");
+      const esc = (s) =>
+        String(s || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;");
+
+      async function load() {
+        const res = await fetch("./alerts.json", { cache: "no-store" });
+        const data = await res.json();
+        const meta = document.getElementById("meta");
+        meta.innerHTML = "";
+        meta.appendChild(pill(`Generated: ${fmtDate(data.generated_at)}`));
+        if (data.repo) meta.appendChild(pill(`Repo: ${data.repo}`));
+        meta.appendChild(pill(`Alerts: ${(data.alerts || []).length}`));
+        meta.appendChild(pill(`New: ${data.new_alerts || 0}`));
+
+        const rows = document.getElementById("rows");
+        rows.innerHTML = "";
+        for (const a of data.alerts || []) {
+          rows.appendChild(renderRow(a));
+        }
+      }
+
+      function pill(text) {
+        const el = document.createElement("span");
+        el.className = "pill";
+        el.textContent = text;
+        return el;
+      }
+
+      function renderRow(a) {
+        const tr = document.createElement("tr");
+        const t = a.trade || {};
+        const m = a.market || {};
+
+        const when = td(`<div class="mono">${esc(fmtDate(t.timestamp))}</div><div class="muted mono">${esc(t.transaction_hash || "")}</div>`);
+        const score = td(
+          `<div><span class="score">${esc(a.score)}</span> <span class="money">${esc(fmtMoney(a.notional))}</span></div>` +
+            `<div>${(a.reasons || []).slice(0, 6).map((r) => `<span class="chip">${esc(r)}</span>`).join("")}</div>`,
+        );
+
+        const trade = td(
+          `<div><a href="${esc(a.url)}" target="_blank" rel="noreferrer">${esc(t.title || m.question || "")}</a></div>` +
+            `<div class="muted">side=${esc(t.side)} outcome=${esc(t.outcome)} price=${esc(t.price)} size=${esc(t.size)}</div>`,
+        );
+
+        const wallet = td(
+          `<div class="mono">${esc(shortAddr(t.proxy_wallet))} <span class="muted">${esc(t.pseudonym || t.name || "")}</span></div>` +
+            `<div class="muted">trades_7d=${esc(a.wallet_stats?.trades_7d)} markets_7d=${esc(a.wallet_stats?.unique_markets_7d)}</div>`,
+        );
+
+        tr.appendChild(when);
+        tr.appendChild(score);
+        tr.appendChild(trade);
+        tr.appendChild(wallet);
+        return tr;
+      }
+
+      function td(html) {
+        const el = document.createElement("td");
+        el.innerHTML = html;
+        return el;
+      }
+
+      load().catch((e) => {
+        const meta = document.getElementById("meta");
+        meta.innerHTML = `<span class="pill">Failed to load alerts.json: ${esc(e)}</span>`;
+      });
+    </script>
+  </body>
+</html>
+
