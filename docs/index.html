@@ -139,10 +139,10 @@
         <table>
           <thead>
             <tr>
-              <th style="width: 160px">When</th>
-              <th style="width: 120px">Score</th>
               <th>Trade</th>
+              <th style="width: 140px">Score</th>
               <th style="width: 260px">Wallet</th>
+              <th style="width: 180px">When</th>
             </tr>
           </thead>
           <tbody id="rows"></tbody>
@@ -194,15 +194,14 @@
         const t = a.trade || {};
         const m = a.market || {};
 
-        const when = td(`<div class="mono">${esc(fmtDate(t.timestamp))}</div><div class="muted mono">${esc(t.transaction_hash || "")}</div>`);
-        const score = td(
-          `<div><span class="score">${esc(a.score)}</span> <span class="money">${esc(fmtMoney(a.notional))}</span></div>` +
-            `<div>${(a.reasons || []).slice(0, 6).map((r) => `<span class="chip">${esc(r)}</span>`).join("")}</div>`,
-        );
-
         const trade = td(
           `<div><a href="${esc(a.url)}" target="_blank" rel="noreferrer">${esc(t.title || m.question || "")}</a></div>` +
             `<div class="muted">side=${esc(t.side)} outcome=${esc(t.outcome)} price=${esc(t.price)} size=${esc(t.size)}</div>`,
+        );
+
+        const score = td(
+          `<div><span class="score">${esc(a.score)}</span> <span class="money">${esc(fmtMoney(a.notional))}</span></div>` +
+            `<div>${(a.reasons || []).slice(0, 6).map((r) => `<span class="chip">${esc(r)}</span>`).join("")}</div>`,
         );
 
         const wallet = td(
@@ -210,10 +209,13 @@
             `<div class="muted">trades_7d=${esc(a.wallet_stats?.trades_7d)} markets_7d=${esc(a.wallet_stats?.unique_markets_7d)}</div>`,
         );
 
-        tr.appendChild(when);
-        tr.appendChild(score);
         tr.appendChild(trade);
+        tr.appendChild(score);
         tr.appendChild(wallet);
+        const when = td(
+          `<div class="mono">${esc(fmtDate(t.timestamp))}</div><div class="muted mono">${esc(t.transaction_hash || "")}</div>`,
+        );
+        tr.appendChild(when);
         return tr;
       }
 
@@ -230,4 +232,3 @@
     </script>
   </body>
 </html>
-
