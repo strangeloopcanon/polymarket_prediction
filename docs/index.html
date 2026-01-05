@@ -272,14 +272,24 @@
           const fastNotional = fmtMoney(metrics.notional_fast_window);
           const fastWallets = String(metrics.unique_wallets_fast_window ?? "");
           const fastRange = fmtFloat(metrics.price_range_fast_window);
-          const topWallet = shortAddr(String(metrics.top_wallet_accum_window || ""));
-          const topNotional = fmtMoney(metrics.top_wallet_notional_accum_window);
-          const topShare = fmtFloat(metrics.top_wallet_share_accum_window, 2);
+          const topWallet = shortAddr(
+            String(metrics.top_net_wallet_accum_window || metrics.top_wallet_accum_window || ""),
+          );
+          const topNotional = fmtMoney(
+            metrics.top_net_wallet_notional_accum_window ?? metrics.top_wallet_notional_accum_window,
+          );
+          const topShareMarket = fmtFloat(
+            metrics.top_net_wallet_share_of_market_accum_window ?? metrics.top_wallet_share_accum_window,
+            2,
+          );
+          const topDir = String(metrics.top_net_wallet_direction_accum_window || "");
+          const sharePart = topShareMarket ? ` share=${esc(topShareMarket)}` : "";
+          const dirPart = topDir ? ` dir=${esc(topDir)}` : "";
           metricLine =
             `<div class="muted">event=${esc(eventType)} ` +
             `fast=${esc(fastNotional)} wallets=${esc(fastWallets)} range=${esc(fastRange)}` +
             (eventType === "accumulation"
-              ? ` · top=${esc(topWallet)} ${esc(topNotional)} share=${esc(topShare)}`
+              ? ` · top=${esc(topWallet)} ${esc(topNotional)}${sharePart}${dirPart}`
               : "") +
             `</div>`;
         }

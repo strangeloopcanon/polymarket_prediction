@@ -151,7 +151,16 @@ def _record_market_event(
     if not isinstance(events, list):
         events = []
         market_events[trade.condition_id] = events
-    events.append([int(trade.timestamp), trade.proxy_wallet, float(trade.price), float(notional)])
+    events.append(
+        [
+            int(trade.timestamp),
+            trade.proxy_wallet,
+            float(trade.price),
+            float(notional),
+            int(trade.outcome_index),
+            str(trade.side),
+        ]
+    )
 
     cutoff = int(now_ts) - int(keep_seconds)
     pruned: list[list[Any]] = []
@@ -171,9 +180,16 @@ def _record_market_event(
 def _window_stats(events: list[Any], *, since_ts: int) -> dict[str, Any]:
     notional_sum = 0.0
     wallets: set[str] = set()
-    prices: list[float] = []
+    raw_prices: list[float] = []
+    p0_prices: list[float] = []
     notional_by_wallet: dict[str, float] = defaultdict(float)
     trades_by_wallet: dict[str, int] = defaultdict(int)
+
+    pro_notional_by_wallet: dict[str, float] = defaultdict(float)
+    anti_notional_by_wallet: dict[str, float] = defaultdict(float)
+    pro_trades_by_wallet: dict[str, int] = defaultdict(int)
+    anti_trades_by_wallet: dict[str, int] = defaultdict(int)
+    multi_outcome_seen = False
 
     for e in events:
         if not isinstance(e, list) or len(e) < 4:
@@ -189,11 +205,51 @@ def _window_stats(events: list[Any], *, since_ts: int) -> dict[str, Any]:
             continue
         notional_sum += notional
         wallets.add(wallet)
-        prices.append(price)
+        raw_prices.append(price)
         notional_by_wallet[wallet] += notional
         trades_by_wallet[wallet] += 1
 
-    price_range = (max(prices) - min(prices)) if prices else None
+        outcome_index = None
+        side = None
+        if len(e) >= 6:
+            try:
+                outcome_index = int(e[4])
+            except Exception:
+                outcome_index = None
+            side_raw = str(e[5] or "").upper()
+            if side_raw in {"BUY", "SELL"}:
+                side = side_raw
+
+        # If we see trades on outcomes beyond {0,1}, treat the market as non-binary for
+        # canonical price/direction calculations.
+        if outcome_index is not None and outcome_index not in {0, 1}:
+            multi_outcome_seen = True
+            continue
+
+        # Canonicalize to "outcome 0" implied probability so we can compare apples-to-apples
+        # even when trades are on different outcome tokens (e.g., "Yes" vs "No").
+        if outcome_index in {0, 1}:
+            p0 = price if outcome_index == 0 else (1.0 - price)
+            p0 = max(0.0, min(1.0, p0))
+            p0_prices.append(p0)
+
+            if side is not None:
+                pro0 = (outcome_index == 0 and side == "BUY") or (
+                    outcome_index == 1 and side == "SELL"
+                )
+                if pro0:
+                    pro_notional_by_wallet[wallet] += notional
+                    pro_trades_by_wallet[wallet] += 1
+                else:
+                    anti_notional_by_wallet[wallet] += notional
+                    anti_trades_by_wallet[wallet] += 1
+
+    price_range_raw = (max(raw_prices) - min(raw_prices)) if len(raw_prices) >= 2 else None
+    price_range = (
+        (max(p0_prices) - min(p0_prices))
+        if not multi_outcome_seen and len(p0_prices) >= 2
+        else None
+    )
 
     top_wallet = None
     top_wallet_notional = 0.0
@@ -205,14 +261,52 @@ def _window_stats(events: list[Any], *, since_ts: int) -> dict[str, Any]:
     top_wallet_share = (top_wallet_notional / notional_sum) if notional_sum > 0 else None
     top_wallet_trades = trades_by_wallet.get(top_wallet or "", 0)
 
+    top_net_wallet = None
+    top_net_wallet_notional = 0.0
+    top_net_wallet_direction = None
+    top_net_wallet_share_of_wallet = None
+    top_net_wallet_share_of_market = None
+    top_net_wallet_trades = 0
+    if not multi_outcome_seen:
+        for w in set(pro_notional_by_wallet.keys()) | set(anti_notional_by_wallet.keys()):
+            pro = float(pro_notional_by_wallet.get(w, 0.0) or 0.0)
+            anti = float(anti_notional_by_wallet.get(w, 0.0) or 0.0)
+            total = pro + anti
+            if total <= 0:
+                continue
+            net = abs(pro - anti)
+            if net <= top_net_wallet_notional:
+                continue
+            direction = "pro0" if pro >= anti else "anti0"
+            trades = (
+                int(pro_trades_by_wallet.get(w, 0) or 0)
+                if direction == "pro0"
+                else int(anti_trades_by_wallet.get(w, 0) or 0)
+            )
+            top_net_wallet = w
+            top_net_wallet_notional = net
+            top_net_wallet_direction = direction
+            top_net_wallet_share_of_wallet = net / total
+            top_net_wallet_trades = trades
+
+        if top_net_wallet is not None and notional_sum > 0:
+            top_net_wallet_share_of_market = top_net_wallet_notional / notional_sum
+
     return {
         "notional_sum": notional_sum,
         "unique_wallets": len(wallets),
         "price_range": price_range,
+        "price_range_raw": price_range_raw,
         "top_wallet": top_wallet,
         "top_wallet_notional": top_wallet_notional,
         "top_wallet_share": top_wallet_share,
         "top_wallet_trades": top_wallet_trades,
+        "top_net_wallet": top_net_wallet,
+        "top_net_wallet_notional": top_net_wallet_notional,
+        "top_net_wallet_direction": top_net_wallet_direction,
+        "top_net_wallet_share_of_wallet": top_net_wallet_share_of_wallet,
+        "top_net_wallet_share_of_market": top_net_wallet_share_of_market,
+        "top_net_wallet_trades": top_net_wallet_trades,
     }
 
 
@@ -462,27 +556,39 @@ def main(argv: list[str] | None = None) -> int:
             fast_score += 1
             reasons.append("market_participation_30m")
 
-        accum_top_notional = float(accum.get("top_wallet_notional", 0.0) or 0.0)
         accum_top_wallet = accum.get("top_wallet")
+        accum_top_notional = float(accum.get("top_wallet_notional", 0.0) or 0.0)
         accum_top_share = accum.get("top_wallet_share")
         accum_top_trades = int(accum.get("top_wallet_trades", 0) or 0)
         accum_price_range = accum.get("price_range")
-        if accum_top_trades >= 2:
+
+        accum_top_net_wallet = accum.get("top_net_wallet")
+        accum_top_net_notional = float(accum.get("top_net_wallet_notional", 0.0) or 0.0)
+        accum_top_net_direction = accum.get("top_net_wallet_direction")
+        accum_top_net_share_of_wallet = accum.get("top_net_wallet_share_of_wallet")
+        accum_top_net_share_of_market = accum.get("top_net_wallet_share_of_market")
+        accum_top_net_trades = int(accum.get("top_net_wallet_trades", 0) or 0)
+
+        if (
+            accum_top_net_trades >= 2
+            and isinstance(accum_top_net_share_of_wallet, float)
+            and accum_top_net_share_of_wallet >= 0.6
+        ):
             is_whale = False
-            if accum_top_notional >= 50_000:
+            if accum_top_net_notional >= 50_000:
                 accum_score += 6
                 reasons.append("whale_accumulation_6h")
                 is_whale = True
-            elif accum_top_notional >= 25_000:
+            elif accum_top_net_notional >= 25_000:
                 accum_score += 4
                 reasons.append("whale_accumulation_6h")
                 is_whale = True
             if is_whale:
-                if isinstance(accum_top_share, float):
-                    if accum_top_share >= 0.8:
+                if isinstance(accum_top_net_share_of_market, float):
+                    if accum_top_net_share_of_market >= 0.8:
                         accum_score += 2
                         reasons.append("concentrated_flow_6h")
-                    elif accum_top_share >= 0.6:
+                    elif accum_top_net_share_of_market >= 0.6:
                         accum_score += 1
                         reasons.append("concentrated_flow_6h")
                 if isinstance(accum_price_range, float) and accum_price_range <= 0.05:
@@ -500,9 +606,13 @@ def main(argv: list[str] | None = None) -> int:
         _mark_alerted(state, key)
 
         rep_trade = trade
-        if event_type == "accumulation" and isinstance(accum_top_wallet, str) and accum_top_wallet:
+        if (
+            event_type == "accumulation"
+            and isinstance(accum_top_net_wallet, str)
+            and accum_top_net_wallet
+        ):
             rep_trade = (
-                latest_trade_by_market_wallet.get(condition_id, {}).get(accum_top_wallet)
+                latest_trade_by_market_wallet.get(condition_id, {}).get(accum_top_net_wallet)
                 or rep_trade
             )
 
@@ -521,7 +631,7 @@ def main(argv: list[str] | None = None) -> int:
             if r in {"new_wallet_to_system", "concentrated_activity_7d", "extreme_price"}:
                 reasons.append(r)
 
-        alert_notional = fast_notional if event_type == "fast_move" else accum_top_notional
+        alert_notional = fast_notional if event_type == "fast_move" else accum_top_net_notional
         slug = rep_trade.slug or (market.slug if market else "")
         new_alerts.append(
             {
@@ -546,6 +656,12 @@ def main(argv: list[str] | None = None) -> int:
                     "top_wallet_notional_accum_window": accum_top_notional,
                     "top_wallet_share_accum_window": accum_top_share,
                     "top_wallet_trades_accum_window": accum_top_trades,
+                    "top_net_wallet_accum_window": accum_top_net_wallet,
+                    "top_net_wallet_notional_accum_window": accum_top_net_notional,
+                    "top_net_wallet_direction_accum_window": accum_top_net_direction,
+                    "top_net_wallet_share_of_wallet_accum_window": accum_top_net_share_of_wallet,
+                    "top_net_wallet_share_of_market_accum_window": accum_top_net_share_of_market,
+                    "top_net_wallet_trades_accum_window": accum_top_net_trades,
                     "price_range_accum_window": accum_price_range,
                 },
             }

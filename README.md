@@ -58,10 +58,10 @@ So what: the public feed is tuned to surface a handful of “key event” market
 
 The publisher (`scripts/publish_alerts.py:1`) emits alerts based on:
 
-- `market_price_move_30m`: large price range over the last `--fast-window-seconds` (default 30m)
+- `market_price_move_30m`: large implied-probability range over the last `--fast-window-seconds` (default 30m); for binary markets this is canonicalized so trades on opposite outcomes compare correctly
 - `market_heat_30m`: meaningful notional over the same window
 - `market_participation_30m`: multiple unique wallets over the same window
-- `whale_accumulation_6h`: a single wallet accumulating over `--accum-window-seconds` (default 6h)
+- `whale_accumulation_6h`: a single wallet’s directional net flow over `--accum-window-seconds` (default 6h)
 
 Notes:
 - The feed is capped to `--max-alerts-per-day` (default 5) in UTC days.
