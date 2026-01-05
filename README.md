@@ -52,6 +52,22 @@ Points are added by `src/polymarket_watch/scoring.py:1`:
 Important caveat:
 - In the GitHub Pages publisher (`scripts/publish_alerts.py:1`), wallet history is only tracked for trades `>= --min-notional`, so `new_wallet_to_system` means “new among tracked large trades”, not necessarily a brand-new Polymarket user.
 
+## Publisher heuristics (GitHub Pages)
+
+So what: the public feed is tuned to surface a handful of “key event” markets per day (fast moves + quiet accumulation), not every suspicious trade.
+
+The publisher (`scripts/publish_alerts.py:1`) emits alerts based on:
+
+- `market_price_move_30m`: large price range over the last `--fast-window-seconds` (default 30m)
+- `market_heat_30m`: meaningful notional over the same window
+- `market_participation_30m`: multiple unique wallets over the same window
+- `whale_accumulation_6h`: a single wallet accumulating over `--accum-window-seconds` (default 6h)
+
+Notes:
+- The feed is capped to `--max-alerts-per-day` (default 5) in UTC days.
+- `alerts.json` includes a `metrics` object per alert with the window stats that triggered it.
+- The displayed `notional` is the signal notional for the window (not necessarily `size * price` of the single displayed trade).
+
 ## Cheap public publishing (GitHub Pages)
 
 So what: you can publish a simple webpage + JSON feed of alerts without running servers.

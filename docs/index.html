@@ -189,6 +189,14 @@
             </select>
           </label>
           <label>
+            Event
+            <select id="eventType">
+              <option value="">Any</option>
+              <option value="fast_move">fast_move</option>
+              <option value="accumulation">accumulation</option>
+            </select>
+          </label>
+          <label>
             Search
             <input id="q" type="text" placeholder="market, slug, wallet…" style="width: 240px" />
           </label>
@@ -218,6 +226,8 @@
     <script>
       const fmtMoney = (n) =>
         new Intl.NumberFormat(undefined, { style: "currency", currency: "USD" }).format(n || 0);
+      const fmtFloat = (n, d = 3) =>
+        n === null || n === undefined || n === "" ? "" : Number(n).toFixed(d);
       const fmtDate = (ts) => new Date((ts || 0) * 1000).toISOString().replace("T", " ").slice(0, 19) + " UTC";
       const shortAddr = (a) => (a ? a.slice(0, 6) + "…" + a.slice(-4) : "");
       const esc = (s) =>
@@ -254,10 +264,30 @@
         const tr = document.createElement("tr");
         const t = a.trade || {};
         const m = a.market || {};
+        const metrics = a.metrics || null;
+
+        let metricLine = "";
+        if (metrics && metrics.event_type) {
+          const eventType = String(metrics.event_type || "");
+          const fastNotional = fmtMoney(metrics.notional_fast_window);
+          const fastWallets = String(metrics.unique_wallets_fast_window ?? "");
+          const fastRange = fmtFloat(metrics.price_range_fast_window);
+          const topWallet = shortAddr(String(metrics.top_wallet_accum_window || ""));
+          const topNotional = fmtMoney(metrics.top_wallet_notional_accum_window);
+          const topShare = fmtFloat(metrics.top_wallet_share_accum_window, 2);
+          metricLine =
+            `<div class="muted">event=${esc(eventType)} ` +
+            `fast=${esc(fastNotional)} wallets=${esc(fastWallets)} range=${esc(fastRange)}` +
+            (eventType === "accumulation"
+              ? ` · top=${esc(topWallet)} ${esc(topNotional)} share=${esc(topShare)}`
+              : "") +
+            `</div>`;
+        }
 
         const trade = td(
           `<div><a href="${esc(a.url)}" target="_blank" rel="noreferrer">${esc(t.title || m.question || "")}</a></div>` +
-            `<div class="muted">side=${esc(t.side)} outcome=${esc(t.outcome)} price=${esc(t.price)} size=${esc(t.size)}</div>`,
+            `<div class="muted">side=${esc(t.side)} outcome=${esc(t.outcome)} price=${esc(t.price)} size=${esc(t.size)}</div>` +
+            metricLine,
         );
 
         const score = td(
@@ -297,6 +327,7 @@
         const q = (document.getElementById("q").value || "").trim().toLowerCase();
         const minScore = parseInt(document.getElementById("minScore").value || "0", 10);
         const reason = document.getElementById("reason").value || "";
+        const eventType = document.getElementById("eventType").value || "";
         const onlyNewWallet = document.getElementById("onlyNewWallet").checked;
 
         return (alerts || []).filter((a) => {
@@ -304,6 +335,7 @@
           if (score < minScore) return false;
           const reasons = (a.reasons || []).map((x) => String(x));
           if (reason && !reasons.includes(reason)) return false;
+          if (eventType && String(a.metrics?.event_type || "") !== eventType) return false;
           if (onlyNewWallet && !reasons.includes("new_wallet_to_system")) return false;
           if (!q) return true;
 
@@ -359,6 +391,7 @@
         el.addEventListener("input", render);
         el.addEventListener("change", render);
       }
+      document.getElementById("eventType").addEventListener("change", render);
 
       load().catch((e) => {
         const meta = document.getElementById("meta");

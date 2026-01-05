@@ -4,13 +4,14 @@ import argparse
 import json
 import os
 import time
+from collections import defaultdict
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from polymarket_watch.polymarket import Market, PolymarketClient, Trade
-from polymarket_watch.scoring import build_alert
+from polymarket_watch.scoring import score_trade, trade_notional_usd
 from polymarket_watch.store import WalletStats
 
 
@@ -133,6 +134,134 @@ def _record_wallet_event(state: dict[str, Any], trade: Trade, notional: float) -
     w["markets"] = markets[-500:]
 
 
+def _record_market_event(
+    state: dict[str, Any],
+    trade: Trade,
+    *,
+    notional: float,
+    now_ts: int,
+    keep_seconds: int,
+    max_events_per_market: int,
+) -> None:
+    market_events = state.setdefault("market_events", {})
+    if not isinstance(market_events, dict):
+        market_events = {}
+        state["market_events"] = market_events
+    events = market_events.setdefault(trade.condition_id, [])
+    if not isinstance(events, list):
+        events = []
+        market_events[trade.condition_id] = events
+    events.append([int(trade.timestamp), trade.proxy_wallet, float(trade.price), float(notional)])
+
+    cutoff = int(now_ts) - int(keep_seconds)
+    pruned: list[list[Any]] = []
+    for e in events:
+        if not isinstance(e, list) or len(e) < 4:
+            continue
+        try:
+            if int(e[0]) >= cutoff:
+                pruned.append(e)
+        except Exception:
+            continue
+    if len(pruned) > int(max_events_per_market):
+        pruned = pruned[-int(max_events_per_market) :]
+    market_events[trade.condition_id] = pruned
+
+
+def _window_stats(events: list[Any], *, since_ts: int) -> dict[str, Any]:
+    notional_sum = 0.0
+    wallets: set[str] = set()
+    prices: list[float] = []
+    notional_by_wallet: dict[str, float] = defaultdict(float)
+    trades_by_wallet: dict[str, int] = defaultdict(int)
+
+    for e in events:
+        if not isinstance(e, list) or len(e) < 4:
+            continue
+        try:
+            ts = int(e[0])
+            if ts < int(since_ts):
+                continue
+            wallet = str(e[1] or "")
+            price = float(e[2])
+            notional = float(e[3])
+        except Exception:
+            continue
+        notional_sum += notional
+        wallets.add(wallet)
+        prices.append(price)
+        notional_by_wallet[wallet] += notional
+        trades_by_wallet[wallet] += 1
+
+    price_range = (max(prices) - min(prices)) if prices else None
+
+    top_wallet = None
+    top_wallet_notional = 0.0
+    for w, v in notional_by_wallet.items():
+        if v > top_wallet_notional:
+            top_wallet = w
+            top_wallet_notional = v
+
+    top_wallet_share = (top_wallet_notional / notional_sum) if notional_sum > 0 else None
+    top_wallet_trades = trades_by_wallet.get(top_wallet or "", 0)
+
+    return {
+        "notional_sum": notional_sum,
+        "unique_wallets": len(wallets),
+        "price_range": price_range,
+        "top_wallet": top_wallet,
+        "top_wallet_notional": top_wallet_notional,
+        "top_wallet_share": top_wallet_share,
+        "top_wallet_trades": top_wallet_trades,
+    }
+
+
+def _day_key_utc(ts: int) -> str:
+    dt = datetime.fromtimestamp(int(ts), tz=timezone.utc)
+    return f"{dt:%Y-%m-%d}"
+
+
+def _cap_alerts_per_day(alerts: list[dict[str, Any]], *, max_per_day: int) -> list[dict[str, Any]]:
+    if max_per_day <= 0:
+        return []
+
+    by_day: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for a in alerts:
+        try:
+            ts = int(a.get("trade", {}).get("timestamp", 0))
+        except Exception:
+            ts = 0
+        by_day[_day_key_utc(ts)].append(a)
+
+    kept: list[dict[str, Any]] = []
+    for day in sorted(by_day.keys(), reverse=True):
+        day_alerts = by_day[day]
+
+        def _sort_key(x: dict[str, Any]) -> tuple[float, float, int]:
+            try:
+                score = float(x.get("score", 0) or 0)
+            except Exception:
+                score = 0.0
+            try:
+                notional = float(x.get("notional", 0) or 0)
+            except Exception:
+                notional = 0.0
+            try:
+                ts = int(x.get("trade", {}).get("timestamp", 0) or 0)
+            except Exception:
+                ts = 0
+            return (score, notional, ts)
+
+        day_alerts_sorted = sorted(day_alerts, key=_sort_key, reverse=True)
+        kept.extend(day_alerts_sorted[:max_per_day])
+
+    return sorted(
+        kept,
+        key=lambda a: int(a.get("trade", {}).get("timestamp", 0) or 0),
+        reverse=True,
+    )
+
+
 def _get_market(
     state: dict[str, Any], client: PolymarketClient, condition_id: str
 ) -> Market | None:
@@ -189,13 +318,43 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument("--limit", type=int, default=500, help="Trades fetch limit.")
     p.add_argument("--min-notional", type=float, default=2000.0, help="Min notional ($).")
-    p.add_argument("--min-score", type=int, default=3, help="Min score to alert.")
+    p.add_argument("--min-score", type=int, default=7, help="Min score to alert.")
     p.add_argument(
         "--cooldown-seconds", type=int, default=6 * 60 * 60, help="Cooldown per wallet+market."
     )
     p.add_argument("--max-seen", type=int, default=5000, help="Max seen trade IDs retained.")
     p.add_argument(
         "--max-alerts", type=int, default=200, help="Max alerts retained in public feed."
+    )
+    p.add_argument(
+        "--max-alerts-per-day",
+        type=int,
+        default=5,
+        help="Cap alerts per UTC day in public feed.",
+    )
+    p.add_argument(
+        "--fast-window-seconds",
+        type=int,
+        default=30 * 60,
+        help="Window for fast-move signals (seconds).",
+    )
+    p.add_argument(
+        "--accum-window-seconds",
+        type=int,
+        default=6 * 60 * 60,
+        help="Window for accumulation signals (seconds).",
+    )
+    p.add_argument(
+        "--market-events-keep-seconds",
+        type=int,
+        default=6 * 60 * 60,
+        help="How long to keep per-market trade events in state (seconds).",
+    )
+    p.add_argument(
+        "--market-events-max-per-market",
+        type=int,
+        default=500,
+        help="Max per-market events retained in state.",
     )
     p.add_argument(
         "--state-keep-seconds",
@@ -216,6 +375,8 @@ def main(argv: list[str] | None = None) -> int:
     trades = client.get_recent_trades(limit=min(int(args.limit), 500), offset=0)
     trades = sorted(trades, key=lambda t: (t.timestamp, t.trade_id))
 
+    now_ts = _now_ts()
+
     seen_list = state.setdefault("seen_trade_ids", [])
     if not isinstance(seen_list, list):
         seen_list = []
@@ -223,11 +384,13 @@ def main(argv: list[str] | None = None) -> int:
     seen_set = set(seen_list)
 
     new_alerts: list[dict[str, Any]] = []
+    latest_trade_by_market: dict[str, Trade] = {}
+    latest_trade_by_market_wallet: dict[str, dict[str, Trade]] = {}
     for trade in trades:
         if trade.trade_id in seen_set:
             continue
 
-        notional = float(trade.size) * float(trade.price)
+        notional = trade_notional_usd(trade)
         seen_list.append(trade.trade_id)
         seen_set.add(trade.trade_id)
         max_seen = int(args.max_seen)
@@ -240,27 +403,153 @@ def main(argv: list[str] | None = None) -> int:
             continue
 
         _record_wallet_event(state, trade, notional=notional)
-
-        wallet_stats = _wallet_stats_from_state(
-            state, trade.proxy_wallet, min_notional=float(args.min_notional)
+        _record_market_event(
+            state,
+            trade,
+            notional=notional,
+            now_ts=now_ts,
+            keep_seconds=int(args.market_events_keep_seconds),
+            max_events_per_market=int(args.market_events_max_per_market),
         )
-        market = _get_market(state, client, trade.condition_id) if trade.condition_id else None
 
-        alert = build_alert(
-            trade=trade,
-            wallet_stats=wallet_stats,
-            market=market,
-            min_notional=float(args.min_notional),
-            min_score=int(args.min_score),
-        )
-        if alert is None:
+        if trade.condition_id:
+            prev = latest_trade_by_market.get(trade.condition_id)
+            if prev is None or int(trade.timestamp) >= int(prev.timestamp):
+                latest_trade_by_market[trade.condition_id] = trade
+            per_wallet = latest_trade_by_market_wallet.setdefault(trade.condition_id, {})
+            prev_w = per_wallet.get(trade.proxy_wallet)
+            if prev_w is None or int(trade.timestamp) >= int(prev_w.timestamp):
+                per_wallet[trade.proxy_wallet] = trade
+
+    min_score = int(args.min_score)
+    market_events = (
+        state.get("market_events") if isinstance(state.get("market_events"), dict) else {}
+    )
+    for condition_id, trade in latest_trade_by_market.items():
+        events = market_events.get(condition_id, [])
+        if not isinstance(events, list):
             continue
 
-        key = f"{trade.proxy_wallet}:{trade.condition_id}"
+        fast = _window_stats(events, since_ts=now_ts - int(args.fast_window_seconds))
+        accum = _window_stats(events, since_ts=now_ts - int(args.accum_window_seconds))
+
+        reasons: list[str] = []
+        fast_score = 0
+        accum_score = 0
+
+        fast_price_range = fast.get("price_range")
+        if isinstance(fast_price_range, float):
+            if fast_price_range >= 0.15:
+                fast_score += 6
+                reasons.append("market_price_move_30m")
+            elif fast_price_range >= 0.08:
+                fast_score += 4
+                reasons.append("market_price_move_30m")
+
+        fast_notional = float(fast.get("notional_sum", 0.0) or 0.0)
+        if fast_notional >= 50_000:
+            fast_score += 4
+            reasons.append("market_heat_30m")
+        elif fast_notional >= 20_000:
+            fast_score += 2
+            reasons.append("market_heat_30m")
+
+        fast_wallets = int(fast.get("unique_wallets", 0) or 0)
+        if fast_wallets >= 20:
+            fast_score += 2
+            reasons.append("market_participation_30m")
+        elif fast_wallets >= 5:
+            fast_score += 1
+            reasons.append("market_participation_30m")
+
+        accum_top_notional = float(accum.get("top_wallet_notional", 0.0) or 0.0)
+        accum_top_wallet = accum.get("top_wallet")
+        accum_top_share = accum.get("top_wallet_share")
+        accum_top_trades = int(accum.get("top_wallet_trades", 0) or 0)
+        accum_price_range = accum.get("price_range")
+        if accum_top_trades >= 2:
+            is_whale = False
+            if accum_top_notional >= 50_000:
+                accum_score += 6
+                reasons.append("whale_accumulation_6h")
+                is_whale = True
+            elif accum_top_notional >= 25_000:
+                accum_score += 4
+                reasons.append("whale_accumulation_6h")
+                is_whale = True
+            if is_whale:
+                if isinstance(accum_top_share, float):
+                    if accum_top_share >= 0.8:
+                        accum_score += 2
+                        reasons.append("concentrated_flow_6h")
+                    elif accum_top_share >= 0.6:
+                        accum_score += 1
+                        reasons.append("concentrated_flow_6h")
+                if isinstance(accum_price_range, float) and accum_price_range <= 0.05:
+                    accum_score += 1
+                    reasons.append("quiet_price_6h")
+
+        score = fast_score + accum_score
+        if score < min_score:
+            continue
+
+        event_type = "fast_move" if fast_score >= accum_score else "accumulation"
+        key = f"{event_type}:{condition_id}"
         if not _cooldown_ok(state, key, cooldown_s=int(args.cooldown_seconds)):
             continue
         _mark_alerted(state, key)
-        new_alerts.append(_alert_to_public_dict(alert))
+
+        rep_trade = trade
+        if event_type == "accumulation" and isinstance(accum_top_wallet, str) and accum_top_wallet:
+            rep_trade = (
+                latest_trade_by_market_wallet.get(condition_id, {}).get(accum_top_wallet)
+                or rep_trade
+            )
+
+        wallet_stats = _wallet_stats_from_state(
+            state, rep_trade.proxy_wallet, min_notional=float(args.min_notional)
+        )
+        market = _get_market(state, client, condition_id) if condition_id else None
+        _, ctx_reasons = score_trade(
+            trade=rep_trade,
+            notional=trade_notional_usd(rep_trade),
+            wallet_stats=wallet_stats,
+            market=market,
+            min_notional=float(args.min_notional),
+        )
+        for r in ctx_reasons:
+            if r in {"new_wallet_to_system", "concentrated_activity_7d", "extreme_price"}:
+                reasons.append(r)
+
+        alert_notional = fast_notional if event_type == "fast_move" else accum_top_notional
+        slug = rep_trade.slug or (market.slug if market else "")
+        new_alerts.append(
+            {
+                "type": "alert",
+                "score": score,
+                "reasons": reasons,
+                "notional": alert_notional,
+                "url": f"https://polymarket.com/market/{slug}"
+                if slug
+                else "https://polymarket.com",
+                "trade": asdict(rep_trade),
+                "wallet_stats": asdict(wallet_stats),
+                "market": (asdict(market) if market else None),
+                "metrics": {
+                    "event_type": event_type,
+                    "fast_window_s": int(args.fast_window_seconds),
+                    "notional_fast_window": fast_notional,
+                    "unique_wallets_fast_window": fast_wallets,
+                    "price_range_fast_window": fast_price_range,
+                    "accum_window_s": int(args.accum_window_seconds),
+                    "top_wallet_accum_window": accum_top_wallet,
+                    "top_wallet_notional_accum_window": accum_top_notional,
+                    "top_wallet_share_accum_window": accum_top_share,
+                    "top_wallet_trades_accum_window": accum_top_trades,
+                    "price_range_accum_window": accum_price_range,
+                },
+            }
+        )
 
     # Merge into existing feed.
     existing = _load_json(out_path, default={})
@@ -282,22 +571,31 @@ def main(argv: list[str] | None = None) -> int:
     combined = prev_alerts + new_alerts
     combined_sorted = sorted(
         combined,
-        key=lambda a: int(a.get("trade", {}).get("timestamp", 0)),
+        key=lambda a: int(a.get("trade", {}).get("timestamp", 0) or 0),
         reverse=True,
     )
+
+    max_per_day = int(args.max_alerts_per_day)
+    if max_per_day > 0:
+        combined_sorted = _cap_alerts_per_day(combined_sorted, max_per_day=max_per_day)
     combined_sorted = combined_sorted[: int(args.max_alerts)]
+
+    new_trade_ids = {str(a.get("trade", {}).get("trade_id", "")) for a in new_alerts}
+    new_in_feed = sum(
+        1 for a in combined_sorted if str(a.get("trade", {}).get("trade_id", "")) in new_trade_ids
+    )
 
     payload = {
         "generated_at": _now_ts(),
         "repo": os.environ.get("GITHUB_REPOSITORY", ""),
         "alerts": combined_sorted,
-        "new_alerts": len(new_alerts),
+        "new_alerts": new_in_feed,
     }
 
     _atomic_write(out_path, json.dumps(payload, indent=2, sort_keys=True) + "\n")
     for_alerts_jsonl = sorted(
         combined_sorted,
-        key=lambda a: int(a.get("trade", {}).get("timestamp", 0)),
+        key=lambda a: int(a.get("trade", {}).get("timestamp", 0) or 0),
     )
     _atomic_write(
         out_jsonl_path, "\n".join(json.dumps(x, sort_keys=True) for x in for_alerts_jsonl) + "\n"
@@ -306,7 +604,7 @@ def main(argv: list[str] | None = None) -> int:
     # Append new alerts to an archive so we don't lose history as the public feed is capped.
     archive_batches: dict[Path, list[str]] = {}
     for a in new_alerts:
-        ts = int(a.get("trade", {}).get("timestamp", 0))
+        ts = int(a.get("trade", {}).get("timestamp", 0) or 0)
         path = _archive_path(archive_dir, ts if ts > 0 else _now_ts())
         archive_batches.setdefault(path, []).append(json.dumps(a, sort_keys=True))
     for path, lines in archive_batches.items():
@@ -353,6 +651,31 @@ def main(argv: list[str] | None = None) -> int:
                     alerts.pop(k, None)
             except Exception:
                 alerts.pop(k, None)
+
+    market_events = state.get("market_events")
+    if isinstance(market_events, dict):
+        event_cutoff = _now_ts() - int(args.market_events_keep_seconds)
+        for k in list(market_events.keys()):
+            v = market_events.get(k)
+            if not isinstance(v, list):
+                market_events.pop(k, None)
+                continue
+            pruned: list[list[Any]] = []
+            for e in v:
+                if not isinstance(e, list) or len(e) < 4:
+                    continue
+                try:
+                    if int(e[0]) >= event_cutoff:
+                        pruned.append(e)
+                except Exception:
+                    continue
+            if not pruned and k not in keep_markets:
+                market_events.pop(k, None)
+                continue
+            if len(pruned) > int(args.market_events_max_per_market):
+                pruned = pruned[-int(args.market_events_max_per_market) :]
+            market_events[k] = pruned
+            keep_markets.add(k)
 
     _atomic_write(state_path, json.dumps(state, indent=2, sort_keys=True) + "\n")
     return 0

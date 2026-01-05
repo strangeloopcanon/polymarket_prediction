@@ -33,9 +33,10 @@ jobs:
           python scripts/publish_alerts.py \
             --limit 500 \
             --min-notional 2000 \
-            --min-score 3 \
-            --cooldown-seconds 21600 \
+            --min-score 7 \
+            --cooldown-seconds 86400 \
             --state-keep-seconds 604800 \
+            --max-alerts-per-day 5 \
             --max-alerts 200
 
       - name: Commit and push (if changed)
