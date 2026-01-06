@@ -94,6 +94,9 @@
         font-size: 12px;
         color: var(--muted);
       }
+      a.pill {
+        color: var(--link);
+      }
       table {
         width: 100%;
         border-collapse: collapse;
@@ -244,7 +247,11 @@
         base = data;
         const meta = document.getElementById("meta");
         meta.innerHTML = "";
-        meta.appendChild(pill(`Generated: ${fmtDate(data.generated_at)}`));
+        meta.appendChild(pill(`Last successful run: ${fmtDate(data.generated_at)}`));
+        meta.appendChild(pill("Schedule: every 6h"));
+        if (data.workflow_run_url) {
+          meta.appendChild(pillLink(`Run logs: ${data.workflow_run_id || "link"}`, data.workflow_run_url));
+        }
         if (data.repo) meta.appendChild(pill(`Repo: ${data.repo}`));
         meta.appendChild(pill(`Alerts: ${(data.alerts || []).length}`));
         meta.appendChild(pill(`New: ${data.new_alerts || 0}`));
@@ -256,6 +263,16 @@
       function pill(text) {
         const el = document.createElement("span");
         el.className = "pill";
+        el.textContent = text;
+        return el;
+      }
+
+      function pillLink(text, href) {
+        const el = document.createElement("a");
+        el.className = "pill";
+        el.href = href;
+        el.target = "_blank";
+        el.rel = "noreferrer";
         el.textContent = text;
         return el;
       }

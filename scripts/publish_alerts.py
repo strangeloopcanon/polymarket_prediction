@@ -701,11 +701,18 @@ def main(argv: list[str] | None = None) -> int:
         1 for a in combined_sorted if str(a.get("trade", {}).get("trade_id", "")) in new_trade_ids
     )
 
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    run_id = os.environ.get("GITHUB_RUN_ID", "")
+    server_url = os.environ.get("GITHUB_SERVER_URL", "https://github.com").rstrip("/")
+    run_url = f"{server_url}/{repo}/actions/runs/{run_id}" if repo and run_id else ""
+
     payload = {
         "generated_at": _now_ts(),
-        "repo": os.environ.get("GITHUB_REPOSITORY", ""),
+        "repo": repo,
         "alerts": combined_sorted,
         "new_alerts": new_in_feed,
+        "workflow_run_id": run_id,
+        "workflow_run_url": run_url,
     }
 
     _atomic_write(out_path, json.dumps(payload, indent=2, sort_keys=True) + "\n")
