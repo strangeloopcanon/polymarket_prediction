@@ -51,6 +51,20 @@ def _now_ts() -> int:
     return int(time.time())
 
 
+def _window_label(seconds: int) -> str:
+    s = int(seconds)
+    if s <= 0:
+        return "0s"
+    days = s // 86_400
+    if s % 86_400 == 0 and days > 1:
+        return f"{days}d"
+    if s % 3_600 == 0:
+        return f"{s // 3_600}h"
+    if s % 60 == 0:
+        return f"{s // 60}m"
+    return f"{s}s"
+
+
 def _as_market(obj: dict[str, Any]) -> Market:
     return Market(
         condition_id=str(obj.get("condition_id", "")),
@@ -516,6 +530,8 @@ def main(argv: list[str] | None = None) -> int:
                 per_wallet[trade.proxy_wallet] = trade
 
     min_score = int(args.min_score)
+    fast_label = _window_label(int(args.fast_window_seconds))
+    accum_label = _window_label(int(args.accum_window_seconds))
     market_events = (
         state.get("market_events") if isinstance(state.get("market_events"), dict) else {}
     )
@@ -535,26 +551,26 @@ def main(argv: list[str] | None = None) -> int:
         if isinstance(fast_price_range, float):
             if fast_price_range >= 0.15:
                 fast_score += 6
-                reasons.append("market_price_move_30m")
+                reasons.append(f"market_price_move_{fast_label}")
             elif fast_price_range >= 0.08:
                 fast_score += 4
-                reasons.append("market_price_move_30m")
+                reasons.append(f"market_price_move_{fast_label}")
 
         fast_notional = float(fast.get("notional_sum", 0.0) or 0.0)
         if fast_notional >= 50_000:
             fast_score += 4
-            reasons.append("market_heat_30m")
+            reasons.append(f"market_heat_{fast_label}")
         elif fast_notional >= 20_000:
             fast_score += 2
-            reasons.append("market_heat_30m")
+            reasons.append(f"market_heat_{fast_label}")
 
         fast_wallets = int(fast.get("unique_wallets", 0) or 0)
         if fast_wallets >= 20:
             fast_score += 2
-            reasons.append("market_participation_30m")
+            reasons.append(f"market_participation_{fast_label}")
         elif fast_wallets >= 5:
             fast_score += 1
-            reasons.append("market_participation_30m")
+            reasons.append(f"market_participation_{fast_label}")
 
         accum_top_wallet = accum.get("top_wallet")
         accum_top_notional = float(accum.get("top_wallet_notional", 0.0) or 0.0)
@@ -577,23 +593,23 @@ def main(argv: list[str] | None = None) -> int:
             is_whale = False
             if accum_top_net_notional >= 50_000:
                 accum_score += 6
-                reasons.append("whale_accumulation_6h")
+                reasons.append(f"whale_accumulation_{accum_label}")
                 is_whale = True
             elif accum_top_net_notional >= 25_000:
                 accum_score += 4
-                reasons.append("whale_accumulation_6h")
+                reasons.append(f"whale_accumulation_{accum_label}")
                 is_whale = True
             if is_whale:
                 if isinstance(accum_top_net_share_of_market, float):
                     if accum_top_net_share_of_market >= 0.8:
                         accum_score += 2
-                        reasons.append("concentrated_flow_6h")
+                        reasons.append(f"concentrated_flow_{accum_label}")
                     elif accum_top_net_share_of_market >= 0.6:
                         accum_score += 1
-                        reasons.append("concentrated_flow_6h")
+                        reasons.append(f"concentrated_flow_{accum_label}")
                 if isinstance(accum_price_range, float) and accum_price_range <= 0.05:
                     accum_score += 1
-                    reasons.append("quiet_price_6h")
+                    reasons.append(f"quiet_price_{accum_label}")
 
         score = fast_score + accum_score
         if score < min_score:

@@ -58,15 +58,16 @@ So what: the public feed is tuned to surface a handful of “key event” market
 
 The publisher (`scripts/publish_alerts.py:1`) emits alerts based on:
 
-- `market_price_move_30m`: large implied-probability range over the last `--fast-window-seconds` (default 30m); for binary markets this is canonicalized so trades on opposite outcomes compare correctly
-- `market_heat_30m`: meaningful notional over the same window
-- `market_participation_30m`: multiple unique wallets over the same window
-- `whale_accumulation_6h`: a single wallet’s directional net flow over `--accum-window-seconds` (default 6h)
+- `market_price_move_<window>`: large implied-probability range over the last `--fast-window-seconds` (default 30m); for binary markets this is canonicalized so trades on opposite outcomes compare correctly
+- `market_heat_<window>`: meaningful notional over the same window
+- `market_participation_<window>`: multiple unique wallets over the same window
+- `whale_accumulation_<window>`: a single wallet’s directional net flow over `--accum-window-seconds` (default 6h)
 
 Notes:
 - The feed is capped to `--max-alerts-per-day` (default 5) in UTC days.
 - `alerts.json` includes a `metrics` object per alert with the window stats that triggered it.
 - The displayed `notional` is the signal notional for the window (not necessarily `size * price` of the single displayed trade).
+  - In the GitHub Action (`.github/workflows/publish_alerts.yml`), the fast window is set to 24h, so these reasons appear as `*_24h`.
 
 ## Cheap public publishing (GitHub Pages)
 
