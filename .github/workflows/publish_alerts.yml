@@ -2,7 +2,7 @@ name: Publish Polymarket Watch
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -26,6 +26,38 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Restore persisted state (pmwatch-state)
+        run: |
+          set -euo pipefail
+          STATE_BRANCH="pmwatch-state"
+          STATE_WORKTREE=".worktrees/${STATE_BRANCH}"
+
+          if ! git ls-remote --exit-code --heads origin "${STATE_BRANCH}" >/dev/null 2>&1; then
+            echo "Creating ${STATE_BRANCH} branch from current HEAD."
+            git branch "${STATE_BRANCH}"
+            git push origin "${STATE_BRANCH}"
+          fi
+
+          mkdir -p .worktrees
+          rm -rf "${STATE_WORKTREE}"
+          git fetch origin "${STATE_BRANCH}":"refs/remotes/origin/${STATE_BRANCH}"
+          git worktree add -B "${STATE_BRANCH}" "${STATE_WORKTREE}" "origin/${STATE_BRANCH}"
+
+          mkdir -p state docs archive
+
+          if [ -f "${STATE_WORKTREE}/state/state.json" ]; then
+            cp "${STATE_WORKTREE}/state/state.json" state/state.json
+          fi
+          if [ -f "${STATE_WORKTREE}/docs/alerts.json" ]; then
+            cp "${STATE_WORKTREE}/docs/alerts.json" docs/alerts.json
+          fi
+          if [ -f "${STATE_WORKTREE}/docs/alerts.jsonl" ]; then
+            cp "${STATE_WORKTREE}/docs/alerts.jsonl" docs/alerts.jsonl
+          fi
+          if [ -d "${STATE_WORKTREE}/archive" ]; then
+            rsync -a "${STATE_WORKTREE}/archive/" archive/
+          fi
+
       - name: Run poller
         env:
           PYTHONPATH: src
@@ -41,12 +73,52 @@ jobs:
             --max-alerts-per-day 5 \
             --max-alerts 200
 
-      - name: Commit and push (if changed)
+      - name: Persist state (pmwatch-state)
         run: |
-          if git diff --quiet; then
-            echo "No changes."
+          set -euo pipefail
+          STATE_BRANCH="pmwatch-state"
+          STATE_WORKTREE=".worktrees/${STATE_BRANCH}"
+
+          mkdir -p "${STATE_WORKTREE}/state" "${STATE_WORKTREE}/docs" "${STATE_WORKTREE}/archive"
+          cp state/state.json "${STATE_WORKTREE}/state/state.json"
+          cp docs/alerts.json "${STATE_WORKTREE}/docs/alerts.json"
+          cp docs/alerts.jsonl "${STATE_WORKTREE}/docs/alerts.jsonl"
+          rsync -a archive/ "${STATE_WORKTREE}/archive/"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cd "${STATE_WORKTREE}"
+          git add state/state.json docs/alerts.json docs/alerts.jsonl archive/
+          if git diff --cached --quiet; then
+            echo "No state changes."
             exit 0
           fi
+          git commit --amend -m "chore(pmwatch): update state"
+          git push --force origin "${STATE_BRANCH}"
+
+      - name: Publish to main (at most hourly)
+        run: |
+          set -euo pipefail
+          NOW_HOUR="$(date -u +'%Y-%m-%dT%H')"
+          LAST_FILE="state/last_published_hour_utc.txt"
+
+          LAST_HOUR=""
+          if [ -f "${LAST_FILE}" ]; then
+            LAST_HOUR="$(cat "${LAST_FILE}" | tr -d '\n' || true)"
+          fi
+
+          if [ "${NOW_HOUR}" = "${LAST_HOUR}" ]; then
+            echo "Already published for ${NOW_HOUR}; skipping."
+            exit 0
+          fi
+
+          echo "${NOW_HOUR}" > "${LAST_FILE}"
+
+          if git diff --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/ state/ archive/
