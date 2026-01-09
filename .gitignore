@@ -27,3 +27,5 @@ build/
 
 .idea/
 .vscode/
+
+.codex/
