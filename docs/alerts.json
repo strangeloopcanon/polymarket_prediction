@@ -2,6 +2,4754 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x561cd8d035bac38ed04e23d7882a126da38d7ead9d6679f722ad62c0c9d54ad2",
+        "liquidity_num": 52026.2356,
+        "outcome_prices": [
+          0.325,
+          0.675
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Iran close the Strait of Hormuz by March 31?",
+        "slug": "will-iran-close-the-strait-of-hormuz-by-march-31",
+        "volume24hr": 1546774.1962739993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21053.156299,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.3054247894955906,
+        "top_net_wallet_accum_window": "0x2974bd0059e48f215c391882976e0f1b4c8c9c23",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 4499.999999000001,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x2974bd0059e48f215c391882976e0f1b4c8c9c23",
+        "top_wallet_notional_accum_window": 4499.999999000001,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 21053.156299,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "50005952796518586292778222685298750447930027597009327781466731324939399757427",
+        "condition_id": "0x561cd8d035bac38ed04e23d7882a126da38d7ead9d6679f722ad62c0c9d54ad2",
+        "event_slug": "will-iran-close-the-strait-of-hormuz-by-2027",
+        "name": "65765757",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.6854247894955906,
+        "proxy_wallet": "0x2974bd0059e48f215c391882976e0f1b4c8c9c23",
+        "pseudonym": "Crowded-Distance",
+        "side": "BUY",
+        "size": 6565.271738,
+        "slug": "will-iran-close-the-strait-of-hormuz-by-march-31",
+        "timestamp": 1772418045,
+        "title": "Will Iran close the Strait of Hormuz by March 31?",
+        "trade_id": "e968cf6a0c451ab471ab68f6a56a61e8957a6273b7257be81088d7a99760f27a",
+        "transaction_hash": "0xd04d6fd653c550cd395773fb5bc41aace6eed48fc7ef2ecdc8d9743bb6077d13"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-iran-close-the-strait-of-hormuz-by-march-31",
+      "wallet_stats": {
+        "avg_notional_7d": 7249.999999,
+        "first_seen_ts": 1772285561,
+        "proxy_wallet": "0x2974bd0059e48f215c391882976e0f1b4c8c9c23",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xd4bbf7f6707c67beb736135ad32a41f6db41f8ae52d3ac4919650de9eeb94ed8",
+        "liquidity_num": 4980720.22629,
+        "outcome_prices": [
+          0.9985,
+          0.0015
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Khamenei out as Supreme Leader of Iran by February 28?",
+        "slug": "khamenei-out-as-supreme-leader-of-iran-by-february-28",
+        "volume24hr": 64290712.14637565
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 185740.337498,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.375,
+        "top_net_wallet_accum_window": "0xb51b3beffd13cde071ed799e70a7b0b598e8b4d9",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 4491.309380000001,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xb51b3beffd13cde071ed799e70a7b0b598e8b4d9",
+        "top_wallet_notional_accum_window": 4491.309380000001,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 12
+      },
+      "notional": 185740.337498,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "39317885422026394259056328144566743331998444273202427934141325790266108570112",
+        "condition_id": "0xd4bbf7f6707c67beb736135ad32a41f6db41f8ae52d3ac4919650de9eeb94ed8",
+        "event_slug": "khamenei-out-as-supreme-leader-of-iran-by-february-28",
+        "name": "cambridgeisaac",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.998,
+        "proxy_wallet": "0xb51b3beffd13cde071ed799e70a7b0b598e8b4d9",
+        "pseudonym": "Brown-Tragedy",
+        "side": "SELL",
+        "size": 4500.31,
+        "slug": "khamenei-out-as-supreme-leader-of-iran-by-february-28",
+        "timestamp": 1772390133,
+        "title": "Khamenei out as Supreme Leader of Iran by February 28?",
+        "trade_id": "61a90c3d4cbe8e005350fe105cc4935608f8f48135cb0e34e2466962cce55497",
+        "transaction_hash": "0x251c6b9749f3e1f3405296188e2c1c88dd5bf033e1fd4b26eac04f17d32a7003"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/khamenei-out-as-supreme-leader-of-iran-by-february-28",
+      "wallet_stats": {
+        "avg_notional_7d": 4491.309380000001,
+        "first_seen_ts": 1772390133,
+        "proxy_wallet": "0xb51b3beffd13cde071ed799e70a7b0b598e8b4d9",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x70909f0ba8256a89c301da58812ae47203df54957a07c7f8b10235e877ad63c2",
+        "liquidity_num": 3257648.52417,
+        "outcome_prices": [
+          0.9985,
+          0.0015
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Khamenei out as Supreme Leader of Iran by March 31?",
+        "slug": "khamenei-out-as-supreme-leader-of-iran-by-march-31",
+        "volume24hr": 30570126.801371016
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 105683.29108899999,
+        "price_range_accum_window": 0.0010000000000000009,
+        "price_range_fast_window": 0.4947898051067373,
+        "top_net_wallet_accum_window": "0xc757850237e266d3b08d16b8455777a88590ccfc",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 9980.0,
+        "top_net_wallet_share_of_market_accum_window": 0.41202598745335867,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xc757850237e266d3b08d16b8455777a88590ccfc",
+        "top_wallet_notional_accum_window": 9980.0,
+        "top_wallet_share_accum_window": 0.41202598745335867,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 17
+      },
+      "notional": 105683.29108899999,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "70771354585365381988139008309072205730081182435161568795508496003376222185889",
+        "condition_id": "0x70909f0ba8256a89c301da58812ae47203df54957a07c7f8b10235e877ad63c2",
+        "event_slug": "khamenei-out-as-supreme-leader-of-iran-by-march-31",
+        "name": "prospect100",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.998,
+        "proxy_wallet": "0x005613c9e741c6dc850a3e6621999a530522e39a",
+        "pseudonym": "Vivid-Solicitation",
+        "side": "SELL",
+        "size": 6133.73,
+        "slug": "khamenei-out-as-supreme-leader-of-iran-by-march-31",
+        "timestamp": 1772357219,
+        "title": "Khamenei out as Supreme Leader of Iran by March 31?",
+        "trade_id": "afa2d3e763b49b258650214a8818ad56c8e5f265b6f9812ba3eeabc3258124cf",
+        "transaction_hash": "0x26ade02b5f7d9f6b958a0d9efd8e3c90b3bb03fee0a374b7bf04aee701828935"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/khamenei-out-as-supreme-leader-of-iran-by-march-31",
+      "wallet_stats": {
+        "avg_notional_7d": 6121.4625399999995,
+        "first_seen_ts": 1772357219,
+        "proxy_wallet": "0x005613c9e741c6dc850a3e6621999a530522e39a",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xe18ac2532d07d549ce8b6b99cc8a47c854f026335866f1a01bda055ed8d3afe7",
+        "liquidity_num": 220338.46811,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Real Sociedad de F\u00fatbol win on 2026-02-28?",
+        "slug": "lal-mal-rso-2026-02-28-rso",
+        "volume24hr": 199590.715819
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 52496.55733,
+        "price_range_accum_window": 0.589,
+        "price_range_fast_window": 0.589,
+        "top_net_wallet_accum_window": "0xd7a58948a0aba3015f057ab4ecc5bef039e47c26",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 50386.0,
+        "top_net_wallet_share_of_market_accum_window": 0.9597962716539149,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xd7a58948a0aba3015f057ab4ecc5bef039e47c26",
+        "top_wallet_notional_accum_window": 50386.0,
+        "top_wallet_share_accum_window": 0.9597962716539149,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 52496.55733,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "38134435021846405420295893801482674223473271279984497055206377137229923868675",
+        "condition_id": "0xe18ac2532d07d549ce8b6b99cc8a47c854f026335866f1a01bda055ed8d3afe7",
+        "event_slug": "lal-mal-rso-2026-02-28",
+        "name": "kingronij",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xc736d8854771a187cfab32ed8c2aa176b978e547",
+        "pseudonym": "Windy-Scalp",
+        "side": "SELL",
+        "size": 2112.67,
+        "slug": "lal-mal-rso-2026-02-28-rso",
+        "timestamp": 1772310493,
+        "title": "Will Real Sociedad de F\u00fatbol win on 2026-02-28?",
+        "trade_id": "be95595744b63edea992486ce28edfaa34e7bbcb7c4d35882b55f1b2406fdd23",
+        "transaction_hash": "0x8f545c5d1025756eb9d7485bff6a0962d109bcfef8ced2c3de1d765b9ed65dc7"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-mal-rso-2026-02-28-rso",
+      "wallet_stats": {
+        "avg_notional_7d": 2110.55733,
+        "first_seen_ts": 1772310493,
+        "proxy_wallet": "0xc736d8854771a187cfab32ed8c2aa176b978e547",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
+        "liquidity_num": 268190.849,
+        "outcome_prices": [
+          0.205,
+          0.795
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US strikes Iran by February 28, 2026?",
+        "slug": "us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+        "volume24hr": 3120930.1734160003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 245914.48569399997,
+        "price_range_accum_window": 0.7482366429778585,
+        "price_range_fast_window": 0.8482366429778585,
+        "top_net_wallet_accum_window": "0xa43a6e76945b02f10ebc9cfdd641b6299af494b2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 67872.4112,
+        "top_net_wallet_share_of_market_accum_window": 0.6561617367727243,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xa43a6e76945b02f10ebc9cfdd641b6299af494b2",
+        "top_wallet_notional_accum_window": 67872.4112,
+        "top_wallet_share_accum_window": 0.6561617367727243,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 12
+      },
+      "notional": 245914.48569399997,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "110790003121442365126855864076707686014650523258783405996925622264696084778807",
+        "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
+        "event_slug": "us-strikes-iran-by",
+        "name": "0x1793DB5EBc13dfe31f54Cbca0E2d943B550b6AF7-1770973980535",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.8882001336280002,
+        "proxy_wallet": "0x1793db5ebc13dfe31f54cbca0e2d943b550b6af7",
+        "pseudonym": "Late-Pump",
+        "side": "SELL",
+        "size": 4864.25,
+        "slug": "us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+        "timestamp": 1772260759,
+        "title": "US strikes Iran by February 28, 2026?",
+        "trade_id": "c6c2087c560d20bc3c45a9cb01067fec309df6115a3e0f0059825bba352729e2",
+        "transaction_hash": "0x8f743077d74332043940e14dcb35e217ed238a93565a9cb2fb5a9be5b4aae36e"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+      "wallet_stats": {
+        "avg_notional_7d": 4320.4275,
+        "first_seen_ts": 1772260759,
+        "proxy_wallet": "0x1793db5ebc13dfe31f54cbca0e2d943b550b6af7",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xb0607e3f5731c44ab41ae98da47b554cbebaac941ef73dda28b553d3bea3cad9",
+        "liquidity_num": 169983.49199,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Oilers",
+          "Kings"
+        ],
+        "question": "Oilers vs. Kings",
+        "slug": "nhl-edm-lak-2026-02-26",
+        "volume24hr": 33406.342666000004
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 22298.22947,
+        "price_range_accum_window": 0.499,
+        "price_range_fast_window": 0.499,
+        "top_net_wallet_accum_window": "0xc257ea7e3a81ca8e16df8935d44d513959fa358e",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 20000.0,
+        "top_net_wallet_share_of_market_accum_window": 0.8969321993438074,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xc257ea7e3a81ca8e16df8935d44d513959fa358e",
+        "top_wallet_notional_accum_window": 20000.0,
+        "top_wallet_share_accum_window": 0.8969321993438074,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 22298.22947,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "76916934743500908722794275212977234670159629550893830864815940266477352179616",
+        "condition_id": "0xb0607e3f5731c44ab41ae98da47b554cbebaac941ef73dda28b553d3bea3cad9",
+        "event_slug": "nhl-edm-lak-2026-02-26",
+        "name": "samcdh46",
+        "outcome": "Oilers",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x7b842c1f82f598a654865d7a223cf2b52209a13e",
+        "pseudonym": "Accomplished-Property",
+        "side": "SELL",
+        "size": 2300.53,
+        "slug": "nhl-edm-lak-2026-02-26",
+        "timestamp": 1772171202,
+        "title": "Oilers vs. Kings",
+        "trade_id": "744aaa6c71273c07f42d01ac8665d7c874c754c9ffd90c2d63fee28c11281211",
+        "transaction_hash": "0x6440fce22a02df698ebea05701e1ae9a8e2d204338615533e0b55c10dcf66e40"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nhl-edm-lak-2026-02-26",
+      "wallet_stats": {
+        "avg_notional_7d": 2298.22947,
+        "first_seen_ts": 1772171202,
+        "proxy_wallet": "0x7b842c1f82f598a654865d7a223cf2b52209a13e",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xff7e78f7a66c8b2ee3f68b1b298ad77817f98f7c692d3405db276e8ac961b52b",
+        "liquidity_num": 54383.0769,
+        "outcome_prices": [
+          0.795,
+          0.205
+        ],
+        "outcomes": [
+          "Thunder",
+          "Raptors"
+        ],
+        "question": "Thunder vs. Raptors",
+        "slug": "nba-okc-tor-2026-02-24",
+        "volume24hr": 2702902.066031008
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 68413.56059800001,
+        "price_range_accum_window": 0.5499999998577292,
+        "price_range_fast_window": 0.5499999998577292,
+        "top_net_wallet_accum_window": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 49874.16500000001,
+        "top_net_wallet_share_of_market_accum_window": 0.7290099296696746,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+        "top_wallet_notional_accum_window": 49874.16500000001,
+        "top_wallet_share_accum_window": 0.7290099296696746,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 68413.56059800001,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 15,
+      "trade": {
+        "asset": "46299907269453217640174781152774353513755040033088982659742867388017617023193",
+        "condition_id": "0xff7e78f7a66c8b2ee3f68b1b298ad77817f98f7c692d3405db276e8ac961b52b",
+        "event_slug": "nba-okc-tor-2026-02-24",
+        "name": "0xCD5Ae0dee78cb5F0e2627f857CfE2f9bE4dBA71c-1769540891163",
+        "outcome": "Thunder",
+        "outcome_index": 0,
+        "price": 0.9899999998577292,
+        "proxy_wallet": "0xcd5ae0dee78cb5f0e2627f857cfe2f9be4dba71c",
+        "pseudonym": "Repulsive-Macro",
+        "side": "BUY",
+        "size": 4006.444443,
+        "slug": "nba-okc-tor-2026-02-24",
+        "timestamp": 1771985870,
+        "title": "Thunder vs. Raptors",
+        "trade_id": "a3bdd0f878ccbfc3b727c3922a53b51f35ca7eb73fb635238cb8a2f7cab761e7",
+        "transaction_hash": "0x2ffd8dfec204683ed9c0b0ca742009900ba36dce124226d1c8d17d0d93a09803"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-okc-tor-2026-02-24",
+      "wallet_stats": {
+        "avg_notional_7d": 3966.379998,
+        "first_seen_ts": 1771985870,
+        "proxy_wallet": "0xcd5ae0dee78cb5f0e2627f857cfe2f9be4dba71c",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x19da64a3f1b53b26b99bee3bb130d763e92e9f5f78436cb914b40f476665842d",
+        "liquidity_num": 73298.7531,
+        "outcome_prices": [
+          0.915,
+          0.085
+        ],
+        "outcomes": [
+          "Spurs",
+          "Pistons"
+        ],
+        "question": "Spurs vs. Pistons",
+        "slug": "nba-sas-det-2026-02-23",
+        "volume24hr": 3627029.037084991
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 76594.721995,
+        "price_range_accum_window": 0.44886529156427746,
+        "price_range_fast_window": 0.44886529156427746,
+        "top_net_wallet_accum_window": "0x7671deab19823bf122b81e1060c553b4c33e7244",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 39972.409995,
+        "top_net_wallet_share_of_market_accum_window": 0.5690849418964629,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x7671deab19823bf122b81e1060c553b4c33e7244",
+        "top_wallet_notional_accum_window": 39972.409995,
+        "top_wallet_share_accum_window": 0.5690849418964629,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 76594.721995,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "19142327053998389470086705003890707625472105728508265412585954595363891062660",
+        "condition_id": "0x19da64a3f1b53b26b99bee3bb130d763e92e9f5f78436cb914b40f476665842d",
+        "event_slug": "nba-sas-det-2026-02-23",
+        "name": "Mark0Polo",
+        "outcome": "Spurs",
+        "outcome_index": 0,
+        "price": 0.9288652915642774,
+        "proxy_wallet": "0x7671deab19823bf122b81e1060c553b4c33e7244",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 43033.592016,
+        "slug": "nba-sas-det-2026-02-23",
+        "timestamp": 1771899622,
+        "title": "Spurs vs. Pistons",
+        "trade_id": "3ec89f7315a7e0df82ed19b46163ed66b1b795aeaae2b32349128fddc79f66e6",
+        "transaction_hash": "0x6f9cdc0bf469439c3f40bd90e3690914bbe5cdca6e16daa912790af6b040db36"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-sas-det-2026-02-23",
+      "wallet_stats": {
+        "avg_notional_7d": 39972.409995,
+        "first_seen_ts": 1771899622,
+        "proxy_wallet": "0x7671deab19823bf122b81e1060c553b4c33e7244",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x43193f1d434786a3f32fadc77ef5d2a34d83901d6387ed184952a4e47bb34b16",
+        "liquidity_num": 27777.3936,
+        "outcome_prices": [
+          0.86,
+          0.14
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Manchester United FC win on 2026-02-23?",
+        "slug": "epl-eve-mun-2026-02-23-mun",
+        "volume24hr": 919811.3019489978
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 22878.8325,
+        "price_range_accum_window": 0.017024427199309855,
+        "price_range_fast_window": 0.3262562989752863,
+        "top_net_wallet_accum_window": "0x183d846b96510f1987db52648545317427d91270",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 12336.8328,
+        "top_net_wallet_share_of_market_accum_window": 0.8488789660609021,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x183d846b96510f1987db52648545317427d91270",
+        "top_wallet_notional_accum_window": 12336.8328,
+        "top_wallet_share_accum_window": 0.8488789660609021,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 22878.8325,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "62714570878257649619659356909770618496133386495527296744337304814607638065503",
+        "condition_id": "0x43193f1d434786a3f32fadc77ef5d2a34d83901d6387ed184952a4e47bb34b16",
+        "event_slug": "epl-eve-mun-2026-02-23",
+        "name": "Lorans21",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.8262562989752863,
+        "proxy_wallet": "0x183d846b96510f1987db52648545317427d91270",
+        "pseudonym": "Alarmed-Influence",
+        "side": "SELL",
+        "size": 14931.0,
+        "slug": "epl-eve-mun-2026-02-23-mun",
+        "timestamp": 1771883108,
+        "title": "Will Manchester United FC win on 2026-02-23?",
+        "trade_id": "fc0e4019a9f4e446a254728dcafb2002a8a5025950437970c095f78b5bb7386f",
+        "transaction_hash": "0xaa6feff0e0ff2e26d247a0a570a0328bc3e1a9518fa3c3ba21752b1c80ef9592"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-eve-mun-2026-02-23-mun",
+      "wallet_stats": {
+        "avg_notional_7d": 12336.8328,
+        "first_seen_ts": 1771883108,
+        "proxy_wallet": "0x183d846b96510f1987db52648545317427d91270",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x06a6283431f9be1bfa8d8f8e2ac1d03ae2afa2b4f3a141571897ba01df90b7ba",
+        "liquidity_num": 92006.15691,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Up",
+          "Down"
+        ],
+        "question": "Bitcoin Up or Down - February 23, 4AM ET",
+        "slug": "bitcoin-up-or-down-february-23-4am-et",
+        "volume24hr": 327152.31860799994
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 24955.84932,
+        "price_range_accum_window": 0.499,
+        "price_range_fast_window": 0.499,
+        "top_net_wallet_accum_window": "0x9e756315468054491d3c74025bbaef3424b10c54",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 8775.0,
+        "top_net_wallet_share_of_market_accum_window": 0.35162097220099736,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x9e756315468054491d3c74025bbaef3424b10c54",
+        "top_wallet_notional_accum_window": 8775.0,
+        "top_wallet_share_accum_window": 0.35162097220099736,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 8
+      },
+      "notional": 24955.84932,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "25742983416044030993262637910187303945924287529670549206004366861661546600147",
+        "condition_id": "0x06a6283431f9be1bfa8d8f8e2ac1d03ae2afa2b4f3a141571897ba01df90b7ba",
+        "event_slug": "bitcoin-up-or-down-february-23-4am-et",
+        "name": "AcctToBeRetired",
+        "outcome": "Up",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x80ebf01c296b12a9b8309c86991b609907e55bfc",
+        "pseudonym": "Gargantuan-Point",
+        "side": "BUY",
+        "size": 2330.68,
+        "slug": "bitcoin-up-or-down-february-23-4am-et",
+        "timestamp": 1771840350,
+        "title": "Bitcoin Up or Down - February 23, 4AM ET",
+        "trade_id": "8af8c759855aaf1985c43d3fdaafa1714831a0d016c474c9db298068332f32c3",
+        "transaction_hash": "0x5b15b2693ce8378fc66f2d7a5662b55468a203fefdc70b922c82a07c1028e9f8"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/bitcoin-up-or-down-february-23-4am-et",
+      "wallet_stats": {
+        "avg_notional_7d": 5293.6803,
+        "first_seen_ts": 1771813178,
+        "proxy_wallet": "0x80ebf01c296b12a9b8309c86991b609907e55bfc",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x64b71130b6f795b75b36b693c6a4e03cf7f5c38372cc96a84ef9c64b112219a4",
+        "liquidity_num": 1394.7567,
+        "outcome_prices": [
+          0.01,
+          0.99
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Warriors"
+        ],
+        "question": "Spread: Nuggets (-6.5)",
+        "slug": "nba-den-gsw-2026-02-22-spread-away-6pt5",
+        "volume24hr": 5005.1111359999995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27087.03126,
+        "price_range_accum_window": 0.509,
+        "price_range_fast_window": 0.509,
+        "top_net_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 20141.1801,
+        "top_net_wallet_share_of_market_accum_window": 0.7435728155910136,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_wallet_notional_accum_window": 20141.1801,
+        "top_wallet_share_accum_window": 0.7435728155910136,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 27087.03126,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "52112864405105325515663423101271866127040198502484246838998120333318337333302",
+        "condition_id": "0x64b71130b6f795b75b36b693c6a4e03cf7f5c38372cc96a84ef9c64b112219a4",
+        "event_slug": "nba-den-gsw-2026-02-22",
+        "name": "tradingl",
+        "outcome": "Warriors",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0xfb851ce2fdff625431ea2daf84ea7115af0a8464",
+        "pseudonym": "Imaginative-Plastic",
+        "side": "SELL",
+        "size": 2553.84,
+        "slug": "nba-den-gsw-2026-02-22-spread-away-6pt5",
+        "timestamp": 1771802314,
+        "title": "Spread: Nuggets (-6.5)",
+        "trade_id": "556c155efeff2ed8e732d9c1a49fe8882bc33575a1faeb9bc95541623d59763c",
+        "transaction_hash": "0xb3ad1871735d3d0e3e5c9b9ca8d29aee9ab334776dadd3eedf65e13f8e502c33"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-gsw-2026-02-22-spread-away-6pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 2551.28616,
+        "first_seen_ts": 1771802314,
+        "proxy_wallet": "0xfb851ce2fdff625431ea2daf84ea7115af0a8464",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xa99402b3e4e198e75487baab69d97e6fea09850811ca2aae173048bd8f130c1a",
+        "liquidity_num": 63447.4731,
+        "outcome_prices": [
+          0.325,
+          0.675
+        ],
+        "outcomes": [
+          "Cavaliers",
+          "Thunder"
+        ],
+        "question": "Cavaliers vs. Thunder",
+        "slug": "nba-cle-okc-2026-02-22",
+        "volume24hr": 1310899.6071980025
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 57771.602899,
+        "price_range_accum_window": 0.2507919254658385,
+        "price_range_fast_window": 0.2507919254658385,
+        "top_net_wallet_accum_window": "0x1b4d7cbd8dce8a56dd2c51e952cccbf55f78e246",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19000.0,
+        "top_net_wallet_share_of_market_accum_window": 0.7827169506329179,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x1b4d7cbd8dce8a56dd2c51e952cccbf55f78e246",
+        "top_wallet_notional_accum_window": 19000.0,
+        "top_wallet_share_accum_window": 0.7827169506329179,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 57771.602899,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "66355217819996301870018340976831404026816536367613482179944896815064300650031",
+        "condition_id": "0xa99402b3e4e198e75487baab69d97e6fea09850811ca2aae173048bd8f130c1a",
+        "event_slug": "nba-cle-okc-2026-02-22",
+        "name": "GuailanKia",
+        "outcome": "Cavaliers",
+        "outcome_index": 0,
+        "price": 0.3692080745341615,
+        "proxy_wallet": "0x8f0b503c3f65d679b8517480555cd936a53feb6d",
+        "pseudonym": "Dismal-Samurai",
+        "side": "BUY",
+        "size": 6440.0,
+        "slug": "nba-cle-okc-2026-02-22",
+        "timestamp": 1771788258,
+        "title": "Cavaliers vs. Thunder",
+        "trade_id": "1a6db1bb3740459794fc4fed90a9bd80852856332d1feeda1b81cabda6c7aeb7",
+        "transaction_hash": "0xe179125e607fd60e33b10f8c4cb7feeb7436671ef033ba90c82a043adb0bc215"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-cle-okc-2026-02-22",
+      "wallet_stats": {
+        "avg_notional_7d": 2377.7,
+        "first_seen_ts": 1771788258,
+        "proxy_wallet": "0x8f0b503c3f65d679b8517480555cd936a53feb6d",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xd28191318521cbeda80d1ac1d406f5492d6dbbdb81e8a2c01730e927bedf7d88",
+        "liquidity_num": 20035.3654,
+        "outcome_prices": [
+          0.975,
+          0.025
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Club Atl\u00e9tico de Madrid win on 2026-02-21?",
+        "slug": "lal-mad-esp-2026-02-21-mad",
+        "volume24hr": 28527.628343999993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 122534.81999999999,
+        "price_range_accum_window": 0.30000000000000004,
+        "price_range_fast_window": 0.30000000000000004,
+        "top_net_wallet_accum_window": "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 103499.99999999999,
+        "top_net_wallet_share_of_market_accum_window": 0.8446578694937488,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a",
+        "top_wallet_notional_accum_window": 103499.99999999999,
+        "top_wallet_share_accum_window": 0.8446578694937488,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 122534.81999999999,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "89554529686790149860709360339217087366879909570421288123495549756757394876531",
+        "condition_id": "0xd28191318521cbeda80d1ac1d406f5492d6dbbdb81e8a2c01730e927bedf7d88",
+        "event_slug": "lal-mad-esp-2026-02-21",
+        "name": "enesowil",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.98,
+        "proxy_wallet": "0x4408cc367a713840d92693acd35cc205e59e1b6a",
+        "pseudonym": "Productive-Utility",
+        "side": "BUY",
+        "size": 16717.0,
+        "slug": "lal-mad-esp-2026-02-21-mad",
+        "timestamp": 1771708946,
+        "title": "Will Club Atl\u00e9tico de Madrid win on 2026-02-21?",
+        "trade_id": "3d338afd53a7118ec91e3e8d3711b8dc431e60decd97ab0431a0c261ad5d74bc",
+        "transaction_hash": "0x081dfee0b49e8c38989de317869b566815f6947ed3ede9c029a76c9de7e319e1"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-mad-esp-2026-02-21-mad",
+      "wallet_stats": {
+        "avg_notional_7d": 16382.66,
+        "first_seen_ts": 1771708946,
+        "proxy_wallet": "0x4408cc367a713840d92693acd35cc205e59e1b6a",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x0d76bdccd2d21d2d67eaa62d57156b883915fd147bd6d2827fc86ca1e3468603",
+        "liquidity_num": 71281.74958,
+        "outcome_prices": [
+          0.983,
+          0.017
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Trail Blazers"
+        ],
+        "question": "Nuggets vs. Trail Blazers",
+        "slug": "nba-den-por-2026-02-20",
+        "volume24hr": 1204024.7239080018
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 56206.651459,
+        "price_range_accum_window": 0.48771488416367914,
+        "price_range_fast_window": 0.48771488416367914,
+        "top_net_wallet_accum_window": "0x8e433d051bfb5cc6a1f7e5a0452029b7ffb4a3cd",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 22892.3448,
+        "top_net_wallet_share_of_market_accum_window": 0.4072888920753239,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x8e433d051bfb5cc6a1f7e5a0452029b7ffb4a3cd",
+        "top_wallet_notional_accum_window": 22892.3448,
+        "top_wallet_share_accum_window": 0.4072888920753239,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 56206.651459,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "36274874922771201494269787071680827126234349192011324235102433830311222148919",
+        "condition_id": "0x0d76bdccd2d21d2d67eaa62d57156b883915fd147bd6d2827fc86ca1e3468603",
+        "event_slug": "nba-den-por-2026-02-20",
+        "name": "ganadi",
+        "outcome": "Nuggets",
+        "outcome_index": 0,
+        "price": 0.9877148841636791,
+        "proxy_wallet": "0x2f3bc6b83096c4e188687cde22e7692c4dd20cf9",
+        "pseudonym": "Livid-Employee",
+        "side": "BUY",
+        "size": 2429.851,
+        "slug": "nba-den-por-2026-02-20",
+        "timestamp": 1771647898,
+        "title": "Nuggets vs. Trail Blazers",
+        "trade_id": "60e89e3900153fbfc2f765d5043e46ed98efd6ba7dc831283747de73bb8e904e",
+        "transaction_hash": "0xfab9efb5ec55486da0d8a5dc7f97326a191b446a4f08ba6b30bda071cb146974"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-por-2026-02-20",
+      "wallet_stats": {
+        "avg_notional_7d": 2399.999999,
+        "first_seen_ts": 1771647898,
+        "proxy_wallet": "0x2f3bc6b83096c4e188687cde22e7692c4dd20cf9",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x1b15428afa2e318399dc7e8cf565f6e31bd36a041f71965b53a3cae51eb767dc",
+        "liquidity_num": 29312.8951,
+        "outcome_prices": [
+          0.155,
+          0.845
+        ],
+        "outcomes": [
+          "Pegula",
+          "Anisimova"
+        ],
+        "question": "Dubai Duty Free Tennis Championships: Jessica Pegula vs Amanda Anisimova",
+        "slug": "wta-pegula-anisimo-2026-02-20",
+        "volume24hr": 52943.08520400001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 22007.183687000004,
+        "price_range_accum_window": 0.5040459629661717,
+        "price_range_fast_window": 0.5040459629661717,
+        "top_net_wallet_accum_window": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19999.999987000003,
+        "top_net_wallet_share_of_market_accum_window": 0.9087941588279795,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "top_wallet_notional_accum_window": 19999.999987000003,
+        "top_wallet_share_accum_window": 0.9087941588279795,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 22007.183687000004,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "75231590878019420042883303420764496993300232937892205500034088246053893379796",
+        "condition_id": "0x1b15428afa2e318399dc7e8cf565f6e31bd36a041f71965b53a3cae51eb767dc",
+        "event_slug": "wta-pegula-anisimo-2026-02-20",
+        "name": "TexMexTRex",
+        "outcome": "Anisimova",
+        "outcome_index": 1,
+        "price": 0.9140459629661716,
+        "proxy_wallet": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "pseudonym": "Gullible-Pancreas",
+        "side": "BUY",
+        "size": 21880.737728,
+        "slug": "wta-pegula-anisimo-2026-02-20",
+        "timestamp": 1771598104,
+        "title": "Dubai Duty Free Tennis Championships: Jessica Pegula vs Amanda Anisimova",
+        "trade_id": "040ba49ad15949fc8d1177ab28be4556b8066e58a82f18e448719705ae1a5703",
+        "transaction_hash": "0x62e7775e2a471122406373d96b89b4e72d409240f67dd17454d65a4e9b252318"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/wta-pegula-anisimo-2026-02-20",
+      "wallet_stats": {
+        "avg_notional_7d": 19999.999987000003,
+        "first_seen_ts": 1771598104,
+        "proxy_wallet": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xd05ea2206e08b0687ae5f1590ffe0194bda2db67d26abeed79fb51f6fd2fb5cc",
+        "liquidity_num": 61533.188,
+        "outcome_prices": [
+          0.555,
+          0.445
+        ],
+        "outcomes": [
+          "Pistons",
+          "Knicks"
+        ],
+        "question": "Pistons vs. Knicks",
+        "slug": "nba-det-nyk-2026-02-19",
+        "volume24hr": 1340619.4090829983
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21963.460299000002,
+        "price_range_accum_window": 0.1501229970933372,
+        "price_range_fast_window": 0.1501229970933372,
+        "top_net_wallet_accum_window": "0xc6fd646b15d976d7c3e9f410f3419f5c2452f43e",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 19720.999999000003,
+        "top_net_wallet_share_of_market_accum_window": 0.8979004096134116,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xc6fd646b15d976d7c3e9f410f3419f5c2452f43e",
+        "top_wallet_notional_accum_window": 19720.999999000003,
+        "top_wallet_share_accum_window": 0.8979004096134116,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21963.460299000002,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "109027771513242513624684055883465649806848545677215350872123503801547140202531",
+        "condition_id": "0xd05ea2206e08b0687ae5f1590ffe0194bda2db67d26abeed79fb51f6fd2fb5cc",
+        "event_slug": "nba-det-nyk-2026-02-19",
+        "name": "qetuo",
+        "outcome": "Knicks",
+        "outcome_index": 1,
+        "price": 0.43916163196722435,
+        "proxy_wallet": "0x79e505336f5f5e252378d121b7236828af9c9417",
+        "pseudonym": "Fatal-Tray",
+        "side": "SELL",
+        "size": 5106.23,
+        "slug": "nba-det-nyk-2026-02-19",
+        "timestamp": 1771553648,
+        "title": "Pistons vs. Knicks",
+        "trade_id": "939daa97e9c40c0c266abe9eefe874145c0aa9e266525da28192410bab43147d",
+        "transaction_hash": "0x3a75e2dd08b816e8dc494e40e2baf89482d6da9f67f187f70e68d1109995a9be"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-det-nyk-2026-02-19",
+      "wallet_stats": {
+        "avg_notional_7d": 2242.4602999999997,
+        "first_seen_ts": 1771553648,
+        "proxy_wallet": "0x79e505336f5f5e252378d121b7236828af9c9417",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
+        "liquidity_num": 268190.849,
+        "outcome_prices": [
+          0.205,
+          0.795
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US strikes Iran by February 28, 2026?",
+        "slug": "us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+        "volume24hr": 3120930.1734160003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 23944.313598,
+        "price_range_accum_window": 0.16704547800802033,
+        "price_range_fast_window": 0.16704547800802033,
+        "top_net_wallet_accum_window": "0x53e55bc7cb3d67ad177c023ce891ad076a9d6177",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 13191.331900000001,
+        "top_net_wallet_share_of_market_accum_window": 0.5509171038046309,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x53e55bc7cb3d67ad177c023ce891ad076a9d6177",
+        "top_wallet_notional_accum_window": 13191.331900000001,
+        "top_wallet_share_accum_window": 0.5509171038046309,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 23944.313598,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "110790003121442365126855864076707686014650523258783405996925622264696084778807",
+        "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
+        "event_slug": "us-strikes-iran-by",
+        "name": null,
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.20996432780335755,
+        "proxy_wallet": "0xc0fb92d126e4a0a4779c8b5590f2700cac30d4bb",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 12387.81857,
+        "slug": "us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+        "timestamp": 1771453652,
+        "title": "US strikes Iran by February 28, 2026?",
+        "trade_id": "e75ede8195f4e216fdaaef99e135c027ebdc59219b306aad2b3f0a4634a0233c",
+        "transaction_hash": "0xb8bb05b7977ffce1a807b10b57d9df30f48b1e2c534b728b318bddcca94cac59"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+      "wallet_stats": {
+        "avg_notional_7d": 2600.999999,
+        "first_seen_ts": 1771453652,
+        "proxy_wallet": "0xc0fb92d126e4a0a4779c8b5590f2700cac30d4bb",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x79d40080d3738c52b608908fe9d1047e0dc19d2f5688e2d72fbbed8f21c95e7b",
+        "liquidity_num": 44554.55272,
+        "outcome_prices": [
+          0.0095,
+          0.9905
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Internazionale Milano win on 2026-02-18?",
+        "slug": "ucl-bog1-int2-2026-02-18-int2",
+        "volume24hr": 540354.2678999999
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27499.999998,
+        "price_range_accum_window": 0.5299948450389541,
+        "price_range_fast_window": 0.5299948450389541,
+        "top_net_wallet_accum_window": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 22500.0,
+        "top_net_wallet_share_of_market_accum_window": 0.8181818182413223,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+        "top_wallet_notional_accum_window": 22500.0,
+        "top_wallet_share_accum_window": 0.8181818182413223,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 27499.999998,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "41324566809902361002540757213044146849860848253133292497279344018897844012",
+        "condition_id": "0x79d40080d3738c52b608908fe9d1047e0dc19d2f5688e2d72fbbed8f21c95e7b",
+        "event_slug": "ucl-bog1-int2-2026-02-18",
+        "name": "orrabi007",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9799948450389541,
+        "proxy_wallet": "0xc9187abcfc716b1809e26d8630dd7afd43fef848",
+        "pseudonym": "Happy-Grandparent",
+        "side": "BUY",
+        "size": 5102.067652,
+        "slug": "ucl-bog1-int2-2026-02-18-int2",
+        "timestamp": 1771450004,
+        "title": "Will FC Internazionale Milano win on 2026-02-18?",
+        "trade_id": "13dc2a1f7d9a0d933cf7f361097d421ee75fbd75cb4be4ad854212e8865273b9",
+        "transaction_hash": "0xcd3ab7ce391676895a242686f92e0dbb1750db081f840c23ff8a08963e887392"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/ucl-bog1-int2-2026-02-18-int2",
+      "wallet_stats": {
+        "avg_notional_7d": 4999.999998,
+        "first_seen_ts": 1771450004,
+        "proxy_wallet": "0xc9187abcfc716b1809e26d8630dd7afd43fef848",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x1ec6af8f3b274e9aa96e0d3011284d3bdb4d46fecbd88dcdfc00628ae181bb1e",
+        "liquidity_num": 29564.98226,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Kas\u0131mpa\u015fa SK vs. Fatih Karag\u00fcmr\u00fck SK: O/U 3.5",
+        "slug": "tur-kas-kar-2026-02-16-total-3pt5",
+        "volume24hr": 605.849917
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 24106.583092,
+        "price_range_accum_window": 0.52,
+        "price_range_fast_window": 0.52,
+        "top_net_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18927.809992,
+        "top_net_wallet_share_of_market_accum_window": 0.7851718312696656,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 8,
+        "top_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_wallet_notional_accum_window": 18927.809992,
+        "top_wallet_share_accum_window": 0.7851718312696656,
+        "top_wallet_trades_accum_window": 8,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 24106.583092,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "22030612956634296389927839337267493586789226197573749737574130340427573850692",
+        "condition_id": "0x1ec6af8f3b274e9aa96e0d3011284d3bdb4d46fecbd88dcdfc00628ae181bb1e",
+        "event_slug": "tur-kas-kar-2026-02-16-more-markets",
+        "name": "swisstony",
+        "outcome": "Over",
+        "outcome_index": 0,
+        "price": 0.99,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "pseudonym": "Frail-Possible",
+        "side": "BUY",
+        "size": 2395.0,
+        "slug": "tur-kas-kar-2026-02-16-total-3pt5",
+        "timestamp": 1771267417,
+        "title": "Kas\u0131mpa\u015fa SK vs. Fatih Karag\u00fcmr\u00fck SK: O/U 3.5",
+        "trade_id": "f3ae58ce06a5c5689806bfbb0fa75cc1a4c035b5c2d3d169e3d53c2a3cd672b4",
+        "transaction_hash": "0xc45153550b415caedce94a3b5c0e424685063a16ef13574c0f4a1b77e34a1674"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/tur-kas-kar-2026-02-16-total-3pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 3314.748219733333,
+        "first_seen_ts": 1767559199,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "trades_7d": 30,
+        "trades_total": 48,
+        "unique_markets_7d": 21,
+        "unique_markets_total": 84
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xff78086bf542e2b13fcfa25c5762472528bfaddd3410a18eb10a44695fa68fbb",
+        "liquidity_num": 30295.00541,
+        "outcome_prices": [
+          0.9655,
+          0.0345
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Olympique Lyonnais win on 2026-02-15?",
+        "slug": "fl1-lyo-ogc-2026-02-15-lyo",
+        "volume24hr": 193071.86707200005
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 72508.5611,
+        "price_range_accum_window": 0.45492296490735507,
+        "price_range_fast_window": 0.45492296490735507,
+        "top_net_wallet_accum_window": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 65400.105,
+        "top_net_wallet_share_of_market_accum_window": 0.9019639061627993,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+        "top_wallet_notional_accum_window": 65400.105,
+        "top_wallet_share_accum_window": 0.9019639061627993,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 72508.5611,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "15026958131139899623703532489928670471720443819023351081939411577009882390341",
+        "condition_id": "0xff78086bf542e2b13fcfa25c5762472528bfaddd3410a18eb10a44695fa68fbb",
+        "event_slug": "fl1-lyo-ogc-2026-02-15",
+        "name": "0x9f676a27B94db9b583f10FCa537c7b902271642F-1770574574733",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.9549229649073551,
+        "proxy_wallet": "0x9f676a27b94db9b583f10fca537c7b902271642f",
+        "pseudonym": "Tame-Mortality",
+        "side": "SELL",
+        "size": 7444.01,
+        "slug": "fl1-lyo-ogc-2026-02-15-lyo",
+        "timestamp": 1771190547,
+        "title": "Will Olympique Lyonnais win on 2026-02-15?",
+        "trade_id": "d3fc5f94cf1e2a2b95a5acf002fab16de70e69cd8dae8c7669e16394a2553808",
+        "transaction_hash": "0x131b572c132d8d081628d11acb85d386c23793dce692e06a88861c278d451ca0"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/fl1-lyo-ogc-2026-02-15-lyo",
+      "wallet_stats": {
+        "avg_notional_7d": 7108.4561,
+        "first_seen_ts": 1771190547,
+        "proxy_wallet": "0x9f676a27b94db9b583f10fca537c7b902271642f",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xa606d31ce856f4b9c388465b44c2acd09ecde9fbd6a93e0c18fca759cc09ee8a",
+        "liquidity_num": 780149.54811,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Club Atl\u00e9tico de Madrid win on 2026-02-14?",
+        "slug": "lal-ray-mad-2026-02-14-mad",
+        "volume24hr": 4934496.220593982
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27674.702400000002,
+        "price_range_accum_window": 0.529,
+        "price_range_fast_window": 0.539,
+        "top_net_wallet_accum_window": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 12988.201200000001,
+        "top_net_wallet_share_of_market_accum_window": 0.7222407765754185,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+        "top_wallet_notional_accum_window": 12988.201200000001,
+        "top_wallet_share_accum_window": 0.7222407765754185,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 27674.702400000002,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "74832864219258417153336611869763143726463839211689680846229387598716093230854",
+        "condition_id": "0xa606d31ce856f4b9c388465b44c2acd09ecde9fbd6a93e0c18fca759cc09ee8a",
+        "event_slug": "lal-ray-mad-2026-02-14",
+        "name": "Sharkbetss",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x8c818a866e6a4e5821a4faac8418903e33e3dcd3",
+        "pseudonym": "Mysterious-Guard",
+        "side": "SELL",
+        "size": 5000.0,
+        "slug": "lal-ray-mad-2026-02-14-mad",
+        "timestamp": 1771183283,
+        "title": "Will Club Atl\u00e9tico de Madrid win on 2026-02-14?",
+        "trade_id": "a02e74c2a2bc826e634b1f4599e64c3bf49021a9c5907f3f0e8daaae5ab58b6d",
+        "transaction_hash": "0xa28456030acce32021f565b7217eaf5dc4928e5223bc61dd82712969c8697a91"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-ray-mad-2026-02-14-mad",
+      "wallet_stats": {
+        "avg_notional_7d": 4995.0,
+        "first_seen_ts": 1771183283,
+        "proxy_wallet": "0x8c818a866e6a4e5821a4faac8418903e33e3dcd3",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x4b78de44ea49d0eb8d5fee85352294b6f679a47c56944c6ad5c945e9a2ba7211",
+        "liquidity_num": 45172.07117,
+        "outcome_prices": [
+          0.0635,
+          0.9365
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Government shutdown on Saturday?",
+        "slug": "another-us-government-shutdown-by-february-14",
+        "volume24hr": 6410563.899665934
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 54638.051550000004,
+        "price_range_accum_window": 0.010932052345240195,
+        "price_range_fast_window": 0.46470810298368936,
+        "top_net_wallet_accum_window": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 37192.396049999996,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "top_wallet_notional_accum_window": 37192.396049999996,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 54638.051550000004,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 17,
+      "trade": {
+        "asset": "43946269812975261940442841140057396362355013850035195910637438338242851933505",
+        "condition_id": "0x4b78de44ea49d0eb8d5fee85352294b6f679a47c56944c6ad5c945e9a2ba7211",
+        "event_slug": "another-us-government-shutdown-by-february-14",
+        "name": "unwillingly-public",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9097081029836893,
+        "proxy_wallet": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "pseudonym": "Young-Pinot",
+        "side": "BUY",
+        "size": 15590.43,
+        "slug": "another-us-government-shutdown-by-february-14",
+        "timestamp": 1771043919,
+        "title": "Government shutdown on Saturday?",
+        "trade_id": "afd096ef715605eddf43bf053f2a2b4c8427e6006ac410fc1b81768880b38553",
+        "transaction_hash": "0x96e632b31aa52929aa221e04c68dc255cefceb23f29239d37f5cc17e37553b20"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/another-us-government-shutdown-by-february-14",
+      "wallet_stats": {
+        "avg_notional_7d": 18596.198024999998,
+        "first_seen_ts": 1771043857,
+        "proxy_wallet": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xdd9c34540ae6339109d8882c45b8cd48a803cf59f5893b413fffbfd4e6f9e7c8",
+        "liquidity_num": 293608.99919,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Dplus KIA",
+          "DRX"
+        ],
+        "question": "LoL: Dplus KIA vs DRX - Game 2 Winner",
+        "slug": "lol-dk-drx-2026-02-13-game2",
+        "volume24hr": 4035.985535
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 42015.3049,
+        "price_range_accum_window": 0.30899255318515173,
+        "price_range_fast_window": 0.30899255318515173,
+        "top_net_wallet_accum_window": "0x689abe8bcb5d5b9993e7b4ffec964b21d1f297a4",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 24424.73156,
+        "top_net_wallet_share_of_market_accum_window": 0.5813293898052849,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x689abe8bcb5d5b9993e7b4ffec964b21d1f297a4",
+        "top_wallet_notional_accum_window": 24424.73156,
+        "top_wallet_share_accum_window": 0.5813293898052849,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 42015.3049,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "4392204803903190732970525287931835401736558517577403554349362592506400040066",
+        "condition_id": "0xdd9c34540ae6339109d8882c45b8cd48a803cf59f5893b413fffbfd4e6f9e7c8",
+        "event_slug": "lol-dk-drx-2026-02-13",
+        "name": "kkkkkkkkkkk",
+        "outcome": "Dplus KIA",
+        "outcome_index": 0,
+        "price": 0.9989925531851517,
+        "proxy_wallet": "0x66fe8149ec5811c265b882fdade058b81e6ee123",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 13428.56,
+        "slug": "lol-dk-drx-2026-02-13-game2",
+        "timestamp": 1770975931,
+        "title": "LoL: Dplus KIA vs DRX - Game 2 Winner",
+        "trade_id": "6b44124d92932555e6ebaa673889db10b3cbc14a4830030143247d1bf7a819b7",
+        "transaction_hash": "0xfe3034227e9a3d971d20fc11d294763ebd716474c2203254424215bd974faa8b"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-dk-drx-2026-02-13-game2",
+      "wallet_stats": {
+        "avg_notional_7d": 7901.762643333333,
+        "first_seen_ts": 1768657766,
+        "proxy_wallet": "0x66fe8149ec5811c265b882fdade058b81e6ee123",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 5
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x5ee8c736270c36d314a3db86983eca6da7de3f4e24a7dcddadfa9aa2c258ce38",
+        "liquidity_num": 44091.2152,
+        "outcome_prices": [
+          0.9775,
+          0.0225
+        ],
+        "outcomes": [
+          "Bucks",
+          "Thunder"
+        ],
+        "question": "Bucks vs. Thunder",
+        "slug": "nba-mil-okc-2026-02-12",
+        "volume24hr": 2521744.9591629906
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 38317.5299,
+        "price_range_accum_window": 0.7999999999999999,
+        "price_range_fast_window": 0.83,
+        "top_net_wallet_accum_window": "0xfa21179f2cef2f61cb78e8340ae62b17f9271438",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18343.9264,
+        "top_net_wallet_share_of_market_accum_window": 0.512865340471834,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xfa21179f2cef2f61cb78e8340ae62b17f9271438",
+        "top_wallet_notional_accum_window": 18343.9264,
+        "top_wallet_share_accum_window": 0.512865340471834,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 6
+      },
+      "notional": 38317.5299,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "115398480700108494801153059742450217770464747356385312544248721773516157633342",
+        "condition_id": "0x5ee8c736270c36d314a3db86983eca6da7de3f4e24a7dcddadfa9aa2c258ce38",
+        "event_slug": "nba-mil-okc-2026-02-12",
+        "name": "0xb7511d7b0dcb75ffad0507cbac7223653d08915",
+        "outcome": "Bucks",
+        "outcome_index": 0,
+        "price": 0.98,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "pseudonym": "Comfortable-Gymnast",
+        "side": "BUY",
+        "size": 2345.0,
+        "slug": "nba-mil-okc-2026-02-12",
+        "timestamp": 1770949639,
+        "title": "Bucks vs. Thunder",
+        "trade_id": "a780160aaaac36aba3caa5dcf2291541b94fc9e955c3c18dd1eb3c3b3f5da171",
+        "transaction_hash": "0x7b5718d1652a49257310e29d498d2ffcec25111ed64e02fb3fbac9287bf581b7"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mil-okc-2026-02-12",
+      "wallet_stats": {
+        "avg_notional_7d": 11061.813861538463,
+        "first_seen_ts": 1768517326,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "trades_7d": 13,
+        "trades_total": 13,
+        "unique_markets_7d": 11,
+        "unique_markets_total": 24
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xf23a18c26127d9b153ef1ca40ec94f7603b18170c474d0415cdca71ac52dbebd",
+        "liquidity_num": 144578.4845,
+        "outcome_prices": [
+          0.445,
+          0.555
+        ],
+        "outcomes": [
+          "Spurs",
+          "Warriors"
+        ],
+        "question": "Spurs vs. Warriors",
+        "slug": "nba-sas-gsw-2026-02-11",
+        "volume24hr": 2292010.1741309967
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 97615.201995,
+        "price_range_accum_window": 0.4162918269541891,
+        "price_range_fast_window": 0.4462918269777668,
+        "top_net_wallet_accum_window": "0x8d60d79299178e5e7df7024114acf34c9bc6649f",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 6999.999999,
+        "top_net_wallet_share_of_market_accum_window": 0.3295727513320796,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x8d60d79299178e5e7df7024114acf34c9bc6649f",
+        "top_wallet_notional_accum_window": 6999.999999,
+        "top_wallet_share_accum_window": 0.3295727513320796,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 10
+      },
+      "notional": 97615.201995,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "75770450326867429336359774085640967495495061869740727884349010015650004493650",
+        "condition_id": "0xf23a18c26127d9b153ef1ca40ec94f7603b18170c474d0415cdca71ac52dbebd",
+        "event_slug": "nba-sas-gsw-2026-02-11",
+        "name": "Treasured-Spending",
+        "outcome": "Warriors",
+        "outcome_index": 1,
+        "price": 0.7462918269777669,
+        "proxy_wallet": "0x9569e042a3e349a8d1797e45406b5288494f27fd",
+        "pseudonym": "Treasured-Spending",
+        "side": "BUY",
+        "size": 6877.457065,
+        "slug": "nba-sas-gsw-2026-02-11",
+        "timestamp": 1770872033,
+        "title": "Spurs vs. Warriors",
+        "trade_id": "a923395e1bd998a54d9b9587662927d354365bd3817776fb5fba1d71303bd649",
+        "transaction_hash": "0x47c7899a81dc6ef52664d13c0bbf6f0674d5b5b8d576804f176c52824546d1b5"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-sas-gsw-2026-02-11",
+      "wallet_stats": {
+        "avg_notional_7d": 8083.856914,
+        "first_seen_ts": 1770799677,
+        "proxy_wallet": "0x9569e042a3e349a8d1797e45406b5288494f27fd",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xeb2afeb7f33df971ab0476bfb8dd6e05d522873a7b085e210b071e88e60c7b6b",
+        "liquidity_num": 23948.17797,
+        "outcome_prices": [
+          0.0305,
+          0.9695
+        ],
+        "outcomes": [
+          "Hawks",
+          "Hornets"
+        ],
+        "question": "Hawks vs. Hornets",
+        "slug": "nba-atl-cha-2026-02-11",
+        "volume24hr": 1842957.5546009976
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21549.396950000002,
+        "price_range_accum_window": 0.43572828747554293,
+        "price_range_fast_window": 0.43572828747554293,
+        "top_net_wallet_accum_window": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 8659.1322,
+        "top_net_wallet_share_of_market_accum_window": 0.6344284094829166,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+        "top_wallet_notional_accum_window": 8659.1322,
+        "top_wallet_share_accum_window": 0.6344284094829166,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 6
+      },
+      "notional": 21549.396950000002,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "115268613144636015421760671646354712858132213527008985387233637908081047916521",
+        "condition_id": "0xeb2afeb7f33df971ab0476bfb8dd6e05d522873a7b085e210b071e88e60c7b6b",
+        "event_slug": "nba-atl-cha-2026-02-11",
+        "name": "jake2026",
+        "outcome": "Hornets",
+        "outcome_index": 1,
+        "price": 0.975728287475543,
+        "proxy_wallet": "0xdab7ecc8ccd7eef1e22c3d86eb37e9118c6524ec",
+        "pseudonym": "Ringed-Torso",
+        "side": "SELL",
+        "size": 2443.06,
+        "slug": "nba-atl-cha-2026-02-11",
+        "timestamp": 1770862997,
+        "title": "Hawks vs. Hornets",
+        "trade_id": "be87e268436fc7bc8fa9dc654cad5212159100e51e602248db693cfd32e644a0",
+        "transaction_hash": "0xf346ccd2973257650c79493d15e8db7ed3abaf7cbc1d4c527a2dad04a66afd01"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-atl-cha-2026-02-11",
+      "wallet_stats": {
+        "avg_notional_7d": 7891.393475333333,
+        "first_seen_ts": 1770344489,
+        "proxy_wallet": "0xdab7ecc8ccd7eef1e22c3d86eb37e9118c6524ec",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x589b74a8c97aebaf0a6edd9849ea933cac8130ccfc992395b34e171476463b5c",
+        "liquidity_num": 77011.3315,
+        "outcome_prices": [
+          0.9,
+          0.1
+        ],
+        "outcomes": [
+          "Grizzlies",
+          "Warriors"
+        ],
+        "question": "Grizzlies vs. Warriors",
+        "slug": "nba-mem-gsw-2026-02-09",
+        "volume24hr": 330800.41204299947
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 43867.6367,
+        "price_range_accum_window": 0.6297665614925578,
+        "price_range_fast_window": 0.6297665614925578,
+        "top_net_wallet_accum_window": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 23552.4,
+        "top_net_wallet_share_of_market_accum_window": 0.5368969420684566,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+        "top_wallet_notional_accum_window": 23552.4,
+        "top_wallet_share_accum_window": 0.5368969420684566,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 43867.6367,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "60439234430362709974882894006983490945936162049975599173500033204788385182221",
+        "condition_id": "0x589b74a8c97aebaf0a6edd9849ea933cac8130ccfc992395b34e171476463b5c",
+        "event_slug": "nba-mem-gsw-2026-02-09",
+        "name": null,
+        "outcome": "Warriors",
+        "outcome_index": 1,
+        "price": 0.16762305699481866,
+        "proxy_wallet": "0xa4f5650a655502b2e2bc66636d347a2fd8281079",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 16984.0,
+        "slug": "nba-mem-gsw-2026-02-09",
+        "timestamp": 1770699799,
+        "title": "Grizzlies vs. Warriors",
+        "trade_id": "3191791c2c85cf3df1ab3a9a799465657b381f8ee41d481e1520881c0ac772a2",
+        "transaction_hash": "0xa3034e48840fdcd01bf1d2049e40a75a0f30d47adbdf9a4b8ee0e72ed886b9ce"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mem-gsw-2026-02-09",
+      "wallet_stats": {
+        "avg_notional_7d": 7763.61835,
+        "first_seen_ts": 1770699623,
+        "proxy_wallet": "0xa4f5650a655502b2e2bc66636d347a2fd8281079",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x4ba2f1c8c313fb3826e3f5e76db2dbf227c03bd0fedd85c237bd44247953d426",
+        "liquidity_num": 704829.0056,
+        "outcome_prices": [
+          0.435,
+          0.565
+        ],
+        "outcomes": [
+          "76ers",
+          "Trail Blazers"
+        ],
+        "question": "76ers vs. Trail Blazers",
+        "slug": "nba-phi-por-2026-02-09",
+        "volume24hr": 566011.9465989993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 26820.711999000003,
+        "price_range_accum_window": 0.07902560775032408,
+        "price_range_fast_window": 0.17902560763907616,
+        "top_net_wallet_accum_window": "0xff36c717909a7bad60e74eed3418009ff481e757",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 10786.51,
+        "top_net_wallet_share_of_market_accum_window": 0.4855585788868441,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xff36c717909a7bad60e74eed3418009ff481e757",
+        "top_wallet_notional_accum_window": 10786.51,
+        "top_wallet_share_accum_window": 0.4855585788868441,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 7
+      },
+      "notional": 26820.711999000003,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "84120294776633858418680721063577651501092735503330720547857557332236828827217",
+        "condition_id": "0x4ba2f1c8c313fb3826e3f5e76db2dbf227c03bd0fedd85c237bd44247953d426",
+        "event_slug": "nba-phi-por-2026-02-09",
+        "name": "Moneyloverman",
+        "outcome": "76ers",
+        "outcome_index": 0,
+        "price": 0.44097439224967594,
+        "proxy_wallet": "0x906fd5683ec51f215164f55b06bbee2b0f1288b4",
+        "pseudonym": "Frayed-Mud",
+        "side": "SELL",
+        "size": 6426.57,
+        "slug": "nba-phi-por-2026-02-09",
+        "timestamp": 1770690647,
+        "title": "76ers vs. Trail Blazers",
+        "trade_id": "b3de1089c092a698494cc4ba0cdfc6071efb6c4cd354002497a9af75b6b553a8",
+        "transaction_hash": "0xd03a5ab885404827a1778a04f9a87898ebec089efe2370efae6451b9dbe4dae3"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-phi-por-2026-02-09",
+      "wallet_stats": {
+        "avg_notional_7d": 2833.9527999999996,
+        "first_seen_ts": 1770690647,
+        "proxy_wallet": "0x906fd5683ec51f215164f55b06bbee2b0f1288b4",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x204d24f3a0f5dd5fca825292bdeab6a97af3978b2caa2b21bb37e610eddfff5d",
+        "liquidity_num": 1008179.35781,
+        "outcome_prices": [
+          0.9855,
+          0.0145
+        ],
+        "outcomes": [
+          "Seahawks",
+          "Patriots"
+        ],
+        "question": "Seahawks vs. Patriots",
+        "slug": "nfl-sea-ne-2026-02-08",
+        "volume24hr": 19430123.215925053
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 97230.881058,
+        "price_range_accum_window": 0.32000000000000006,
+        "price_range_fast_window": 0.32000000000000006,
+        "top_net_wallet_accum_window": "0xbde579ead903b9cf5c3fc4be5a0c515464769c38",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 25600.060800000003,
+        "top_net_wallet_share_of_market_accum_window": 0.37863157852635043,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xbde579ead903b9cf5c3fc4be5a0c515464769c38",
+        "top_wallet_notional_accum_window": 25600.060800000003,
+        "top_wallet_share_accum_window": 0.37863157852635043,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 12
+      },
+      "notional": 97230.881058,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "46434110155841033529384949983718980438706543876953886750286883506638610790525",
+        "condition_id": "0x204d24f3a0f5dd5fca825292bdeab6a97af3978b2caa2b21bb37e610eddfff5d",
+        "event_slug": "nfl-sea-ne-2026-02-08",
+        "name": "BIGTONKA",
+        "outcome": "Seahawks",
+        "outcome_index": 0,
+        "price": 0.99,
+        "proxy_wallet": "0x792a304badfc3d160568a4a5b52823c1b1257264",
+        "pseudonym": "Terrific-Peanut",
+        "side": "BUY",
+        "size": 3355.2828,
+        "slug": "nfl-sea-ne-2026-02-08",
+        "timestamp": 1770604057,
+        "title": "Seahawks vs. Patriots",
+        "trade_id": "f51a8ba4313dc06407219a174262753b007a2840f8642d8bbbbfcfa04360dda7",
+        "transaction_hash": "0x2de4f582722956615ae65dc589e0ffc685ed1f4cc6042da78e2da8132896eee4"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nfl-sea-ne-2026-02-08",
+      "wallet_stats": {
+        "avg_notional_7d": 3321.729972,
+        "first_seen_ts": 1770604057,
+        "proxy_wallet": "0x792a304badfc3d160568a4a5b52823c1b1257264",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xc19752f04c00ea836e711387fb786351e604f88f63422d811f5de42386124319",
+        "liquidity_num": 714010.396,
+        "outcome_prices": [
+          0.675,
+          0.325
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Paris Saint-Germain FC win on 2026-02-08?",
+        "slug": "fl1-psg-olm-2026-02-08-psg",
+        "volume24hr": 176547.08295799993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 99448.5776,
+        "price_range_accum_window": 0.010000000000000009,
+        "price_range_fast_window": 0.010000000000000009,
+        "top_net_wallet_accum_window": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 85067.3576,
+        "top_net_wallet_share_of_market_accum_window": 0.8553903902191156,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "top_wallet_notional_accum_window": 85067.3576,
+        "top_wallet_share_accum_window": 0.8553903902191156,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 85067.3576,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "59324994772443259452909702803090803202219235757859341589213219426911504985747",
+        "condition_id": "0xc19752f04c00ea836e711387fb786351e604f88f63422d811f5de42386124319",
+        "event_slug": "fl1-psg-olm-2026-02-08",
+        "name": "0xb7511d7b0dcb75ffad0507cbac7223653d08915",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.689799176,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "pseudonym": "Comfortable-Gymnast",
+        "side": "BUY",
+        "size": 100000.0,
+        "slug": "fl1-psg-olm-2026-02-08-psg",
+        "timestamp": 1770578661,
+        "title": "Will Paris Saint-Germain FC win on 2026-02-08?",
+        "trade_id": "43122d3401d7d3f16c62e1a6f2964403d4aa377a257e74048a904eedaec3f2dc",
+        "transaction_hash": "0xa5f694279db5572aac6fbf0516c7beef9ee9d1d3be38f694aa84d99cb3a818ae"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/fl1-psg-olm-2026-02-08-psg",
+      "wallet_stats": {
+        "avg_notional_7d": 13692.805025000001,
+        "first_seen_ts": 1768517326,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "trades_7d": 8,
+        "trades_total": 8,
+        "unique_markets_7d": 7,
+        "unique_markets_total": 17
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x2220d8f9f37894051cd41803663c5873339be57e3e194b64d877329cb25e02f7",
+        "liquidity_num": 628345.89381,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Liverpool FC win on 2026-02-08?",
+        "slug": "epl-liv-mac-2026-02-08-liv",
+        "volume24hr": 256809.00281799995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 68943.35329900001,
+        "price_range_accum_window": 0.15000000000000002,
+        "price_range_fast_window": 0.15000000000000002,
+        "top_net_wallet_accum_window": "0xf208326de73e12994c0cd2b641dddc74a319fa74",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 23500.0,
+        "top_net_wallet_share_of_market_accum_window": 0.3408595444738957,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xf208326de73e12994c0cd2b641dddc74a319fa74",
+        "top_wallet_notional_accum_window": 23500.0,
+        "top_wallet_share_accum_window": 0.3408595444738957,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 8
+      },
+      "notional": 68943.35329900001,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "32862118554388398199342382931866492593348870301871636456579037484757781169089",
+        "condition_id": "0x2220d8f9f37894051cd41803663c5873339be57e3e194b64d877329cb25e02f7",
+        "event_slug": "epl-liv-mac-2026-02-08",
+        "name": "bobacircle",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.67,
+        "proxy_wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
+        "pseudonym": "Unpleasant-Outfit",
+        "side": "SELL",
+        "size": 5322.27,
+        "slug": "epl-liv-mac-2026-02-08-liv",
+        "timestamp": 1770573267,
+        "title": "Will Liverpool FC win on 2026-02-08?",
+        "trade_id": "8d1a704e7e71528abdb629b25134293791a4205600fd0455b103334c1181b340",
+        "transaction_hash": "0x0c290b7c073f695ebc3f5833a47407ac137b9acedd0f9cd23583b4591a9d9db1"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-liv-mac-2026-02-08-liv",
+      "wallet_stats": {
+        "avg_notional_7d": 12697.881475,
+        "first_seen_ts": 1770506805,
+        "proxy_wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x7f6f6279ab74e333edf31a69d69a7e9e374abbb27eb5ae3084bc687c78ab7675",
+        "liquidity_num": null,
+        "outcome_prices": [
+          1.0,
+          0.0
+        ],
+        "outcomes": [
+          "Up",
+          "Down"
+        ],
+        "question": "Bitcoin Up or Down - February 7, 4:45AM-5:00AM ET",
+        "slug": "btc-updown-15m-1770457500",
+        "volume24hr": 25.0
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 30278.999698999996,
+        "price_range_accum_window": 0.9630503494483139,
+        "price_range_fast_window": 0.9630503494483139,
+        "top_net_wallet_accum_window": "0x212af34bef48df3922c77ae109f67b690ede83cf",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 10377.5106,
+        "top_net_wallet_share_of_market_accum_window": 0.3427296378071146,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x212af34bef48df3922c77ae109f67b690ede83cf",
+        "top_wallet_notional_accum_window": 10377.5106,
+        "top_wallet_share_accum_window": 0.3427296378071146,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 6
+      },
+      "notional": 30278.999698999996,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "38238231970170348193632817513196740756587444653850325055339102029152308860271",
+        "condition_id": "0x7f6f6279ab74e333edf31a69d69a7e9e374abbb27eb5ae3084bc687c78ab7675",
+        "event_slug": "btc-updown-15m-1770457500",
+        "name": "0x06c4b5c1AFF1Bfc0D93f0d0B529698242Ec0f553-1762579505410",
+        "outcome": "Up",
+        "outcome_index": 0,
+        "price": 0.99,
+        "proxy_wallet": "0x06c4b5c1aff1bfc0d93f0d0b529698242ec0f553",
+        "pseudonym": "Empty-Support",
+        "side": "SELL",
+        "size": 4593.54,
+        "slug": "btc-updown-15m-1770457500",
+        "timestamp": 1770458415,
+        "title": "Bitcoin Up or Down - February 7, 4:45AM-5:00AM ET",
+        "trade_id": "4dd7df3ff05e44b1ce7727dad2b33cd0a211c508d971066c9f7879a7ce65eaca",
+        "transaction_hash": "0x775f7ad1e4313ef1d2b2b5b7be76c09d61ee1e34ffd80638b6409736592d0a72"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/btc-updown-15m-1770457500",
+      "wallet_stats": {
+        "avg_notional_7d": 4547.6046,
+        "first_seen_ts": 1770458415,
+        "proxy_wallet": "0x06c4b5c1aff1bfc0d93f0d0b529698242ec0f553",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x82d875ef23328199c31b7481d98b16c89d8d66df41e79f07255f50045b0ae7fc",
+        "liquidity_num": 1161395.32027,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Pelicans",
+          "Timberwolves"
+        ],
+        "question": "Pelicans vs. Timberwolves",
+        "slug": "nba-nop-min-2026-02-06",
+        "volume24hr": 1321235.378053003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 38428.350638,
+        "price_range_accum_window": 0.749,
+        "price_range_fast_window": 0.749,
+        "top_net_wallet_accum_window": "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 9735.6,
+        "top_net_wallet_share_of_market_accum_window": 0.30406560184264836,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x7ea571c40408f340c1c8fc8eaacebab53c1bde7b",
+        "top_wallet_notional_accum_window": 9735.6,
+        "top_wallet_share_accum_window": 0.30406560184264836,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 7
+      },
+      "notional": 38428.350638,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "94789668953574282145581443591184589237593767628272740131331890208188721216788",
+        "condition_id": "0x82d875ef23328199c31b7481d98b16c89d8d66df41e79f07255f50045b0ae7fc",
+        "event_slug": "nba-nop-min-2026-02-06",
+        "name": "kuzzzz",
+        "outcome": "Pelicans",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xe29e4b491a3982694f5978bdbf3a3570f087fa35",
+        "pseudonym": "Worthless-Summer",
+        "side": "SELL",
+        "size": 2156.39,
+        "slug": "nba-nop-min-2026-02-06",
+        "timestamp": 1770437987,
+        "title": "Pelicans vs. Timberwolves",
+        "trade_id": "32fa5072a12a80352e7a7ca382abea092462c43f80affcc311234d009cad817c",
+        "transaction_hash": "0x529ffa91c8e713f336203c7f23d350ff405a194d64460c974ca16d61e6c5f9c5"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-nop-min-2026-02-06",
+      "wallet_stats": {
+        "avg_notional_7d": 2984.004534333333,
+        "first_seen_ts": 1770344397,
+        "proxy_wallet": "0xe29e4b491a3982694f5978bdbf3a3570f087fa35",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xa5df581580471cec946c2cb2af86419194cee8833bd6c87b70473efab4065c8b",
+        "liquidity_num": 838819.96344,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "G2",
+          "MOUZ"
+        ],
+        "question": "Counter-Strike: G2 vs MOUZ (BO3) - IEM Krakow Playoffs",
+        "slug": "cs2-g2-mouz-2026-02-06",
+        "volume24hr": 171731.05583599998
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 20527.49345,
+        "price_range_accum_window": 0.389,
+        "price_range_fast_window": 0.389,
+        "top_net_wallet_accum_window": "0x56fcc141d24f3c9c29c72165ee2594cc59df733e",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 8419.58199,
+        "top_net_wallet_share_of_market_accum_window": 0.4101612313509227,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x56fcc141d24f3c9c29c72165ee2594cc59df733e",
+        "top_wallet_notional_accum_window": 8419.58199,
+        "top_wallet_share_accum_window": 0.4101612313509227,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 20527.49345,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "45793298372474382222833520078071001210341850351305313847320297271984013588486",
+        "condition_id": "0xa5df581580471cec946c2cb2af86419194cee8833bd6c87b70473efab4065c8b",
+        "event_slug": "cs2-g2-mouz-2026-02-06",
+        "name": "merhax",
+        "outcome": "MOUZ",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x549840cf3dc15cea65c1296264f361007d7e126f",
+        "pseudonym": "Trim-Opossum",
+        "side": "SELL",
+        "size": 2424.24,
+        "slug": "cs2-g2-mouz-2026-02-06",
+        "timestamp": 1770413179,
+        "title": "Counter-Strike: G2 vs MOUZ (BO3) - IEM Krakow Playoffs",
+        "trade_id": "82f58d3c8274c99327474f603436724a5050be6331706d295d1057e966a20dd8",
+        "transaction_hash": "0xbbbe74655c5627361a72c5bf355190ccaccf525183acd02fcc5694315ee3a8c1"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-g2-mouz-2026-02-06",
+      "wallet_stats": {
+        "avg_notional_7d": 3485.1178790000004,
+        "first_seen_ts": 1770039750,
+        "proxy_wallet": "0x549840cf3dc15cea65c1296264f361007d7e126f",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xca2e341f7d7e6fec7e4e4e1d5f4beadfb1486149b8b5fcdd58f6f3c4ce199f0c",
+        "liquidity_num": 60627.2619,
+        "outcome_prices": [
+          0.805,
+          0.195
+        ],
+        "outcomes": [
+          "Wizards",
+          "Pistons"
+        ],
+        "question": "Wizards vs. Pistons",
+        "slug": "nba-was-det-2026-02-05",
+        "volume24hr": 1372902.1334099986
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 133254.383094,
+        "price_range_accum_window": 0.86,
+        "price_range_fast_window": 0.86,
+        "top_net_wallet_accum_window": "0xfa5f472ac88d746f769fcf694c2346e2ec59005f",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 92471.3445,
+        "top_net_wallet_share_of_market_accum_window": 0.6939459877636377,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xfa5f472ac88d746f769fcf694c2346e2ec59005f",
+        "top_wallet_notional_accum_window": 92471.3445,
+        "top_wallet_share_accum_window": 0.6939459877636377,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 11
+      },
+      "notional": 133254.383094,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "99184995239560630555271008911254578903513329260018163614062033950302453927749",
+        "condition_id": "0xca2e341f7d7e6fec7e4e4e1d5f4beadfb1486149b8b5fcdd58f6f3c4ce199f0c",
+        "event_slug": "nba-was-det-2026-02-05",
+        "name": "jinsanity",
+        "outcome": "Wizards",
+        "outcome_index": 0,
+        "price": 0.9729001176364016,
+        "proxy_wallet": "0xfa5f472ac88d746f769fcf694c2346e2ec59005f",
+        "pseudonym": "Weekly-Toque",
+        "side": "BUY",
+        "size": 95047.11,
+        "slug": "nba-was-det-2026-02-05",
+        "timestamp": 1770344495,
+        "title": "Wizards vs. Pistons",
+        "trade_id": "5273915259a25bccb6e1df6835ecccdbb2ba71ba1834c87196fe2ff629127af4",
+        "transaction_hash": "0x44b9317c69e9d3c00e5f7c05eb57a3ee10c048e59bf9746b8b9d6d4c69e92c13"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-was-det-2026-02-05",
+      "wallet_stats": {
+        "avg_notional_7d": 23697.198278000003,
+        "first_seen_ts": 1769768746,
+        "proxy_wallet": "0xfa5f472ac88d746f769fcf694c2346e2ec59005f",
+        "trades_7d": 5,
+        "trades_total": 5,
+        "unique_markets_7d": 5,
+        "unique_markets_total": 5
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x11e7e994c203dad70cf6415067f9fed5410556fd33349e7f562c422d3d9d1c77",
+        "liquidity_num": 9264.4323,
+        "outcome_prices": [
+          0.63,
+          0.37
+        ],
+        "outcomes": [
+          "JD Gaming",
+          "Top Esports"
+        ],
+        "question": "LoL: JD Gaming vs Top Esports - Game 1 Winner",
+        "slug": "lol-jdg-tes-2026-02-05-game1",
+        "volume24hr": 4836.538991
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 98911.2854,
+        "price_range_accum_window": 0.03660571614672248,
+        "price_range_fast_window": 0.03660571614672248,
+        "top_net_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 93911.2854,
+        "top_net_wallet_share_of_market_accum_window": 0.9494496509697568,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_wallet_notional_accum_window": 93911.2854,
+        "top_wallet_share_accum_window": 0.9494496509697568,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 93911.2854,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "2715626323691199585190700619674734657190560958438145232719703845719038470381",
+        "condition_id": "0x11e7e994c203dad70cf6415067f9fed5410556fd33349e7f562c422d3d9d1c77",
+        "event_slug": "lol-jdg-tes-2026-02-05",
+        "name": "gmanas",
+        "outcome": "Top Esports",
+        "outcome_index": 1,
+        "price": 0.38,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "pseudonym": "Wicked-Rap",
+        "side": "BUY",
+        "size": 150013.0,
+        "slug": "lol-jdg-tes-2026-02-05-game1",
+        "timestamp": 1770291113,
+        "title": "LoL: JD Gaming vs Top Esports - Game 1 Winner",
+        "trade_id": "dcd4576bab5201bed03cb3cb1d3527020ab6763d0a9adb85823a45d55f4d7074",
+        "transaction_hash": "0x54bb741b71c7a9d71b97420c302c813dab5b72ba2ff7c3ef669574ccd701c36f"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-jdg-tes-2026-02-05-game1",
+      "wallet_stats": {
+        "avg_notional_7d": 23511.283541111115,
+        "first_seen_ts": 1769687992,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "trades_7d": 9,
+        "trades_total": 9,
+        "unique_markets_7d": 7,
+        "unique_markets_total": 8
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x4423b9502b64ecd9b1b76ee25d8c716ee2ccddc65a2fb9953c25cc5df4555160",
+        "liquidity_num": 398214.90735,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "FUT Esports",
+          "G2"
+        ],
+        "question": "Counter-Strike: FUT Esports vs G2 (BO3) - IEM Krakow Group A",
+        "slug": "cs2-fut-g2-2026-02-01",
+        "volume24hr": 625094.638729
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 68544.65404,
+        "price_range_accum_window": 0.439,
+        "price_range_fast_window": 0.439,
+        "top_net_wallet_accum_window": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 29969.76024,
+        "top_net_wallet_share_of_market_accum_window": 0.8504372194867,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "top_wallet_notional_accum_window": 29969.76024,
+        "top_wallet_share_accum_window": 0.8504372194867,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 68544.65404,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "87302242676391403657632386474777337511659509645839311404861297333825251898985",
+        "condition_id": "0x4423b9502b64ecd9b1b76ee25d8c716ee2ccddc65a2fb9953c25cc5df4555160",
+        "event_slug": "cs2-fut-g2-2026-02-01",
+        "name": "pikachusplace",
+        "outcome": "G2",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "pseudonym": "Violet-Stepgrandmother",
+        "side": "SELL",
+        "size": 29999.76,
+        "slug": "cs2-fut-g2-2026-02-01",
+        "timestamp": 1769973218,
+        "title": "Counter-Strike: FUT Esports vs G2 (BO3) - IEM Krakow Group A",
+        "trade_id": "009fa4c2d06e8eab1fc551ef31d33d77b7c90a3b0bec1454d0b3b331e82709d3",
+        "transaction_hash": "0x96c5685c695444c01f8ab8de397ad6b9413dd5b23ca36a541a054cbfba2de7b2"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-fut-g2-2026-02-01",
+      "wallet_stats": {
+        "avg_notional_7d": 29969.76024,
+        "first_seen_ts": 1769973218,
+        "proxy_wallet": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xd8f7008eee565f248e35fd9bd92a9bbe1bb7f39bdea0ac2ed567790e6a0c3dba",
+        "liquidity_num": 156852.37331,
+        "outcome_prices": [
+          0.122,
+          0.878
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Novak Djokovic win the 2026 Australian Open?",
+        "slug": "will-novak-djokovic-win-the-2026-australian-open",
+        "volume24hr": 378711.75081500027
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 59706.96446,
+        "price_range_accum_window": 0.020031996682256414,
+        "price_range_fast_window": 0.020031996682256414,
+        "top_net_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 59706.96446,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_wallet_notional_accum_window": 59706.96446,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 59706.96446,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "39240464319959997192334542902515275409104373417950380888440834225950435786672",
+        "condition_id": "0xd8f7008eee565f248e35fd9bd92a9bbe1bb7f39bdea0ac2ed567790e6a0c3dba",
+        "event_slug": "2026-mens-australian-open-winner",
+        "name": "gmanas",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9965530986474611,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "pseudonym": "Wicked-Rap",
+        "side": "BUY",
+        "size": 38188.92,
+        "slug": "will-novak-djokovic-win-the-2026-australian-open",
+        "timestamp": 1769946488,
+        "title": "Will Novak Djokovic win the 2026 Australian Open?",
+        "trade_id": "a1939321406b513e079e3cb0401458c3e7ed61f29c11aa7a45eafe968a86b984",
+        "transaction_hash": "0xbc38a9c45ab730a6360bce7fa2f3694d73170ad7a2800b2e3f99e495fd5bb048"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-novak-djokovic-win-the-2026-australian-open",
+      "wallet_stats": {
+        "avg_notional_7d": 16409.037910000003,
+        "first_seen_ts": 1769454751,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "trades_7d": 7,
+        "trades_total": 7,
+        "unique_markets_7d": 6,
+        "unique_markets_total": 6
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x5078a2ad91dfa276cb4c4adef13b4fbdd851ba372eb7252760b1f6f2d2c8d949",
+        "liquidity_num": 13187.5441,
+        "outcome_prices": [
+          0.375,
+          0.625
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Olympique Lyonnais win on 2026-01-29?",
+        "slug": "uel-lyo1-pao1-2026-01-29-lyo1",
+        "volume24hr": 145718.93527300024
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 580690.1218,
+        "price_range_accum_window": 0.22328403568865435,
+        "price_range_fast_window": 0.22328403568865435,
+        "top_net_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 578635.3302,
+        "top_net_wallet_share_of_market_accum_window": 0.9964614662401512,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_wallet_notional_accum_window": 578635.3302,
+        "top_wallet_share_accum_window": 0.9964614662401512,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 580690.1218,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "79231513667392475413653161401324956729816406064352218935586387524090836835391",
+        "condition_id": "0x5078a2ad91dfa276cb4c4adef13b4fbdd851ba372eb7252760b1f6f2d2c8d949",
+        "event_slug": "uel-lyo1-pao1-2026-01-29",
+        "name": "RushiTWT",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.62,
+        "proxy_wallet": "0x70c5c900812fc38c1277ca972eb09483671e457f",
+        "pseudonym": "Bubbly-Bay",
+        "side": "BUY",
+        "size": 3314.18,
+        "slug": "uel-lyo1-pao1-2026-01-29-lyo1",
+        "timestamp": 1769719516,
+        "title": "Will Olympique Lyonnais win on 2026-01-29?",
+        "trade_id": "4994067aaf3db9fbc98166006c62c917a1b7cf4ebf6cd4387f890be194f88224",
+        "transaction_hash": "0xc1c0e3c98e2b60c245bbc56a5f5b5500a71ef62a8fcfa09a20e141a32b2a5faa"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/uel-lyo1-pao1-2026-01-29-lyo1",
+      "wallet_stats": {
+        "avg_notional_7d": 2397.9929333333334,
+        "first_seen_ts": 1769289924,
+        "proxy_wallet": "0x70c5c900812fc38c1277ca972eb09483671e457f",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x94d4faea6073ba990fbd4e83a570ec2f964c0f1f69f3ec9ec2a6ff4d9b3ebb8f",
+        "liquidity_num": 130291.613,
+        "outcome_prices": [
+          0.455,
+          0.545
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Basel 1893 win on 2026-01-29?",
+        "slug": "uel-bas1-plz1-2026-01-29-bas1",
+        "volume24hr": 45630.74822300001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27600.0,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 27600.0,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "top_wallet_notional_accum_window": 27600.0,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 27600.0,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "59996517961306981623284015200937194633662203537163578276314706074856201211173",
+        "condition_id": "0x94d4faea6073ba990fbd4e83a570ec2f964c0f1f69f3ec9ec2a6ff4d9b3ebb8f",
+        "event_slug": "uel-bas1-plz1-2026-01-29",
+        "name": "EchoNoice",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.46,
+        "proxy_wallet": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "pseudonym": "Prestigious-Incarnation",
+        "side": "BUY",
+        "size": 30000.0,
+        "slug": "uel-bas1-plz1-2026-01-29-bas1",
+        "timestamp": 1769715546,
+        "title": "Will FC Basel 1893 win on 2026-01-29?",
+        "trade_id": "4b205e467a2978ec554fef6d5b515e57d4dcdd7b54d6108b135f000182e017f2",
+        "transaction_hash": "0xc336b0faf1dd44f5e1e351d38a1b362504e287062857511765e32139a75446d4"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/uel-bas1-plz1-2026-01-29-bas1",
+      "wallet_stats": {
+        "avg_notional_7d": 13800.0,
+        "first_seen_ts": 1769715538,
+        "proxy_wallet": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xe93c89c41d1bb08d3bb40066d8565df301a696563b2542256e6e8bbbb1ec490d",
+        "liquidity_num": 1390403.24405,
+        "outcome_prices": [
+          0.9965,
+          0.0035
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "No change in Fed interest rates after January 2026 meeting?",
+        "slug": "no-change-in-fed-interest-rates-after-january-2026-meeting",
+        "volume24hr": 20308580.03414495
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 102731.47994,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0020000000000000018,
+        "top_net_wallet_accum_window": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 94244.88459,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "top_wallet_notional_accum_window": 94244.88459,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 94244.88459,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "112838095111461683880944516726938163688341306245473734071798778736646352193304",
+        "condition_id": "0xe93c89c41d1bb08d3bb40066d8565df301a696563b2542256e6e8bbbb1ec490d",
+        "event_slug": "fed-decision-in-january",
+        "name": "xule",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.997,
+        "proxy_wallet": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "pseudonym": "Healthy-Product",
+        "side": "BUY",
+        "size": 50000.0,
+        "slug": "no-change-in-fed-interest-rates-after-january-2026-meeting",
+        "timestamp": 1769621966,
+        "title": "No change in Fed interest rates after January 2026 meeting?",
+        "trade_id": "65261e3bac685b510849e9c598858b872ce87201f874ae111ee4b69fb450ce35",
+        "transaction_hash": "0xb3db1d3b95561652d0d9d5d9cb6f6cf362275e1524f2297d8a7768ccea728961"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/no-change-in-fed-interest-rates-after-january-2026-meeting",
+      "wallet_stats": {
+        "avg_notional_7d": 47122.442295,
+        "first_seen_ts": 1769619258,
+        "proxy_wallet": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x70cdc92881a74fa13b6d861aae79f3b153989f29b285f234bd8be08f723812a9",
+        "liquidity_num": 66968.04799,
+        "outcome_prices": [
+          0.0145,
+          0.9855
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US strikes Iran by January 28, 2026?",
+        "slug": "us-strikes-iran-by-january-28-2026-117-856-648-735-438",
+        "volume24hr": 312991.8833549997
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 54996.34712,
+        "price_range_accum_window": 0.0010000000000000009,
+        "price_range_fast_window": 0.0010000000000000009,
+        "top_net_wallet_accum_window": "0xf38e6583dfa37026ee25cf0a567b8cef6307a38a",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 54996.34712,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xf38e6583dfa37026ee25cf0a567b8cef6307a38a",
+        "top_wallet_notional_accum_window": 54996.34712,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 54996.34712,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "112847346639203630765901077163845076542730075387943895802537171945310360721295",
+        "condition_id": "0x70cdc92881a74fa13b6d861aae79f3b153989f29b285f234bd8be08f723812a9",
+        "event_slug": "us-strikes-iran-by",
+        "name": "kvento",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.988,
+        "proxy_wallet": "0xf38e6583dfa37026ee25cf0a567b8cef6307a38a",
+        "pseudonym": "Last-Greatgrandmother",
+        "side": "BUY",
+        "size": 32764.88,
+        "slug": "us-strikes-iran-by-january-28-2026-117-856-648-735-438",
+        "timestamp": 1769584359,
+        "title": "US strikes Iran by January 28, 2026?",
+        "trade_id": "0d7d73d596ffcf89305881992fd68c02360df18e16b835f71ad4208ae381d4e6",
+        "transaction_hash": "0xcf99f73024e6557a58424e2c7ec40f65851a5b005823259341b75f1c0bd52634"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-strikes-iran-by-january-28-2026-117-856-648-735-438",
+      "wallet_stats": {
+        "avg_notional_7d": 27498.17356,
+        "first_seen_ts": 1769584355,
+        "proxy_wallet": "0xf38e6583dfa37026ee25cf0a567b8cef6307a38a",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x1fc322c68723e7d66ccf795cdb8cf229ddb02e0e44b7d92e4d7818a6a8effab1",
+        "liquidity_num": 250094.33406,
+        "outcome_prices": [
+          0.0125,
+          0.9875
+        ],
+        "outcomes": [
+          "Magic",
+          "Cavaliers"
+        ],
+        "question": "Magic vs. Cavaliers",
+        "slug": "nba-orl-cle-2026-01-26",
+        "volume24hr": 1255033.0932079982
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 134830.07584499998,
+        "price_range_accum_window": 0.34898804044942416,
+        "price_range_fast_window": 0.34898804044942416,
+        "top_net_wallet_accum_window": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 123342.57587,
+        "top_net_wallet_share_of_market_accum_window": 0.9148001667802519,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "top_wallet_notional_accum_window": 123342.57587,
+        "top_wallet_share_accum_window": 0.9148001667802519,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 134830.07584499998,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "12538008096049809260959942696355073549474960063955610419251367912602775702371",
+        "condition_id": "0x1fc322c68723e7d66ccf795cdb8cf229ddb02e0e44b7d92e4d7818a6a8effab1",
+        "event_slug": "nba-orl-cle-2026-01-26",
+        "name": "piston777",
+        "outcome": "Cavaliers",
+        "outcome_index": 1,
+        "price": 0.9989880404984242,
+        "proxy_wallet": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "pseudonym": "Excited-Reboot",
+        "side": "BUY",
+        "size": 123467.52,
+        "slug": "nba-orl-cle-2026-01-26",
+        "timestamp": 1769480975,
+        "title": "Magic vs. Cavaliers",
+        "trade_id": "92d51c92df5a9dc6f4840945b9448037e26497e404b44071537db4616cbb18a9",
+        "transaction_hash": "0xb77e1debd1b3e2f16f0bc6bad7a9f404d0593bc83efb29990755387a0b150df7"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-orl-cle-2026-01-26",
+      "wallet_stats": {
+        "avg_notional_7d": 123342.57587,
+        "first_seen_ts": 1769480975,
+        "proxy_wallet": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+        "liquidity_num": 5511917.74417,
+        "outcome_prices": [
+          0.0025,
+          0.9975
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Fed decreases interest rates by 50+ bps after January 2026 meeting?",
+        "slug": "fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+        "volume24hr": 5220318.671724005
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 46053.9,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 46053.9,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "top_wallet_notional_accum_window": 46053.9,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 46053.9,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "71478852790279095447182996049071040792010759617668969799049179229104800573786",
+        "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+        "event_slug": "fed-decision-in-january",
+        "name": "Pestle",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "pseudonym": "Excitable-Saviour",
+        "side": "BUY",
+        "size": 23100.0,
+        "slug": "fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+        "timestamp": 1769376798,
+        "title": "Fed decreases interest rates by 50+ bps after January 2026 meeting?",
+        "trade_id": "ea320cb435cae856572e33296918727ed72a1e393340c91aef51b79c181a0bf1",
+        "transaction_hash": "0xb5134796f1e6058a54d0d2019fccb04d86ecf2a1273872b1cf064a11fb904772"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+      "wallet_stats": {
+        "avg_notional_7d": 22948.966666666664,
+        "first_seen_ts": 1769375622,
+        "proxy_wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xd1ed61d59ea450b598ea887ccd12f35adca8655d5cba27116547f440c36ed941",
+        "liquidity_num": 401772.6359,
+        "outcome_prices": [
+          0.375,
+          0.625
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Juventus FC vs. SSC Napoli: O/U 2.5",
+        "slug": "sea-juv-nap-2026-01-25-total-2pt5",
+        "volume24hr": 139.987004
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 59843.3836,
+        "price_range_accum_window": 0.0005972476234422652,
+        "price_range_fast_window": 0.0005972476234422652,
+        "top_net_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 35850.92,
+        "top_net_wallet_share_of_market_accum_window": 0.5990790935156948,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 3,
+        "top_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_wallet_notional_accum_window": 35850.92,
+        "top_wallet_share_accum_window": 0.5990790935156948,
+        "top_wallet_trades_accum_window": 3,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 35850.92,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "quiet_price_6h"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "1078019777362823397573310437936437835559083825397233408629437716604414204791",
+        "condition_id": "0xd1ed61d59ea450b598ea887ccd12f35adca8655d5cba27116547f440c36ed941",
+        "event_slug": "sea-juv-nap-2026-01-25-more-markets",
+        "name": "swisstony",
+        "outcome": "Under",
+        "outcome_index": 1,
+        "price": 0.61,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "pseudonym": "Frail-Possible",
+        "side": "BUY",
+        "size": 5473.0,
+        "slug": "sea-juv-nap-2026-01-25-total-2pt5",
+        "timestamp": 1769356714,
+        "title": "Juventus FC vs. SSC Napoli: O/U 2.5",
+        "trade_id": "eb0e0115a1eabd55cc473a9ed1a4e3e60a5cd55d8068f2d52afbf86db92778c0",
+        "transaction_hash": "0x7319aa603559e1cdf7ca6b19efd66af014fe211d10eb774b19d04f9577168b17"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/sea-juv-nap-2026-01-25-total-2pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 6990.703636045454,
+        "first_seen_ts": 1768753078,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "trades_7d": 22,
+        "trades_total": 22,
+        "unique_markets_7d": 16,
+        "unique_markets_total": 33
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x5a4e3ea3550c04220f2b6f785a8eb5e5d4b6c65a3f98b95cdef9602bc79adfe2",
+        "liquidity_num": 13376.0669,
+        "outcome_prices": [
+          0.525,
+          0.475
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Boston College Eagles vs. Notre Dame Fighting Irish: O/U 135.5",
+        "slug": "cbb-boscol-nd-2026-01-24-total-135pt5",
+        "volume24hr": null
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 77993.1872,
+        "price_range_accum_window": 4.101843860859766e-05,
+        "price_range_fast_window": 4.101843860859766e-05,
+        "top_net_wallet_accum_window": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 77993.1872,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "top_wallet_notional_accum_window": 77993.1872,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 77993.1872,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "65864787422491992095859871674604404373845988009163742286289690146225689396740",
+        "condition_id": "0x5a4e3ea3550c04220f2b6f785a8eb5e5d4b6c65a3f98b95cdef9602bc79adfe2",
+        "event_slug": "cbb-boscol-nd-2026-01-24",
+        "name": "DiviLungaoBBW",
+        "outcome": "Over",
+        "outcome_index": 0,
+        "price": 0.54,
+        "proxy_wallet": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "pseudonym": "Pesky-Fedora",
+        "side": "BUY",
+        "size": 120054.4,
+        "slug": "cbb-boscol-nd-2026-01-24-total-135pt5",
+        "timestamp": 1769293656,
+        "title": "Boston College Eagles vs. Notre Dame Fighting Irish: O/U 135.5",
+        "trade_id": "1baa81179c130b02573b248129a693cb3ff5741ef6c3462d1ac25692b718c17b",
+        "transaction_hash": "0x80fff7cf36c5b181cd8aad84460826770bfa04388643ec8d6a85ae13c7434824"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-boscol-nd-2026-01-24-total-135pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 38996.5936,
+        "first_seen_ts": 1769293644,
+        "proxy_wallet": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x9452b262538ead43f3fc7f05bab4aae4384b4622f865c570b78ac2af6b930c96",
+        "liquidity_num": 262764.87736,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "PARIVISION",
+          "FURIA"
+        ],
+        "question": "Counter-Strike: PARIVISION vs FURIA (BO3) - BLAST Bounty Playoffs",
+        "slug": "cs2-prv-furia-2026-01-24",
+        "volume24hr": 90983.74608200001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 130694.60138,
+        "price_range_accum_window": 0.679,
+        "price_range_fast_window": 0.679,
+        "top_net_wallet_accum_window": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 123894.60138,
+        "top_net_wallet_share_of_market_accum_window": 0.9479703068971554,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "top_wallet_notional_accum_window": 123894.60138,
+        "top_wallet_share_accum_window": 0.9479703068971554,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 130694.60138,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "31753919780919718560644826477205334094859156267009035756647404231273668061068",
+        "condition_id": "0x9452b262538ead43f3fc7f05bab4aae4384b4622f865c570b78ac2af6b930c96",
+        "event_slug": "cs2-prv-furia-2026-01-24",
+        "name": "Marktakh",
+        "outcome": "PARIVISION",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "pseudonym": "Criminal-Meatball",
+        "side": "SELL",
+        "size": 124018.62,
+        "slug": "cs2-prv-furia-2026-01-24",
+        "timestamp": 1769287420,
+        "title": "Counter-Strike: PARIVISION vs FURIA (BO3) - BLAST Bounty Playoffs",
+        "trade_id": "d5d7777f2d12153e608c98e2992d082c965476f00d72aad8980eef9d71d80193",
+        "transaction_hash": "0x46f1b3bd798b1dc93042e9575b43cb61bfbdd2597dc9abb1bdceacd477c12a53"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-prv-furia-2026-01-24",
+      "wallet_stats": {
+        "avg_notional_7d": 123894.60138,
+        "first_seen_ts": 1769287420,
+        "proxy_wallet": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x49ddf726e689bbecaa326c68d5be5a50ab14ff24c327fa86f0ead6a25c671bff",
+        "liquidity_num": 699692.14992,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Internazionale Milano win on 2026-01-23?",
+        "slug": "sea-int-pis-2026-01-23-int",
+        "volume24hr": 115886.90455700007
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 90932.25506899999,
+        "price_range_accum_window": 0.46398570194181055,
+        "price_range_fast_window": 0.46398570194181055,
+        "top_net_wallet_accum_window": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 77267.58506999999,
+        "top_net_wallet_share_of_market_accum_window": 0.8497269204570901,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "top_wallet_notional_accum_window": 77267.58506999999,
+        "top_wallet_share_accum_window": 0.8497269204570901,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 90932.25506899999,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "87346582767305511121676819406989808447001352679671273656682639899072985944860",
+        "condition_id": "0x49ddf726e689bbecaa326c68d5be5a50ab14ff24c327fa86f0ead6a25c671bff",
+        "event_slug": "sea-int-pis-2026-01-23",
+        "name": "joosangyoo",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "pseudonym": "Puny-Tenor",
+        "side": "SELL",
+        "size": 77344.93,
+        "slug": "sea-int-pis-2026-01-23-int",
+        "timestamp": 1769210938,
+        "title": "Will FC Internazionale Milano win on 2026-01-23?",
+        "trade_id": "3609e2202a59e07ad93c2a90060102fe27611ddc8189c78120747b728b3f9cff",
+        "transaction_hash": "0x5bc69fdafece5eb96daede7f7dae0f4f9b9dedc625f8ba751b1d20c1effaa18f"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/sea-int-pis-2026-01-23-int",
+      "wallet_stats": {
+        "avg_notional_7d": 45133.79253499999,
+        "first_seen_ts": 1768865606,
+        "proxy_wallet": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x39504cbc120a8092f5df3d0ba612976a0d97a7aa2b699e73fae49010cbc31f1d",
+        "liquidity_num": 105579.43433,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will the US next strike Iran on January 21, 2026 (ET)?",
+        "slug": "will-the-us-next-strike-iran-on-january-21-2026-et-774",
+        "volume24hr": 299106.40525899996
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 44955.0,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 44955.0,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "top_wallet_notional_accum_window": 44955.0,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 44955.0,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "63388457263324141525857929671932549855961962010728135756149984345636847346975",
+        "condition_id": "0x39504cbc120a8092f5df3d0ba612976a0d97a7aa2b699e73fae49010cbc31f1d",
+        "event_slug": "us-next-strikes-iran-on",
+        "name": "hersodolphi",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "pseudonym": "Genuine-Centre",
+        "side": "SELL",
+        "size": 35000.0,
+        "slug": "will-the-us-next-strike-iran-on-january-21-2026-et-774",
+        "timestamp": 1769111426,
+        "title": "Will the US next strike Iran on January 21, 2026 (ET)?",
+        "trade_id": "28f0bc3b418b048dc0e26c25818e70828260a40a0e5ee91747ed804467fd933f",
+        "transaction_hash": "0xceab354671566d0a1018cb3b3ea4caed9487d2c1c4620fd3c6fc43b3b69de569"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-the-us-next-strike-iran-on-january-21-2026-et-774",
+      "wallet_stats": {
+        "avg_notional_7d": 22477.5,
+        "first_seen_ts": 1769111414,
+        "proxy_wallet": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x3219a411a99734715a4087b023ef30cc0517d0a1a07aba9fa5e9459a229d591e",
+        "liquidity_num": 39890.68096,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Army Black Knights vs. Bucknell Bison: O/U 144.5",
+        "slug": "cbb-army-buck-2026-01-21-total-144pt5",
+        "volume24hr": 661101.7888040012
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 137268.00297,
+        "price_range_accum_window": 0.519,
+        "price_range_fast_window": 0.519,
+        "top_net_wallet_accum_window": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 124880.5728,
+        "top_net_wallet_share_of_market_accum_window": 0.9097573367283031,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "top_wallet_notional_accum_window": 124880.5728,
+        "top_wallet_share_accum_window": 0.9097573367283031,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 137268.00297,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "49146107815926527428495483018340282848008502585538894053977787851848038061192",
+        "condition_id": "0x3219a411a99734715a4087b023ef30cc0517d0a1a07aba9fa5e9459a229d591e",
+        "event_slug": "cbb-army-buck-2026-01-21",
+        "name": "mp5reddotbluetiger",
+        "outcome": "Over",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xc49fe658479db29e1a2fefebf0735f657dca9e05",
+        "pseudonym": "Milky-Living",
+        "side": "SELL",
+        "size": 12399.83,
+        "slug": "cbb-army-buck-2026-01-21-total-144pt5",
+        "timestamp": 1769048968,
+        "title": "Army Black Knights vs. Bucknell Bison: O/U 144.5",
+        "trade_id": "7c32a2f08f83b7e4aacc03914ea5650ec742ed70e46894bc5d95288747294c7e",
+        "transaction_hash": "0x5bc5cbed6736a5f4a87863a1e6662167912eaa928a00612124ed232e584c656e"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-army-buck-2026-01-21-total-144pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 7235.459085,
+        "first_seen_ts": 1769048968,
+        "proxy_wallet": "0xc49fe658479db29e1a2fefebf0735f657dca9e05",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xa650efeeb4b5bbd0ee96910df487a1b96f16456fdace101adddf213d3c34f2dc",
+        "liquidity_num": 73657.8746,
+        "outcome_prices": [
+          0.155,
+          0.845
+        ],
+        "outcomes": [
+          "Clippers",
+          "Bulls"
+        ],
+        "question": "Clippers vs. Bulls",
+        "slug": "nba-lac-chi-2026-01-20",
+        "volume24hr": 857092.2939750022
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21699.191598,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.2700000001056474,
+        "top_net_wallet_accum_window": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19521.191600000002,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "top_wallet_notional_accum_window": 19521.191600000002,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21699.191598,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "98460775796116008085555714166765054825961577301924446058408674780459442144744",
+        "condition_id": "0xa650efeeb4b5bbd0ee96910df487a1b96f16456fdace101adddf213d3c34f2dc",
+        "event_slug": "nba-lac-chi-2026-01-20",
+        "name": "Momentumtrades",
+        "outcome": "Bulls",
+        "outcome_index": 1,
+        "price": 0.86,
+        "proxy_wallet": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "pseudonym": "Alert-Carrot",
+        "side": "BUY",
+        "size": 22699.06,
+        "slug": "nba-lac-chi-2026-01-20",
+        "timestamp": 1768960702,
+        "title": "Clippers vs. Bulls",
+        "trade_id": "a00d13c954a90450f1ba528f284b2a7f827937090bfb5ce441fc303d88937f94",
+        "transaction_hash": "0x3d6ba1c0ced48dda724e62768404f5a9a5e10ded112f78d57dab804a3f40d99f"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-lac-chi-2026-01-20",
+      "wallet_stats": {
+        "avg_notional_7d": 19521.191600000002,
+        "first_seen_ts": 1768960702,
+        "proxy_wallet": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x77283a70c8d14270d6b708c07c59cfe1841e3dcd666c4aa02b113f08fd27213d",
+        "liquidity_num": 133436.8492,
+        "outcome_prices": [
+          0.92,
+          0.08
+        ],
+        "outcomes": [
+          "Thunder",
+          "Cavaliers"
+        ],
+        "question": "Thunder vs. Cavaliers",
+        "slug": "nba-okc-cle-2026-01-19",
+        "volume24hr": 353403.00124000036
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 16961.899901,
+        "price_range_accum_window": 0.33000000000000007,
+        "price_range_fast_window": 0.33000000000000007,
+        "top_net_wallet_accum_window": "0x1f789eb1a5ff2da596241d43e1d40b41f8e6bbe8",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 4631.309991,
+        "top_net_wallet_share_of_market_accum_window": 0.2730419362236042,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x1f789eb1a5ff2da596241d43e1d40b41f8e6bbe8",
+        "top_wallet_notional_accum_window": 4631.309991,
+        "top_wallet_share_accum_window": 0.2730419362236042,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 16961.899901,
+      "reasons": [
+        "market_price_move_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 7,
+      "trade": {
+        "asset": "85586162052458928153097852273134698465879472186070103893126584027098527896672",
+        "condition_id": "0x77283a70c8d14270d6b708c07c59cfe1841e3dcd666c4aa02b113f08fd27213d",
+        "event_slug": "nba-okc-cle-2026-01-19",
+        "name": "hanlunzhang",
+        "outcome": "Thunder",
+        "outcome_index": 0,
+        "price": 0.9899999998983087,
+        "proxy_wallet": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "pseudonym": "Outrageous-Craft",
+        "side": "BUY",
+        "size": 2556.757574,
+        "slug": "nba-okc-cle-2026-01-19",
+        "timestamp": 1768858766,
+        "title": "Thunder vs. Cavaliers",
+        "trade_id": "a5685bad11aa3b94c80a110cc897b1d0c33b5eda23470f0f9c2e300990bfccb4",
+        "transaction_hash": "0xb739b4a56105f0a551de13aa18a8b60e2b9471995eeb8cb12a1fae15ff964551"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-okc-cle-2026-01-19",
+      "wallet_stats": {
+        "avg_notional_7d": 6547.49058625,
+        "first_seen_ts": 1768706710,
+        "proxy_wallet": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "trades_7d": 4,
+        "trades_total": 4,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 4
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x702e0c0736e1f0f44f1ff42037fc876b02be7ac64690879df67008c204986857",
+        "liquidity_num": 2259791.8669,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Bucks",
+          "Hawks"
+        ],
+        "question": "Bucks vs. Hawks",
+        "slug": "nba-mil-atl-2026-01-19",
+        "volume24hr": 591902.1248590003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 46499.64578,
+        "price_range_accum_window": 0.339898119581757,
+        "price_range_fast_window": 0.339898119581757,
+        "top_net_wallet_accum_window": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 35646.53778,
+        "top_net_wallet_share_of_market_accum_window": 0.7665980499862638,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "top_wallet_notional_accum_window": 35646.53778,
+        "top_wallet_share_accum_window": 0.7665980499862638,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 46499.64578,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "79953150680837162532137605828382592220196479931285240613170341563418148527733",
+        "condition_id": "0x702e0c0736e1f0f44f1ff42037fc876b02be7ac64690879df67008c204986857",
+        "event_slug": "nba-mil-atl-2026-01-19",
+        "name": "98percentloser",
+        "outcome": "Bucks",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "pseudonym": "Wicked-Output",
+        "side": "SELL",
+        "size": 35682.22,
+        "slug": "nba-mil-atl-2026-01-19",
+        "timestamp": 1768855980,
+        "title": "Bucks vs. Hawks",
+        "trade_id": "661d87adeb470be9ca24a9d19dece7400b58af240afcf4f37b3918633631aa7d",
+        "transaction_hash": "0x322b952fcbaf0a7d03dd17001a96b74f283841a81fc611d77f1e5f0150ad0b73"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mil-atl-2026-01-19",
+      "wallet_stats": {
+        "avg_notional_7d": 35646.53778,
+        "first_seen_ts": 1768855980,
+        "proxy_wallet": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x207995ff48217719db39a7769cfda4f8f11ba9320e6ec71371095267a22de39a",
+        "liquidity_num": 705951.1056,
+        "outcome_prices": [
+          0.495,
+          0.505
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Aston Villa FC win on 2026-01-18?",
+        "slug": "epl-ast-eve-2026-01-18-ast",
+        "volume24hr": 905095.9656910028
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 408043.9457,
+        "price_range_accum_window": 0.509,
+        "price_range_fast_window": 0.509,
+        "top_net_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 398053.9457,
+        "top_net_wallet_share_of_market_accum_window": 0.9755173429105481,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_wallet_notional_accum_window": 398053.9457,
+        "top_wallet_share_accum_window": 0.9755173429105481,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 408043.9457,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "extreme_price"
+      ],
+      "score": 18,
+      "trade": {
+        "asset": "70799749519037511308067844727626588930095292580275517685513320628888580949292",
+        "condition_id": "0x207995ff48217719db39a7769cfda4f8f11ba9320e6ec71371095267a22de39a",
+        "event_slug": "epl-ast-eve-2026-01-18",
+        "name": "kkkkkkkkkkk",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x66fe8149ec5811c265b882fdade058b81e6ee123",
+        "pseudonym": null,
+        "side": "SELL",
+        "size": 10000.0,
+        "slug": "epl-ast-eve-2026-01-18-ast",
+        "timestamp": 1768772356,
+        "title": "Will Aston Villa FC win on 2026-01-18?",
+        "trade_id": "619f7502a5750d8eee8969ce5686aecff900bad2bb4a7aa5647ca55268d75b6c",
+        "transaction_hash": "0x57d66df3592d5c4993ad9f6116cfc4f5b9ad5059c2b169a9779dce7903cc32e2"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-ast-eve-2026-01-18-ast",
+      "wallet_stats": {
+        "avg_notional_7d": 7009.504425,
+        "first_seen_ts": 1768657766,
+        "proxy_wallet": "0x66fe8149ec5811c265b882fdade058b81e6ee123",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x207995ff48217719db39a7769cfda4f8f11ba9320e6ec71371095267a22de39a",
+        "liquidity_num": 705951.1056,
+        "outcome_prices": [
+          0.495,
+          0.505
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Aston Villa FC win on 2026-01-18?",
+        "slug": "epl-ast-eve-2026-01-18-ast",
+        "volume24hr": 905095.9656910028
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 398053.9457,
+        "price_range_accum_window": 1.458217474548107e-07,
+        "price_range_fast_window": 1.458217474548107e-07,
+        "top_net_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 398053.9457,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_wallet_notional_accum_window": 398053.9457,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 398053.9457,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "74803449892900277363518384349372944809469841225698764412757944250208116959217",
+        "condition_id": "0x207995ff48217719db39a7769cfda4f8f11ba9320e6ec71371095267a22de39a",
+        "event_slug": "epl-ast-eve-2026-01-18",
+        "name": "beachboy4",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.51,
+        "proxy_wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "pseudonym": "Threadbare-Skunk",
+        "side": "BUY",
+        "size": 580253.51,
+        "slug": "epl-ast-eve-2026-01-18-ast",
+        "timestamp": 1768757146,
+        "title": "Will Aston Villa FC win on 2026-01-18?",
+        "trade_id": "72d6e5188c6c7aeab12a706f9fa0c9e552fd36449b4d4cceb39ca1edc5e74726",
+        "transaction_hash": "0x63ae1f995e4939893e54945c27dc525e259e3c6bdb93aebce2f21dfd98c5ec77"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-ast-eve-2026-01-18-ast",
+      "wallet_stats": {
+        "avg_notional_7d": 153158.781175,
+        "first_seen_ts": 1768585880,
+        "proxy_wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "trades_7d": 4,
+        "trades_total": 4,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 4
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x746f66fb1859ce9f795b0bbe0b4fede7666bfe4de95b2aa280296b25f763deee",
+        "liquidity_num": 140191.6117,
+        "outcome_prices": [
+          0.6,
+          0.4
+        ],
+        "outcomes": [
+          "Bills",
+          "Broncos"
+        ],
+        "question": "Bills vs. Broncos",
+        "slug": "nfl-buf-den-2026-01-17",
+        "volume24hr": 1212786.7972470087
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 16546.840098,
+        "price_range_accum_window": 0.17000000002464422,
+        "price_range_fast_window": 0.17000000002464422,
+        "top_net_wallet_accum_window": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 4708.52,
+        "top_net_wallet_share_of_market_accum_window": 0.2845570496912649,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
+        "top_wallet_notional_accum_window": 4708.52,
+        "top_wallet_share_accum_window": 0.2845570496912649,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 16546.840098,
+      "reasons": [
+        "market_price_move_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 7,
+      "trade": {
+        "asset": "59971444048982820090749128753331211858318529324980291176754797725178535217659",
+        "condition_id": "0x746f66fb1859ce9f795b0bbe0b4fede7666bfe4de95b2aa280296b25f763deee",
+        "event_slug": "nfl-buf-den-2026-01-17",
+        "name": "mterr18",
+        "outcome": "Bills",
+        "outcome_index": 0,
+        "price": 0.64,
+        "proxy_wallet": "0x7b2f099176bb5552540751f8857ec27b04fa3531",
+        "pseudonym": "Puzzling-Seaplane",
+        "side": "BUY",
+        "size": 4853.4,
+        "slug": "nfl-buf-den-2026-01-17",
+        "timestamp": 1768687912,
+        "title": "Bills vs. Broncos",
+        "trade_id": "7a1689922ca2faf2274754e7c01bd7137482ef350aea3b0da38292b7e1b27055",
+        "transaction_hash": "0x9fb7b0df6917390476324a030dabadf00a1d7cd2264c06f1a9e4e4158943cb23"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nfl-buf-den-2026-01-17",
+      "wallet_stats": {
+        "avg_notional_7d": 3106.176,
+        "first_seen_ts": 1768687912,
+        "proxy_wallet": "0x7b2f099176bb5552540751f8857ec27b04fa3531",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x011de01e618d6f40008b76faecb7808d61fd75529aeafa06c66450024864d3ee",
+        "liquidity_num": 974894.98646,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Manchester City FC win on 2026-01-17?",
+        "slug": "epl-mun-mac-2026-01-17-mac",
+        "volume24hr": 912299.2992869995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21476.402109,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.4793263550511392,
+        "top_net_wallet_accum_window": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 11476.402109999999,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "top_wallet_notional_accum_window": 11476.402109999999,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21476.402109,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "51242892360171801116750756416604557873739020827431771326901207405849528484536",
+        "condition_id": "0x011de01e618d6f40008b76faecb7808d61fd75529aeafa06c66450024864d3ee",
+        "event_slug": "epl-mun-mac-2026-01-17",
+        "name": "0x20D6436849F930584892730C7F96eBB2Ac763856-1768642056357",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "pseudonym": "Shrill-Aunt",
+        "side": "SELL",
+        "size": 11487.89,
+        "slug": "epl-mun-mac-2026-01-17-mac",
+        "timestamp": 1768661474,
+        "title": "Will Manchester City FC win on 2026-01-17?",
+        "trade_id": "06141ac680bd66569092d516ea191c5c12e2ca70dc3acf92b76115c74f0703c0",
+        "transaction_hash": "0xfcc24ae0dec81129c73ed970c3f9da13e76a0b261a84dcf9271f7ab3f4b225f8"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-mun-mac-2026-01-17-mac",
+      "wallet_stats": {
+        "avg_notional_7d": 11476.402109999999,
+        "first_seen_ts": 1768661474,
+        "proxy_wallet": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
+        "liquidity_num": 75019.7973,
+        "outcome_prices": [
+          0.16,
+          0.84
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Trump out as President before 2027?",
+        "slug": "trump-out-as-president-before-2027",
+        "volume24hr": 49896.096126000004
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 100016.669998,
+        "price_range_accum_window": 0.04069156019103293,
+        "price_range_fast_window": 0.04069156019103293,
+        "top_net_wallet_accum_window": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 100016.669998,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "top_wallet_notional_accum_window": 100016.669998,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 100016.669998,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "2849827372590072151380088930233312280478318575453624773762283369907909283027",
+        "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
+        "event_slug": "trump-out-as-president-before-2027",
+        "name": "RomkaMoon",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.8620262305047875,
+        "proxy_wallet": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "pseudonym": "Bruised-Hybridisation",
+        "side": "BUY",
+        "size": 49151.17,
+        "slug": "trump-out-as-president-before-2027",
+        "timestamp": 1768490332,
+        "title": "Trump out as President before 2027?",
+        "trade_id": "f474d48f50d0fd5ffc14f1787bcbd90819fb7d19e3df9c754024f8fd4f8dd5fb",
+        "transaction_hash": "0xa647d611b546e562a2f6d1eb6aebe05c7cab0debbfd08af481ab20ef0dd6e3d9"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/trump-out-as-president-before-2027",
+      "wallet_stats": {
+        "avg_notional_7d": 50008.334999,
+        "first_seen_ts": 1768490332,
+        "proxy_wallet": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xabb86b080e9858dcb3f46954010e49b6f539c20036856c7f999395bfd58d01e6",
+        "liquidity_num": 95917.9472,
+        "outcome_prices": [
+          0.58,
+          0.42
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US strikes Iran by January 31, 2026?",
+        "slug": "us-strikes-iran-by-january-31-2026-165-644-953-482-164-893-945",
+        "volume24hr": 2021570.517355002
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 26022.133799,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.18295212163111918,
+        "top_net_wallet_accum_window": "0x66b43362c2db730f3f888736ea354d9d75261473",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 9999.999999,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x66b43362c2db730f3f888736ea354d9d75261473",
+        "top_wallet_notional_accum_window": 9999.999999,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 26022.133799,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "11631590502751337995086584451805403545770829549632613492416833230270784409909",
+        "condition_id": "0xabb86b080e9858dcb3f46954010e49b6f539c20036856c7f999395bfd58d01e6",
+        "event_slug": "us-strikes-iran-by",
+        "name": "apset9",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.5947095095078595,
+        "proxy_wallet": "0x66b43362c2db730f3f888736ea354d9d75261473",
+        "pseudonym": "Untidy-Gain",
+        "side": "BUY",
+        "size": 16814.932062,
+        "slug": "us-strikes-iran-by-january-31-2026-165-644-953-482-164-893-945",
+        "timestamp": 1768455190,
+        "title": "US strikes Iran by January 31, 2026?",
+        "trade_id": "b1424d29475b3c7020954c2b5b9f2d5762e84848dd9af8e07d3c15d175a7f907",
+        "transaction_hash": "0x39ea584e6000443e2e2f7685c46f7e7a96c41560ae27aff3de25717ff04dfd22"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-strikes-iran-by-january-31-2026-165-644-953-482-164-893-945",
+      "wallet_stats": {
+        "avg_notional_7d": 9999.999999,
+        "first_seen_ts": 1768455190,
+        "proxy_wallet": "0x66b43362c2db730f3f888736ea354d9d75261473",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x64b14a09a6cf9dc02b840bc83f4dcfd41ca6108544c47ecabc6e5d00bc15fd2e",
+        "liquidity_num": 271359.7591,
+        "outcome_prices": [
+          0.245,
+          0.755
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US strikes Iran by January 14, 2026?",
+        "slug": "us-strikes-iran-by-january-14-2026-913",
+        "volume24hr": 1458781.1898529984
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 39081.437995,
+        "price_range_accum_window": 0.047334509027907146,
+        "price_range_fast_window": 0.1273345089575071,
+        "top_net_wallet_accum_window": "0x6f4394c1fa596ac734fba65771d4e91edaeaa080",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 18362.319997000002,
+        "top_net_wallet_share_of_market_accum_window": 0.5387777358049368,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x6f4394c1fa596ac734fba65771d4e91edaeaa080",
+        "top_wallet_notional_accum_window": 18362.319997000002,
+        "top_wallet_share_accum_window": 0.5387777358049368,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 39081.437995,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 7,
+      "trade": {
+        "asset": "107466605109663553513292622306704058439964410323614615918125569795938950910295",
+        "condition_id": "0x64b14a09a6cf9dc02b840bc83f4dcfd41ca6108544c47ecabc6e5d00bc15fd2e",
+        "event_slug": "us-strikes-iran-by",
+        "name": "Sauron1",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.20052502175745188,
+        "proxy_wallet": "0x82dcb7056005621dbc1ae88da30d200c7216aa35",
+        "pseudonym": "Growling-Tambour",
+        "side": "SELL",
+        "size": 43617.24,
+        "slug": "us-strikes-iran-by-january-14-2026-913",
+        "timestamp": 1768432492,
+        "title": "US strikes Iran by January 14, 2026?",
+        "trade_id": "0477eadfa27f67146b2dfb16912c4064586328a2340224c506c3f0b859af7101",
+        "transaction_hash": "0xe67ac793650f432386494cf3ad6d5515c37cad6e5722e9193ab0507961be6b4c"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-strikes-iran-by-january-14-2026-913",
+      "wallet_stats": {
+        "avg_notional_7d": 8746.348,
+        "first_seen_ts": 1768432492,
+        "proxy_wallet": "0x82dcb7056005621dbc1ae88da30d200c7216aa35",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x45f80523af3fbd9993ca1980472895ac27ec1c52f99d04b3a83e3d67d5e89673",
+        "liquidity_num": 188085.6152,
+        "outcome_prices": [
+          0.52,
+          0.48
+        ],
+        "outcomes": [
+          "Wisconsin Badgers",
+          "Minnesota Golden Gophers"
+        ],
+        "question": "Wisconsin Badgers vs. Minnesota Golden Gophers",
+        "slug": "cbb-wisc-minnst-2026-01-13",
+        "volume24hr": 3923.5108540000006
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 35539.0781,
+        "price_range_accum_window": 0.004087039870398712,
+        "price_range_fast_window": 0.004087039870398712,
+        "top_net_wallet_accum_window": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 35539.0781,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 6,
+        "top_wallet_accum_window": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "top_wallet_notional_accum_window": 35539.0781,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 6,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 35539.0781,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "84173369974332149459621686816344220958167034876358829789515292699261601505573",
+        "condition_id": "0x45f80523af3fbd9993ca1980472895ac27ec1c52f99d04b3a83e3d67d5e89673",
+        "event_slug": "cbb-wisc-minnst-2026-01-13",
+        "name": "Latina",
+        "outcome": "Minnesota Golden Gophers",
+        "outcome_index": 1,
+        "price": 0.4859129601296013,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "pseudonym": "Impractical-Fondue",
+        "side": "BUY",
+        "size": 11111.0,
+        "slug": "cbb-wisc-minnst-2026-01-13",
+        "timestamp": 1768348634,
+        "title": "Wisconsin Badgers vs. Minnesota Golden Gophers",
+        "trade_id": "50e3ed17d1a8598b7542a5dced332c05edb062c54225c604dec14a2e3f6cd11b",
+        "transaction_hash": "0xdcf0f4d18e876e8c4f80f218ab30f0afecc40047d64459d05061206f33523dbc"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-wisc-minnst-2026-01-13",
+      "wallet_stats": {
+        "avg_notional_7d": 5923.179683333333,
+        "first_seen_ts": 1768348602,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "trades_7d": 6,
+        "trades_total": 6,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x49fb25e3312d97399df97de066fc7971c883548b87f54e9852f3c81153f05efe",
+        "liquidity_num": 7130.4042,
+        "outcome_prices": [
+          0.78,
+          0.22
+        ],
+        "outcomes": [
+          "Up",
+          "Down"
+        ],
+        "question": "Ethereum Up or Down on January 12?",
+        "slug": "ethereum-up-or-down-on-january-12",
+        "volume24hr": 230741.49075999984
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 20198.5974,
+        "price_range_accum_window": 0.3164716000000001,
+        "price_range_fast_window": 0.3164716000000001,
+        "top_net_wallet_accum_window": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18129.432,
+        "top_net_wallet_share_of_market_accum_window": 0.8975589562471304,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "top_wallet_notional_accum_window": 18129.432,
+        "top_wallet_share_accum_window": 0.8975589562471304,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 20198.5974,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "30616119969379487621197211350858194023607791590528793845616416029907273137559",
+        "condition_id": "0x49fb25e3312d97399df97de066fc7971c883548b87f54e9852f3c81153f05efe",
+        "event_slug": "ethereum-up-or-down-on-january-12",
+        "name": "IsraeliCowboy",
+        "outcome": "Up",
+        "outcome_index": 0,
+        "price": 0.9064716,
+        "proxy_wallet": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "pseudonym": "Mealy-Itinerary",
+        "side": "BUY",
+        "size": 20000.0,
+        "slug": "ethereum-up-or-down-on-january-12",
+        "timestamp": 1768237205,
+        "title": "Ethereum Up or Down on January 12?",
+        "trade_id": "673d2063ac38a5bee4da89737a9cfe4aaca7236347458877360fd00eda946d5c",
+        "transaction_hash": "0x40e8f46239fe3f7187552a738a7b2dc822460bf21cc5dce586a61480d9fcb7dc"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/ethereum-up-or-down-on-january-12",
+      "wallet_stats": {
+        "avg_notional_7d": 18129.432,
+        "first_seen_ts": 1768237205,
+        "proxy_wallet": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x50d6d3fde46f4d141a22712e2a6f356edf8cdddff04242922e806a55ba97c2a8",
+        "liquidity_num": 520197.59534,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Bills",
+          "Jaguars"
+        ],
+        "question": "Bills vs. Jaguars",
+        "slug": "nfl-buf-jax-2026-01-11",
+        "volume24hr": 3297066.9898830005
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 134140.345219,
+        "price_range_accum_window": 0.5462359590958302,
+        "price_range_fast_window": 0.5462359590958302,
+        "top_net_wallet_accum_window": "0xabb89972b21b304c1bed2bf26f35c8741ac9bba3",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 130304.34522,
+        "top_net_wallet_share_of_market_accum_window": 0.9714030853824233,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xabb89972b21b304c1bed2bf26f35c8741ac9bba3",
+        "top_wallet_notional_accum_window": 130304.34522,
+        "top_wallet_share_accum_window": 0.9714030853824233,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 134140.345219,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "13956685932830942820984529200412542483017817009782056613417904667255563287990",
+        "condition_id": "0x50d6d3fde46f4d141a22712e2a6f356edf8cdddff04242922e806a55ba97c2a8",
+        "event_slug": "nfl-buf-jax-2026-01-11",
+        "name": "Feromont",
+        "outcome": "Bills",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xabb89972b21b304c1bed2bf26f35c8741ac9bba3",
+        "pseudonym": "Enchanted-Foal",
+        "side": "SELL",
+        "size": 130434.78,
+        "slug": "nfl-buf-jax-2026-01-11",
+        "timestamp": 1768165892,
+        "title": "Bills vs. Jaguars",
+        "trade_id": "5c5ec76c4996affc3e59fbaa0cf550de8d7650a88b548a3492009dc716891cc0",
+        "transaction_hash": "0x5ac64e7e2259ffd318e62d3860d2a9282146824d5652e9bf89dd9bc515f8be43"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nfl-buf-jax-2026-01-11",
+      "wallet_stats": {
+        "avg_notional_7d": 130304.34522,
+        "first_seen_ts": 1768165892,
+        "proxy_wallet": "0xabb89972b21b304c1bed2bf26f35c8741ac9bba3",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+        "liquidity_num": 5511917.74417,
+        "outcome_prices": [
+          0.0025,
+          0.9975
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Fed decreases interest rates by 50+ bps after January 2026 meeting?",
+        "slug": "fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+        "volume24hr": 5220318.671724005
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 32948.919,
+        "price_range_accum_window": 0.0010000000000000009,
+        "price_range_fast_window": 0.0010000000000000009,
+        "top_net_wallet_accum_window": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 32948.919,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "top_wallet_notional_accum_window": 32948.919,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 32948.919,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "71478852790279095447182996049071040792010759617668969799049179229104800573786",
+        "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+        "event_slug": "fed-decision-in-january",
+        "name": "Pestle",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.998,
+        "proxy_wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "pseudonym": "Excitable-Saviour",
+        "side": "BUY",
+        "size": 21000.0,
+        "slug": "fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+        "timestamp": 1768071526,
+        "title": "Fed decreases interest rates by 50+ bps after January 2026 meeting?",
+        "trade_id": "cabe28ec84deeca1bb0d53ded71217d59474955c09a0bb3f9c7666842cee1e04",
+        "transaction_hash": "0x86ed8676f41c104854ecbf251ae6519836f0a537fac0e30f61cf20f0863b0b3c"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+      "wallet_stats": {
+        "avg_notional_7d": 17427.2879525,
+        "first_seen_ts": 1768062330,
+        "proxy_wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+        "trades_7d": 4,
+        "trades_total": 4,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xf05b12027fc9a7874ad432b11d16f8176f5f7f0e202186e545c6c672c439a0f6",
+        "liquidity_num": 78393.9505,
+        "outcome_prices": [
+          0.345,
+          0.655
+        ],
+        "outcomes": [
+          "Bucks",
+          "Lakers"
+        ],
+        "question": "Bucks vs. Lakers",
+        "slug": "nba-mil-lal-2026-01-09",
+        "volume24hr": 375287.3951719997
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 17532.819997,
+        "price_range_accum_window": 0.2757270115242987,
+        "price_range_fast_window": 0.2757270115242987,
+        "top_net_wallet_accum_window": "0xcc6385889a3466743f0ce6bd46a2b20b86d0f1c7",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 5292.299999999999,
+        "top_net_wallet_share_of_market_accum_window": 0.3018510428388333,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xcc6385889a3466743f0ce6bd46a2b20b86d0f1c7",
+        "top_wallet_notional_accum_window": 5292.299999999999,
+        "top_wallet_share_accum_window": 0.3018510428388333,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 17532.819997,
+      "reasons": [
+        "market_price_move_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 7,
+      "trade": {
+        "asset": "105814450355638048111200786537485536417634050752691201195852976437898103450505",
+        "condition_id": "0xf05b12027fc9a7874ad432b11d16f8176f5f7f0e202186e545c6c672c439a0f6",
+        "event_slug": "nba-mil-lal-2026-01-09",
+        "name": "0xFabA37f1854eBbd6a130E41d03485c0c1e2051dE-1762017765100",
+        "outcome": "Lakers",
+        "outcome_index": 1,
+        "price": 0.619478896328381,
+        "proxy_wallet": "0xfaba37f1854ebbd6a130e41d03485c0c1e2051de",
+        "pseudonym": "Baggy-Spectacles",
+        "side": "BUY",
+        "size": 6396.424515,
+        "slug": "nba-mil-lal-2026-01-09",
+        "timestamp": 1768023428,
+        "title": "Bucks vs. Lakers",
+        "trade_id": "205b9e705577b7d1d94df4bd77fb398f1ca45b70772f52eda203e8e8f1229a16",
+        "transaction_hash": "0xe60c0d2af7a3b4592ee43377f83630574225446c56ddf7dc5c98bf33ff38fdff"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mil-lal-2026-01-09",
+      "wallet_stats": {
+        "avg_notional_7d": 3962.449999,
+        "first_seen_ts": 1768023428,
+        "proxy_wallet": "0xfaba37f1854ebbd6a130e41d03485c0c1e2051de",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x0ac2ffe56e0baf504292ab168e3194febb6d0904905817a0950923cbf1e30a79",
         "liquidity_num": 257238.463,
         "outcome_prices": [
@@ -112,9 +4860,9 @@
       }
     }
   ],
-  "generated_at": 1767963023,
+  "generated_at": 1772448401,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "20852465986",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/20852465986"
+  "workflow_run_id": "22572495913",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22572495913"
 }
