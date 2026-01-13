@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x49fb25e3312d97399df97de066fc7971c883548b87f54e9852f3c81153f05efe",
+        "liquidity_num": 7130.4042,
+        "outcome_prices": [
+          0.78,
+          0.22
+        ],
+        "outcomes": [
+          "Up",
+          "Down"
+        ],
+        "question": "Ethereum Up or Down on January 12?",
+        "slug": "ethereum-up-or-down-on-january-12",
+        "volume24hr": 230741.49075999984
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 20198.5974,
+        "price_range_accum_window": 0.3164716000000001,
+        "price_range_fast_window": 0.3164716000000001,
+        "top_net_wallet_accum_window": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18129.432,
+        "top_net_wallet_share_of_market_accum_window": 0.8975589562471304,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "top_wallet_notional_accum_window": 18129.432,
+        "top_wallet_share_accum_window": 0.8975589562471304,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 20198.5974,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "30616119969379487621197211350858194023607791590528793845616416029907273137559",
+        "condition_id": "0x49fb25e3312d97399df97de066fc7971c883548b87f54e9852f3c81153f05efe",
+        "event_slug": "ethereum-up-or-down-on-january-12",
+        "name": "IsraeliCowboy",
+        "outcome": "Up",
+        "outcome_index": 0,
+        "price": 0.9064716,
+        "proxy_wallet": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "pseudonym": "Mealy-Itinerary",
+        "side": "BUY",
+        "size": 20000.0,
+        "slug": "ethereum-up-or-down-on-january-12",
+        "timestamp": 1768237205,
+        "title": "Ethereum Up or Down on January 12?",
+        "trade_id": "673d2063ac38a5bee4da89737a9cfe4aaca7236347458877360fd00eda946d5c",
+        "transaction_hash": "0x40e8f46239fe3f7187552a738a7b2dc822460bf21cc5dce586a61480d9fcb7dc"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/ethereum-up-or-down-on-january-12",
+      "wallet_stats": {
+        "avg_notional_7d": 18129.432,
+        "first_seen_ts": 1768237205,
+        "proxy_wallet": "0xb77b6ef359f02192fb077227499f9f853d4870a5",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x50d6d3fde46f4d141a22712e2a6f356edf8cdddff04242922e806a55ba97c2a8",
         "liquidity_num": 520197.59534,
         "outcome_prices": [
@@ -332,9 +404,9 @@
       }
     }
   ],
-  "generated_at": 1768219227,
+  "generated_at": 1768270937,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "20918570657",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/20918570657"
+  "workflow_run_id": "20942278459",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/20942278459"
 }
