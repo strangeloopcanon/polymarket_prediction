@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x45f80523af3fbd9993ca1980472895ac27ec1c52f99d04b3a83e3d67d5e89673",
+        "liquidity_num": 188085.6152,
+        "outcome_prices": [
+          0.52,
+          0.48
+        ],
+        "outcomes": [
+          "Wisconsin Badgers",
+          "Minnesota Golden Gophers"
+        ],
+        "question": "Wisconsin Badgers vs. Minnesota Golden Gophers",
+        "slug": "cbb-wisc-minnst-2026-01-13",
+        "volume24hr": 3923.5108540000006
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 35539.0781,
+        "price_range_accum_window": 0.004087039870398712,
+        "price_range_fast_window": 0.004087039870398712,
+        "top_net_wallet_accum_window": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 35539.0781,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 6,
+        "top_wallet_accum_window": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "top_wallet_notional_accum_window": 35539.0781,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 6,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 35539.0781,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "84173369974332149459621686816344220958167034876358829789515292699261601505573",
+        "condition_id": "0x45f80523af3fbd9993ca1980472895ac27ec1c52f99d04b3a83e3d67d5e89673",
+        "event_slug": "cbb-wisc-minnst-2026-01-13",
+        "name": "Latina",
+        "outcome": "Minnesota Golden Gophers",
+        "outcome_index": 1,
+        "price": 0.4859129601296013,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "pseudonym": "Impractical-Fondue",
+        "side": "BUY",
+        "size": 11111.0,
+        "slug": "cbb-wisc-minnst-2026-01-13",
+        "timestamp": 1768348634,
+        "title": "Wisconsin Badgers vs. Minnesota Golden Gophers",
+        "trade_id": "50e3ed17d1a8598b7542a5dced332c05edb062c54225c604dec14a2e3f6cd11b",
+        "transaction_hash": "0xdcf0f4d18e876e8c4f80f218ab30f0afecc40047d64459d05061206f33523dbc"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-wisc-minnst-2026-01-13",
+      "wallet_stats": {
+        "avg_notional_7d": 5923.179683333333,
+        "first_seen_ts": 1768348602,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "trades_7d": 6,
+        "trades_total": 6,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x49fb25e3312d97399df97de066fc7971c883548b87f54e9852f3c81153f05efe",
         "liquidity_num": 7130.4042,
         "outcome_prices": [
@@ -404,9 +478,9 @@
       }
     }
   ],
-  "generated_at": 1768309624,
+  "generated_at": 1768357778,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "20957835397",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/20957835397"
+  "workflow_run_id": "20980146783",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/20980146783"
 }
