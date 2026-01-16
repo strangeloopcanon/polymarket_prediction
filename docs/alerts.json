@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
+        "liquidity_num": 75019.7973,
+        "outcome_prices": [
+          0.16,
+          0.84
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Trump out as President before 2027?",
+        "slug": "trump-out-as-president-before-2027",
+        "volume24hr": 49896.096126000004
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 100016.669998,
+        "price_range_accum_window": 0.04069156019103293,
+        "price_range_fast_window": 0.04069156019103293,
+        "top_net_wallet_accum_window": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 100016.669998,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "top_wallet_notional_accum_window": 100016.669998,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 100016.669998,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "2849827372590072151380088930233312280478318575453624773762283369907909283027",
+        "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
+        "event_slug": "trump-out-as-president-before-2027",
+        "name": "RomkaMoon",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.8620262305047875,
+        "proxy_wallet": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "pseudonym": "Bruised-Hybridisation",
+        "side": "BUY",
+        "size": 49151.17,
+        "slug": "trump-out-as-president-before-2027",
+        "timestamp": 1768490332,
+        "title": "Trump out as President before 2027?",
+        "trade_id": "f474d48f50d0fd5ffc14f1787bcbd90819fb7d19e3df9c754024f8fd4f8dd5fb",
+        "transaction_hash": "0xa647d611b546e562a2f6d1eb6aebe05c7cab0debbfd08af481ab20ef0dd6e3d9"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/trump-out-as-president-before-2027",
+      "wallet_stats": {
+        "avg_notional_7d": 50008.334999,
+        "first_seen_ts": 1768490332,
+        "proxy_wallet": "0x07a9bf6d9a913df0e149bb2d652998b57fd832c8",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xabb86b080e9858dcb3f46954010e49b6f539c20036856c7f999395bfd58d01e6",
         "liquidity_num": 95917.9472,
         "outcome_prices": [
@@ -623,9 +696,9 @@
       }
     }
   ],
-  "generated_at": 1768478434,
+  "generated_at": 1768526570,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21030535537",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21030535537"
+  "workflow_run_id": "21052305160",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21052305160"
 }
