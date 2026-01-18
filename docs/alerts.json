@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x38573c3d92bb832d31b70771006ec88075683bb231424eab994c2318be5c4044",
+        "liquidity_num": 57612.36757,
+        "outcome_prices": [
+          0.3245,
+          0.6755
+        ],
+        "outcomes": [
+          "Timberwolves",
+          "Spurs"
+        ],
+        "question": "Timberwolves vs. Spurs",
+        "slug": "nba-min-sas-2026-01-17",
+        "volume24hr": 559821.5234899998
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27371.965947,
+        "price_range_accum_window": 0.3779238739075589,
+        "price_range_fast_window": 0.3779238739075589,
+        "top_net_wallet_accum_window": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 15599.189997000001,
+        "top_net_wallet_share_of_market_accum_window": 0.6150623350570813,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "top_wallet_notional_accum_window": 15599.189997000001,
+        "top_wallet_share_accum_window": 0.6150623350570813,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 27371.965947,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "51491941925235610341195475147029791786684953847583702976427318143187755620417",
+        "condition_id": "0x38573c3d92bb832d31b70771006ec88075683bb231424eab994c2318be5c4044",
+        "event_slug": "nba-min-sas-2026-01-17",
+        "name": "hanlunzhang",
+        "outcome": "Spurs",
+        "outcome_index": 1,
+        "price": 0.9779238739075589,
+        "proxy_wallet": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "pseudonym": "Outrageous-Craft",
+        "side": "BUY",
+        "size": 15951.33365,
+        "slug": "nba-min-sas-2026-01-17",
+        "timestamp": 1768706710,
+        "title": "Timberwolves vs. Spurs",
+        "trade_id": "58dd747d9ebf903622e4e08f68858bbef316045baf8f9859d0cc44ba0ce120fd",
+        "transaction_hash": "0xe46b805b02367e64952da9db7d79f379cc989c05a690e190635ce2872d1fc99d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-min-sas-2026-01-17",
+      "wallet_stats": {
+        "avg_notional_7d": 15599.189997000001,
+        "first_seen_ts": 1768706710,
+        "proxy_wallet": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x746f66fb1859ce9f795b0bbe0b4fede7666bfe4de95b2aa280296b25f763deee",
         "liquidity_num": 140191.6117,
         "outcome_prices": [
@@ -841,9 +915,9 @@
       }
     }
   ],
-  "generated_at": 1768700355,
+  "generated_at": 1768740992,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21104036411",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21104036411"
+  "workflow_run_id": "21112092605",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21112092605"
 }
