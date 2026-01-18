@@ -2,6 +2,151 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x746f66fb1859ce9f795b0bbe0b4fede7666bfe4de95b2aa280296b25f763deee",
+        "liquidity_num": 140191.6117,
+        "outcome_prices": [
+          0.6,
+          0.4
+        ],
+        "outcomes": [
+          "Bills",
+          "Broncos"
+        ],
+        "question": "Bills vs. Broncos",
+        "slug": "nfl-buf-den-2026-01-17",
+        "volume24hr": 1212786.7972470087
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 16546.840098,
+        "price_range_accum_window": 0.17000000002464422,
+        "price_range_fast_window": 0.17000000002464422,
+        "top_net_wallet_accum_window": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 4708.52,
+        "top_net_wallet_share_of_market_accum_window": 0.2845570496912649,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
+        "top_wallet_notional_accum_window": 4708.52,
+        "top_wallet_share_accum_window": 0.2845570496912649,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 16546.840098,
+      "reasons": [
+        "market_price_move_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 7,
+      "trade": {
+        "asset": "59971444048982820090749128753331211858318529324980291176754797725178535217659",
+        "condition_id": "0x746f66fb1859ce9f795b0bbe0b4fede7666bfe4de95b2aa280296b25f763deee",
+        "event_slug": "nfl-buf-den-2026-01-17",
+        "name": "mterr18",
+        "outcome": "Bills",
+        "outcome_index": 0,
+        "price": 0.64,
+        "proxy_wallet": "0x7b2f099176bb5552540751f8857ec27b04fa3531",
+        "pseudonym": "Puzzling-Seaplane",
+        "side": "BUY",
+        "size": 4853.4,
+        "slug": "nfl-buf-den-2026-01-17",
+        "timestamp": 1768687912,
+        "title": "Bills vs. Broncos",
+        "trade_id": "7a1689922ca2faf2274754e7c01bd7137482ef350aea3b0da38292b7e1b27055",
+        "transaction_hash": "0x9fb7b0df6917390476324a030dabadf00a1d7cd2264c06f1a9e4e4158943cb23"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nfl-buf-den-2026-01-17",
+      "wallet_stats": {
+        "avg_notional_7d": 3106.176,
+        "first_seen_ts": 1768687912,
+        "proxy_wallet": "0x7b2f099176bb5552540751f8857ec27b04fa3531",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x011de01e618d6f40008b76faecb7808d61fd75529aeafa06c66450024864d3ee",
+        "liquidity_num": 974894.98646,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Manchester City FC win on 2026-01-17?",
+        "slug": "epl-mun-mac-2026-01-17-mac",
+        "volume24hr": 912299.2992869995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21476.402109,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.4793263550511392,
+        "top_net_wallet_accum_window": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 11476.402109999999,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "top_wallet_notional_accum_window": 11476.402109999999,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21476.402109,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "51242892360171801116750756416604557873739020827431771326901207405849528484536",
+        "condition_id": "0x011de01e618d6f40008b76faecb7808d61fd75529aeafa06c66450024864d3ee",
+        "event_slug": "epl-mun-mac-2026-01-17",
+        "name": "0x20D6436849F930584892730C7F96eBB2Ac763856-1768642056357",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "pseudonym": "Shrill-Aunt",
+        "side": "SELL",
+        "size": 11487.89,
+        "slug": "epl-mun-mac-2026-01-17-mac",
+        "timestamp": 1768661474,
+        "title": "Will Manchester City FC win on 2026-01-17?",
+        "trade_id": "06141ac680bd66569092d516ea191c5c12e2ca70dc3acf92b76115c74f0703c0",
+        "transaction_hash": "0xfcc24ae0dec81129c73ed970c3f9da13e76a0b261a84dcf9271f7ab3f4b225f8"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-mun-mac-2026-01-17-mac",
+      "wallet_stats": {
+        "avg_notional_7d": 11476.402109999999,
+        "first_seen_ts": 1768661474,
+        "proxy_wallet": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
         "liquidity_num": 75019.7973,
         "outcome_prices": [
@@ -696,9 +841,9 @@
       }
     }
   ],
-  "generated_at": 1768654571,
+  "generated_at": 1768700355,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21094617589",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21094617589"
+  "workflow_run_id": "21104036411",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21104036411"
 }
