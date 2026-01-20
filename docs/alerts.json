@@ -2,6 +2,151 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x77283a70c8d14270d6b708c07c59cfe1841e3dcd666c4aa02b113f08fd27213d",
+        "liquidity_num": 133436.8492,
+        "outcome_prices": [
+          0.92,
+          0.08
+        ],
+        "outcomes": [
+          "Thunder",
+          "Cavaliers"
+        ],
+        "question": "Thunder vs. Cavaliers",
+        "slug": "nba-okc-cle-2026-01-19",
+        "volume24hr": 353403.00124000036
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 16961.899901,
+        "price_range_accum_window": 0.33000000000000007,
+        "price_range_fast_window": 0.33000000000000007,
+        "top_net_wallet_accum_window": "0x1f789eb1a5ff2da596241d43e1d40b41f8e6bbe8",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 4631.309991,
+        "top_net_wallet_share_of_market_accum_window": 0.2730419362236042,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x1f789eb1a5ff2da596241d43e1d40b41f8e6bbe8",
+        "top_wallet_notional_accum_window": 4631.309991,
+        "top_wallet_share_accum_window": 0.2730419362236042,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 16961.899901,
+      "reasons": [
+        "market_price_move_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 7,
+      "trade": {
+        "asset": "85586162052458928153097852273134698465879472186070103893126584027098527896672",
+        "condition_id": "0x77283a70c8d14270d6b708c07c59cfe1841e3dcd666c4aa02b113f08fd27213d",
+        "event_slug": "nba-okc-cle-2026-01-19",
+        "name": "hanlunzhang",
+        "outcome": "Thunder",
+        "outcome_index": 0,
+        "price": 0.9899999998983087,
+        "proxy_wallet": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "pseudonym": "Outrageous-Craft",
+        "side": "BUY",
+        "size": 2556.757574,
+        "slug": "nba-okc-cle-2026-01-19",
+        "timestamp": 1768858766,
+        "title": "Thunder vs. Cavaliers",
+        "trade_id": "a5685bad11aa3b94c80a110cc897b1d0c33b5eda23470f0f9c2e300990bfccb4",
+        "transaction_hash": "0xb739b4a56105f0a551de13aa18a8b60e2b9471995eeb8cb12a1fae15ff964551"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-okc-cle-2026-01-19",
+      "wallet_stats": {
+        "avg_notional_7d": 6547.49058625,
+        "first_seen_ts": 1768706710,
+        "proxy_wallet": "0xf691f591c22106e1b976d5dd73689f5a5dfbef99",
+        "trades_7d": 4,
+        "trades_total": 4,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 4
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x702e0c0736e1f0f44f1ff42037fc876b02be7ac64690879df67008c204986857",
+        "liquidity_num": 2259791.8669,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Bucks",
+          "Hawks"
+        ],
+        "question": "Bucks vs. Hawks",
+        "slug": "nba-mil-atl-2026-01-19",
+        "volume24hr": 591902.1248590003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 46499.64578,
+        "price_range_accum_window": 0.339898119581757,
+        "price_range_fast_window": 0.339898119581757,
+        "top_net_wallet_accum_window": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 35646.53778,
+        "top_net_wallet_share_of_market_accum_window": 0.7665980499862638,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "top_wallet_notional_accum_window": 35646.53778,
+        "top_wallet_share_accum_window": 0.7665980499862638,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 46499.64578,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "79953150680837162532137605828382592220196479931285240613170341563418148527733",
+        "condition_id": "0x702e0c0736e1f0f44f1ff42037fc876b02be7ac64690879df67008c204986857",
+        "event_slug": "nba-mil-atl-2026-01-19",
+        "name": "98percentloser",
+        "outcome": "Bucks",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "pseudonym": "Wicked-Output",
+        "side": "SELL",
+        "size": 35682.22,
+        "slug": "nba-mil-atl-2026-01-19",
+        "timestamp": 1768855980,
+        "title": "Bucks vs. Hawks",
+        "trade_id": "661d87adeb470be9ca24a9d19dece7400b58af240afcf4f37b3918633631aa7d",
+        "transaction_hash": "0x322b952fcbaf0a7d03dd17001a96b74f283841a81fc611d77f1e5f0150ad0b73"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mil-atl-2026-01-19",
+      "wallet_stats": {
+        "avg_notional_7d": 35646.53778,
+        "first_seen_ts": 1768855980,
+        "proxy_wallet": "0x30ae3992180b30b791df5e6e5480629449594318",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x207995ff48217719db39a7769cfda4f8f11ba9320e6ec71371095267a22de39a",
         "liquidity_num": 705951.1056,
         "outcome_prices": [
@@ -1210,9 +1355,9 @@
       }
     }
   ],
-  "generated_at": 1768826202,
+  "generated_at": 1768872438,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21137714340",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21137714340"
+  "workflow_run_id": "21156348521",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21156348521"
 }
