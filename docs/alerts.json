@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xa650efeeb4b5bbd0ee96910df487a1b96f16456fdace101adddf213d3c34f2dc",
+        "liquidity_num": 73657.8746,
+        "outcome_prices": [
+          0.155,
+          0.845
+        ],
+        "outcomes": [
+          "Clippers",
+          "Bulls"
+        ],
+        "question": "Clippers vs. Bulls",
+        "slug": "nba-lac-chi-2026-01-20",
+        "volume24hr": 857092.2939750022
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21699.191598,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.2700000001056474,
+        "top_net_wallet_accum_window": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19521.191600000002,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "top_wallet_notional_accum_window": 19521.191600000002,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21699.191598,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "98460775796116008085555714166765054825961577301924446058408674780459442144744",
+        "condition_id": "0xa650efeeb4b5bbd0ee96910df487a1b96f16456fdace101adddf213d3c34f2dc",
+        "event_slug": "nba-lac-chi-2026-01-20",
+        "name": "Momentumtrades",
+        "outcome": "Bulls",
+        "outcome_index": 1,
+        "price": 0.86,
+        "proxy_wallet": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "pseudonym": "Alert-Carrot",
+        "side": "BUY",
+        "size": 22699.06,
+        "slug": "nba-lac-chi-2026-01-20",
+        "timestamp": 1768960702,
+        "title": "Clippers vs. Bulls",
+        "trade_id": "a00d13c954a90450f1ba528f284b2a7f827937090bfb5ce441fc303d88937f94",
+        "transaction_hash": "0x3d6ba1c0ced48dda724e62768404f5a9a5e10ded112f78d57dab804a3f40d99f"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-lac-chi-2026-01-20",
+      "wallet_stats": {
+        "avg_notional_7d": 19521.191600000002,
+        "first_seen_ts": 1768960702,
+        "proxy_wallet": "0x832d13d39011acf2da1b8e56182b0961d02fd420",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x77283a70c8d14270d6b708c07c59cfe1841e3dcd666c4aa02b113f08fd27213d",
         "liquidity_num": 133436.8492,
         "outcome_prices": [
@@ -1355,9 +1427,9 @@
       }
     }
   ],
-  "generated_at": 1768914604,
-  "new_alerts": 0,
+  "generated_at": 1768960742,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21172697351",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21172697351"
+  "workflow_run_id": "21194415572",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21194415572"
 }
