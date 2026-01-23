@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x39504cbc120a8092f5df3d0ba612976a0d97a7aa2b699e73fae49010cbc31f1d",
+        "liquidity_num": 105579.43433,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will the US next strike Iran on January 21, 2026 (ET)?",
+        "slug": "will-the-us-next-strike-iran-on-january-21-2026-et-774",
+        "volume24hr": 299106.40525899996
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 44955.0,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 44955.0,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "top_wallet_notional_accum_window": 44955.0,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 44955.0,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "63388457263324141525857929671932549855961962010728135756149984345636847346975",
+        "condition_id": "0x39504cbc120a8092f5df3d0ba612976a0d97a7aa2b699e73fae49010cbc31f1d",
+        "event_slug": "us-next-strikes-iran-on",
+        "name": "hersodolphi",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "pseudonym": "Genuine-Centre",
+        "side": "SELL",
+        "size": 35000.0,
+        "slug": "will-the-us-next-strike-iran-on-january-21-2026-et-774",
+        "timestamp": 1769111426,
+        "title": "Will the US next strike Iran on January 21, 2026 (ET)?",
+        "trade_id": "28f0bc3b418b048dc0e26c25818e70828260a40a0e5ee91747ed804467fd933f",
+        "transaction_hash": "0xceab354671566d0a1018cb3b3ea4caed9487d2c1c4620fd3c6fc43b3b69de569"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-the-us-next-strike-iran-on-january-21-2026-et-774",
+      "wallet_stats": {
+        "avg_notional_7d": 22477.5,
+        "first_seen_ts": 1769111414,
+        "proxy_wallet": "0x7d3a81f7c2490d7eecb74893e69a36c0b4d8d8b8",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x98d1aaf1514d3e2fca35c3fc218e3697c80e7227fbb3b56137e6c8a5dc1882fe",
         "liquidity_num": 131354.75546,
         "outcome_prices": [
@@ -1571,9 +1645,9 @@
       }
     }
   ],
-  "generated_at": 1769086053,
+  "generated_at": 1769126409,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21249008749",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21249008749"
+  "workflow_run_id": "21269320885",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21269320885"
 }
