@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x49ddf726e689bbecaa326c68d5be5a50ab14ff24c327fa86f0ead6a25c671bff",
+        "liquidity_num": 699692.14992,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Internazionale Milano win on 2026-01-23?",
+        "slug": "sea-int-pis-2026-01-23-int",
+        "volume24hr": 115886.90455700007
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 90932.25506899999,
+        "price_range_accum_window": 0.46398570194181055,
+        "price_range_fast_window": 0.46398570194181055,
+        "top_net_wallet_accum_window": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 77267.58506999999,
+        "top_net_wallet_share_of_market_accum_window": 0.8497269204570901,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "top_wallet_notional_accum_window": 77267.58506999999,
+        "top_wallet_share_accum_window": 0.8497269204570901,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 90932.25506899999,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "87346582767305511121676819406989808447001352679671273656682639899072985944860",
+        "condition_id": "0x49ddf726e689bbecaa326c68d5be5a50ab14ff24c327fa86f0ead6a25c671bff",
+        "event_slug": "sea-int-pis-2026-01-23",
+        "name": "joosangyoo",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "pseudonym": "Puny-Tenor",
+        "side": "SELL",
+        "size": 77344.93,
+        "slug": "sea-int-pis-2026-01-23-int",
+        "timestamp": 1769210938,
+        "title": "Will FC Internazionale Milano win on 2026-01-23?",
+        "trade_id": "3609e2202a59e07ad93c2a90060102fe27611ddc8189c78120747b728b3f9cff",
+        "transaction_hash": "0x5bc69fdafece5eb96daede7f7dae0f4f9b9dedc625f8ba751b1d20c1effaa18f"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/sea-int-pis-2026-01-23-int",
+      "wallet_stats": {
+        "avg_notional_7d": 45133.79253499999,
+        "first_seen_ts": 1768865606,
+        "proxy_wallet": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x39504cbc120a8092f5df3d0ba612976a0d97a7aa2b699e73fae49010cbc31f1d",
         "liquidity_num": 105579.43433,
         "outcome_prices": [
@@ -1645,9 +1717,9 @@
       }
     }
   ],
-  "generated_at": 1769171251,
+  "generated_at": 1769212841,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21286134015",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21286134015"
+  "workflow_run_id": "21305244498",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21305244498"
 }
