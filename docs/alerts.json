@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xcb2d9749e46835cd13476a8501ac9190202d10be47842f6ad21c754677da5cf4",
+        "liquidity_num": 92019.2755,
+        "outcome_prices": [
+          0.46,
+          0.54
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Bucks"
+        ],
+        "question": "Nuggets vs. Bucks",
+        "slug": "nba-den-mil-2026-01-23",
+        "volume24hr": 1071278.4971589977
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 26192.751898,
+        "price_range_accum_window": 0.012753615043561872,
+        "price_range_fast_window": 0.15999999999999992,
+        "top_net_wallet_accum_window": "0xebc0df15e665da95bf819105b723ae90042ffa41",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 6835.7121,
+        "top_net_wallet_share_of_market_accum_window": 0.6308502881532677,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xebc0df15e665da95bf819105b723ae90042ffa41",
+        "top_wallet_notional_accum_window": 6835.7121,
+        "top_wallet_share_accum_window": 0.6308502881532677,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 6
+      },
+      "notional": 26192.751898,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "67365221192487855696414861274137015318796719701676881313441017147523166672336",
+        "condition_id": "0xcb2d9749e46835cd13476a8501ac9190202d10be47842f6ad21c754677da5cf4",
+        "event_slug": "nba-den-mil-2026-01-23",
+        "name": "laodi666",
+        "outcome": "Bucks",
+        "outcome_index": 1,
+        "price": 0.5427536150435619,
+        "proxy_wallet": "0x6e12ee3679f3c7777f95331c367e3ef374aa20e9",
+        "pseudonym": "Frail-Saving",
+        "side": "BUY",
+        "size": 7369.826544,
+        "slug": "nba-den-mil-2026-01-23",
+        "timestamp": 1769226346,
+        "title": "Nuggets vs. Bucks",
+        "trade_id": "66d1760b7331f67abc0ceee242cd989d0f9de7d80500834df4878a690e6c8060",
+        "transaction_hash": "0x19438b0499011f51d53c4d6617fe337710799f641a82498e93457516c9ff6bfa"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-mil-2026-01-23",
+      "wallet_stats": {
+        "avg_notional_7d": 3499.999999,
+        "first_seen_ts": 1769091432,
+        "proxy_wallet": "0x6e12ee3679f3c7777f95331c367e3ef374aa20e9",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x49ddf726e689bbecaa326c68d5be5a50ab14ff24c327fa86f0ead6a25c671bff",
         "liquidity_num": 699692.14992,
         "outcome_prices": [
@@ -1717,9 +1789,9 @@
       }
     }
   ],
-  "generated_at": 1769212841,
+  "generated_at": 1769259571,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21305244498",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21305244498"
+  "workflow_run_id": "21315477140",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21315477140"
 }
