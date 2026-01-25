@@ -2,6 +2,370 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xc1028d76a55fc04cc798c79e486b339146d87215e7fc40a03669529b46b7c0b6",
+        "liquidity_num": 15452.24128,
+        "outcome_prices": [
+          0.003,
+          0.997
+        ],
+        "outcomes": [
+          "Lightning",
+          "Blue Jackets"
+        ],
+        "question": "Lightning vs. Blue Jackets",
+        "slug": "nhl-tb-cbj-2026-01-24",
+        "volume24hr": 542222.7719749997
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 38404.86453,
+        "price_range_accum_window": 0.539,
+        "price_range_fast_window": 0.539,
+        "top_net_wallet_accum_window": "0xaa075924e1dc7cff3b9fab67401126338c4d2125",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 23414.4,
+        "top_net_wallet_share_of_market_accum_window": 0.6096727663681725,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xaa075924e1dc7cff3b9fab67401126338c4d2125",
+        "top_wallet_notional_accum_window": 23414.4,
+        "top_wallet_share_accum_window": 0.6096727663681725,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 38404.86453,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "47350953729079297502743167149157929033561233194810012464239943959465093285819",
+        "condition_id": "0xc1028d76a55fc04cc798c79e486b339146d87215e7fc40a03669529b46b7c0b6",
+        "event_slug": "nhl-tb-cbj-2026-01-24",
+        "name": "BoringPunter",
+        "outcome": "Blue Jackets",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0xdf1b70066e58788c7b05c53dd9cc4fd412d2b963",
+        "pseudonym": "Gracious-Movement",
+        "side": "BUY",
+        "size": 15005.47,
+        "slug": "nhl-tb-cbj-2026-01-24",
+        "timestamp": 1769308700,
+        "title": "Lightning vs. Blue Jackets",
+        "trade_id": "e94afd25a62ef53fcd0cf6e6e0f378166cb76299cbd526bbbe0312876079272a",
+        "transaction_hash": "0xd2b2845fcacf86604ac7cb8c58f1426a02df5a6978e51594e885d9cf65e68794"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nhl-tb-cbj-2026-01-24",
+      "wallet_stats": {
+        "avg_notional_7d": 18393.6548525,
+        "first_seen_ts": 1768838418,
+        "proxy_wallet": "0xdf1b70066e58788c7b05c53dd9cc4fd412d2b963",
+        "trades_7d": 4,
+        "trades_total": 4,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 8
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x395be77c2c7579c2b15c86e635285d5fe0187fa6d6cf42682adc7078533c7583",
+        "liquidity_num": 16401.8418,
+        "outcome_prices": [
+          0.445,
+          0.555
+        ],
+        "outcomes": [
+          "Alabama Crimson Tide",
+          "Tennessee Volunteers"
+        ],
+        "question": "Spread: Alabama Crimson Tide (-5.5)",
+        "slug": "cbb-tenn-ala-2026-01-24-spread-home-5pt5",
+        "volume24hr": null
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 31666.35,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x1af1dfc2c523af1d7551597c985277cd11b30f7b",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 31666.35,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 5,
+        "top_wallet_accum_window": "0x1af1dfc2c523af1d7551597c985277cd11b30f7b",
+        "top_wallet_notional_accum_window": 31666.35,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 5,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 31666.35,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "59383676185569473636802916633192852994280042328489757397918205792886301743369",
+        "condition_id": "0x395be77c2c7579c2b15c86e635285d5fe0187fa6d6cf42682adc7078533c7583",
+        "event_slug": "cbb-tenn-ala-2026-01-24",
+        "name": "Pimping",
+        "outcome": "Tennessee Volunteers",
+        "outcome_index": 1,
+        "price": 0.57,
+        "proxy_wallet": "0x1af1dfc2c523af1d7551597c985277cd11b30f7b",
+        "pseudonym": "Failing-Lapdog",
+        "side": "BUY",
+        "size": 11111.0,
+        "slug": "cbb-tenn-ala-2026-01-24-spread-home-5pt5",
+        "timestamp": 1769298344,
+        "title": "Spread: Alabama Crimson Tide (-5.5)",
+        "trade_id": "72d7f56d944ca7d2f02e331f7455dd97ea6bbf6eeab570032e0880f284cf1154",
+        "transaction_hash": "0x63b36c6cf49d5755eaa814190ecbc7ec390c8117edc694caad2915411067f614"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-tenn-ala-2026-01-24-spread-home-5pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 128229.590243625,
+        "first_seen_ts": 1768778736,
+        "proxy_wallet": "0x1af1dfc2c523af1d7551597c985277cd11b30f7b",
+        "trades_7d": 8,
+        "trades_total": 8,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 4
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x5a4e3ea3550c04220f2b6f785a8eb5e5d4b6c65a3f98b95cdef9602bc79adfe2",
+        "liquidity_num": 13376.0669,
+        "outcome_prices": [
+          0.525,
+          0.475
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Boston College Eagles vs. Notre Dame Fighting Irish: O/U 135.5",
+        "slug": "cbb-boscol-nd-2026-01-24-total-135pt5",
+        "volume24hr": null
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 77993.1872,
+        "price_range_accum_window": 4.101843860859766e-05,
+        "price_range_fast_window": 4.101843860859766e-05,
+        "top_net_wallet_accum_window": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 77993.1872,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "top_wallet_notional_accum_window": 77993.1872,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 77993.1872,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "65864787422491992095859871674604404373845988009163742286289690146225689396740",
+        "condition_id": "0x5a4e3ea3550c04220f2b6f785a8eb5e5d4b6c65a3f98b95cdef9602bc79adfe2",
+        "event_slug": "cbb-boscol-nd-2026-01-24",
+        "name": "DiviLungaoBBW",
+        "outcome": "Over",
+        "outcome_index": 0,
+        "price": 0.54,
+        "proxy_wallet": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "pseudonym": "Pesky-Fedora",
+        "side": "BUY",
+        "size": 120054.4,
+        "slug": "cbb-boscol-nd-2026-01-24-total-135pt5",
+        "timestamp": 1769293656,
+        "title": "Boston College Eagles vs. Notre Dame Fighting Irish: O/U 135.5",
+        "trade_id": "1baa81179c130b02573b248129a693cb3ff5741ef6c3462d1ac25692b718c17b",
+        "transaction_hash": "0x80fff7cf36c5b181cd8aad84460826770bfa04388643ec8d6a85ae13c7434824"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-boscol-nd-2026-01-24-total-135pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 38996.5936,
+        "first_seen_ts": 1769293644,
+        "proxy_wallet": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x9452b262538ead43f3fc7f05bab4aae4384b4622f865c570b78ac2af6b930c96",
+        "liquidity_num": 262764.87736,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "PARIVISION",
+          "FURIA"
+        ],
+        "question": "Counter-Strike: PARIVISION vs FURIA (BO3) - BLAST Bounty Playoffs",
+        "slug": "cs2-prv-furia-2026-01-24",
+        "volume24hr": 90983.74608200001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 130694.60138,
+        "price_range_accum_window": 0.679,
+        "price_range_fast_window": 0.679,
+        "top_net_wallet_accum_window": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 123894.60138,
+        "top_net_wallet_share_of_market_accum_window": 0.9479703068971554,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "top_wallet_notional_accum_window": 123894.60138,
+        "top_wallet_share_accum_window": 0.9479703068971554,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 130694.60138,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "31753919780919718560644826477205334094859156267009035756647404231273668061068",
+        "condition_id": "0x9452b262538ead43f3fc7f05bab4aae4384b4622f865c570b78ac2af6b930c96",
+        "event_slug": "cs2-prv-furia-2026-01-24",
+        "name": "Marktakh",
+        "outcome": "PARIVISION",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "pseudonym": "Criminal-Meatball",
+        "side": "SELL",
+        "size": 124018.62,
+        "slug": "cs2-prv-furia-2026-01-24",
+        "timestamp": 1769287420,
+        "title": "Counter-Strike: PARIVISION vs FURIA (BO3) - BLAST Bounty Playoffs",
+        "trade_id": "d5d7777f2d12153e608c98e2992d082c965476f00d72aad8980eef9d71d80193",
+        "transaction_hash": "0x46f1b3bd798b1dc93042e9575b43cb61bfbdd2597dc9abb1bdceacd477c12a53"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-prv-furia-2026-01-24",
+      "wallet_stats": {
+        "avg_notional_7d": 123894.60138,
+        "first_seen_ts": 1769287420,
+        "proxy_wallet": "0x58776759ee5c70a915138706a1308add8bc5d894",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x7eac585d9255d54e3fc1bedb17bdcd8652b3ed39743721450e42981b580ce6c4",
+        "liquidity_num": 271544.21411,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Como 1907 win on 2026-01-24?",
+        "slug": "sea-com-tor-2026-01-24-com",
+        "volume24hr": 1325991.762174
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 22465.51625,
+        "price_range_accum_window": 0.389,
+        "price_range_fast_window": 0.389,
+        "top_net_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 12351.89,
+        "top_net_wallet_share_of_market_accum_window": 0.5498155422980765,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_wallet_notional_accum_window": 12351.89,
+        "top_wallet_share_accum_window": 0.5498155422980765,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 22465.51625,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "51540017197572667659069568692290157797168127230801750360576486538453902236456",
+        "condition_id": "0x7eac585d9255d54e3fc1bedb17bdcd8652b3ed39743721450e42981b580ce6c4",
+        "event_slug": "sea-com-tor-2026-01-24",
+        "name": "0x7087CD3Bf54Eff81210EECeE5d0DAf37D708C61F-1760948659334",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x7087cd3bf54eff81210eecee5d0daf37d708c61f",
+        "pseudonym": "Unaware-Adoption",
+        "side": "SELL",
+        "size": 10123.75,
+        "slug": "sea-com-tor-2026-01-24-com",
+        "timestamp": 1769273656,
+        "title": "Will Como 1907 win on 2026-01-24?",
+        "trade_id": "4f07e9ed074349a0042fb8d4b871c79826aeecc5b83a671e838eedfe86e71c6f",
+        "transaction_hash": "0xebbe4a09e554d57d94a4f9622558a28ce3b46e8b9ed455f94a3f2f676b7a123d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/sea-com-tor-2026-01-24-com",
+      "wallet_stats": {
+        "avg_notional_7d": 10113.62625,
+        "first_seen_ts": 1769273656,
+        "proxy_wallet": "0x7087cd3bf54eff81210eecee5d0daf37d708c61f",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xcb2d9749e46835cd13476a8501ac9190202d10be47842f6ad21c754677da5cf4",
         "liquidity_num": 92019.2755,
         "outcome_prices": [
@@ -1789,9 +2153,9 @@
       }
     }
   ],
-  "generated_at": 1769259571,
-  "new_alerts": 0,
+  "generated_at": 1769308730,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21315477140",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21315477140"
+  "workflow_run_id": "21325614692",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21325614692"
 }
