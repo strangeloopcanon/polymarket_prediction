@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1fc322c68723e7d66ccf795cdb8cf229ddb02e0e44b7d92e4d7818a6a8effab1",
+        "liquidity_num": 250094.33406,
+        "outcome_prices": [
+          0.0125,
+          0.9875
+        ],
+        "outcomes": [
+          "Magic",
+          "Cavaliers"
+        ],
+        "question": "Magic vs. Cavaliers",
+        "slug": "nba-orl-cle-2026-01-26",
+        "volume24hr": 1255033.0932079982
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 134830.07584499998,
+        "price_range_accum_window": 0.34898804044942416,
+        "price_range_fast_window": 0.34898804044942416,
+        "top_net_wallet_accum_window": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 123342.57587,
+        "top_net_wallet_share_of_market_accum_window": 0.9148001667802519,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "top_wallet_notional_accum_window": 123342.57587,
+        "top_wallet_share_accum_window": 0.9148001667802519,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 134830.07584499998,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "12538008096049809260959942696355073549474960063955610419251367912602775702371",
+        "condition_id": "0x1fc322c68723e7d66ccf795cdb8cf229ddb02e0e44b7d92e4d7818a6a8effab1",
+        "event_slug": "nba-orl-cle-2026-01-26",
+        "name": "piston777",
+        "outcome": "Cavaliers",
+        "outcome_index": 1,
+        "price": 0.9989880404984242,
+        "proxy_wallet": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "pseudonym": "Excited-Reboot",
+        "side": "BUY",
+        "size": 123467.52,
+        "slug": "nba-orl-cle-2026-01-26",
+        "timestamp": 1769480975,
+        "title": "Magic vs. Cavaliers",
+        "trade_id": "92d51c92df5a9dc6f4840945b9448037e26497e404b44071537db4616cbb18a9",
+        "transaction_hash": "0xb77e1debd1b3e2f16f0bc6bad7a9f404d0593bc83efb29990755387a0b150df7"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-orl-cle-2026-01-26",
+      "wallet_stats": {
+        "avg_notional_7d": 123342.57587,
+        "first_seen_ts": 1769480975,
+        "proxy_wallet": "0x161eb16874e34f545991e774b4e1ac5b65f86ef0",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
         "liquidity_num": 5511917.74417,
         "outcome_prices": [
@@ -2372,9 +2446,9 @@
       }
     }
   ],
-  "generated_at": 1769428801,
-  "new_alerts": 0,
+  "generated_at": 1769481053,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21356869685",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21356869685"
+  "workflow_run_id": "21382237412",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21382237412"
 }
