@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xe93c89c41d1bb08d3bb40066d8565df301a696563b2542256e6e8bbbb1ec490d",
+        "liquidity_num": 1390403.24405,
+        "outcome_prices": [
+          0.9965,
+          0.0035
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "No change in Fed interest rates after January 2026 meeting?",
+        "slug": "no-change-in-fed-interest-rates-after-january-2026-meeting",
+        "volume24hr": 20308580.03414495
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 102731.47994,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0020000000000000018,
+        "top_net_wallet_accum_window": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 94244.88459,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "top_wallet_notional_accum_window": 94244.88459,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 94244.88459,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "112838095111461683880944516726938163688341306245473734071798778736646352193304",
+        "condition_id": "0xe93c89c41d1bb08d3bb40066d8565df301a696563b2542256e6e8bbbb1ec490d",
+        "event_slug": "fed-decision-in-january",
+        "name": "xule",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.997,
+        "proxy_wallet": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "pseudonym": "Healthy-Product",
+        "side": "BUY",
+        "size": 50000.0,
+        "slug": "no-change-in-fed-interest-rates-after-january-2026-meeting",
+        "timestamp": 1769621966,
+        "title": "No change in Fed interest rates after January 2026 meeting?",
+        "trade_id": "65261e3bac685b510849e9c598858b872ce87201f874ae111ee4b69fb450ce35",
+        "transaction_hash": "0xb3db1d3b95561652d0d9d5d9cb6f6cf362275e1524f2297d8a7768ccea728961"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/no-change-in-fed-interest-rates-after-january-2026-meeting",
+      "wallet_stats": {
+        "avg_notional_7d": 47122.442295,
+        "first_seen_ts": 1769619258,
+        "proxy_wallet": "0x6e95019d16cd1592c88b7c3892c7419e28cf1218",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x70cdc92881a74fa13b6d861aae79f3b153989f29b285f234bd8be08f723812a9",
         "liquidity_num": 66968.04799,
         "outcome_prices": [
@@ -2520,9 +2594,9 @@
       }
     }
   ],
-  "generated_at": 1769604413,
+  "generated_at": 1769654724,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21438794316",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21438794316"
+  "workflow_run_id": "21463626912",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21463626912"
 }
