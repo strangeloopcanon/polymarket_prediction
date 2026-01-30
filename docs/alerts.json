@@ -2,6 +2,151 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x5078a2ad91dfa276cb4c4adef13b4fbdd851ba372eb7252760b1f6f2d2c8d949",
+        "liquidity_num": 13187.5441,
+        "outcome_prices": [
+          0.375,
+          0.625
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Olympique Lyonnais win on 2026-01-29?",
+        "slug": "uel-lyo1-pao1-2026-01-29-lyo1",
+        "volume24hr": 145718.93527300024
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 580690.1218,
+        "price_range_accum_window": 0.22328403568865435,
+        "price_range_fast_window": 0.22328403568865435,
+        "top_net_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 578635.3302,
+        "top_net_wallet_share_of_market_accum_window": 0.9964614662401512,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_wallet_notional_accum_window": 578635.3302,
+        "top_wallet_share_accum_window": 0.9964614662401512,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 580690.1218,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "79231513667392475413653161401324956729816406064352218935586387524090836835391",
+        "condition_id": "0x5078a2ad91dfa276cb4c4adef13b4fbdd851ba372eb7252760b1f6f2d2c8d949",
+        "event_slug": "uel-lyo1-pao1-2026-01-29",
+        "name": "RushiTWT",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.62,
+        "proxy_wallet": "0x70c5c900812fc38c1277ca972eb09483671e457f",
+        "pseudonym": "Bubbly-Bay",
+        "side": "BUY",
+        "size": 3314.18,
+        "slug": "uel-lyo1-pao1-2026-01-29-lyo1",
+        "timestamp": 1769719516,
+        "title": "Will Olympique Lyonnais win on 2026-01-29?",
+        "trade_id": "4994067aaf3db9fbc98166006c62c917a1b7cf4ebf6cd4387f890be194f88224",
+        "transaction_hash": "0xc1c0e3c98e2b60c245bbc56a5f5b5500a71ef62a8fcfa09a20e141a32b2a5faa"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/uel-lyo1-pao1-2026-01-29-lyo1",
+      "wallet_stats": {
+        "avg_notional_7d": 2397.9929333333334,
+        "first_seen_ts": 1769289924,
+        "proxy_wallet": "0x70c5c900812fc38c1277ca972eb09483671e457f",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x94d4faea6073ba990fbd4e83a570ec2f964c0f1f69f3ec9ec2a6ff4d9b3ebb8f",
+        "liquidity_num": 130291.613,
+        "outcome_prices": [
+          0.455,
+          0.545
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Basel 1893 win on 2026-01-29?",
+        "slug": "uel-bas1-plz1-2026-01-29-bas1",
+        "volume24hr": 45630.74822300001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27600.0,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 27600.0,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "top_wallet_notional_accum_window": 27600.0,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 27600.0,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "59996517961306981623284015200937194633662203537163578276314706074856201211173",
+        "condition_id": "0x94d4faea6073ba990fbd4e83a570ec2f964c0f1f69f3ec9ec2a6ff4d9b3ebb8f",
+        "event_slug": "uel-bas1-plz1-2026-01-29",
+        "name": "EchoNoice",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.46,
+        "proxy_wallet": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "pseudonym": "Prestigious-Incarnation",
+        "side": "BUY",
+        "size": 30000.0,
+        "slug": "uel-bas1-plz1-2026-01-29-bas1",
+        "timestamp": 1769715546,
+        "title": "Will FC Basel 1893 win on 2026-01-29?",
+        "trade_id": "4b205e467a2978ec554fef6d5b515e57d4dcdd7b54d6108b135f000182e017f2",
+        "transaction_hash": "0xc336b0faf1dd44f5e1e351d38a1b362504e287062857511765e32139a75446d4"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/uel-bas1-plz1-2026-01-29-bas1",
+      "wallet_stats": {
+        "avg_notional_7d": 13800.0,
+        "first_seen_ts": 1769715538,
+        "proxy_wallet": "0xbf227981b81829047d785dc4b06ac07330fafc16",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xe93c89c41d1bb08d3bb40066d8565df301a696563b2542256e6e8bbbb1ec490d",
         "liquidity_num": 1390403.24405,
         "outcome_prices": [
@@ -2594,9 +2739,9 @@
       }
     }
   ],
-  "generated_at": 1769688120,
+  "generated_at": 1769731266,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21477352355",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21477352355"
+  "workflow_run_id": "21499189773",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21499189773"
 }
