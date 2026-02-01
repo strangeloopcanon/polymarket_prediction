@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xd8f7008eee565f248e35fd9bd92a9bbe1bb7f39bdea0ac2ed567790e6a0c3dba",
+        "liquidity_num": 156852.37331,
+        "outcome_prices": [
+          0.122,
+          0.878
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Novak Djokovic win the 2026 Australian Open?",
+        "slug": "will-novak-djokovic-win-the-2026-australian-open",
+        "volume24hr": 378711.75081500027
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 59706.96446,
+        "price_range_accum_window": 0.020031996682256414,
+        "price_range_fast_window": 0.020031996682256414,
+        "top_net_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 59706.96446,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_wallet_notional_accum_window": 59706.96446,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 59706.96446,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "39240464319959997192334542902515275409104373417950380888440834225950435786672",
+        "condition_id": "0xd8f7008eee565f248e35fd9bd92a9bbe1bb7f39bdea0ac2ed567790e6a0c3dba",
+        "event_slug": "2026-mens-australian-open-winner",
+        "name": "gmanas",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9965530986474611,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "pseudonym": "Wicked-Rap",
+        "side": "BUY",
+        "size": 38188.92,
+        "slug": "will-novak-djokovic-win-the-2026-australian-open",
+        "timestamp": 1769946488,
+        "title": "Will Novak Djokovic win the 2026 Australian Open?",
+        "trade_id": "a1939321406b513e079e3cb0401458c3e7ed61f29c11aa7a45eafe968a86b984",
+        "transaction_hash": "0xbc38a9c45ab730a6360bce7fa2f3694d73170ad7a2800b2e3f99e495fd5bb048"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-novak-djokovic-win-the-2026-australian-open",
+      "wallet_stats": {
+        "avg_notional_7d": 16409.037910000003,
+        "first_seen_ts": 1769454751,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "trades_7d": 7,
+        "trades_total": 7,
+        "unique_markets_7d": 6,
+        "unique_markets_total": 6
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x3433c070b75b8435edc8882e7707ee097da9fa12e0a2d51d56959a912c77069c",
         "liquidity_num": 1202269.85069,
         "outcome_prices": [
@@ -2812,9 +2886,9 @@
       }
     }
   ],
-  "generated_at": 1769913164,
-  "new_alerts": 1,
+  "generated_at": 1769949532,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21555081467",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21555081467"
+  "workflow_run_id": "21563021764",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21563021764"
 }
