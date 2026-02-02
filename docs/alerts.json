@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x4423b9502b64ecd9b1b76ee25d8c716ee2ccddc65a2fb9953c25cc5df4555160",
+        "liquidity_num": 398214.90735,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "FUT Esports",
+          "G2"
+        ],
+        "question": "Counter-Strike: FUT Esports vs G2 (BO3) - IEM Krakow Group A",
+        "slug": "cs2-fut-g2-2026-02-01",
+        "volume24hr": 625094.638729
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 68544.65404,
+        "price_range_accum_window": 0.439,
+        "price_range_fast_window": 0.439,
+        "top_net_wallet_accum_window": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 29969.76024,
+        "top_net_wallet_share_of_market_accum_window": 0.8504372194867,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "top_wallet_notional_accum_window": 29969.76024,
+        "top_wallet_share_accum_window": 0.8504372194867,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 68544.65404,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "87302242676391403657632386474777337511659509645839311404861297333825251898985",
+        "condition_id": "0x4423b9502b64ecd9b1b76ee25d8c716ee2ccddc65a2fb9953c25cc5df4555160",
+        "event_slug": "cs2-fut-g2-2026-02-01",
+        "name": "pikachusplace",
+        "outcome": "G2",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "pseudonym": "Violet-Stepgrandmother",
+        "side": "SELL",
+        "size": 29999.76,
+        "slug": "cs2-fut-g2-2026-02-01",
+        "timestamp": 1769973218,
+        "title": "Counter-Strike: FUT Esports vs G2 (BO3) - IEM Krakow Group A",
+        "trade_id": "009fa4c2d06e8eab1fc551ef31d33d77b7c90a3b0bec1454d0b3b331e82709d3",
+        "transaction_hash": "0x96c5685c695444c01f8ab8de397ad6b9413dd5b23ca36a541a054cbfba2de7b2"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-fut-g2-2026-02-01",
+      "wallet_stats": {
+        "avg_notional_7d": 29969.76024,
+        "first_seen_ts": 1769973218,
+        "proxy_wallet": "0x6adcccb0ea0b93a66e67f0d7b2b625b135a8beba",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xd8f7008eee565f248e35fd9bd92a9bbe1bb7f39bdea0ac2ed567790e6a0c3dba",
         "liquidity_num": 156852.37331,
         "outcome_prices": [
@@ -2886,9 +2959,9 @@
       }
     }
   ],
-  "generated_at": 1769949532,
+  "generated_at": 1769999410,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21563021764",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21563021764"
+  "workflow_run_id": "21575288246",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21575288246"
 }
