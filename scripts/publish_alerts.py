@@ -466,6 +466,11 @@ def main(argv: list[str] | None = None) -> int:
         default=40,
         help="Max pages to fetch per run (for longer polling intervals).",
     )
+    p.add_argument(
+        "--require-primary-signal",
+        action="store_true",
+        help="Only emit alerts for big price moves or big whale accumulation.",
+    )
     p.add_argument("--min-notional", type=float, default=2000.0, help="Min notional ($).")
     p.add_argument("--min-score", type=int, default=7, help="Min score to alert.")
     p.add_argument(
@@ -601,12 +606,14 @@ def main(argv: list[str] | None = None) -> int:
         reasons: list[str] = []
         fast_score = 0
         accum_score = 0
+        has_primary_signal = False
 
         fast_price_range = fast.get("price_range")
         if isinstance(fast_price_range, float):
             if fast_price_range >= 0.15:
                 fast_score += 6
                 reasons.append(f"market_price_move_{fast_label}")
+                has_primary_signal = True
             elif fast_price_range >= 0.08:
                 fast_score += 4
                 reasons.append(f"market_price_move_{fast_label}")
@@ -650,6 +657,7 @@ def main(argv: list[str] | None = None) -> int:
                 accum_score += 6
                 reasons.append(f"whale_accumulation_{accum_label}")
                 is_whale = True
+                has_primary_signal = True
             elif accum_top_net_notional >= 25_000:
                 accum_score += 4
                 reasons.append(f"whale_accumulation_{accum_label}")
@@ -667,6 +675,8 @@ def main(argv: list[str] | None = None) -> int:
                     reasons.append(f"quiet_price_{accum_label}")
 
         score = fast_score + accum_score
+        if bool(args.require_primary_signal) and not has_primary_signal:
+            continue
         if score < min_score:
             continue
 

@@ -77,6 +77,7 @@ So what: you can publish a simple webpage + JSON feed of alerts without running 
   - Each poll persists its working state to the `pmwatch-state` branch (so the next poll can build on it without spamming commits on `main`).
   - The publisher paginates recent trades (via `--max-pages`) so longer polling intervals don’t silently miss activity.
   - Twice per day, the latest state is copied to `main` and GitHub Pages updates.
+- The GitHub Pages feed is intentionally “highest signal”: big price moves and/or big whale accumulation, capped per day.
 - Publishing updates:
   - `docs/index.html` (webpage)
   - `docs/alerts.json` and `docs/alerts.jsonl` (public feeds)
