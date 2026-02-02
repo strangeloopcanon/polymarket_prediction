@@ -73,8 +73,9 @@ Notes:
 
 So what: you can publish a simple webpage + JSON feed of alerts without running servers.
 
-- GitHub Action (`.github/workflows/publish_alerts.yml`) polls every 5 minutes but only publishes to `main` twice per day (UTC):
+- GitHub Action (`.github/workflows/publish_alerts.yml`) polls every 6 hours but only publishes to `main` twice per day (UTC):
   - Each poll persists its working state to the `pmwatch-state` branch (so the next poll can build on it without spamming commits on `main`).
+  - The publisher paginates recent trades (via `--max-pages`) so longer polling intervals don’t silently miss activity.
   - Twice per day, the latest state is copied to `main` and GitHub Pages updates.
 - Publishing updates:
   - `docs/index.html` (webpage)

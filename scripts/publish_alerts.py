@@ -414,6 +414,41 @@ def _alert_to_public_dict(alert) -> dict[str, Any]:  # noqa: ANN001
     }
 
 
+def _fetch_trades(
+    client: PolymarketClient,
+    *,
+    since_ts: int,
+    page_limit: int,
+    max_pages: int,
+) -> list[Trade]:
+    page_limit = max(1, min(int(page_limit), 500))
+    max_pages = max(1, int(max_pages))
+
+    trades: list[Trade] = []
+    seen_ids: set[str] = set()
+    for page in range(max_pages):
+        offset = page * page_limit
+        chunk = client.get_recent_trades(limit=page_limit, offset=offset)
+        if not chunk:
+            break
+
+        for t in chunk:
+            if t.trade_id in seen_ids:
+                continue
+            seen_ids.add(t.trade_id)
+            trades.append(t)
+
+        if since_ts > 0:
+            try:
+                oldest_ts = min(int(t.timestamp) for t in chunk)
+            except ValueError:
+                oldest_ts = 0
+            if oldest_ts <= since_ts:
+                break
+
+    return trades
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--state", default="state/state.json", help="State JSON path (committed).")
@@ -424,7 +459,13 @@ def main(argv: list[str] | None = None) -> int:
         default="archive",
         help="Directory for append-only JSONL archives (partitioned monthly).",
     )
-    p.add_argument("--limit", type=int, default=500, help="Trades fetch limit.")
+    p.add_argument("--limit", type=int, default=500, help="Trades fetch page size (max 500).")
+    p.add_argument(
+        "--max-pages",
+        type=int,
+        default=40,
+        help="Max pages to fetch per run (for longer polling intervals).",
+    )
     p.add_argument("--min-notional", type=float, default=2000.0, help="Min notional ($).")
     p.add_argument("--min-score", type=int, default=7, help="Min score to alert.")
     p.add_argument(
@@ -480,7 +521,18 @@ def main(argv: list[str] | None = None) -> int:
     state: dict[str, Any] = _load_json(state_path, default={})
     client = PolymarketClient()
 
-    trades = client.get_recent_trades(limit=min(int(args.limit), 500), offset=0)
+    since_ts_raw = state.get("last_fetched_trade_ts")
+    try:
+        since_ts = int(since_ts_raw) if since_ts_raw is not None else 0
+    except Exception:
+        since_ts = 0
+
+    trades = _fetch_trades(
+        client,
+        since_ts=since_ts,
+        page_limit=int(args.limit),
+        max_pages=int(args.max_pages),
+    )
     trades = sorted(trades, key=lambda t: (t.timestamp, t.trade_id))
 
     now_ts = _now_ts()
@@ -528,6 +580,9 @@ def main(argv: list[str] | None = None) -> int:
             prev_w = per_wallet.get(trade.proxy_wallet)
             if prev_w is None or int(trade.timestamp) >= int(prev_w.timestamp):
                 per_wallet[trade.proxy_wallet] = trade
+
+    if trades:
+        state["last_fetched_trade_ts"] = max(int(t.timestamp) for t in trades)
 
     min_score = int(args.min_score)
     fast_label = _window_label(int(args.fast_window_seconds))
