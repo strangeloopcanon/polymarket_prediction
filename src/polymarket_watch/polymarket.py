@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 from dataclasses import dataclass
 from typing import Any, Literal
 
@@ -55,6 +56,27 @@ def _stable_trade_id(trade: dict[str, Any]) -> str:
     return digest
 
 
+def _to_float(value: Any, default: float = 0.0) -> float:
+    try:
+        out = float(value)
+    except (TypeError, ValueError):
+        return default
+    if not math.isfinite(out):
+        return default
+    return out
+
+
+def _to_int(value: Any, default: int = 0) -> int:
+    try:
+        if isinstance(value, str):
+            value = value.strip()
+            if not value:
+                return default
+        return int(float(value))
+    except (TypeError, ValueError):
+        return default
+
+
 class PolymarketClient:
     def __init__(
         self,
@@ -77,21 +99,23 @@ class PolymarketClient:
         for item in raw:
             if not isinstance(item, dict):
                 continue
+            side_raw = str(item.get("side", "")).upper()
+            side: Side = side_raw if side_raw in {"BUY", "SELL"} else "BUY"
             trades.append(
                 Trade(
                     trade_id=_stable_trade_id(item),
                     proxy_wallet=str(item.get("proxyWallet", "")),
-                    side=str(item.get("side", "")).upper(),  # type: ignore[arg-type]
+                    side=side,
                     asset=str(item.get("asset", "")),
                     condition_id=str(item.get("conditionId", "")),
-                    size=float(item.get("size", 0.0)),
-                    price=float(item.get("price", 0.0)),
-                    timestamp=int(item.get("timestamp", 0)),
+                    size=_to_float(item.get("size", 0.0)),
+                    price=_to_float(item.get("price", 0.0)),
+                    timestamp=_to_int(item.get("timestamp", 0)),
                     title=str(item.get("title", "")),
                     slug=str(item.get("slug", "")),
                     event_slug=str(item.get("eventSlug", "")),
                     outcome=str(item.get("outcome", "")),
-                    outcome_index=int(item.get("outcomeIndex", -1)),
+                    outcome_index=_to_int(item.get("outcomeIndex", -1), default=-1),
                     transaction_hash=str(item.get("transactionHash", "")),
                     name=str(item.get("name")) if item.get("name") else None,
                     pseudonym=str(item.get("pseudonym")) if item.get("pseudonym") else None,
@@ -111,12 +135,12 @@ class PolymarketClient:
             return None
 
         def _maybe_float(v: Any) -> float | None:
-            try:
-                if v is None:
-                    return None
-                return float(v)
-            except (TypeError, ValueError):
+            if v is None:
                 return None
+            out = _to_float(v, default=math.nan)
+            if not math.isfinite(out):
+                return None
+            return out
 
         outcomes_raw = item.get("outcomes", "[]")
         prices_raw = item.get("outcomePrices", "[]")
@@ -132,7 +156,10 @@ class PolymarketClient:
                 if target is outcomes:
                     target.extend([str(x) for x in parsed])
                 else:
-                    target.extend([float(x) for x in parsed if x is not None])
+                    for x in parsed:
+                        as_float = _maybe_float(x)
+                        if as_float is not None:
+                            target.append(as_float)
 
         return Market(
             condition_id=str(item.get("conditionId", condition_id)),

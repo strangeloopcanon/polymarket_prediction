@@ -237,7 +237,17 @@
         String(s || "")
           .replaceAll("&", "&amp;")
           .replaceAll("<", "&lt;")
-          .replaceAll(">", "&gt;");
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+
+      const safeUrl = (u) => {
+        try {
+          const parsed = new URL(String(u || ""), window.location.href);
+          if (parsed.protocol === "http:" || parsed.protocol === "https:") return parsed.href;
+        } catch (_) {}
+        return "about:blank";
+      };
 
       let base = null;
 
@@ -248,7 +258,7 @@
         const meta = document.getElementById("meta");
         meta.innerHTML = "";
         meta.appendChild(pill(`Last successful run: ${fmtDate(data.generated_at)}`));
-        meta.appendChild(pill("Schedule: every 6h"));
+        meta.appendChild(pill("Schedule: poll hourly, publish twice daily (UTC)"));
         if (data.workflow_run_url) {
           meta.appendChild(pillLink(`Run logs: ${data.workflow_run_id || "link"}`, data.workflow_run_url));
         }
@@ -312,7 +322,7 @@
         }
 
         const trade = td(
-          `<div><a href="${esc(a.url)}" target="_blank" rel="noreferrer">${esc(t.title || m.question || "")}</a></div>` +
+          `<div><a href="${esc(safeUrl(a.url))}" target="_blank" rel="noreferrer">${esc(t.title || m.question || "")}</a></div>` +
             `<div class="muted">side=${esc(t.side)} outcome=${esc(t.outcome)} price=${esc(t.price)} size=${esc(t.size)}</div>` +
             metricLine,
         );
@@ -422,7 +432,8 @@
 
       load().catch((e) => {
         const meta = document.getElementById("meta");
-        meta.innerHTML = `<span class="pill">Failed to load alerts.json: ${esc(e)}</span>`;
+        meta.innerHTML = "";
+        meta.appendChild(pill(`Failed to load alerts.json: ${e}`));
       });
     </script>
   </body>

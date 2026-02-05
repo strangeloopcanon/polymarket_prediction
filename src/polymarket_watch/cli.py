@@ -138,16 +138,19 @@ def main(argv: list[str] | None = None) -> int:
             return 0
 
         while True:
-            _run_once(
-                store=store,
-                client=client,
-                limit=limit,
-                min_notional=args.min_notional,
-                min_score=args.min_score,
-                cooldown_seconds=args.cooldown_seconds,
-                out_format=args.format,
-                discord_webhook_url=args.discord_webhook_url,
-            )
+            try:
+                _run_once(
+                    store=store,
+                    client=client,
+                    limit=limit,
+                    min_notional=args.min_notional,
+                    min_score=args.min_score,
+                    cooldown_seconds=args.cooldown_seconds,
+                    out_format=args.format,
+                    discord_webhook_url=args.discord_webhook_url,
+                )
+            except Exception as e:
+                log(logger, logging.ERROR, "watch_iteration_failed", error=str(e))
             time.sleep(float(args.poll_seconds))
     except KeyboardInterrupt:
         log(logger, logging.INFO, "shutdown")
