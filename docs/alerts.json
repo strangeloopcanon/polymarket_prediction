@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x11e7e994c203dad70cf6415067f9fed5410556fd33349e7f562c422d3d9d1c77",
+        "liquidity_num": 9264.4323,
+        "outcome_prices": [
+          0.63,
+          0.37
+        ],
+        "outcomes": [
+          "JD Gaming",
+          "Top Esports"
+        ],
+        "question": "LoL: JD Gaming vs Top Esports - Game 1 Winner",
+        "slug": "lol-jdg-tes-2026-02-05-game1",
+        "volume24hr": 4836.538991
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 98911.2854,
+        "price_range_accum_window": 0.03660571614672248,
+        "price_range_fast_window": 0.03660571614672248,
+        "top_net_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 93911.2854,
+        "top_net_wallet_share_of_market_accum_window": 0.9494496509697568,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_wallet_notional_accum_window": 93911.2854,
+        "top_wallet_share_accum_window": 0.9494496509697568,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 93911.2854,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "2715626323691199585190700619674734657190560958438145232719703845719038470381",
+        "condition_id": "0x11e7e994c203dad70cf6415067f9fed5410556fd33349e7f562c422d3d9d1c77",
+        "event_slug": "lol-jdg-tes-2026-02-05",
+        "name": "gmanas",
+        "outcome": "Top Esports",
+        "outcome_index": 1,
+        "price": 0.38,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "pseudonym": "Wicked-Rap",
+        "side": "BUY",
+        "size": 150013.0,
+        "slug": "lol-jdg-tes-2026-02-05-game1",
+        "timestamp": 1770291113,
+        "title": "LoL: JD Gaming vs Top Esports - Game 1 Winner",
+        "trade_id": "dcd4576bab5201bed03cb3cb1d3527020ab6763d0a9adb85823a45d55f4d7074",
+        "transaction_hash": "0x54bb741b71c7a9d71b97420c302c813dab5b72ba2ff7c3ef669574ccd701c36f"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-jdg-tes-2026-02-05-game1",
+      "wallet_stats": {
+        "avg_notional_7d": 23511.283541111115,
+        "first_seen_ts": 1769687992,
+        "proxy_wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "trades_7d": 9,
+        "trades_total": 9,
+        "unique_markets_7d": 7,
+        "unique_markets_total": 8
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x4423b9502b64ecd9b1b76ee25d8c716ee2ccddc65a2fb9953c25cc5df4555160",
         "liquidity_num": 398214.90735,
         "outcome_prices": [
@@ -2231,9 +2304,9 @@
       }
     }
   ],
-  "generated_at": 1770281397,
+  "generated_at": 1770296905,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21704912505",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21704912505"
+  "workflow_run_id": "21712691919",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21712691919"
 }
