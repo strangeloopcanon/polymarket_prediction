@@ -50,20 +50,22 @@ def score_trade(
         score += 1
         reasons.append("concentrated_activity_7d")
 
-    if market and market.liquidity_num and market.liquidity_num > 0:
-        frac = notional / market.liquidity_num
-        if frac >= 0.01:
-            score += 1
-            reasons.append("large_vs_liquidity")
+    if market and market.liquidity_num is not None:
+        if market.liquidity_num > 0:
+            frac = notional / market.liquidity_num
+            if frac >= 0.01:
+                score += 1
+                reasons.append("large_vs_liquidity")
         if market.liquidity_num < 50_000:
             score += 1
             reasons.append("low_liquidity_market")
 
-    if market and market.volume24hr and market.volume24hr > 0:
-        frac = notional / market.volume24hr
-        if frac >= 0.05:
-            score += 1
-            reasons.append("large_vs_24h_volume")
+    if market and market.volume24hr is not None:
+        if market.volume24hr > 0:
+            frac = notional / market.volume24hr
+            if frac >= 0.05:
+                score += 1
+                reasons.append("large_vs_24h_volume")
         if market.volume24hr < 25_000:
             score += 1
             reasons.append("low_24h_volume_market")

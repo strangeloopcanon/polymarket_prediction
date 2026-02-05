@@ -67,3 +67,40 @@ def test_cli_once_emits_alert_json(monkeypatch, capsys) -> None:  # noqa: ANN001
     payload = json.loads(out[0])
     assert payload["type"] == "alert"
     assert payload["trade"]["slug"] == "test-market"
+
+
+def test_cli_watch_recovers_from_iteration_error(monkeypatch) -> None:  # noqa: ANN001
+    import polymarket_watch.cli as cli
+
+    class _StubStore:
+        def __init__(self) -> None:
+            self.closed = False
+
+        def close(self) -> None:
+            self.closed = True
+
+    store = _StubStore()
+    monkeypatch.setattr(cli, "Store", lambda _db: store)
+    monkeypatch.setattr(cli, "PolymarketClient", lambda: object())
+
+    calls = {"n": 0}
+    events: list[str] = []
+
+    def _fake_run_once(**_kwargs) -> int:
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise RuntimeError("boom")
+        raise KeyboardInterrupt
+
+    def _fake_log(_logger, _level, message: str, **_fields) -> None:
+        events.append(message)
+
+    monkeypatch.setattr(cli, "_run_once", _fake_run_once)
+    monkeypatch.setattr(cli, "log", _fake_log)
+    monkeypatch.setattr(cli.time, "sleep", lambda _s: None)
+
+    code = cli.main(["watch", "--db", ":memory:", "--poll-seconds", "0", "--log-level", "CRITICAL"])
+    assert code == 0
+    assert calls["n"] == 2
+    assert "watch_iteration_failed" in events
+    assert store.closed is True

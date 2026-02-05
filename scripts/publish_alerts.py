@@ -83,7 +83,10 @@ def _wallet_stats_from_state(
     state: dict[str, Any], wallet: str, *, min_notional: float
 ) -> WalletStats:
     wallets = state.setdefault("wallets", {})
-    w = wallets.setdefault(wallet, {"first_seen_ts": None, "events": [], "markets": []})
+    w = wallets.get(wallet)
+    if not isinstance(w, dict):
+        w = {"first_seen_ts": None, "events": [], "markets": [], "trades_total": 0}
+        wallets[wallet] = w
 
     events: list[list[Any]] = w.get("events") or []
     filtered: list[list[Any]] = []
@@ -106,17 +109,27 @@ def _wallet_stats_from_state(
     markets_total = set(markets)
     markets_7d = {str(e[1]) for e in events_7d}
 
-    first_seen_ts = None
-    if events:
+    first_seen_ts_raw = w.get("first_seen_ts")
+    try:
+        first_seen_ts = int(first_seen_ts_raw) if first_seen_ts_raw is not None else None
+    except Exception:
+        first_seen_ts = None
+    if first_seen_ts is None and events:
         try:
             first_seen_ts = int(min(int(e[0]) for e in events))
         except Exception:
             first_seen_ts = None
 
+    trades_total = len(events)
+    try:
+        trades_total = max(trades_total, int(w.get("trades_total", trades_total) or 0))
+    except Exception:
+        pass
+
     return WalletStats(
         proxy_wallet=wallet,
         first_seen_ts=first_seen_ts,
-        trades_total=len(events),
+        trades_total=trades_total,
         unique_markets_total=len(markets_total),
         trades_7d=len(events_7d),
         unique_markets_7d=len(markets_7d),
@@ -126,11 +139,18 @@ def _wallet_stats_from_state(
 
 def _record_wallet_event(state: dict[str, Any], trade: Trade, notional: float) -> None:
     wallets = state.setdefault("wallets", {})
-    w = wallets.setdefault(trade.proxy_wallet, {"first_seen_ts": None, "events": [], "markets": []})
+    w = wallets.get(trade.proxy_wallet)
+    if not isinstance(w, dict):
+        w = {"first_seen_ts": None, "events": [], "markets": [], "trades_total": 0}
+        wallets[trade.proxy_wallet] = w
 
     if w.get("first_seen_ts") is None:
         w["first_seen_ts"] = int(trade.timestamp)
     w["last_seen_ts"] = int(trade.timestamp)
+    try:
+        w["trades_total"] = max(0, int(w.get("trades_total", 0) or 0)) + 1
+    except Exception:
+        w["trades_total"] = 1
 
     events: list[list[Any]] = w.get("events") or []
     events.append([int(trade.timestamp), trade.condition_id, float(notional)])
@@ -146,6 +166,18 @@ def _record_wallet_event(state: dict[str, Any], trade: Trade, notional: float) -
         events = events[-400:]
     w["events"] = events
     w["markets"] = markets[-500:]
+
+
+def _alert_dedupe_key(alert: dict[str, Any]) -> tuple[str, str, str]:
+    trade = alert.get("trade")
+    trade_obj = trade if isinstance(trade, dict) else {}
+    metrics = alert.get("metrics")
+    metrics_obj = metrics if isinstance(metrics, dict) else {}
+    return (
+        str(trade_obj.get("condition_id", "")),
+        str(metrics_obj.get("event_type", "")),
+        str(trade_obj.get("trade_id", "")),
+    )
 
 
 def _record_market_event(
@@ -538,6 +570,11 @@ def main(argv: list[str] | None = None) -> int:
         since_ts = int(since_ts_raw) if since_ts_raw is not None else 0
     except Exception:
         since_ts = 0
+    since_trade_ids_raw = state.get("last_fetched_trade_ids")
+    if isinstance(since_trade_ids_raw, list):
+        since_trade_ids = {str(x) for x in since_trade_ids_raw if x is not None}
+    else:
+        since_trade_ids = set()
 
     trades = _fetch_trades(
         client,
@@ -559,6 +596,12 @@ def main(argv: list[str] | None = None) -> int:
     latest_trade_by_market: dict[str, Trade] = {}
     latest_trade_by_market_wallet: dict[str, dict[str, Trade]] = {}
     for trade in trades:
+        trade_ts = int(trade.timestamp)
+        if since_ts > 0:
+            if trade_ts < since_ts:
+                continue
+            if trade_ts == since_ts and trade.trade_id in since_trade_ids:
+                continue
         if trade.trade_id in seen_set:
             continue
 
@@ -594,7 +637,13 @@ def main(argv: list[str] | None = None) -> int:
                 per_wallet[trade.proxy_wallet] = trade
 
     if trades:
-        state["last_fetched_trade_ts"] = max(int(t.timestamp) for t in trades)
+        max_trade_ts = max(int(t.timestamp) for t in trades)
+        if max_trade_ts >= since_ts:
+            state["last_fetched_trade_ts"] = max_trade_ts
+            checkpoint_ids = {t.trade_id for t in trades if int(t.timestamp) == max_trade_ts}
+            if max_trade_ts == since_ts:
+                checkpoint_ids |= since_trade_ids
+            state["last_fetched_trade_ids"] = sorted(checkpoint_ids)[-2000:]
 
     min_score = int(args.min_score)
     fast_label = _window_label(int(args.fast_window_seconds))
@@ -772,7 +821,16 @@ def main(argv: list[str] | None = None) -> int:
         except Exception:
             continue
     prev_alerts = prev_filtered
-    combined = prev_alerts + new_alerts
+    combined: list[dict[str, Any]] = []
+    seen_alerts: set[tuple[str, str, str]] = set()
+    for a in new_alerts + prev_alerts:
+        if not isinstance(a, dict):
+            continue
+        key = _alert_dedupe_key(a)
+        if key in seen_alerts:
+            continue
+        seen_alerts.add(key)
+        combined.append(a)
     combined_sorted = sorted(
         combined,
         key=lambda a: int(a.get("trade", {}).get("timestamp", 0) or 0),
