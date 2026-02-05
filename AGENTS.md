@@ -17,5 +17,4 @@ mode: baseline
 
 ## Publishing
 - GitHub Pages serves from `/docs` (`docs/index.html`, `docs/alerts.json`, `docs/alerts.jsonl`).
-- `.github/workflows/publish_alerts.yml` runs on a 6-hour cron and commits updates to `docs/` and `state/`.
-
+- `.github/workflows/publish_alerts.yml` runs hourly and commits updates to `docs/` and `state/`.

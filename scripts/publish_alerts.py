@@ -421,6 +421,11 @@ def _fetch_trades(
     page_limit: int,
     max_pages: int,
 ) -> list[Trade]:
+    # Polymarket's public /trades endpoint enforces a maximum historical offset.
+    # Empirically it returns HTTP 400 when offset > 3000:
+    #   {"error":"max historical activity offset of 3000 exceeded"}
+    # Cap pagination so the publisher doesn't fail hard in GitHub Actions.
+    max_offset = 3000
     page_limit = max(1, min(int(page_limit), 500))
     max_pages = max(1, int(max_pages))
 
@@ -428,6 +433,8 @@ def _fetch_trades(
     seen_ids: set[str] = set()
     for page in range(max_pages):
         offset = page * page_limit
+        if offset > max_offset:
+            break
         chunk = client.get_recent_trades(limit=page_limit, offset=offset)
         if not chunk:
             break
@@ -463,7 +470,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--max-pages",
         type=int,
-        default=40,
+        default=7,
         help="Max pages to fetch per run (for longer polling intervals).",
     )
     p.add_argument(

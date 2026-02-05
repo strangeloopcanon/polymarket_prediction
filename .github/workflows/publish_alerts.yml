@@ -2,7 +2,7 @@ name: Publish Polymarket Watch
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -64,7 +64,7 @@ jobs:
         run: |
           python scripts/publish_alerts.py \
             --limit 500 \
-            --max-pages 40 \
+            --max-pages 7 \
             --require-primary-signal \
             --min-notional 2000 \
             --min-score 8 \
