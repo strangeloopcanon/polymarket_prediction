@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xa5df581580471cec946c2cb2af86419194cee8833bd6c87b70473efab4065c8b",
+        "liquidity_num": 838819.96344,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "G2",
+          "MOUZ"
+        ],
+        "question": "Counter-Strike: G2 vs MOUZ (BO3) - IEM Krakow Playoffs",
+        "slug": "cs2-g2-mouz-2026-02-06",
+        "volume24hr": 171731.05583599998
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 20527.49345,
+        "price_range_accum_window": 0.389,
+        "price_range_fast_window": 0.389,
+        "top_net_wallet_accum_window": "0x56fcc141d24f3c9c29c72165ee2594cc59df733e",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 8419.58199,
+        "top_net_wallet_share_of_market_accum_window": 0.4101612313509227,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x56fcc141d24f3c9c29c72165ee2594cc59df733e",
+        "top_wallet_notional_accum_window": 8419.58199,
+        "top_wallet_share_accum_window": 0.4101612313509227,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 20527.49345,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "45793298372474382222833520078071001210341850351305313847320297271984013588486",
+        "condition_id": "0xa5df581580471cec946c2cb2af86419194cee8833bd6c87b70473efab4065c8b",
+        "event_slug": "cs2-g2-mouz-2026-02-06",
+        "name": "merhax",
+        "outcome": "MOUZ",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x549840cf3dc15cea65c1296264f361007d7e126f",
+        "pseudonym": "Trim-Opossum",
+        "side": "SELL",
+        "size": 2424.24,
+        "slug": "cs2-g2-mouz-2026-02-06",
+        "timestamp": 1770413179,
+        "title": "Counter-Strike: G2 vs MOUZ (BO3) - IEM Krakow Playoffs",
+        "trade_id": "82f58d3c8274c99327474f603436724a5050be6331706d295d1057e966a20dd8",
+        "transaction_hash": "0xbbbe74655c5627361a72c5bf355190ccaccf525183acd02fcc5694315ee3a8c1"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-g2-mouz-2026-02-06",
+      "wallet_stats": {
+        "avg_notional_7d": 3485.1178790000004,
+        "first_seen_ts": 1770039750,
+        "proxy_wallet": "0x549840cf3dc15cea65c1296264f361007d7e126f",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xca2e341f7d7e6fec7e4e4e1d5f4beadfb1486149b8b5fcdd58f6f3c4ce199f0c",
         "liquidity_num": 60627.2619,
         "outcome_prices": [
@@ -71,78 +144,6 @@
         "trades_total": 5,
         "unique_markets_7d": 5,
         "unique_markets_total": 5
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0x38dadb6d9a478d94c062bad36dda3ee319faaa4e4f6cb422c3cc3e21a2a4670e",
-        "liquidity_num": 58882.7324,
-        "outcome_prices": [
-          0.065,
-          0.935
-        ],
-        "outcomes": [
-          "Bulls",
-          "Raptors"
-        ],
-        "question": "Bulls vs. Raptors",
-        "slug": "nba-chi-tor-2026-02-05",
-        "volume24hr": 890954.5391050006
-      },
-      "metrics": {
-        "accum_window_s": 21600,
-        "event_type": "fast_move",
-        "fast_window_s": 86400,
-        "notional_fast_window": 48852.819200000005,
-        "price_range_accum_window": 0.20000000000000007,
-        "price_range_fast_window": 0.20000000000000007,
-        "top_net_wallet_accum_window": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 36480.8667,
-        "top_net_wallet_share_of_market_accum_window": 0.9444093185853342,
-        "top_net_wallet_share_of_wallet_accum_window": 1.0,
-        "top_net_wallet_trades_accum_window": 1,
-        "top_wallet_accum_window": "0x07b8e44b90cc3e91b8d5fe60ea810d2534638e25",
-        "top_wallet_notional_accum_window": 36480.8667,
-        "top_wallet_share_accum_window": 0.9444093185853342,
-        "top_wallet_trades_accum_window": 1,
-        "unique_wallets_fast_window": 4
-      },
-      "notional": 48852.819200000005,
-      "reasons": [
-        "market_price_move_24h",
-        "market_heat_24h",
-        "new_wallet_to_system"
-      ],
-      "score": 8,
-      "trade": {
-        "asset": "78131091086128352627746108182187186669373615588804060578200697558812999037589",
-        "condition_id": "0x38dadb6d9a478d94c062bad36dda3ee319faaa4e4f6cb422c3cc3e21a2a4670e",
-        "event_slug": "nba-chi-tor-2026-02-05",
-        "name": "ElonSpam",
-        "outcome": "Raptors",
-        "outcome_index": 1,
-        "price": 0.93,
-        "proxy_wallet": "0x5116ee15e86bc8878b90ac8a8514e38511eb58c4",
-        "pseudonym": "Wee-Globe",
-        "side": "BUY",
-        "size": 2309.0,
-        "slug": "nba-chi-tor-2026-02-05",
-        "timestamp": 1770344485,
-        "title": "Bulls vs. Raptors",
-        "trade_id": "2f55a00b0f15edf8fb99ea37b93b8109ad359b6f2dc060919d37462155f05ce6",
-        "transaction_hash": "0xca5c3c4c55d0f5cf767517ce97c7ce8a61c95710af73d16d8931d69ee7ad2af1"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/nba-chi-tor-2026-02-05",
-      "wallet_stats": {
-        "avg_notional_7d": 2147.37,
-        "first_seen_ts": 1770344485,
-        "proxy_wallet": "0x5116ee15e86bc8878b90ac8a8514e38511eb58c4",
-        "trades_7d": 1,
-        "trades_total": 1,
-        "unique_markets_7d": 1,
-        "unique_markets_total": 1
       }
     },
     {
@@ -2449,9 +2450,9 @@
       }
     }
   ],
-  "generated_at": 1770383148,
+  "generated_at": 1770430326,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21751603053",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21751603053"
+  "workflow_run_id": "21772397320",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21772397320"
 }
