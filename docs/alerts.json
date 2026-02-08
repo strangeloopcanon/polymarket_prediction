@@ -2,6 +2,77 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x7facbb07c1b0a43cabc496f18815795d8f88f1280ef1ab97af17a81ea3c2c755",
+        "liquidity_num": 121452.6259,
+        "outcome_prices": [
+          0.805,
+          0.195
+        ],
+        "outcomes": [
+          "Hornets",
+          "Hawks"
+        ],
+        "question": "Hornets vs. Hawks",
+        "slug": "nba-cha-atl-2026-02-07",
+        "volume24hr": 2283628.599203993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 80307.712397,
+        "price_range_accum_window": 0.19292612965637457,
+        "price_range_fast_window": 0.2129261296580791,
+        "top_net_wallet_accum_window": "0xfa41acf573021e64b607b3294bd0c0518884a7a1",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 65999.99999899999,
+        "top_net_wallet_share_of_market_accum_window": 0.8454446806719743,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xfa41acf573021e64b607b3294bd0c0518884a7a1",
+        "top_wallet_notional_accum_window": 65999.99999899999,
+        "top_wallet_share_accum_window": 0.8454446806719743,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 80307.712397,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "33402623887713499464637381593495383528874963126704601554073373188920614128317",
+        "condition_id": "0x7facbb07c1b0a43cabc496f18815795d8f88f1280ef1ab97af17a81ea3c2c755",
+        "event_slug": "nba-cha-atl-2026-02-07",
+        "name": "takeormake",
+        "outcome": "Hornets",
+        "outcome_index": 0,
+        "price": 0.65,
+        "proxy_wallet": "0xa38a455bbdd4b68486548b7e19da99903f4f821d",
+        "pseudonym": "Scary-Fannypack",
+        "side": "BUY",
+        "size": 4382.58,
+        "slug": "nba-cha-atl-2026-02-07",
+        "timestamp": 1770518631,
+        "title": "Hornets vs. Hawks",
+        "trade_id": "5413bf5b30cda380878ef776b5878a62775baf1eae71af8b80b2cbbf3bb8ac34",
+        "transaction_hash": "0x11243664ec307a51a7c1e7203091f916e4d23de78e83d1cb61be31fe5a7339c0"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-cha-atl-2026-02-07",
+      "wallet_stats": {
+        "avg_notional_7d": 4007.7134995000006,
+        "first_seen_ts": 1770518445,
+        "proxy_wallet": "0xa38a455bbdd4b68486548b7e19da99903f4f821d",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x7f6f6279ab74e333edf31a69d69a7e9e374abbb27eb5ae3084bc687c78ab7675",
         "liquidity_num": null,
         "outcome_prices": [
@@ -2598,9 +2669,9 @@
       }
     }
   ],
-  "generated_at": 1770468900,
-  "new_alerts": 0,
+  "generated_at": 1770518741,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21780421690",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21780421690"
+  "workflow_run_id": "21791040689",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21791040689"
 }
