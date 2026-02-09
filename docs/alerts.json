@@ -2,73 +2,221 @@
   "alerts": [
     {
       "market": {
-        "condition_id": "0x7facbb07c1b0a43cabc496f18815795d8f88f1280ef1ab97af17a81ea3c2c755",
-        "liquidity_num": 121452.6259,
+        "condition_id": "0x204d24f3a0f5dd5fca825292bdeab6a97af3978b2caa2b21bb37e610eddfff5d",
+        "liquidity_num": 1008179.35781,
         "outcome_prices": [
-          0.805,
-          0.195
+          0.9855,
+          0.0145
         ],
         "outcomes": [
-          "Hornets",
-          "Hawks"
+          "Seahawks",
+          "Patriots"
         ],
-        "question": "Hornets vs. Hawks",
-        "slug": "nba-cha-atl-2026-02-07",
-        "volume24hr": 2283628.599203993
+        "question": "Seahawks vs. Patriots",
+        "slug": "nfl-sea-ne-2026-02-08",
+        "volume24hr": 19430123.215925053
       },
       "metrics": {
         "accum_window_s": 21600,
         "event_type": "fast_move",
         "fast_window_s": 86400,
-        "notional_fast_window": 80307.712397,
-        "price_range_accum_window": 0.19292612965637457,
-        "price_range_fast_window": 0.2129261296580791,
-        "top_net_wallet_accum_window": "0xfa41acf573021e64b607b3294bd0c0518884a7a1",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 65999.99999899999,
-        "top_net_wallet_share_of_market_accum_window": 0.8454446806719743,
+        "notional_fast_window": 97230.881058,
+        "price_range_accum_window": 0.32000000000000006,
+        "price_range_fast_window": 0.32000000000000006,
+        "top_net_wallet_accum_window": "0xbde579ead903b9cf5c3fc4be5a0c515464769c38",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 25600.060800000003,
+        "top_net_wallet_share_of_market_accum_window": 0.37863157852635043,
         "top_net_wallet_share_of_wallet_accum_window": 1.0,
         "top_net_wallet_trades_accum_window": 1,
-        "top_wallet_accum_window": "0xfa41acf573021e64b607b3294bd0c0518884a7a1",
-        "top_wallet_notional_accum_window": 65999.99999899999,
-        "top_wallet_share_accum_window": 0.8454446806719743,
+        "top_wallet_accum_window": "0xbde579ead903b9cf5c3fc4be5a0c515464769c38",
+        "top_wallet_notional_accum_window": 25600.060800000003,
+        "top_wallet_share_accum_window": 0.37863157852635043,
         "top_wallet_trades_accum_window": 1,
-        "unique_wallets_fast_window": 4
+        "unique_wallets_fast_window": 12
       },
-      "notional": 80307.712397,
+      "notional": 97230.881058,
       "reasons": [
         "market_price_move_24h",
-        "market_heat_24h"
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
       ],
-      "score": 10,
+      "score": 11,
       "trade": {
-        "asset": "33402623887713499464637381593495383528874963126704601554073373188920614128317",
-        "condition_id": "0x7facbb07c1b0a43cabc496f18815795d8f88f1280ef1ab97af17a81ea3c2c755",
-        "event_slug": "nba-cha-atl-2026-02-07",
-        "name": "takeormake",
-        "outcome": "Hornets",
+        "asset": "46434110155841033529384949983718980438706543876953886750286883506638610790525",
+        "condition_id": "0x204d24f3a0f5dd5fca825292bdeab6a97af3978b2caa2b21bb37e610eddfff5d",
+        "event_slug": "nfl-sea-ne-2026-02-08",
+        "name": "BIGTONKA",
+        "outcome": "Seahawks",
         "outcome_index": 0,
-        "price": 0.65,
-        "proxy_wallet": "0xa38a455bbdd4b68486548b7e19da99903f4f821d",
-        "pseudonym": "Scary-Fannypack",
+        "price": 0.99,
+        "proxy_wallet": "0x792a304badfc3d160568a4a5b52823c1b1257264",
+        "pseudonym": "Terrific-Peanut",
         "side": "BUY",
-        "size": 4382.58,
-        "slug": "nba-cha-atl-2026-02-07",
-        "timestamp": 1770518631,
-        "title": "Hornets vs. Hawks",
-        "trade_id": "5413bf5b30cda380878ef776b5878a62775baf1eae71af8b80b2cbbf3bb8ac34",
-        "transaction_hash": "0x11243664ec307a51a7c1e7203091f916e4d23de78e83d1cb61be31fe5a7339c0"
+        "size": 3355.2828,
+        "slug": "nfl-sea-ne-2026-02-08",
+        "timestamp": 1770604057,
+        "title": "Seahawks vs. Patriots",
+        "trade_id": "f51a8ba4313dc06407219a174262753b007a2840f8642d8bbbbfcfa04360dda7",
+        "transaction_hash": "0x2de4f582722956615ae65dc589e0ffc685ed1f4cc6042da78e2da8132896eee4"
       },
       "type": "alert",
-      "url": "https://polymarket.com/market/nba-cha-atl-2026-02-07",
+      "url": "https://polymarket.com/market/nfl-sea-ne-2026-02-08",
       "wallet_stats": {
-        "avg_notional_7d": 4007.7134995000006,
-        "first_seen_ts": 1770518445,
-        "proxy_wallet": "0xa38a455bbdd4b68486548b7e19da99903f4f821d",
-        "trades_7d": 2,
-        "trades_total": 2,
+        "avg_notional_7d": 3321.729972,
+        "first_seen_ts": 1770604057,
+        "proxy_wallet": "0x792a304badfc3d160568a4a5b52823c1b1257264",
+        "trades_7d": 1,
+        "trades_total": 1,
         "unique_markets_7d": 1,
         "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xc19752f04c00ea836e711387fb786351e604f88f63422d811f5de42386124319",
+        "liquidity_num": 714010.396,
+        "outcome_prices": [
+          0.675,
+          0.325
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Paris Saint-Germain FC win on 2026-02-08?",
+        "slug": "fl1-psg-olm-2026-02-08-psg",
+        "volume24hr": 176547.08295799993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 99448.5776,
+        "price_range_accum_window": 0.010000000000000009,
+        "price_range_fast_window": 0.010000000000000009,
+        "top_net_wallet_accum_window": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 85067.3576,
+        "top_net_wallet_share_of_market_accum_window": 0.8553903902191156,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "top_wallet_notional_accum_window": 85067.3576,
+        "top_wallet_share_accum_window": 0.8553903902191156,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 85067.3576,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "59324994772443259452909702803090803202219235757859341589213219426911504985747",
+        "condition_id": "0xc19752f04c00ea836e711387fb786351e604f88f63422d811f5de42386124319",
+        "event_slug": "fl1-psg-olm-2026-02-08",
+        "name": "0xb7511d7b0dcb75ffad0507cbac7223653d08915",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.689799176,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "pseudonym": "Comfortable-Gymnast",
+        "side": "BUY",
+        "size": 100000.0,
+        "slug": "fl1-psg-olm-2026-02-08-psg",
+        "timestamp": 1770578661,
+        "title": "Will Paris Saint-Germain FC win on 2026-02-08?",
+        "trade_id": "43122d3401d7d3f16c62e1a6f2964403d4aa377a257e74048a904eedaec3f2dc",
+        "transaction_hash": "0xa5f694279db5572aac6fbf0516c7beef9ee9d1d3be38f694aa84d99cb3a818ae"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/fl1-psg-olm-2026-02-08-psg",
+      "wallet_stats": {
+        "avg_notional_7d": 13692.805025000001,
+        "first_seen_ts": 1768517326,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "trades_7d": 8,
+        "trades_total": 8,
+        "unique_markets_7d": 7,
+        "unique_markets_total": 17
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x2220d8f9f37894051cd41803663c5873339be57e3e194b64d877329cb25e02f7",
+        "liquidity_num": 628345.89381,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Liverpool FC win on 2026-02-08?",
+        "slug": "epl-liv-mac-2026-02-08-liv",
+        "volume24hr": 256809.00281799995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 68943.35329900001,
+        "price_range_accum_window": 0.15000000000000002,
+        "price_range_fast_window": 0.15000000000000002,
+        "top_net_wallet_accum_window": "0xf208326de73e12994c0cd2b641dddc74a319fa74",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 23500.0,
+        "top_net_wallet_share_of_market_accum_window": 0.3408595444738957,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xf208326de73e12994c0cd2b641dddc74a319fa74",
+        "top_wallet_notional_accum_window": 23500.0,
+        "top_wallet_share_accum_window": 0.3408595444738957,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 8
+      },
+      "notional": 68943.35329900001,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "32862118554388398199342382931866492593348870301871636456579037484757781169089",
+        "condition_id": "0x2220d8f9f37894051cd41803663c5873339be57e3e194b64d877329cb25e02f7",
+        "event_slug": "epl-liv-mac-2026-02-08",
+        "name": "bobacircle",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.67,
+        "proxy_wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
+        "pseudonym": "Unpleasant-Outfit",
+        "side": "SELL",
+        "size": 5322.27,
+        "slug": "epl-liv-mac-2026-02-08-liv",
+        "timestamp": 1770573267,
+        "title": "Will Liverpool FC win on 2026-02-08?",
+        "trade_id": "8d1a704e7e71528abdb629b25134293791a4205600fd0455b103334c1181b340",
+        "transaction_hash": "0x0c290b7c073f695ebc3f5833a47407ac137b9acedd0f9cd23583b4591a9d9db1"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-liv-mac-2026-02-08-liv",
+      "wallet_stats": {
+        "avg_notional_7d": 12697.881475,
+        "first_seen_ts": 1770506805,
+        "proxy_wallet": "0x0d16999d6ba24c2c2c8bff93f91014cc43fad24d",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
       }
     },
     {
@@ -2669,9 +2817,9 @@
       }
     }
   ],
-  "generated_at": 1770555381,
-  "new_alerts": 0,
+  "generated_at": 1770604262,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21798521900",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21798521900"
+  "workflow_run_id": "21810327757",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21810327757"
 }
