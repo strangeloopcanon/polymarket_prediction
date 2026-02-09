@@ -2817,9 +2817,9 @@
       }
     }
   ],
-  "generated_at": 1770604262,
-  "new_alerts": 1,
+  "generated_at": 1770642934,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21810327757",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21810327757"
+  "workflow_run_id": "21826552386",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21826552386"
 }
