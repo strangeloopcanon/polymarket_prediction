@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x4ba2f1c8c313fb3826e3f5e76db2dbf227c03bd0fedd85c237bd44247953d426",
+        "liquidity_num": 704829.0056,
+        "outcome_prices": [
+          0.435,
+          0.565
+        ],
+        "outcomes": [
+          "76ers",
+          "Trail Blazers"
+        ],
+        "question": "76ers vs. Trail Blazers",
+        "slug": "nba-phi-por-2026-02-09",
+        "volume24hr": 566011.9465989993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 26820.711999000003,
+        "price_range_accum_window": 0.07902560775032408,
+        "price_range_fast_window": 0.17902560763907616,
+        "top_net_wallet_accum_window": "0xff36c717909a7bad60e74eed3418009ff481e757",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 10786.51,
+        "top_net_wallet_share_of_market_accum_window": 0.4855585788868441,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xff36c717909a7bad60e74eed3418009ff481e757",
+        "top_wallet_notional_accum_window": 10786.51,
+        "top_wallet_share_accum_window": 0.4855585788868441,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 7
+      },
+      "notional": 26820.711999000003,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "84120294776633858418680721063577651501092735503330720547857557332236828827217",
+        "condition_id": "0x4ba2f1c8c313fb3826e3f5e76db2dbf227c03bd0fedd85c237bd44247953d426",
+        "event_slug": "nba-phi-por-2026-02-09",
+        "name": "Moneyloverman",
+        "outcome": "76ers",
+        "outcome_index": 0,
+        "price": 0.44097439224967594,
+        "proxy_wallet": "0x906fd5683ec51f215164f55b06bbee2b0f1288b4",
+        "pseudonym": "Frayed-Mud",
+        "side": "SELL",
+        "size": 6426.57,
+        "slug": "nba-phi-por-2026-02-09",
+        "timestamp": 1770690647,
+        "title": "76ers vs. Trail Blazers",
+        "trade_id": "b3de1089c092a698494cc4ba0cdfc6071efb6c4cd354002497a9af75b6b553a8",
+        "transaction_hash": "0xd03a5ab885404827a1778a04f9a87898ebec089efe2370efae6451b9dbe4dae3"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-phi-por-2026-02-09",
+      "wallet_stats": {
+        "avg_notional_7d": 2833.9527999999996,
+        "first_seen_ts": 1770690647,
+        "proxy_wallet": "0x906fd5683ec51f215164f55b06bbee2b0f1288b4",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x204d24f3a0f5dd5fca825292bdeab6a97af3978b2caa2b21bb37e610eddfff5d",
         "liquidity_num": 1008179.35781,
         "outcome_prices": [
@@ -2817,9 +2890,9 @@
       }
     }
   ],
-  "generated_at": 1770642934,
-  "new_alerts": 0,
+  "generated_at": 1770691138,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21826552386",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21826552386"
+  "workflow_run_id": "21849501874",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21849501874"
 }
