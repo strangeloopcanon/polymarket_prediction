@@ -2,6 +2,77 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x589b74a8c97aebaf0a6edd9849ea933cac8130ccfc992395b34e171476463b5c",
+        "liquidity_num": 77011.3315,
+        "outcome_prices": [
+          0.9,
+          0.1
+        ],
+        "outcomes": [
+          "Grizzlies",
+          "Warriors"
+        ],
+        "question": "Grizzlies vs. Warriors",
+        "slug": "nba-mem-gsw-2026-02-09",
+        "volume24hr": 330800.41204299947
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 43867.6367,
+        "price_range_accum_window": 0.6297665614925578,
+        "price_range_fast_window": 0.6297665614925578,
+        "top_net_wallet_accum_window": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 23552.4,
+        "top_net_wallet_share_of_market_accum_window": 0.5368969420684566,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+        "top_wallet_notional_accum_window": 23552.4,
+        "top_wallet_share_accum_window": 0.5368969420684566,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 43867.6367,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "60439234430362709974882894006983490945936162049975599173500033204788385182221",
+        "condition_id": "0x589b74a8c97aebaf0a6edd9849ea933cac8130ccfc992395b34e171476463b5c",
+        "event_slug": "nba-mem-gsw-2026-02-09",
+        "name": null,
+        "outcome": "Warriors",
+        "outcome_index": 1,
+        "price": 0.16762305699481866,
+        "proxy_wallet": "0xa4f5650a655502b2e2bc66636d347a2fd8281079",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 16984.0,
+        "slug": "nba-mem-gsw-2026-02-09",
+        "timestamp": 1770699799,
+        "title": "Grizzlies vs. Warriors",
+        "trade_id": "3191791c2c85cf3df1ab3a9a799465657b381f8ee41d481e1520881c0ac772a2",
+        "transaction_hash": "0xa3034e48840fdcd01bf1d2049e40a75a0f30d47adbdf9a4b8ee0e72ed886b9ce"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mem-gsw-2026-02-09",
+      "wallet_stats": {
+        "avg_notional_7d": 7763.61835,
+        "first_seen_ts": 1770699623,
+        "proxy_wallet": "0xa4f5650a655502b2e2bc66636d347a2fd8281079",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x4ba2f1c8c313fb3826e3f5e76db2dbf227c03bd0fedd85c237bd44247953d426",
         "liquidity_num": 704829.0056,
         "outcome_prices": [
@@ -2890,9 +2961,9 @@
       }
     }
   ],
-  "generated_at": 1770691138,
-  "new_alerts": 1,
+  "generated_at": 1770729602,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21849501874",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21849501874"
+  "workflow_run_id": "21866531708",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21866531708"
 }
