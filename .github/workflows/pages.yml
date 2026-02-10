@@ -1,6 +1,14 @@
 name: Deploy GitHub Pages
 
 on:
+  # Pushes made by another workflow using GITHUB_TOKEN do NOT trigger `push`
+  # workflows (GitHub prevents recursive runs). Our publisher commits to `main`
+  # via Actions, so we also deploy Pages after that workflow completes.
+  workflow_run:
+    workflows:
+      - Publish Polymarket Watch
+    types:
+      - completed
   push:
     branches:
       - main
@@ -19,6 +27,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -26,6 +35,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
