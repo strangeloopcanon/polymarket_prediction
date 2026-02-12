@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xf23a18c26127d9b153ef1ca40ec94f7603b18170c474d0415cdca71ac52dbebd",
+        "liquidity_num": 144578.4845,
+        "outcome_prices": [
+          0.445,
+          0.555
+        ],
+        "outcomes": [
+          "Spurs",
+          "Warriors"
+        ],
+        "question": "Spurs vs. Warriors",
+        "slug": "nba-sas-gsw-2026-02-11",
+        "volume24hr": 2292010.1741309967
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 97615.201995,
+        "price_range_accum_window": 0.4162918269541891,
+        "price_range_fast_window": 0.4462918269777668,
+        "top_net_wallet_accum_window": "0x8d60d79299178e5e7df7024114acf34c9bc6649f",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 6999.999999,
+        "top_net_wallet_share_of_market_accum_window": 0.3295727513320796,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x8d60d79299178e5e7df7024114acf34c9bc6649f",
+        "top_wallet_notional_accum_window": 6999.999999,
+        "top_wallet_share_accum_window": 0.3295727513320796,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 10
+      },
+      "notional": 97615.201995,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "75770450326867429336359774085640967495495061869740727884349010015650004493650",
+        "condition_id": "0xf23a18c26127d9b153ef1ca40ec94f7603b18170c474d0415cdca71ac52dbebd",
+        "event_slug": "nba-sas-gsw-2026-02-11",
+        "name": "Treasured-Spending",
+        "outcome": "Warriors",
+        "outcome_index": 1,
+        "price": 0.7462918269777669,
+        "proxy_wallet": "0x9569e042a3e349a8d1797e45406b5288494f27fd",
+        "pseudonym": "Treasured-Spending",
+        "side": "BUY",
+        "size": 6877.457065,
+        "slug": "nba-sas-gsw-2026-02-11",
+        "timestamp": 1770872033,
+        "title": "Spurs vs. Warriors",
+        "trade_id": "a923395e1bd998a54d9b9587662927d354365bd3817776fb5fba1d71303bd649",
+        "transaction_hash": "0x47c7899a81dc6ef52664d13c0bbf6f0674d5b5b8d576804f176c52824546d1b5"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-sas-gsw-2026-02-11",
+      "wallet_stats": {
+        "avg_notional_7d": 8083.856914,
+        "first_seen_ts": 1770799677,
+        "proxy_wallet": "0x9569e042a3e349a8d1797e45406b5288494f27fd",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xeb2afeb7f33df971ab0476bfb8dd6e05d522873a7b085e210b071e88e60c7b6b",
         "liquidity_num": 23948.17797,
         "outcome_prices": [
@@ -3035,9 +3107,9 @@
       }
     }
   ],
-  "generated_at": 1770863483,
-  "new_alerts": 1,
+  "generated_at": 1770902058,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21931283490",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21931283490"
+  "workflow_run_id": "21948069183",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21948069183"
 }
