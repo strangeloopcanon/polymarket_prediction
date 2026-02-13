@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xdd9c34540ae6339109d8882c45b8cd48a803cf59f5893b413fffbfd4e6f9e7c8",
+        "liquidity_num": 293608.99919,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Dplus KIA",
+          "DRX"
+        ],
+        "question": "LoL: Dplus KIA vs DRX - Game 2 Winner",
+        "slug": "lol-dk-drx-2026-02-13-game2",
+        "volume24hr": 4035.985535
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 42015.3049,
+        "price_range_accum_window": 0.30899255318515173,
+        "price_range_fast_window": 0.30899255318515173,
+        "top_net_wallet_accum_window": "0x689abe8bcb5d5b9993e7b4ffec964b21d1f297a4",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 24424.73156,
+        "top_net_wallet_share_of_market_accum_window": 0.5813293898052849,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x689abe8bcb5d5b9993e7b4ffec964b21d1f297a4",
+        "top_wallet_notional_accum_window": 24424.73156,
+        "top_wallet_share_accum_window": 0.5813293898052849,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 42015.3049,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "4392204803903190732970525287931835401736558517577403554349362592506400040066",
+        "condition_id": "0xdd9c34540ae6339109d8882c45b8cd48a803cf59f5893b413fffbfd4e6f9e7c8",
+        "event_slug": "lol-dk-drx-2026-02-13",
+        "name": "kkkkkkkkkkk",
+        "outcome": "Dplus KIA",
+        "outcome_index": 0,
+        "price": 0.9989925531851517,
+        "proxy_wallet": "0x66fe8149ec5811c265b882fdade058b81e6ee123",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 13428.56,
+        "slug": "lol-dk-drx-2026-02-13-game2",
+        "timestamp": 1770975931,
+        "title": "LoL: Dplus KIA vs DRX - Game 2 Winner",
+        "trade_id": "6b44124d92932555e6ebaa673889db10b3cbc14a4830030143247d1bf7a819b7",
+        "transaction_hash": "0xfe3034227e9a3d971d20fc11d294763ebd716474c2203254424215bd974faa8b"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-dk-drx-2026-02-13-game2",
+      "wallet_stats": {
+        "avg_notional_7d": 7901.762643333333,
+        "first_seen_ts": 1768657766,
+        "proxy_wallet": "0x66fe8149ec5811c265b882fdade058b81e6ee123",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 5
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x5ee8c736270c36d314a3db86983eca6da7de3f4e24a7dcddadfa9aa2c258ce38",
         "liquidity_num": 44091.2152,
         "outcome_prices": [
@@ -3180,9 +3253,9 @@
       }
     }
   ],
-  "generated_at": 1770949951,
-  "new_alerts": 1,
+  "generated_at": 1770987963,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21972413117",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21972413117"
+  "workflow_run_id": "21987914922",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21987914922"
 }
