@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x5ee8c736270c36d314a3db86983eca6da7de3f4e24a7dcddadfa9aa2c258ce38",
+        "liquidity_num": 44091.2152,
+        "outcome_prices": [
+          0.9775,
+          0.0225
+        ],
+        "outcomes": [
+          "Bucks",
+          "Thunder"
+        ],
+        "question": "Bucks vs. Thunder",
+        "slug": "nba-mil-okc-2026-02-12",
+        "volume24hr": 2521744.9591629906
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 38317.5299,
+        "price_range_accum_window": 0.7999999999999999,
+        "price_range_fast_window": 0.83,
+        "top_net_wallet_accum_window": "0xfa21179f2cef2f61cb78e8340ae62b17f9271438",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18343.9264,
+        "top_net_wallet_share_of_market_accum_window": 0.512865340471834,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xfa21179f2cef2f61cb78e8340ae62b17f9271438",
+        "top_wallet_notional_accum_window": 18343.9264,
+        "top_wallet_share_accum_window": 0.512865340471834,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 6
+      },
+      "notional": 38317.5299,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "115398480700108494801153059742450217770464747356385312544248721773516157633342",
+        "condition_id": "0x5ee8c736270c36d314a3db86983eca6da7de3f4e24a7dcddadfa9aa2c258ce38",
+        "event_slug": "nba-mil-okc-2026-02-12",
+        "name": "0xb7511d7b0dcb75ffad0507cbac7223653d08915",
+        "outcome": "Bucks",
+        "outcome_index": 0,
+        "price": 0.98,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "pseudonym": "Comfortable-Gymnast",
+        "side": "BUY",
+        "size": 2345.0,
+        "slug": "nba-mil-okc-2026-02-12",
+        "timestamp": 1770949639,
+        "title": "Bucks vs. Thunder",
+        "trade_id": "a780160aaaac36aba3caa5dcf2291541b94fc9e955c3c18dd1eb3c3b3f5da171",
+        "transaction_hash": "0x7b5718d1652a49257310e29d498d2ffcec25111ed64e02fb3fbac9287bf581b7"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mil-okc-2026-02-12",
+      "wallet_stats": {
+        "avg_notional_7d": 11061.813861538463,
+        "first_seen_ts": 1768517326,
+        "proxy_wallet": "0xe60a9b0be459d9849bc2339dac20517639ae6a47",
+        "trades_7d": 13,
+        "trades_total": 13,
+        "unique_markets_7d": 11,
+        "unique_markets_total": 24
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xf23a18c26127d9b153ef1ca40ec94f7603b18170c474d0415cdca71ac52dbebd",
         "liquidity_num": 144578.4845,
         "outcome_prices": [
@@ -3107,9 +3180,9 @@
       }
     }
   ],
-  "generated_at": 1770902058,
-  "new_alerts": 0,
+  "generated_at": 1770949951,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "21948069183",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21948069183"
+  "workflow_run_id": "21972413117",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/21972413117"
 }
