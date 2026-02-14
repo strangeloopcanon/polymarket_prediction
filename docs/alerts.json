@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x4b78de44ea49d0eb8d5fee85352294b6f679a47c56944c6ad5c945e9a2ba7211",
+        "liquidity_num": 45172.07117,
+        "outcome_prices": [
+          0.0635,
+          0.9365
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Government shutdown on Saturday?",
+        "slug": "another-us-government-shutdown-by-february-14",
+        "volume24hr": 6410563.899665934
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 54638.051550000004,
+        "price_range_accum_window": 0.010932052345240195,
+        "price_range_fast_window": 0.46470810298368936,
+        "top_net_wallet_accum_window": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 37192.396049999996,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "top_wallet_notional_accum_window": 37192.396049999996,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 54638.051550000004,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 17,
+      "trade": {
+        "asset": "43946269812975261940442841140057396362355013850035195910637438338242851933505",
+        "condition_id": "0x4b78de44ea49d0eb8d5fee85352294b6f679a47c56944c6ad5c945e9a2ba7211",
+        "event_slug": "another-us-government-shutdown-by-february-14",
+        "name": "unwillingly-public",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9097081029836893,
+        "proxy_wallet": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "pseudonym": "Young-Pinot",
+        "side": "BUY",
+        "size": 15590.43,
+        "slug": "another-us-government-shutdown-by-february-14",
+        "timestamp": 1771043919,
+        "title": "Government shutdown on Saturday?",
+        "trade_id": "afd096ef715605eddf43bf053f2a2b4c8427e6006ac410fc1b81768880b38553",
+        "transaction_hash": "0x96e632b31aa52929aa221e04c68dc255cefceb23f29239d37f5cc17e37553b20"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/another-us-government-shutdown-by-february-14",
+      "wallet_stats": {
+        "avg_notional_7d": 18596.198024999998,
+        "first_seen_ts": 1771043857,
+        "proxy_wallet": "0xe0368af7f5777989b927b7ad0d420562fee8616c",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xdd9c34540ae6339109d8882c45b8cd48a803cf59f5893b413fffbfd4e6f9e7c8",
         "liquidity_num": 293608.99919,
         "outcome_prices": [
@@ -3253,9 +3327,9 @@
       }
     }
   ],
-  "generated_at": 1771035674,
+  "generated_at": 1771073706,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22009402990",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22009402990"
+  "workflow_run_id": "22017739929",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22017739929"
 }
