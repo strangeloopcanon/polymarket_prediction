@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1ec6af8f3b274e9aa96e0d3011284d3bdb4d46fecbd88dcdfc00628ae181bb1e",
+        "liquidity_num": 29564.98226,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Kas\u0131mpa\u015fa SK vs. Fatih Karag\u00fcmr\u00fck SK: O/U 3.5",
+        "slug": "tur-kas-kar-2026-02-16-total-3pt5",
+        "volume24hr": 605.849917
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 24106.583092,
+        "price_range_accum_window": 0.52,
+        "price_range_fast_window": 0.52,
+        "top_net_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18927.809992,
+        "top_net_wallet_share_of_market_accum_window": 0.7851718312696656,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 8,
+        "top_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_wallet_notional_accum_window": 18927.809992,
+        "top_wallet_share_accum_window": 0.7851718312696656,
+        "top_wallet_trades_accum_window": 8,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 24106.583092,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "22030612956634296389927839337267493586789226197573749737574130340427573850692",
+        "condition_id": "0x1ec6af8f3b274e9aa96e0d3011284d3bdb4d46fecbd88dcdfc00628ae181bb1e",
+        "event_slug": "tur-kas-kar-2026-02-16-more-markets",
+        "name": "swisstony",
+        "outcome": "Over",
+        "outcome_index": 0,
+        "price": 0.99,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "pseudonym": "Frail-Possible",
+        "side": "BUY",
+        "size": 2395.0,
+        "slug": "tur-kas-kar-2026-02-16-total-3pt5",
+        "timestamp": 1771267417,
+        "title": "Kas\u0131mpa\u015fa SK vs. Fatih Karag\u00fcmr\u00fck SK: O/U 3.5",
+        "trade_id": "f3ae58ce06a5c5689806bfbb0fa75cc1a4c035b5c2d3d169e3d53c2a3cd672b4",
+        "transaction_hash": "0xc45153550b415caedce94a3b5c0e424685063a16ef13574c0f4a1b77e34a1674"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/tur-kas-kar-2026-02-16-total-3pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 3314.748219733333,
+        "first_seen_ts": 1767559199,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "trades_7d": 30,
+        "trades_total": 48,
+        "unique_markets_7d": 21,
+        "unique_markets_total": 84
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xff78086bf542e2b13fcfa25c5762472528bfaddd3410a18eb10a44695fa68fbb",
         "liquidity_num": 30295.00541,
         "outcome_prices": [
@@ -3474,9 +3546,9 @@
       }
     }
   ],
-  "generated_at": 1771247400,
+  "generated_at": 1771295154,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22064020473",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22064020473"
+  "workflow_run_id": "22083807982",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22083807982"
 }
