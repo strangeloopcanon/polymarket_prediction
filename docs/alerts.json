@@ -2,6 +2,152 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
+        "liquidity_num": 268190.849,
+        "outcome_prices": [
+          0.205,
+          0.795
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US strikes Iran by February 28, 2026?",
+        "slug": "us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+        "volume24hr": 3120930.1734160003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 23944.313598,
+        "price_range_accum_window": 0.16704547800802033,
+        "price_range_fast_window": 0.16704547800802033,
+        "top_net_wallet_accum_window": "0x53e55bc7cb3d67ad177c023ce891ad076a9d6177",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 13191.331900000001,
+        "top_net_wallet_share_of_market_accum_window": 0.5509171038046309,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x53e55bc7cb3d67ad177c023ce891ad076a9d6177",
+        "top_wallet_notional_accum_window": 13191.331900000001,
+        "top_wallet_share_accum_window": 0.5509171038046309,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 23944.313598,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "110790003121442365126855864076707686014650523258783405996925622264696084778807",
+        "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
+        "event_slug": "us-strikes-iran-by",
+        "name": null,
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.20996432780335755,
+        "proxy_wallet": "0xc0fb92d126e4a0a4779c8b5590f2700cac30d4bb",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 12387.81857,
+        "slug": "us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+        "timestamp": 1771453652,
+        "title": "US strikes Iran by February 28, 2026?",
+        "trade_id": "e75ede8195f4e216fdaaef99e135c027ebdc59219b306aad2b3f0a4634a0233c",
+        "transaction_hash": "0xb8bb05b7977ffce1a807b10b57d9df30f48b1e2c534b728b318bddcca94cac59"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-strikes-iran-by-february-28-2026-227-967-547-688-589-491-592-418-452-924-384-915-464-672-196-157-993-596-269-535-381-391-471-256-988-997-296-225-762-973-292-827-345-182-558-215-794-879-189-761",
+      "wallet_stats": {
+        "avg_notional_7d": 2600.999999,
+        "first_seen_ts": 1771453652,
+        "proxy_wallet": "0xc0fb92d126e4a0a4779c8b5590f2700cac30d4bb",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x79d40080d3738c52b608908fe9d1047e0dc19d2f5688e2d72fbbed8f21c95e7b",
+        "liquidity_num": 44554.55272,
+        "outcome_prices": [
+          0.0095,
+          0.9905
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Internazionale Milano win on 2026-02-18?",
+        "slug": "ucl-bog1-int2-2026-02-18-int2",
+        "volume24hr": 540354.2678999999
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27499.999998,
+        "price_range_accum_window": 0.5299948450389541,
+        "price_range_fast_window": 0.5299948450389541,
+        "top_net_wallet_accum_window": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 22500.0,
+        "top_net_wallet_share_of_market_accum_window": 0.8181818182413223,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x6ade597c0e2b43c0bf3542cada8a5e330d73f5b0",
+        "top_wallet_notional_accum_window": 22500.0,
+        "top_wallet_share_accum_window": 0.8181818182413223,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 27499.999998,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "41324566809902361002540757213044146849860848253133292497279344018897844012",
+        "condition_id": "0x79d40080d3738c52b608908fe9d1047e0dc19d2f5688e2d72fbbed8f21c95e7b",
+        "event_slug": "ucl-bog1-int2-2026-02-18",
+        "name": "orrabi007",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9799948450389541,
+        "proxy_wallet": "0xc9187abcfc716b1809e26d8630dd7afd43fef848",
+        "pseudonym": "Happy-Grandparent",
+        "side": "BUY",
+        "size": 5102.067652,
+        "slug": "ucl-bog1-int2-2026-02-18-int2",
+        "timestamp": 1771450004,
+        "title": "Will FC Internazionale Milano win on 2026-02-18?",
+        "trade_id": "13dc2a1f7d9a0d933cf7f361097d421ee75fbd75cb4be4ad854212e8865273b9",
+        "transaction_hash": "0xcd3ab7ce391676895a242686f92e0dbb1750db081f840c23ff8a08963e887392"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/ucl-bog1-int2-2026-02-18-int2",
+      "wallet_stats": {
+        "avg_notional_7d": 4999.999998,
+        "first_seen_ts": 1771450004,
+        "proxy_wallet": "0xc9187abcfc716b1809e26d8630dd7afd43fef848",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x1ec6af8f3b274e9aa96e0d3011284d3bdb4d46fecbd88dcdfc00628ae181bb1e",
         "liquidity_num": 29564.98226,
         "outcome_prices": [
@@ -3546,9 +3692,9 @@
       }
     }
   ],
-  "generated_at": 1771420246,
+  "generated_at": 1771468083,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22141084554",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22141084554"
+  "workflow_run_id": "22166097184",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22166097184"
 }
