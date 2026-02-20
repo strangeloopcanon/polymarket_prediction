@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xd05ea2206e08b0687ae5f1590ffe0194bda2db67d26abeed79fb51f6fd2fb5cc",
+        "liquidity_num": 61533.188,
+        "outcome_prices": [
+          0.555,
+          0.445
+        ],
+        "outcomes": [
+          "Pistons",
+          "Knicks"
+        ],
+        "question": "Pistons vs. Knicks",
+        "slug": "nba-det-nyk-2026-02-19",
+        "volume24hr": 1340619.4090829983
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21963.460299000002,
+        "price_range_accum_window": 0.1501229970933372,
+        "price_range_fast_window": 0.1501229970933372,
+        "top_net_wallet_accum_window": "0xc6fd646b15d976d7c3e9f410f3419f5c2452f43e",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 19720.999999000003,
+        "top_net_wallet_share_of_market_accum_window": 0.8979004096134116,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xc6fd646b15d976d7c3e9f410f3419f5c2452f43e",
+        "top_wallet_notional_accum_window": 19720.999999000003,
+        "top_wallet_share_accum_window": 0.8979004096134116,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21963.460299000002,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "109027771513242513624684055883465649806848545677215350872123503801547140202531",
+        "condition_id": "0xd05ea2206e08b0687ae5f1590ffe0194bda2db67d26abeed79fb51f6fd2fb5cc",
+        "event_slug": "nba-det-nyk-2026-02-19",
+        "name": "qetuo",
+        "outcome": "Knicks",
+        "outcome_index": 1,
+        "price": 0.43916163196722435,
+        "proxy_wallet": "0x79e505336f5f5e252378d121b7236828af9c9417",
+        "pseudonym": "Fatal-Tray",
+        "side": "SELL",
+        "size": 5106.23,
+        "slug": "nba-det-nyk-2026-02-19",
+        "timestamp": 1771553648,
+        "title": "Pistons vs. Knicks",
+        "trade_id": "939daa97e9c40c0c266abe9eefe874145c0aa9e266525da28192410bab43147d",
+        "transaction_hash": "0x3a75e2dd08b816e8dc494e40e2baf89482d6da9f67f187f70e68d1109995a9be"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-det-nyk-2026-02-19",
+      "wallet_stats": {
+        "avg_notional_7d": 2242.4602999999997,
+        "first_seen_ts": 1771553648,
+        "proxy_wallet": "0x79e505336f5f5e252378d121b7236828af9c9417",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x3488f31e6449f9803f99a8b5dd232c7ad883637f1c86e6953305a2ef19c77f20",
         "liquidity_num": 268190.849,
         "outcome_prices": [
@@ -3692,9 +3764,9 @@
       }
     }
   ],
-  "generated_at": 1771506740,
-  "new_alerts": 0,
+  "generated_at": 1771554228,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22183183615",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22183183615"
+  "workflow_run_id": "22208759661",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22208759661"
 }
