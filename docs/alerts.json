@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1b15428afa2e318399dc7e8cf565f6e31bd36a041f71965b53a3cae51eb767dc",
+        "liquidity_num": 29312.8951,
+        "outcome_prices": [
+          0.155,
+          0.845
+        ],
+        "outcomes": [
+          "Pegula",
+          "Anisimova"
+        ],
+        "question": "Dubai Duty Free Tennis Championships: Jessica Pegula vs Amanda Anisimova",
+        "slug": "wta-pegula-anisimo-2026-02-20",
+        "volume24hr": 52943.08520400001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 22007.183687000004,
+        "price_range_accum_window": 0.5040459629661717,
+        "price_range_fast_window": 0.5040459629661717,
+        "top_net_wallet_accum_window": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19999.999987000003,
+        "top_net_wallet_share_of_market_accum_window": 0.9087941588279795,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "top_wallet_notional_accum_window": 19999.999987000003,
+        "top_wallet_share_accum_window": 0.9087941588279795,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 22007.183687000004,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "75231590878019420042883303420764496993300232937892205500034088246053893379796",
+        "condition_id": "0x1b15428afa2e318399dc7e8cf565f6e31bd36a041f71965b53a3cae51eb767dc",
+        "event_slug": "wta-pegula-anisimo-2026-02-20",
+        "name": "TexMexTRex",
+        "outcome": "Anisimova",
+        "outcome_index": 1,
+        "price": 0.9140459629661716,
+        "proxy_wallet": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "pseudonym": "Gullible-Pancreas",
+        "side": "BUY",
+        "size": 21880.737728,
+        "slug": "wta-pegula-anisimo-2026-02-20",
+        "timestamp": 1771598104,
+        "title": "Dubai Duty Free Tennis Championships: Jessica Pegula vs Amanda Anisimova",
+        "trade_id": "040ba49ad15949fc8d1177ab28be4556b8066e58a82f18e448719705ae1a5703",
+        "transaction_hash": "0x62e7775e2a471122406373d96b89b4e72d409240f67dd17454d65a4e9b252318"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/wta-pegula-anisimo-2026-02-20",
+      "wallet_stats": {
+        "avg_notional_7d": 19999.999987000003,
+        "first_seen_ts": 1771598104,
+        "proxy_wallet": "0xdd8e67a862bd81067891ad41e86e9673229ef023",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xd05ea2206e08b0687ae5f1590ffe0194bda2db67d26abeed79fb51f6fd2fb5cc",
         "liquidity_num": 61533.188,
         "outcome_prices": [
@@ -3764,9 +3836,9 @@
       }
     }
   ],
-  "generated_at": 1771592668,
+  "generated_at": 1771639846,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22225210726",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22225210726"
+  "workflow_run_id": "22248361722",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22248361722"
 }
