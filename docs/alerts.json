@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x0d76bdccd2d21d2d67eaa62d57156b883915fd147bd6d2827fc86ca1e3468603",
+        "liquidity_num": 71281.74958,
+        "outcome_prices": [
+          0.983,
+          0.017
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Trail Blazers"
+        ],
+        "question": "Nuggets vs. Trail Blazers",
+        "slug": "nba-den-por-2026-02-20",
+        "volume24hr": 1204024.7239080018
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 56206.651459,
+        "price_range_accum_window": 0.48771488416367914,
+        "price_range_fast_window": 0.48771488416367914,
+        "top_net_wallet_accum_window": "0x8e433d051bfb5cc6a1f7e5a0452029b7ffb4a3cd",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 22892.3448,
+        "top_net_wallet_share_of_market_accum_window": 0.4072888920753239,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x8e433d051bfb5cc6a1f7e5a0452029b7ffb4a3cd",
+        "top_wallet_notional_accum_window": 22892.3448,
+        "top_wallet_share_accum_window": 0.4072888920753239,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 56206.651459,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "36274874922771201494269787071680827126234349192011324235102433830311222148919",
+        "condition_id": "0x0d76bdccd2d21d2d67eaa62d57156b883915fd147bd6d2827fc86ca1e3468603",
+        "event_slug": "nba-den-por-2026-02-20",
+        "name": "ganadi",
+        "outcome": "Nuggets",
+        "outcome_index": 0,
+        "price": 0.9877148841636791,
+        "proxy_wallet": "0x2f3bc6b83096c4e188687cde22e7692c4dd20cf9",
+        "pseudonym": "Livid-Employee",
+        "side": "BUY",
+        "size": 2429.851,
+        "slug": "nba-den-por-2026-02-20",
+        "timestamp": 1771647898,
+        "title": "Nuggets vs. Trail Blazers",
+        "trade_id": "60e89e3900153fbfc2f765d5043e46ed98efd6ba7dc831283747de73bb8e904e",
+        "transaction_hash": "0xfab9efb5ec55486da0d8a5dc7f97326a191b446a4f08ba6b30bda071cb146974"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-por-2026-02-20",
+      "wallet_stats": {
+        "avg_notional_7d": 2399.999999,
+        "first_seen_ts": 1771647898,
+        "proxy_wallet": "0x2f3bc6b83096c4e188687cde22e7692c4dd20cf9",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x1b15428afa2e318399dc7e8cf565f6e31bd36a041f71965b53a3cae51eb767dc",
         "liquidity_num": 29312.8951,
         "outcome_prices": [
@@ -3836,9 +3910,9 @@
       }
     }
   ],
-  "generated_at": 1771639846,
+  "generated_at": 1771678430,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22248361722",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22248361722"
+  "workflow_run_id": "22257164027",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22257164027"
 }
