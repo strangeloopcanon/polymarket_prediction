@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xd28191318521cbeda80d1ac1d406f5492d6dbbdb81e8a2c01730e927bedf7d88",
+        "liquidity_num": 20035.3654,
+        "outcome_prices": [
+          0.975,
+          0.025
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Club Atl\u00e9tico de Madrid win on 2026-02-21?",
+        "slug": "lal-mad-esp-2026-02-21-mad",
+        "volume24hr": 28527.628343999993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 122534.81999999999,
+        "price_range_accum_window": 0.30000000000000004,
+        "price_range_fast_window": 0.30000000000000004,
+        "top_net_wallet_accum_window": "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 103499.99999999999,
+        "top_net_wallet_share_of_market_accum_window": 0.8446578694937488,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a",
+        "top_wallet_notional_accum_window": 103499.99999999999,
+        "top_wallet_share_accum_window": 0.8446578694937488,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 122534.81999999999,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "89554529686790149860709360339217087366879909570421288123495549756757394876531",
+        "condition_id": "0xd28191318521cbeda80d1ac1d406f5492d6dbbdb81e8a2c01730e927bedf7d88",
+        "event_slug": "lal-mad-esp-2026-02-21",
+        "name": "enesowil",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.98,
+        "proxy_wallet": "0x4408cc367a713840d92693acd35cc205e59e1b6a",
+        "pseudonym": "Productive-Utility",
+        "side": "BUY",
+        "size": 16717.0,
+        "slug": "lal-mad-esp-2026-02-21-mad",
+        "timestamp": 1771708946,
+        "title": "Will Club Atl\u00e9tico de Madrid win on 2026-02-21?",
+        "trade_id": "3d338afd53a7118ec91e3e8d3711b8dc431e60decd97ab0431a0c261ad5d74bc",
+        "transaction_hash": "0x081dfee0b49e8c38989de317869b566815f6947ed3ede9c029a76c9de7e319e1"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-mad-esp-2026-02-21-mad",
+      "wallet_stats": {
+        "avg_notional_7d": 16382.66,
+        "first_seen_ts": 1771708946,
+        "proxy_wallet": "0x4408cc367a713840d92693acd35cc205e59e1b6a",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x0d76bdccd2d21d2d67eaa62d57156b883915fd147bd6d2827fc86ca1e3468603",
         "liquidity_num": 71281.74958,
         "outcome_prices": [
@@ -3910,9 +3983,9 @@
       }
     }
   ],
-  "generated_at": 1771678430,
+  "generated_at": 1771727293,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22257164027",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22257164027"
+  "workflow_run_id": "22268859761",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22268859761"
 }
