@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x06a6283431f9be1bfa8d8f8e2ac1d03ae2afa2b4f3a141571897ba01df90b7ba",
+        "liquidity_num": 92006.15691,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Up",
+          "Down"
+        ],
+        "question": "Bitcoin Up or Down - February 23, 4AM ET",
+        "slug": "bitcoin-up-or-down-february-23-4am-et",
+        "volume24hr": 327152.31860799994
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 24955.84932,
+        "price_range_accum_window": 0.499,
+        "price_range_fast_window": 0.499,
+        "top_net_wallet_accum_window": "0x9e756315468054491d3c74025bbaef3424b10c54",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 8775.0,
+        "top_net_wallet_share_of_market_accum_window": 0.35162097220099736,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x9e756315468054491d3c74025bbaef3424b10c54",
+        "top_wallet_notional_accum_window": 8775.0,
+        "top_wallet_share_accum_window": 0.35162097220099736,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 8
+      },
+      "notional": 24955.84932,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "25742983416044030993262637910187303945924287529670549206004366861661546600147",
+        "condition_id": "0x06a6283431f9be1bfa8d8f8e2ac1d03ae2afa2b4f3a141571897ba01df90b7ba",
+        "event_slug": "bitcoin-up-or-down-february-23-4am-et",
+        "name": "AcctToBeRetired",
+        "outcome": "Up",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x80ebf01c296b12a9b8309c86991b609907e55bfc",
+        "pseudonym": "Gargantuan-Point",
+        "side": "BUY",
+        "size": 2330.68,
+        "slug": "bitcoin-up-or-down-february-23-4am-et",
+        "timestamp": 1771840350,
+        "title": "Bitcoin Up or Down - February 23, 4AM ET",
+        "trade_id": "8af8c759855aaf1985c43d3fdaafa1714831a0d016c474c9db298068332f32c3",
+        "transaction_hash": "0x5b15b2693ce8378fc66f2d7a5662b55468a203fefdc70b922c82a07c1028e9f8"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/bitcoin-up-or-down-february-23-4am-et",
+      "wallet_stats": {
+        "avg_notional_7d": 5293.6803,
+        "first_seen_ts": 1771813178,
+        "proxy_wallet": "0x80ebf01c296b12a9b8309c86991b609907e55bfc",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x64b71130b6f795b75b36b693c6a4e03cf7f5c38372cc96a84ef9c64b112219a4",
         "liquidity_num": 1394.7567,
         "outcome_prices": [
@@ -4129,9 +4202,9 @@
       }
     }
   ],
-  "generated_at": 1771813756,
+  "generated_at": 1771852285,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22290846289",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22290846289"
+  "workflow_run_id": "22307558821",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22307558821"
 }
