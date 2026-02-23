@@ -2,6 +2,152 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x64b71130b6f795b75b36b693c6a4e03cf7f5c38372cc96a84ef9c64b112219a4",
+        "liquidity_num": 1394.7567,
+        "outcome_prices": [
+          0.01,
+          0.99
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Warriors"
+        ],
+        "question": "Spread: Nuggets (-6.5)",
+        "slug": "nba-den-gsw-2026-02-22-spread-away-6pt5",
+        "volume24hr": 5005.1111359999995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 27087.03126,
+        "price_range_accum_window": 0.509,
+        "price_range_fast_window": 0.509,
+        "top_net_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 20141.1801,
+        "top_net_wallet_share_of_market_accum_window": 0.7435728155910136,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+        "top_wallet_notional_accum_window": 20141.1801,
+        "top_wallet_share_accum_window": 0.7435728155910136,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 27087.03126,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "52112864405105325515663423101271866127040198502484246838998120333318337333302",
+        "condition_id": "0x64b71130b6f795b75b36b693c6a4e03cf7f5c38372cc96a84ef9c64b112219a4",
+        "event_slug": "nba-den-gsw-2026-02-22",
+        "name": "tradingl",
+        "outcome": "Warriors",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0xfb851ce2fdff625431ea2daf84ea7115af0a8464",
+        "pseudonym": "Imaginative-Plastic",
+        "side": "SELL",
+        "size": 2553.84,
+        "slug": "nba-den-gsw-2026-02-22-spread-away-6pt5",
+        "timestamp": 1771802314,
+        "title": "Spread: Nuggets (-6.5)",
+        "trade_id": "556c155efeff2ed8e732d9c1a49fe8882bc33575a1faeb9bc95541623d59763c",
+        "transaction_hash": "0xb3ad1871735d3d0e3e5c9b9ca8d29aee9ab334776dadd3eedf65e13f8e502c33"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-gsw-2026-02-22-spread-away-6pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 2551.28616,
+        "first_seen_ts": 1771802314,
+        "proxy_wallet": "0xfb851ce2fdff625431ea2daf84ea7115af0a8464",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xa99402b3e4e198e75487baab69d97e6fea09850811ca2aae173048bd8f130c1a",
+        "liquidity_num": 63447.4731,
+        "outcome_prices": [
+          0.325,
+          0.675
+        ],
+        "outcomes": [
+          "Cavaliers",
+          "Thunder"
+        ],
+        "question": "Cavaliers vs. Thunder",
+        "slug": "nba-cle-okc-2026-02-22",
+        "volume24hr": 1310899.6071980025
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 57771.602899,
+        "price_range_accum_window": 0.2507919254658385,
+        "price_range_fast_window": 0.2507919254658385,
+        "top_net_wallet_accum_window": "0x1b4d7cbd8dce8a56dd2c51e952cccbf55f78e246",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19000.0,
+        "top_net_wallet_share_of_market_accum_window": 0.7827169506329179,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x1b4d7cbd8dce8a56dd2c51e952cccbf55f78e246",
+        "top_wallet_notional_accum_window": 19000.0,
+        "top_wallet_share_accum_window": 0.7827169506329179,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 57771.602899,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "66355217819996301870018340976831404026816536367613482179944896815064300650031",
+        "condition_id": "0xa99402b3e4e198e75487baab69d97e6fea09850811ca2aae173048bd8f130c1a",
+        "event_slug": "nba-cle-okc-2026-02-22",
+        "name": "GuailanKia",
+        "outcome": "Cavaliers",
+        "outcome_index": 0,
+        "price": 0.3692080745341615,
+        "proxy_wallet": "0x8f0b503c3f65d679b8517480555cd936a53feb6d",
+        "pseudonym": "Dismal-Samurai",
+        "side": "BUY",
+        "size": 6440.0,
+        "slug": "nba-cle-okc-2026-02-22",
+        "timestamp": 1771788258,
+        "title": "Cavaliers vs. Thunder",
+        "trade_id": "1a6db1bb3740459794fc4fed90a9bd80852856332d1feeda1b81cabda6c7aeb7",
+        "transaction_hash": "0xe179125e607fd60e33b10f8c4cb7feeb7436671ef033ba90c82a043adb0bc215"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-cle-okc-2026-02-22",
+      "wallet_stats": {
+        "avg_notional_7d": 2377.7,
+        "first_seen_ts": 1771788258,
+        "proxy_wallet": "0x8f0b503c3f65d679b8517480555cd936a53feb6d",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xd28191318521cbeda80d1ac1d406f5492d6dbbdb81e8a2c01730e927bedf7d88",
         "liquidity_num": 20035.3654,
         "outcome_prices": [
@@ -3983,9 +4129,9 @@
       }
     }
   ],
-  "generated_at": 1771764930,
+  "generated_at": 1771813756,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22277559627",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22277559627"
+  "workflow_run_id": "22290846289",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22290846289"
 }
