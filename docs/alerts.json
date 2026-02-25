@@ -2,6 +2,81 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xff7e78f7a66c8b2ee3f68b1b298ad77817f98f7c692d3405db276e8ac961b52b",
+        "liquidity_num": 54383.0769,
+        "outcome_prices": [
+          0.795,
+          0.205
+        ],
+        "outcomes": [
+          "Thunder",
+          "Raptors"
+        ],
+        "question": "Thunder vs. Raptors",
+        "slug": "nba-okc-tor-2026-02-24",
+        "volume24hr": 2702902.066031008
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 68413.56059800001,
+        "price_range_accum_window": 0.5499999998577292,
+        "price_range_fast_window": 0.5499999998577292,
+        "top_net_wallet_accum_window": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 49874.16500000001,
+        "top_net_wallet_share_of_market_accum_window": 0.7290099296696746,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+        "top_wallet_notional_accum_window": 49874.16500000001,
+        "top_wallet_share_accum_window": 0.7290099296696746,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 68413.56059800001,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 15,
+      "trade": {
+        "asset": "46299907269453217640174781152774353513755040033088982659742867388017617023193",
+        "condition_id": "0xff7e78f7a66c8b2ee3f68b1b298ad77817f98f7c692d3405db276e8ac961b52b",
+        "event_slug": "nba-okc-tor-2026-02-24",
+        "name": "0xCD5Ae0dee78cb5F0e2627f857CfE2f9bE4dBA71c-1769540891163",
+        "outcome": "Thunder",
+        "outcome_index": 0,
+        "price": 0.9899999998577292,
+        "proxy_wallet": "0xcd5ae0dee78cb5f0e2627f857cfe2f9be4dba71c",
+        "pseudonym": "Repulsive-Macro",
+        "side": "BUY",
+        "size": 4006.444443,
+        "slug": "nba-okc-tor-2026-02-24",
+        "timestamp": 1771985870,
+        "title": "Thunder vs. Raptors",
+        "trade_id": "a3bdd0f878ccbfc3b727c3922a53b51f35ca7eb73fb635238cb8a2f7cab761e7",
+        "transaction_hash": "0x2ffd8dfec204683ed9c0b0ca742009900ba36dce124226d1c8d17d0d93a09803"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-okc-tor-2026-02-24",
+      "wallet_stats": {
+        "avg_notional_7d": 3966.379998,
+        "first_seen_ts": 1771985870,
+        "proxy_wallet": "0xcd5ae0dee78cb5f0e2627f857cfe2f9be4dba71c",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x19da64a3f1b53b26b99bee3bb130d763e92e9f5f78436cb914b40f476665842d",
         "liquidity_num": 73298.7531,
         "outcome_prices": [
@@ -4347,9 +4422,9 @@
       }
     }
   ],
-  "generated_at": 1771938749,
-  "new_alerts": 0,
+  "generated_at": 1771986431,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22352342009",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22352342009"
+  "workflow_run_id": "22379441784",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22379441784"
 }
