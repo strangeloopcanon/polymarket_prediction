@@ -2,6 +2,152 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1289e96f7cd84f38431fe1fb778fe9ede981bb7ce3b85c5b96bb4a82d577efc7",
+        "liquidity_num": 623090.30512,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Newcastle United FC win on 2026-03-04?",
+        "slug": "epl-new-mun-2026-03-04-new",
+        "volume24hr": 193574.03689000002
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 47544.0488,
+        "price_range_accum_window": 0.639,
+        "price_range_fast_window": 0.639,
+        "top_net_wallet_accum_window": "0xac4773707daddd3792efed5a91f5ec7651a7d234",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 43360.2368,
+        "top_net_wallet_share_of_market_accum_window": 0.9120013523122583,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xac4773707daddd3792efed5a91f5ec7651a7d234",
+        "top_wallet_notional_accum_window": 43360.2368,
+        "top_wallet_share_accum_window": 0.9120013523122583,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 47544.0488,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "18425759261912435070475771552038964162987874505828147957802062315927148657967",
+        "condition_id": "0x1289e96f7cd84f38431fe1fb778fe9ede981bb7ce3b85c5b96bb4a82d577efc7",
+        "event_slug": "epl-new-mun-2026-03-04",
+        "name": "Cryptocool",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x2350986f0b79cf795d73251e78814e23c5f7570e",
+        "pseudonym": "Faint-Sauce",
+        "side": "SELL",
+        "size": 4188.0,
+        "slug": "epl-new-mun-2026-03-04-new",
+        "timestamp": 1772663331,
+        "title": "Will Newcastle United FC win on 2026-03-04?",
+        "trade_id": "81a4b3ce992642a7f5f23bc716c169719cbc73f7e9cd5839c405cdcd376fe4ca",
+        "transaction_hash": "0xd7ce3a72f774912d094ebf56d64ff5476e3fdee8e78d2c742b3229c69ab603c4"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-new-mun-2026-03-04-new",
+      "wallet_stats": {
+        "avg_notional_7d": 4183.812,
+        "first_seen_ts": 1772663331,
+        "proxy_wallet": "0x2350986f0b79cf795d73251e78814e23c5f7570e",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x55aaedf58a379e677f1a72150605119fcbed1c4cb90d163d1bff2445053f4a18",
+        "liquidity_num": 1807897.43944,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Manchester City FC win on 2026-03-04?",
+        "slug": "epl-mac-not-2026-03-04-mac",
+        "volume24hr": 2174620.246899002
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 112220.59320899998,
+        "price_range_accum_window": 0.7972494435824861,
+        "price_range_fast_window": 0.7972494435824861,
+        "top_net_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 39333.010200000004,
+        "top_net_wallet_share_of_market_accum_window": 0.3504972579029776,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "top_wallet_notional_accum_window": 39333.010200000004,
+        "top_wallet_share_accum_window": 0.3504972579029776,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 6
+      },
+      "notional": 112220.59320899998,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "47360322818856779953484901624413028936225139926711290257453918602423436817642",
+        "condition_id": "0x55aaedf58a379e677f1a72150605119fcbed1c4cb90d163d1bff2445053f4a18",
+        "event_slug": "epl-mac-not-2026-03-04",
+        "name": "YeahNah",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x4cd987f73accbb20eddc474276716ea23986a643",
+        "pseudonym": "Satisfied-Grabbag",
+        "side": "SELL",
+        "size": 8844.99,
+        "slug": "epl-mac-not-2026-03-04-mac",
+        "timestamp": 1772660015,
+        "title": "Will Manchester City FC win on 2026-03-04?",
+        "trade_id": "3a4478076869056ed85fcaf21325afe50d07aa82af630ac15eb849b072ec2b1a",
+        "transaction_hash": "0x1681fcc19215bb405a8961e2b2085e630b753887cbafc136ce3cb46812dc083d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-mac-not-2026-03-04-mac",
+      "wallet_stats": {
+        "avg_notional_7d": 5500.918575,
+        "first_seen_ts": 1772660015,
+        "proxy_wallet": "0x4cd987f73accbb20eddc474276716ea23986a643",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x03e38f4c5abeb1560d3af133186dd3130f80183364964abf4724efbc7debeefe",
         "liquidity_num": 1678935.73182,
         "outcome_prices": [
@@ -5007,9 +5153,9 @@
       }
     }
   ],
-  "generated_at": 1772629355,
+  "generated_at": 1772677420,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22670503204",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22670503204"
+  "workflow_run_id": "22699304513",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22699304513"
 }
