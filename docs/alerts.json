@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x5b33eda386e6fca9b5c73c57fea3f3bec863e17f9d483a0f30515913783cf24f",
+        "liquidity_num": 48517.2386,
+        "outcome_prices": [
+          0.989,
+          0.011
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg parliamentary elections?",
+        "slug": "will-cdu-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary-elections",
+        "volume24hr": 971010.2661950004
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 39143.074179999996,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.9640817719369142,
+        "top_net_wallet_accum_window": "0xb03b826a4fc9893b35d3ddf4f11be824525b6ca1",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 22496.409529999997,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xb03b826a4fc9893b35d3ddf4f11be824525b6ca1",
+        "top_wallet_notional_accum_window": 22496.409529999997,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 39143.074179999996,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "82192673075922987183097238281853331009576845757656637245956266219948917995548",
+        "condition_id": "0x5b33eda386e6fca9b5c73c57fea3f3bec863e17f9d483a0f30515913783cf24f",
+        "event_slug": "who-will-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary-elections",
+        "name": "vvvvvllllllvvvvv",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.9948436554885882,
+        "proxy_wallet": "0xb03b826a4fc9893b35d3ddf4f11be824525b6ca1",
+        "pseudonym": "Mild-Lecture",
+        "side": "BUY",
+        "size": 22613.01,
+        "slug": "will-cdu-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary-elections",
+        "timestamp": 1773078119,
+        "title": "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg parliamentary elections?",
+        "trade_id": "8769f612a3004074ffe953ce505f2bf71949a8a68c1ad2487abba7012083f503",
+        "transaction_hash": "0x6dc082ecd3001b9503ae9a8cda23f943af3ed47a0da214f5ce367ce6e61be4b9"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-cdu-win-the-most-seats-in-the-2026-baden-wrttemberg-parliamentary-elections",
+      "wallet_stats": {
+        "avg_notional_7d": 12425.296765,
+        "first_seen_ts": 1772407229,
+        "proxy_wallet": "0xb03b826a4fc9893b35d3ddf4f11be824525b6ca1",
+        "trades_7d": 2,
+        "trades_total": 3,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x7a0d24ecbc97fae74fcdf6479f80eac887dc7098b62a8cd8b07cf3f45752e63e",
         "liquidity_num": 48271.588,
         "outcome_prices": [
@@ -5594,9 +5666,9 @@
       }
     }
   ],
-  "generated_at": 1773061779,
+  "generated_at": 1773108745,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22854980917",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22854980917"
+  "workflow_run_id": "22883875300",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22883875300"
 }
