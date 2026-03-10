@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x63a3d1cfebf713c27d4a2d3270ab2ce63d358f0b13855de3c2f1e1f93165f429",
+        "liquidity_num": 2541730.6563,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Knicks",
+          "Clippers"
+        ],
+        "question": "Knicks vs. Clippers",
+        "slug": "nba-nyk-lac-2026-03-09",
+        "volume24hr": 4252849.886774007
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 26150.70981,
+        "price_range_accum_window": 0.529,
+        "price_range_fast_window": 0.529,
+        "top_net_wallet_accum_window": "0x67bb64fac5252df3f61ee2d91a4b1350e40eb6ef",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 9990.0,
+        "top_net_wallet_share_of_market_accum_window": 0.3820163992711141,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x67bb64fac5252df3f61ee2d91a4b1350e40eb6ef",
+        "top_wallet_notional_accum_window": 9990.0,
+        "top_wallet_share_accum_window": 0.3820163992711141,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 26150.70981,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "8173524614495040969904535408280217322410066272374832428167977114533470336164",
+        "condition_id": "0x63a3d1cfebf713c27d4a2d3270ab2ce63d358f0b13855de3c2f1e1f93165f429",
+        "event_slug": "nba-nyk-lac-2026-03-09",
+        "name": "0x6f40b2c962500476422Fe853aDF895DF70C3BA19-1772685537242",
+        "outcome": "Clippers",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x6f40b2c962500476422fe853adf895df70c3ba19",
+        "pseudonym": "Massive-Poignance",
+        "side": "SELL",
+        "size": 7344.19,
+        "slug": "nba-nyk-lac-2026-03-09",
+        "timestamp": 1773117727,
+        "title": "Knicks vs. Clippers",
+        "trade_id": "781e7ca4aa038140dd48aca4b952d0ee9d77346a138aabf4a37aeac7fdf06491",
+        "transaction_hash": "0x50c776271257b905c96a5e595f0fc8ca22f0149b35e54d740e9c59976683c3ae"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-nyk-lac-2026-03-09",
+      "wallet_stats": {
+        "avg_notional_7d": 5064.8679015,
+        "first_seen_ts": 1772896911,
+        "proxy_wallet": "0x6f40b2c962500476422fe853adf895df70c3ba19",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x5b33eda386e6fca9b5c73c57fea3f3bec863e17f9d483a0f30515913783cf24f",
         "liquidity_num": 48517.2386,
         "outcome_prices": [
@@ -5666,9 +5738,9 @@
       }
     }
   ],
-  "generated_at": 1773108745,
+  "generated_at": 1773148052,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22883875300",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22883875300"
+  "workflow_run_id": "22903926704",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22903926704"
 }
