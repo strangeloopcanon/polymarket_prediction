@@ -2,6 +2,151 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xa414f00f0e16f393ddfe1d7e5973e12cfde46941be4c72053249f2d6d2270213",
+        "liquidity_num": 885234.33971,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Grizzlies",
+          "76ers"
+        ],
+        "question": "Grizzlies vs. 76ers",
+        "slug": "nba-mem-phi-2026-03-10",
+        "volume24hr": 3270176.2570599993
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 50567.059,
+        "price_range_accum_window": 0.389,
+        "price_range_fast_window": 0.389,
+        "top_net_wallet_accum_window": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 48351.6,
+        "top_net_wallet_share_of_market_accum_window": 0.9561877031448477,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "top_wallet_notional_accum_window": 48351.6,
+        "top_wallet_share_accum_window": 0.9561877031448477,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 50567.059,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "10792382177740918614535068773444774708801345133343368374867450775826786733979",
+        "condition_id": "0xa414f00f0e16f393ddfe1d7e5973e12cfde46941be4c72053249f2d6d2270213",
+        "event_slug": "nba-mem-phi-2026-03-10",
+        "name": "Wannac",
+        "outcome": "76ers",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "pseudonym": "Sympathetic-Dead",
+        "side": "SELL",
+        "size": 48400.0,
+        "slug": "nba-mem-phi-2026-03-10",
+        "timestamp": 1773194785,
+        "title": "Grizzlies vs. 76ers",
+        "trade_id": "4831f235299ec5fb546e8ee0f69ec77a4cc6f55654e7e54780c6b43cf855f15d",
+        "transaction_hash": "0xb44ebd32ebeaf01c29b89302537b38a8886c58974d78c9c4c378398a715c50aa"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-mem-phi-2026-03-10",
+      "wallet_stats": {
+        "avg_notional_7d": 64449.972180000004,
+        "first_seen_ts": 1772997619,
+        "proxy_wallet": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xb6672e33386fff3f751ee29c3bc2cfb0cfe252f8842351f01ef7aed46f28735a",
+        "liquidity_num": 1140978.62879,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Club Atl\u00e9tico de Madrid win on 2026-03-10?",
+        "slug": "ucl-atm1-tot-2026-03-10-atm1",
+        "volume24hr": 6381008.686480001
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 116752.73668100001,
+        "price_range_accum_window": 0.4290000000143048,
+        "price_range_fast_window": 0.4290000000143048,
+        "top_net_wallet_accum_window": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 96103.8,
+        "top_net_wallet_share_of_market_accum_window": 0.8231395916875296,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "top_wallet_notional_accum_window": 96103.8,
+        "top_wallet_share_accum_window": 0.8231395916875296,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 116752.73668100001,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "76744295612879811354415003580935932230180459016810395346047695003117934810873",
+        "condition_id": "0xb6672e33386fff3f751ee29c3bc2cfb0cfe252f8842351f01ef7aed46f28735a",
+        "event_slug": "ucl-atm1-tot-2026-03-10",
+        "name": "Wannac",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "pseudonym": "Sympathetic-Dead",
+        "side": "SELL",
+        "size": 96200.0,
+        "slug": "ucl-atm1-tot-2026-03-10-atm1",
+        "timestamp": 1773181701,
+        "title": "Will Club Atl\u00e9tico de Madrid win on 2026-03-10?",
+        "trade_id": "cc39076d44b74ef66ac8b0510db5cb44380a94e73d800a67e13282ed8765c346",
+        "transaction_hash": "0x1cbcf98731954ee8c9197269a483c6862c9ddf267b130ff4553df67a7b157e4c"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/ucl-atm1-tot-2026-03-10-atm1",
+      "wallet_stats": {
+        "avg_notional_7d": 72499.15827,
+        "first_seen_ts": 1772997619,
+        "proxy_wallet": "0xa8e089ade142c95538e06196e09c85681112ad50",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x63a3d1cfebf713c27d4a2d3270ab2ce63d358f0b13855de3c2f1e1f93165f429",
         "liquidity_num": 2541730.6563,
         "outcome_prices": [
@@ -5738,9 +5883,9 @@
       }
     }
   ],
-  "generated_at": 1773148052,
-  "new_alerts": 0,
+  "generated_at": 1773195107,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "22903926704",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22903926704"
+  "workflow_run_id": "22933376511",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/22933376511"
 }
