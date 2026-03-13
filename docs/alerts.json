@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x02a780bfabf18a6309b58e2d8083a88eb8181f1e8117d285668e868356411bd0",
+        "liquidity_num": 944117.11652,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will VfB Stuttgart win on 2026-03-12?",
+        "slug": "uel-stu3-por1-2026-03-12-stu3",
+        "volume24hr": 4234846.533026013
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 96208.23502,
+        "price_range_accum_window": 0.529,
+        "price_range_fast_window": 0.529,
+        "top_net_wallet_accum_window": "0x8cdc597d51327275463a1c518fdd1621d9b2b83f",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 37976.0,
+        "top_net_wallet_share_of_market_accum_window": 0.3947271248880666,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x8cdc597d51327275463a1c518fdd1621d9b2b83f",
+        "top_wallet_notional_accum_window": 37976.0,
+        "top_wallet_share_accum_window": 0.3947271248880666,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 96208.23502,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "62513232225934224315851918730079673070562891304292704813437550361273121501970",
+        "condition_id": "0x02a780bfabf18a6309b58e2d8083a88eb8181f1e8117d285668e868356411bd0",
+        "event_slug": "uel-stu3-por1-2026-03-12",
+        "name": "0x20D6436849F930584892730C7F96eBB2Ac763856-1768642056357",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "pseudonym": "Shrill-Aunt",
+        "side": "SELL",
+        "size": 20754.98,
+        "slug": "uel-stu3-por1-2026-03-12-stu3",
+        "timestamp": 1773351193,
+        "title": "Will VfB Stuttgart win on 2026-03-12?",
+        "trade_id": "0f57e79df2b361696ac55189cb5909f3f99bb99070cc8eb9bf0c814aacee44df",
+        "transaction_hash": "0x9739e0d1e6662413f28591ec568a9ab75364781656165f3448c886f22c91d363"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/uel-stu3-por1-2026-03-12-stu3",
+      "wallet_stats": {
+        "avg_notional_7d": 20734.225019999998,
+        "first_seen_ts": 1768661474,
+        "proxy_wallet": "0x20d6436849f930584892730c7f96ebb2ac763856",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x4f67296807ad1b64f70297d77a059ab9f00fead8febb757116e772c244247e76",
         "liquidity_num": 496477.37703,
         "outcome_prices": [
@@ -6029,9 +6102,9 @@
       }
     }
   ],
-  "generated_at": 1773320765,
+  "generated_at": 1773368591,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23003409849",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23003409849"
+  "workflow_run_id": "23033354856",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23033354856"
 }
