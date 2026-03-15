@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x87505068f788d6fe956b3d182d2cc6537f1e65ad8d64529f37bb3f300b780ff9",
+        "liquidity_num": 231251.0941,
+        "outcome_prices": [
+          0.385,
+          0.615
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will RCD Mallorca win on 2026-03-15?",
+        "slug": "lal-mal-esp-2026-03-15-mal",
+        "volume24hr": 126798.63813900002
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 77170.6379,
+        "price_range_accum_window": 0.010000000000000009,
+        "price_range_fast_window": 0.010000000000000009,
+        "top_net_wallet_accum_window": "0xd1be0932c621cc31edb32eae5cc7e8394faccc57",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 67170.6353,
+        "top_net_wallet_share_of_market_accum_window": 0.8704170022158129,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 3,
+        "top_wallet_accum_window": "0xd1be0932c621cc31edb32eae5cc7e8394faccc57",
+        "top_wallet_notional_accum_window": 67170.6353,
+        "top_wallet_share_accum_window": 0.8704170022158129,
+        "top_wallet_trades_accum_window": 3,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 67170.6353,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "3888174561085429240162502571918011633832793504796538916202627699755916324118",
+        "condition_id": "0x87505068f788d6fe956b3d182d2cc6537f1e65ad8d64529f37bb3f300b780ff9",
+        "event_slug": "lal-mal-esp-2026-03-15",
+        "name": "smoothmove",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.63,
+        "proxy_wallet": "0xd1be0932c621cc31edb32eae5cc7e8394faccc57",
+        "pseudonym": "Adolescent-Skyline",
+        "side": "BUY",
+        "size": 25000.0,
+        "slug": "lal-mal-esp-2026-03-15-mal",
+        "timestamp": 1773579433,
+        "title": "Will RCD Mallorca win on 2026-03-15?",
+        "trade_id": "c3e4891917b3b884eb4d910813357386128428a8dbf100c48ac671cdb3daf4f9",
+        "transaction_hash": "0x525148bf1ed13ae67d58157f9e1e7daae917028d70cf7d2c46f9fcfcea89fbc4"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-mal-esp-2026-03-15-mal",
+      "wallet_stats": {
+        "avg_notional_7d": 22390.211766666664,
+        "first_seen_ts": 1773579395,
+        "proxy_wallet": "0xd1be0932c621cc31edb32eae5cc7e8394faccc57",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xc69700750371973efc10a74f50e831958a4d07456a86ecd670d7bfc59db9c6a5",
         "liquidity_num": 790369.5651,
         "outcome_prices": [
@@ -6397,9 +6471,9 @@
       }
     }
   ],
-  "generated_at": 1773542372,
-  "new_alerts": 0,
+  "generated_at": 1773579548,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23101757768",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23101757768"
+  "workflow_run_id": "23110853638",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23110853638"
 }
