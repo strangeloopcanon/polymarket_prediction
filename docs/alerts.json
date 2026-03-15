@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xc69700750371973efc10a74f50e831958a4d07456a86ecd670d7bfc59db9c6a5",
+        "liquidity_num": 790369.5651,
+        "outcome_prices": [
+          0.575,
+          0.425
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Eintracht Frankfurt win on 2026-03-14?",
+        "slug": "bun-ein-hei-2026-03-14-ein",
+        "volume24hr": 1564141.4275309998
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 109780.0,
+        "price_range_accum_window": 1.1102230246251565e-16,
+        "price_range_fast_window": 1.1102230246251565e-16,
+        "top_net_wallet_accum_window": "0xefbc5fec8d7b0acdc8911bdd9a98d6964308f9a2",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 107500.0,
+        "top_net_wallet_share_of_market_accum_window": 0.9792311896520314,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xefbc5fec8d7b0acdc8911bdd9a98d6964308f9a2",
+        "top_wallet_notional_accum_window": 107500.0,
+        "top_wallet_share_accum_window": 0.9792311896520314,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 107500.0,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "1130553586035049497332214557498627168242136756231687778170273606534394820442",
+        "condition_id": "0xc69700750371973efc10a74f50e831958a4d07456a86ecd670d7bfc59db9c6a5",
+        "event_slug": "bun-ein-hei-2026-03-14",
+        "name": "reachingthesky",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.43,
+        "proxy_wallet": "0xefbc5fec8d7b0acdc8911bdd9a98d6964308f9a2",
+        "pseudonym": "Free-Briefing",
+        "side": "BUY",
+        "size": 150000.0,
+        "slug": "bun-ein-hei-2026-03-14-ein",
+        "timestamp": 1773498491,
+        "title": "Will Eintracht Frankfurt win on 2026-03-14?",
+        "trade_id": "a3b93490768962c798b2f2b99857b1854a5e0c9c563cbcc408a2976c2f8a469c",
+        "transaction_hash": "0x023f189755da173b4b42879e318443186aae917057c7ad0733a75e683fb5af73"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/bun-ein-hei-2026-03-14-ein",
+      "wallet_stats": {
+        "avg_notional_7d": 53750.0,
+        "first_seen_ts": 1773498413,
+        "proxy_wallet": "0xefbc5fec8d7b0acdc8911bdd9a98d6964308f9a2",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x8116703d24f9d3e570e8c3ef21003c49e16c6543ae490bdbe6f6489612ad2462",
         "liquidity_num": 869.00249,
         "outcome_prices": [
@@ -6324,9 +6397,9 @@
       }
     }
   ],
-  "generated_at": 1773493050,
+  "generated_at": 1773542372,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23088402906",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23088402906"
+  "workflow_run_id": "23101757768",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23101757768"
 }
