@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xd3f429ccc2d3b6280cb846678d9fdad454216e4285970dee67ec3e6dfe6992f5",
+        "liquidity_num": 840373.96285,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will FC Barcelona win on 2026-03-22?",
+        "slug": "lal-bar-ray-2026-03-22-bar",
+        "volume24hr": 5026033.557552995
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 42816.456159,
+        "price_range_accum_window": 0.1889999999782207,
+        "price_range_fast_window": 0.19899999999999995,
+        "top_net_wallet_accum_window": "0x1eaf5d5f822dc5211c25b5839e5b7aa70f319bf0",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 25358.45616,
+        "top_net_wallet_share_of_market_accum_window": 0.812681006577724,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x1eaf5d5f822dc5211c25b5839e5b7aa70f319bf0",
+        "top_wallet_notional_accum_window": 25358.45616,
+        "top_wallet_share_accum_window": 0.812681006577724,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 42816.456159,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "85472148416685863897240595134407738946454201641175811952882644022281429468328",
+        "condition_id": "0xd3f429ccc2d3b6280cb846678d9fdad454216e4285970dee67ec3e6dfe6992f5",
+        "event_slug": "lal-bar-ray-2026-03-22",
+        "name": "LYnetLY",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x1eaf5d5f822dc5211c25b5839e5b7aa70f319bf0",
+        "pseudonym": "Reckless-Silence",
+        "side": "SELL",
+        "size": 25383.84,
+        "slug": "lal-bar-ray-2026-03-22-bar",
+        "timestamp": 1774197081,
+        "title": "Will FC Barcelona win on 2026-03-22?",
+        "trade_id": "3a58cf23ba9fee2d7f46a43d7c37c2563726c3fe4bdb414fac8a59454d1275cf",
+        "transaction_hash": "0xc3b7cd6e111ac2cbb5be224d76407e362b963219090e6b30d0374798f3d7ea9d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-bar-ray-2026-03-22-bar",
+      "wallet_stats": {
+        "avg_notional_7d": 25358.45616,
+        "first_seen_ts": 1774197081,
+        "proxy_wallet": "0x1eaf5d5f822dc5211c25b5839e5b7aa70f319bf0",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x0954cc08de0ab8345bcf24f314d571e6a77d913ea9977ce2b4187983a70b450d",
         "liquidity_num": 2353528.85627,
         "outcome_prices": [
@@ -7127,9 +7201,9 @@
       }
     }
   ],
-  "generated_at": 1774184255,
+  "generated_at": 1774233147,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23403545855",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23403545855"
+  "workflow_run_id": "23418932918",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23418932918"
 }
