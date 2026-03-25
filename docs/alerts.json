@@ -2,6 +2,77 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xbd4c47f29092f81f777211bb56e17a6658e80992fb87db766f679160be3241c3",
+        "liquidity_num": 286124.6573,
+        "outcome_prices": [
+          0.855,
+          0.145
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Suns"
+        ],
+        "question": "Nuggets vs. Suns",
+        "slug": "nba-den-phx-2026-03-24",
+        "volume24hr": 3912530.3066640003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 43955.8076,
+        "price_range_accum_window": 0.18872634690423584,
+        "price_range_fast_window": 0.18872634690423584,
+        "top_net_wallet_accum_window": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 34720.8091,
+        "top_net_wallet_share_of_market_accum_window": 0.789902654410563,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+        "top_wallet_notional_accum_window": 34720.8091,
+        "top_wallet_share_accum_window": 0.789902654410563,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 43955.8076,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "23233394988453138676453756568931964683203148302915027263468721213424953033444",
+        "condition_id": "0xbd4c47f29092f81f777211bb56e17a6658e80992fb87db766f679160be3241c3",
+        "event_slug": "nba-den-phx-2026-03-24",
+        "name": "knedloveprovelo",
+        "outcome": "Nuggets",
+        "outcome_index": 0,
+        "price": 0.8687263469042358,
+        "proxy_wallet": "0xd6a3f0ec6c4a8ad680d580610c82ca57ff139489",
+        "pseudonym": "Weighty-Rifle",
+        "side": "BUY",
+        "size": 3403.36,
+        "slug": "nba-den-phx-2026-03-24",
+        "timestamp": 1774414401,
+        "title": "Nuggets vs. Suns",
+        "trade_id": "20c129a484608ac30c8b483cfd57b82360d476a4be2f4d3d3e9bf372b4260b5b",
+        "transaction_hash": "0xb71a260eb470c75c7f20718eb32c792353cf058022656b5ca4cb00d32702ca85"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-phx-2026-03-24",
+      "wallet_stats": {
+        "avg_notional_7d": 5145.465207076923,
+        "first_seen_ts": 1773962835,
+        "proxy_wallet": "0xd6a3f0ec6c4a8ad680d580610c82ca57ff139489",
+        "trades_7d": 13,
+        "trades_total": 13,
+        "unique_markets_7d": 12,
+        "unique_markets_total": 12
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xd3f429ccc2d3b6280cb846678d9fdad454216e4285970dee67ec3e6dfe6992f5",
         "liquidity_num": 840373.96285,
         "outcome_prices": [
@@ -7201,9 +7272,9 @@
       }
     }
   ],
-  "generated_at": 1774405757,
+  "generated_at": 1774444618,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23522018331",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23522018331"
+  "workflow_run_id": "23542977235",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23542977235"
 }
