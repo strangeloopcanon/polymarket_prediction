@@ -2,6 +2,82 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x8cdf3e7e2322abce8d841b8aae3b1e771a2a2ca1b614a6fd33ef15ee51339609",
+        "liquidity_num": 1268448.43492,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Tennessee Volunteers",
+          "Iowa State Cyclones"
+        ],
+        "question": "Tennessee Volunteers vs. Iowa State Cyclones",
+        "slug": "cbb-tenn-iowast-2026-03-27",
+        "volume24hr": 4987389.886783986
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 61306.1593,
+        "price_range_accum_window": 0.619,
+        "price_range_fast_window": 0.619,
+        "top_net_wallet_accum_window": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 44646.82,
+        "top_net_wallet_share_of_market_accum_window": 0.7282599417380237,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 6,
+        "top_wallet_accum_window": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+        "top_wallet_notional_accum_window": 44646.82,
+        "top_wallet_share_accum_window": 0.7282599417380237,
+        "top_wallet_trades_accum_window": 6,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 61306.1593,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 16,
+      "trade": {
+        "asset": "81438783150792244592328715427303188623453352675284541060677928493725012936568",
+        "condition_id": "0x8cdf3e7e2322abce8d841b8aae3b1e771a2a2ca1b614a6fd33ef15ee51339609",
+        "event_slug": "cbb-tenn-iowast-2026-03-27",
+        "name": "lookatthecost",
+        "outcome": "Tennessee Volunteers",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xd3be00026e2c8a226244d793a50693fcb632c163",
+        "pseudonym": "Severe-Hobbit",
+        "side": "SELL",
+        "size": 3999.99,
+        "slug": "cbb-tenn-iowast-2026-03-27",
+        "timestamp": 1774673461,
+        "title": "Tennessee Volunteers vs. Iowa State Cyclones",
+        "trade_id": "d939ebdad5742750ac5040a90671cdcc59fb056d22947e83d8c3d50a784a6a98",
+        "transaction_hash": "0x108aa649e8b6864194a948b30d4065e91eb061b2fed60d58753a4b3d07c41836"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-tenn-iowast-2026-03-27",
+      "wallet_stats": {
+        "avg_notional_7d": 3995.99001,
+        "first_seen_ts": 1774673461,
+        "proxy_wallet": "0xd3be00026e2c8a226244d793a50693fcb632c163",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xbd4c47f29092f81f777211bb56e17a6658e80992fb87db766f679160be3241c3",
         "liquidity_num": 286124.6573,
         "outcome_prices": [
@@ -7272,9 +7348,9 @@
       }
     }
   ],
-  "generated_at": 1774664910,
+  "generated_at": 1774702842,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23675473753",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23675473753"
+  "workflow_run_id": "23685760730",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23685760730"
 }
