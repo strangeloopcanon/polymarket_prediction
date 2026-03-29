@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x17dafc4d9c1128c17f936e35f6772d02c0eb2f637b883b95f8dc891740d2d6cc",
+        "liquidity_num": 103145.0821,
+        "outcome_prices": [
+          0.955,
+          0.045
+        ],
+        "outcomes": [
+          "Pistons",
+          "Timberwolves"
+        ],
+        "question": "Pistons vs. Timberwolves",
+        "slug": "nba-det-min-2026-03-28",
+        "volume24hr": 4453655.742608983
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 74087.30677,
+        "price_range_accum_window": 0.44999999999999996,
+        "price_range_fast_window": 0.44999999999999996,
+        "top_net_wallet_accum_window": "0x67bb64fac5252df3f61ee2d91a4b1350e40eb6ef",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 29999.999999,
+        "top_net_wallet_share_of_market_accum_window": 0.4751462015874151,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x67bb64fac5252df3f61ee2d91a4b1350e40eb6ef",
+        "top_wallet_notional_accum_window": 29999.999999,
+        "top_wallet_share_accum_window": 0.4751462015874151,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 9
+      },
+      "notional": 74087.30677,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 11,
+      "trade": {
+        "asset": "95411093744734370915792410998151956108686985086137534199369379281549794538611",
+        "condition_id": "0x17dafc4d9c1128c17f936e35f6772d02c0eb2f637b883b95f8dc891740d2d6cc",
+        "event_slug": "nba-det-min-2026-03-28",
+        "name": "RevengeProsper",
+        "outcome": "Pistons",
+        "outcome_index": 0,
+        "price": 0.99,
+        "proxy_wallet": "0x8ccccb677efd2eb45fb471ec847b49fce50af2da",
+        "pseudonym": "Possible-Dolor",
+        "side": "BUY",
+        "size": 7098.43,
+        "slug": "nba-det-min-2026-03-28",
+        "timestamp": 1774740738,
+        "title": "Pistons vs. Timberwolves",
+        "trade_id": "f1f09eaad44b70eda1b9e2f0fc8ba6885ba42a16ed661794e62f55a1067e275d",
+        "transaction_hash": "0xc035911134f56f4e434d49dc0e08e69477592c44f69be9ba7b5b2d17baf5fe53"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-det-min-2026-03-28",
+      "wallet_stats": {
+        "avg_notional_7d": 7027.4457,
+        "first_seen_ts": 1774740738,
+        "proxy_wallet": "0x8ccccb677efd2eb45fb471ec847b49fce50af2da",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x8cdf3e7e2322abce8d841b8aae3b1e771a2a2ca1b614a6fd33ef15ee51339609",
         "liquidity_num": 1268448.43492,
         "outcome_prices": [
@@ -7348,9 +7422,9 @@
       }
     }
   ],
-  "generated_at": 1774702842,
+  "generated_at": 1774752096,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23685760730",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23685760730"
+  "workflow_run_id": "23699740068",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23699740068"
 }
