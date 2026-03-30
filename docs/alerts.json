@@ -2,6 +2,150 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1b85fce2df9ef65284e585bbabac8c0f1e5d4969926f59932aea515a9ed78712",
+        "liquidity_num": 38023.0025,
+        "outcome_prices": [
+          0.885,
+          0.115
+        ],
+        "outcomes": [
+          "Michigan Wolverines",
+          "Tennessee Volunteers"
+        ],
+        "question": "Spread: Michigan Wolverines (-7.5)",
+        "slug": "cbb-tenn-mich-2026-03-29-spread-home-7pt5",
+        "volume24hr": 1315114.9854649988
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 129487.1092,
+        "price_range_accum_window": 0.3354831367284077,
+        "price_range_fast_window": 0.3354831367284077,
+        "top_net_wallet_accum_window": "0xd6a3f0ec6c4a8ad680d580610c82ca57ff139489",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 75459.1495,
+        "top_net_wallet_share_of_market_accum_window": 0.5827541441476554,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xd6a3f0ec6c4a8ad680d580610c82ca57ff139489",
+        "top_wallet_notional_accum_window": 75459.1495,
+        "top_wallet_share_accum_window": 0.5827541441476554,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 129487.1092,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "54484898244191479487846204654029220203309113565910924464259521903242282310544",
+        "condition_id": "0x1b85fce2df9ef65284e585bbabac8c0f1e5d4969926f59932aea515a9ed78712",
+        "event_slug": "cbb-tenn-mich-2026-03-29",
+        "name": "Latina",
+        "outcome": "Michigan Wolverines",
+        "outcome_index": 0,
+        "price": 0.8554831367284077,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "pseudonym": "Impractical-Fondue",
+        "side": "SELL",
+        "size": 15135.26,
+        "slug": "cbb-tenn-mich-2026-03-29-spread-home-7pt5",
+        "timestamp": 1774812686,
+        "title": "Spread: Michigan Wolverines (-7.5)",
+        "trade_id": "47459f3f073c181676ef8528a402f77e4ac655c80ed323f679d39f420b279c8e",
+        "transaction_hash": "0xabfe9b4cb5c9ce286f459c12ec7fde5ca64491c596974fa3e0627c737676b483"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-tenn-mich-2026-03-29-spread-home-7pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 8905.01285,
+        "first_seen_ts": 1768348602,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "trades_7d": 2,
+        "trades_total": 3,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 4
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x87254ca39f82f1fdef981066710fb49904e86358bcf1ed9a4e05e4558d665329",
+        "liquidity_num": 3075565.3449,
+        "outcome_prices": [
+          0.325,
+          0.675
+        ],
+        "outcomes": [
+          "Connecticut Huskies",
+          "Duke Blue Devils"
+        ],
+        "question": "Connecticut Huskies vs. Duke Blue Devils",
+        "slug": "cbb-uconn-duke-2026-03-29",
+        "volume24hr": 260841.46458000006
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 50103.270000000004,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 50103.270000000004,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+        "top_wallet_notional_accum_window": 50103.270000000004,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 50103.270000000004,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "43593107886932819109020400566438799290423163745116636294528838097575046355347",
+        "condition_id": "0x87254ca39f82f1fdef981066710fb49904e86358bcf1ed9a4e05e4558d665329",
+        "event_slug": "cbb-uconn-duke-2026-03-29",
+        "name": "elkmonkey",
+        "outcome": "Duke Blue Devils",
+        "outcome_index": 1,
+        "price": 0.67,
+        "proxy_wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+        "pseudonym": "Unconscious-Penguin",
+        "side": "BUY",
+        "size": 9550.0,
+        "slug": "cbb-uconn-duke-2026-03-29",
+        "timestamp": 1774798278,
+        "title": "Connecticut Huskies vs. Duke Blue Devils",
+        "trade_id": "df44e722dab67932bb63f36ae00916890857bd7f8f5d8393afea7374f8630e3f",
+        "transaction_hash": "0x3202f4b02c8f4b3f1218ac265e7a1387d7e0226cf195329667bd55025f136c1d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cbb-uconn-duke-2026-03-29",
+      "wallet_stats": {
+        "avg_notional_7d": 10026.439000000002,
+        "first_seen_ts": 1773931419,
+        "proxy_wallet": "0xead152b855effa6b5b5837f53b24c0756830c76a",
+        "trades_7d": 10,
+        "trades_total": 19,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 11
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x17dafc4d9c1128c17f936e35f6772d02c0eb2f637b883b95f8dc891740d2d6cc",
         "liquidity_num": 103145.0821,
         "outcome_prices": [
@@ -7422,9 +7566,9 @@
       }
     }
   ],
-  "generated_at": 1774789303,
+  "generated_at": 1774838660,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23709631093",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23709631093"
+  "workflow_run_id": "23725666209",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23725666209"
 }
