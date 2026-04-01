@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xe2867614ca6c032fe5eb49b43a06d7bfe2834bc1936b9ebe5a6e463fd56c4e54",
+        "liquidity_num": 502128.60133,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Cavaliers",
+          "Lakers"
+        ],
+        "question": "Cavaliers vs. Lakers",
+        "slug": "nba-cle-lal-2026-03-31",
+        "volume24hr": 6016888.236356992
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 47243.87658340001,
+        "price_range_accum_window": 0.529,
+        "price_range_fast_window": 0.529,
+        "top_net_wallet_accum_window": "0x05280f7355e88113822932b5cdfe72c77a2f424b",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 11245.703039999999,
+        "top_net_wallet_share_of_market_accum_window": 0.8294307906192313,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x05280f7355e88113822932b5cdfe72c77a2f424b",
+        "top_wallet_notional_accum_window": 11245.703039999999,
+        "top_wallet_share_accum_window": 0.8294307906192313,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 47243.87658340001,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "92423114161359316077701305727464176144249057386642691230919297553309470576929",
+        "condition_id": "0xe2867614ca6c032fe5eb49b43a06d7bfe2834bc1936b9ebe5a6e463fd56c4e54",
+        "event_slug": "nba-cle-lal-2026-03-31",
+        "name": "pendler",
+        "outcome": "Lakers",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x05280f7355e88113822932b5cdfe72c77a2f424b",
+        "pseudonym": "Previous-Download",
+        "side": "SELL",
+        "size": 11256.96,
+        "slug": "nba-cle-lal-2026-03-31",
+        "timestamp": 1775020853,
+        "title": "Cavaliers vs. Lakers",
+        "trade_id": "7f10dab719ac54d806212a5226da3cf11e7d62307d40dc64349381d472df95e2",
+        "transaction_hash": "0x27e8f8102f9a72366f463432cb806a1d29bf37607c4ac9c82daaa9452a2de80a"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-cle-lal-2026-03-31",
+      "wallet_stats": {
+        "avg_notional_7d": 11245.703039999999,
+        "first_seen_ts": 1775020853,
+        "proxy_wallet": "0x05280f7355e88113822932b5cdfe72c77a2f424b",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x1b85fce2df9ef65284e585bbabac8c0f1e5d4969926f59932aea515a9ed78712",
         "liquidity_num": 38023.0025,
         "outcome_prices": [
@@ -7566,9 +7639,9 @@
       }
     }
   ],
-  "generated_at": 1775011801,
+  "generated_at": 1775050045,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23829545254",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23829545254"
+  "workflow_run_id": "23851016071",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23851016071"
 }
