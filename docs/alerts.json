@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xabe787ebbb9f7092724bcf4f2acd13365b77cb7586e23d93d683a500c68b7134",
+        "liquidity_num": 682538.9728,
+        "outcome_prices": [
+          0.485,
+          0.515
+        ],
+        "outcomes": [
+          "Ducks",
+          "Sharks"
+        ],
+        "question": "Ducks vs. Sharks",
+        "slug": "nhl-ana-sj-2026-04-01",
+        "volume24hr": 550810.9501799997
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 89055.9909,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x37c1874a60d348903594a96703e0507c518fc53a",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 89055.9909,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x37c1874a60d348903594a96703e0507c518fc53a",
+        "top_wallet_notional_accum_window": 89055.9909,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 89055.9909,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "104614087696176443127903230962384003793505369570049569117829440122892059738734",
+        "condition_id": "0xabe787ebbb9f7092724bcf4f2acd13365b77cb7586e23d93d683a500c68b7134",
+        "event_slug": "nhl-ana-sj-2026-04-01",
+        "name": "CemeterySun",
+        "outcome": "Sharks",
+        "outcome_index": 1,
+        "price": 0.51,
+        "proxy_wallet": "0x37c1874a60d348903594a96703e0507c518fc53a",
+        "pseudonym": "Pale-Bend",
+        "side": "BUY",
+        "size": 91621.56,
+        "slug": "nhl-ana-sj-2026-04-01",
+        "timestamp": 1775086363,
+        "title": "Ducks vs. Sharks",
+        "trade_id": "ff8db91ae662dee3455517996e3441b4843b881ff90c578f554fb72560c49c70",
+        "transaction_hash": "0xc4a666f660b065a7caeb12aa5e77bbd65503594d015460bbd8b335d4204d0854"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nhl-ana-sj-2026-04-01",
+      "wallet_stats": {
+        "avg_notional_7d": 30758.8895,
+        "first_seen_ts": 1774996083,
+        "proxy_wallet": "0x37c1874a60d348903594a96703e0507c518fc53a",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xe2867614ca6c032fe5eb49b43a06d7bfe2834bc1936b9ebe5a6e463fd56c4e54",
         "liquidity_num": 502128.60133,
         "outcome_prices": [
@@ -7639,9 +7713,9 @@
       }
     }
   ],
-  "generated_at": 1775050045,
+  "generated_at": 1775097254,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23851016071",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23851016071"
+  "workflow_run_id": "23880903835",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23880903835"
 }
