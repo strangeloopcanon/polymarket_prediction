@@ -2,6 +2,81 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x41c6341dd79903aca4bb0c29f5a7976946c3774d2fd72f38cbb7de7092144520",
+        "liquidity_num": 1200590.09486,
+        "outcome_prices": [
+          0.0055,
+          0.9945
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Mike Pence win the 2028 Republican presidential nomination?",
+        "slug": "will-mike-pence-win-the-2028-republican-presidential-nomination",
+        "volume24hr": 480791.033866
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 58447.2,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x7ba5354929bf388707f397c8b21b8322dc954252",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 58447.2,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x7ba5354929bf388707f397c8b21b8322dc954252",
+        "top_wallet_notional_accum_window": 58447.2,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 58447.2,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "11478861872612841666414979216747716059947331582670297431884562915546151249374",
+        "condition_id": "0x41c6341dd79903aca4bb0c29f5a7976946c3774d2fd72f38cbb7de7092144520",
+        "event_slug": "republican-presidential-nominee-2028",
+        "name": "Snpe",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.994,
+        "proxy_wallet": "0x7ba5354929bf388707f397c8b21b8322dc954252",
+        "pseudonym": "Stormy-Trolley",
+        "side": "SELL",
+        "size": 29300.0,
+        "slug": "will-mike-pence-win-the-2028-republican-presidential-nomination",
+        "timestamp": 1775113947,
+        "title": "Will Mike Pence win the 2028 Republican presidential nomination?",
+        "trade_id": "304df29816b5d7bb024a8c4100f67f11ccbec03b672808a2f6fa77f2a11c053b",
+        "transaction_hash": "0x9e39661160e5685d8a11ff86f3c5f0201fcfd3d599a808eedb916da84f0742c2"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-mike-pence-win-the-2028-republican-presidential-nomination",
+      "wallet_stats": {
+        "avg_notional_7d": 31311.0,
+        "first_seen_ts": 1775027857,
+        "proxy_wallet": "0x7ba5354929bf388707f397c8b21b8322dc954252",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xabe787ebbb9f7092724bcf4f2acd13365b77cb7586e23d93d683a500c68b7134",
         "liquidity_num": 682538.9728,
         "outcome_prices": [
@@ -7713,9 +7788,9 @@
       }
     }
   ],
-  "generated_at": 1775097254,
+  "generated_at": 1775135998,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23880903835",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23880903835"
+  "workflow_run_id": "23902433048",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23902433048"
 }
