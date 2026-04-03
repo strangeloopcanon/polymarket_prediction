@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xe798928e26db9c2b009f8ac84852f1333cbc928ff50839385e7c16f3f4af4385",
+        "liquidity_num": 176267.2342,
+        "outcome_prices": [
+          0.515,
+          0.485
+        ],
+        "outcomes": [
+          "Gen.G",
+          "KT Rolster"
+        ],
+        "question": "LoL: Gen.G vs KT Rolster (BO3) - LCK Rounds 1-2",
+        "slug": "lol-gen-kt-2026-04-03",
+        "volume24hr": 493609.0340089996
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 32264.4973858,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.33999999999999997,
+        "top_net_wallet_accum_window": "0xe4daf66dd4f08f3b5cce9099f9efffad2b661772",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 3843.84,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xe4daf66dd4f08f3b5cce9099f9efffad2b661772",
+        "top_wallet_notional_accum_window": 3843.84,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 32264.4973858,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "101173575795817593444763424496046523175030752826075130672855031083635546050709",
+        "condition_id": "0xe798928e26db9c2b009f8ac84852f1333cbc928ff50839385e7c16f3f4af4385",
+        "event_slug": "lol-gen-kt-2026-04-03",
+        "name": "Rainfield",
+        "outcome": "Gen.G",
+        "outcome_index": 0,
+        "price": 0.52,
+        "proxy_wallet": "0xe4daf66dd4f08f3b5cce9099f9efffad2b661772",
+        "pseudonym": "Fixed-Fratricide",
+        "side": "BUY",
+        "size": 7392.0,
+        "slug": "lol-gen-kt-2026-04-03",
+        "timestamp": 1775206311,
+        "title": "LoL: Gen.G vs KT Rolster (BO3) - LCK Rounds 1-2",
+        "trade_id": "14f50e94e441b8cc25bd55b79ea58781aaacca3ac6edd3d349ba9942c78823b8",
+        "transaction_hash": "0x66ac39f6fe26a2639b82a06e0cbffe7d442f660aeb888446c622283681c5fb2b"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-gen-kt-2026-04-03",
+      "wallet_stats": {
+        "avg_notional_7d": 3843.84,
+        "first_seen_ts": 1775206311,
+        "proxy_wallet": "0xe4daf66dd4f08f3b5cce9099f9efffad2b661772",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x41c6341dd79903aca4bb0c29f5a7976946c3774d2fd72f38cbb7de7092144520",
         "liquidity_num": 1200590.09486,
         "outcome_prices": [
@@ -7788,9 +7860,9 @@
       }
     }
   ],
-  "generated_at": 1775183783,
+  "generated_at": 1775221794,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23931257029",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23931257029"
+  "workflow_run_id": "23947308458",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23947308458"
 }
