@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xaf295ab688f842b0cfb2934de017b6cf2ed57c7cc821b71664ff45a57ff40436",
+        "liquidity_num": 104856.6424,
+        "outcome_prices": [
+          0.755,
+          0.245
+        ],
+        "outcomes": [
+          "T1",
+          "Hanwha Life Esports"
+        ],
+        "question": "LoL: T1 vs Hanwha Life Esports (BO3) - LCK Rounds 1-2",
+        "slug": "lol-t1-hle1-2026-04-04",
+        "volume24hr": 592119.9258429998
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 22471.582018407873,
+        "price_range_accum_window": 0.2734498461099425,
+        "price_range_fast_window": 0.2734498461099425,
+        "top_net_wallet_accum_window": "0x47f80d27eb78d92f1fe1932d971f299553dd6699",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 8118.99985,
+        "top_net_wallet_share_of_market_accum_window": 0.3613007683815595,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x47f80d27eb78d92f1fe1932d971f299553dd6699",
+        "top_wallet_notional_accum_window": 8118.99985,
+        "top_wallet_share_accum_window": 0.3613007683815595,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 22471.582018407873,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "109759633503991431872069810198229419784034155718451854046113125778916232117516",
+        "condition_id": "0xaf295ab688f842b0cfb2934de017b6cf2ed57c7cc821b71664ff45a57ff40436",
+        "event_slug": "lol-t1-hle1-2026-04-04",
+        "name": "retroactivesource",
+        "outcome": "T1",
+        "outcome_index": 0,
+        "price": 0.7534498461099425,
+        "proxy_wallet": "0x85d53efdd055aa88fb00a914f5615bfd585545ee",
+        "pseudonym": "Black-And-White-Catalogue",
+        "side": "BUY",
+        "size": 8904.33826,
+        "slug": "lol-t1-hle1-2026-04-04",
+        "timestamp": 1775291981,
+        "title": "LoL: T1 vs Hanwha Life Esports (BO3) - LCK Rounds 1-2",
+        "trade_id": "d4b5656637bb7cfed7d15152b95ccf7b2cceaba981fabb7cfec99651dbe0a1e5",
+        "transaction_hash": "0x1bf43d530e6e41c8548a660907edf0bd26e27870dd767451834f41bd0169a1ba"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-t1-hle1-2026-04-04",
+      "wallet_stats": {
+        "avg_notional_7d": 12622.168492502626,
+        "first_seen_ts": 1774780366,
+        "proxy_wallet": "0x85d53efdd055aa88fb00a914f5615bfd585545ee",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x6d0e09d0f04572d9b1adad84703458b0297bc5603b69dccbde93147ee4443246",
         "liquidity_num": 857977.389,
         "outcome_prices": [
@@ -7933,9 +8005,9 @@
       }
     }
   ],
-  "generated_at": 1775269664,
+  "generated_at": 1775307682,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23969399512",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23969399512"
+  "workflow_run_id": "23979418608",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23979418608"
 }
