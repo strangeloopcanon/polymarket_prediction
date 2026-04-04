@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x6d0e09d0f04572d9b1adad84703458b0297bc5603b69dccbde93147ee4443246",
+        "liquidity_num": 857977.389,
+        "outcome_prices": [
+          0.865,
+          0.135
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US forces enter Iran by April 30?",
+        "slug": "us-forces-enter-iran-by-april-30-899",
+        "volume24hr": 5928063.341022984
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 23451.874794000003,
+        "price_range_accum_window": 0.1400000000236724,
+        "price_range_fast_window": 0.27944022949269287,
+        "top_net_wallet_accum_window": "0xe4e1095da07f9924cf007a99bc0103f4027ff038",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 9999.999997,
+        "top_net_wallet_share_of_market_accum_window": 0.5075143900145511,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xe4e1095da07f9924cf007a99bc0103f4027ff038",
+        "top_wallet_notional_accum_window": 9999.999997,
+        "top_wallet_share_accum_window": 0.5075143900145511,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 23451.874794000003,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "2916184120206223749839849644877707470354946028257066951797428049170871002238",
+        "condition_id": "0x6d0e09d0f04572d9b1adad84703458b0297bc5603b69dccbde93147ee4443246",
+        "event_slug": "us-forces-enter-iran-by",
+        "name": "0xE4E1095Da07f9924cF007a99BC0103F4027fF038-1768418108423",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.8591156521106122,
+        "proxy_wallet": "0xe4e1095da07f9924cf007a99bc0103f4027ff038",
+        "pseudonym": "Authentic-Menu",
+        "side": "BUY",
+        "size": 11639.876392,
+        "slug": "us-forces-enter-iran-by-april-30-899",
+        "timestamp": 1775237259,
+        "title": "US forces enter Iran by April 30?",
+        "trade_id": "d66ef087a31d1063d009159782f8e1853b6d9b5bafc7aa973078a72b2d44ccaa",
+        "transaction_hash": "0xf7e7431b0846cae979872bf4a2b8be5966f526366f17103af05cf2d5c34c4865"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-forces-enter-iran-by-april-30-899",
+      "wallet_stats": {
+        "avg_notional_7d": 9999.999997,
+        "first_seen_ts": 1775237259,
+        "proxy_wallet": "0xe4e1095da07f9924cf007a99bc0103f4027ff038",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xe798928e26db9c2b009f8ac84852f1333cbc928ff50839385e7c16f3f4af4385",
         "liquidity_num": 176267.2342,
         "outcome_prices": [
@@ -7860,9 +7933,9 @@
       }
     }
   ],
-  "generated_at": 1775221794,
+  "generated_at": 1775269664,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23947308458",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23947308458"
+  "workflow_run_id": "23969399512",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23969399512"
 }
