@@ -2,73 +2,145 @@
   "alerts": [
     {
       "market": {
-        "condition_id": "0xaf295ab688f842b0cfb2934de017b6cf2ed57c7cc821b71664ff45a57ff40436",
-        "liquidity_num": 104856.6424,
+        "condition_id": "0xad8718e9f01fdeac1f59a56f02bd93a204bedc454649d0941d91007ec14961fc",
+        "liquidity_num": 51113.4748,
         "outcome_prices": [
-          0.755,
-          0.245
+          0.595,
+          0.405
         ],
         "outcomes": [
-          "T1",
-          "Hanwha Life Esports"
+          "Bruins",
+          "Lightning"
         ],
-        "question": "LoL: T1 vs Hanwha Life Esports (BO3) - LCK Rounds 1-2",
-        "slug": "lol-t1-hle1-2026-04-04",
-        "volume24hr": 592119.9258429998
+        "question": "Bruins vs. Lightning",
+        "slug": "nhl-bos-tb-2026-04-04",
+        "volume24hr": 696151.8857380019
       },
       "metrics": {
         "accum_window_s": 21600,
         "event_type": "fast_move",
         "fast_window_s": 86400,
-        "notional_fast_window": 22471.582018407873,
-        "price_range_accum_window": 0.2734498461099425,
-        "price_range_fast_window": 0.2734498461099425,
-        "top_net_wallet_accum_window": "0x47f80d27eb78d92f1fe1932d971f299553dd6699",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 8118.99985,
-        "top_net_wallet_share_of_market_accum_window": 0.3613007683815595,
+        "notional_fast_window": 63768.20330000001,
+        "price_range_accum_window": 0.18999999999999995,
+        "price_range_fast_window": 0.18999999999999995,
+        "top_net_wallet_accum_window": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 36621.93550000001,
+        "top_net_wallet_share_of_market_accum_window": 0.5742977472285157,
         "top_net_wallet_share_of_wallet_accum_window": 1.0,
-        "top_net_wallet_trades_accum_window": 1,
-        "top_wallet_accum_window": "0x47f80d27eb78d92f1fe1932d971f299553dd6699",
-        "top_wallet_notional_accum_window": 8118.99985,
-        "top_wallet_share_accum_window": 0.3613007683815595,
-        "top_wallet_trades_accum_window": 1,
-        "unique_wallets_fast_window": 3
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
+        "top_wallet_notional_accum_window": 36621.93550000001,
+        "top_wallet_share_accum_window": 0.5742977472285157,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
       },
-      "notional": 22471.582018407873,
+      "notional": 63768.20330000001,
       "reasons": [
         "market_price_move_24h",
         "market_heat_24h",
-        "concentrated_activity_7d"
+        "whale_accumulation_6h"
+      ],
+      "score": 14,
+      "trade": {
+        "asset": "103147398919289110246609363012544438198677511082794125191857357365579106814799",
+        "condition_id": "0xad8718e9f01fdeac1f59a56f02bd93a204bedc454649d0941d91007ec14961fc",
+        "event_slug": "nhl-bos-tb-2026-04-04",
+        "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+        "outcome": "Bruins",
+        "outcome_index": 0,
+        "price": 0.58,
+        "proxy_wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "pseudonym": "Dishonest-Bloom",
+        "side": "BUY",
+        "size": 46803.91,
+        "slug": "nhl-bos-tb-2026-04-04",
+        "timestamp": 1775341709,
+        "title": "Bruins vs. Lightning",
+        "trade_id": "a87977aff9b543c02f0e16909db53732ffebb60d66f5edbb83a9b8234fad5e6d",
+        "transaction_hash": "0xe10b5e903aa5ef91d28c2b730722ff5a5768d9a2398998560ddc0464d75ed7df"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nhl-bos-tb-2026-04-04",
+      "wallet_stats": {
+        "avg_notional_7d": 32408.38607266667,
+        "first_seen_ts": 1772513153,
+        "proxy_wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "trades_7d": 6,
+        "trades_total": 21,
+        "unique_markets_7d": 5,
+        "unique_markets_total": 20
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x9a1ee292a92110ccf7ac22d4b1c77091876211f3abe5bac83034df99b98df0a2",
+        "liquidity_num": 255127.76021,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "PARIVISION",
+          "Legacy"
+        ],
+        "question": "Counter-Strike: PARIVISION vs Legacy (BO3) - PGL Bucharest Group Stage",
+        "slug": "cs2-prv-lgc-2026-04-04",
+        "volume24hr": 791393.1455840011
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 25251.62914093079,
+        "price_range_accum_window": 0.28924897713750664,
+        "price_range_fast_window": 0.28924897713750664,
+        "top_net_wallet_accum_window": "0x4e8d5fd8911c46e7270e5424576a57630c74febf",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 23206.90986,
+        "top_net_wallet_share_of_market_accum_window": 0.9190262430388514,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x4e8d5fd8911c46e7270e5424576a57630c74febf",
+        "top_wallet_notional_accum_window": 23206.90986,
+        "top_wallet_share_accum_window": 0.9190262430388514,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 25251.62914093079,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
       ],
       "score": 8,
       "trade": {
-        "asset": "109759633503991431872069810198229419784034155718451854046113125778916232117516",
-        "condition_id": "0xaf295ab688f842b0cfb2934de017b6cf2ed57c7cc821b71664ff45a57ff40436",
-        "event_slug": "lol-t1-hle1-2026-04-04",
-        "name": "retroactivesource",
-        "outcome": "T1",
+        "asset": "62587843841192731456299912100840440704627785665233428577697964087298431642332",
+        "condition_id": "0x9a1ee292a92110ccf7ac22d4b1c77091876211f3abe5bac83034df99b98df0a2",
+        "event_slug": "cs2-prv-lgc-2026-04-04",
+        "name": "ggwp-cs2",
+        "outcome": "PARIVISION",
         "outcome_index": 0,
-        "price": 0.7534498461099425,
-        "proxy_wallet": "0x85d53efdd055aa88fb00a914f5615bfd585545ee",
-        "pseudonym": "Black-And-White-Catalogue",
-        "side": "BUY",
-        "size": 8904.33826,
-        "slug": "lol-t1-hle1-2026-04-04",
-        "timestamp": 1775291981,
-        "title": "LoL: T1 vs Hanwha Life Esports (BO3) - LCK Rounds 1-2",
-        "trade_id": "d4b5656637bb7cfed7d15152b95ccf7b2cceaba981fabb7cfec99651dbe0a1e5",
-        "transaction_hash": "0x1bf43d530e6e41c8548a660907edf0bd26e27870dd767451834f41bd0169a1ba"
+        "price": 0.999,
+        "proxy_wallet": "0x4e8d5fd8911c46e7270e5424576a57630c74febf",
+        "pseudonym": "Silky-Vogue",
+        "side": "SELL",
+        "size": 23230.14,
+        "slug": "cs2-prv-lgc-2026-04-04",
+        "timestamp": 1775323871,
+        "title": "Counter-Strike: PARIVISION vs Legacy (BO3) - PGL Bucharest Group Stage",
+        "trade_id": "4cff44c8276527b3bf06dc74603e772aed0cd3fcb1de4f7fbf87eb7382023af5",
+        "transaction_hash": "0xa25d1707a187a3077a787485a337d38ae9dc8e2added3fe7f892fbc0122c7ecc"
       },
       "type": "alert",
-      "url": "https://polymarket.com/market/lol-t1-hle1-2026-04-04",
+      "url": "https://polymarket.com/market/cs2-prv-lgc-2026-04-04",
       "wallet_stats": {
-        "avg_notional_7d": 12622.168492502626,
-        "first_seen_ts": 1774780366,
-        "proxy_wallet": "0x85d53efdd055aa88fb00a914f5615bfd585545ee",
-        "trades_7d": 3,
+        "avg_notional_7d": 13603.454921,
+        "first_seen_ts": 1774708289,
+        "proxy_wallet": "0x4e8d5fd8911c46e7270e5424576a57630c74febf",
+        "trades_7d": 2,
         "trades_total": 3,
-        "unique_markets_7d": 3,
+        "unique_markets_7d": 2,
         "unique_markets_total": 3
       }
     },
@@ -8005,9 +8077,9 @@
       }
     }
   ],
-  "generated_at": 1775307682,
+  "generated_at": 1775357075,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "23979418608",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23979418608"
+  "workflow_run_id": "23992762053",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/23992762053"
 }
