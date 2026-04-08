@@ -2,6 +2,151 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x4c5701bcde0b8fb7d7f48c8e9d20245a6caa58c61a77f981fad98f2bfa0b1bc7",
+        "liquidity_num": 174057.03935,
+        "outcome_prices": [
+          0.584,
+          0.416
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US x Iran ceasefire by April 7?",
+        "slug": "us-x-iran-ceasefire-by-april-7-278",
+        "volume24hr": 11309966.73925798
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 47446.070918,
+        "price_range_accum_window": 0.6078938606342716,
+        "price_range_fast_window": 0.6078938606342716,
+        "top_net_wallet_accum_window": "0x58df4f5d434f7390349e6272a1eecf761992b4ad",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 17230.48617,
+        "top_net_wallet_share_of_market_accum_window": 0.3631593899477803,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x58df4f5d434f7390349e6272a1eecf761992b4ad",
+        "top_wallet_notional_accum_window": 17230.48617,
+        "top_wallet_share_accum_window": 0.3631593899477803,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 7
+      },
+      "notional": 47446.070918,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "82855088893985825781350466813737280564000275725006328179621744619327480699369",
+        "condition_id": "0x4c5701bcde0b8fb7d7f48c8e9d20245a6caa58c61a77f981fad98f2bfa0b1bc7",
+        "event_slug": "us-x-iran-ceasefire-by",
+        "name": "tj69",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.75,
+        "proxy_wallet": "0x6a681a1e83a5f1b49837c7a02ba1bbfd72a56679",
+        "pseudonym": "Scaly-Surge",
+        "side": "BUY",
+        "size": 2743.7,
+        "slug": "us-x-iran-ceasefire-by-april-7-278",
+        "timestamp": 1775601391,
+        "title": "US x Iran ceasefire by April 7?",
+        "trade_id": "ef26f091c1a42f48b24cbcf76650c9586120cf43072a560b7903aab6b9b98692",
+        "transaction_hash": "0x1f0a52ea08070cf8dd95c246131b922cdfb48838c80c30814c6cc428506ae5cf"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-x-iran-ceasefire-by-april-7-278",
+      "wallet_stats": {
+        "avg_notional_7d": 2057.7749999999996,
+        "first_seen_ts": 1775601391,
+        "proxy_wallet": "0x6a681a1e83a5f1b49837c7a02ba1bbfd72a56679",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x80059ff4e694f878c0498f6f3a067ee7ca62dc2fc46251a4287b58355ce47bc5",
+        "liquidity_num": 175405.2973,
+        "outcome_prices": [
+          0.865,
+          0.135
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "US x Iran ceasefire by April 30?",
+        "slug": "us-x-iran-ceasefire-by-april-30-194-679-389-371",
+        "volume24hr": 2015025.0294190003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 136228.00579999998,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.5941014579786249,
+        "top_net_wallet_accum_window": "0xbc43a2f0deb85ba4ad316300762972089c911540",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 8498.8,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xbc43a2f0deb85ba4ad316300762972089c911540",
+        "top_wallet_notional_accum_window": 8498.8,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 136228.00579999998,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "44149007410374101286260953227333745102128417138356632089802983317837574022801",
+        "condition_id": "0x80059ff4e694f878c0498f6f3a067ee7ca62dc2fc46251a4287b58355ce47bc5",
+        "event_slug": "us-x-iran-ceasefire-by",
+        "name": "westminster",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.84988,
+        "proxy_wallet": "0xbc43a2f0deb85ba4ad316300762972089c911540",
+        "pseudonym": "Unknown-Last",
+        "side": "BUY",
+        "size": 10000.0,
+        "slug": "us-x-iran-ceasefire-by-april-30-194-679-389-371",
+        "timestamp": 1775601311,
+        "title": "US x Iran ceasefire by April 30?",
+        "trade_id": "e78671990837daf4ba827be5dae97743e8f43967fd2594fec3a6f78887b32235",
+        "transaction_hash": "0x5218df46dd0eaeb605bdf0146978591deaa02d8cb206ed127c40f648354fd1f9"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/us-x-iran-ceasefire-by-april-30-194-679-389-371",
+      "wallet_stats": {
+        "avg_notional_7d": 8498.8,
+        "first_seen_ts": 1775601311,
+        "proxy_wallet": "0xbc43a2f0deb85ba4ad316300762972089c911540",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x2c5a44bcc9d6316560aacd7e0c084910a1142759624b6833392d4f453e8d6c42",
         "liquidity_num": 531342.46377,
         "outcome_prices": [
@@ -8223,9 +8368,9 @@
       }
     }
   ],
-  "generated_at": 1775569954,
+  "generated_at": 1775616004,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24085037298",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24085037298"
+  "workflow_run_id": "24114748171",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24114748171"
 }
