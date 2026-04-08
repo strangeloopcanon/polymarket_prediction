@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1c16b60c7e7ddb559964cd64c8f7d5c33adc83c3fbd0fd124587a8adc1ded8dd",
+        "liquidity_num": 1180543.6858,
+        "outcome_prices": [
+          0.535,
+          0.465
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Paris Saint-Germain FC win on 2026-04-08?",
+        "slug": "ucl-psg1-liv1-2026-04-08-psg1",
+        "volume24hr": 3906414.1757959984
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 1389361.9802519928,
+        "price_range_accum_window": 0.010000000000000009,
+        "price_range_fast_window": 0.030000000000000027,
+        "top_net_wallet_accum_window": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 1382897.3342431926,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 4,
+        "top_wallet_accum_window": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "top_wallet_notional_accum_window": 1382897.3342431926,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 4,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 1382897.3342431926,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "88950302731484253520228710332093188124886468917693346400073897475016071410567",
+        "condition_id": "0x1c16b60c7e7ddb559964cd64c8f7d5c33adc83c3fbd0fd124587a8adc1ded8dd",
+        "event_slug": "ucl-psg1-liv1-2026-04-08",
+        "name": "blindStaking",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.4614643002817516,
+        "proxy_wallet": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "pseudonym": "Tremendous-Bidet",
+        "side": "BUY",
+        "size": 248391.68675,
+        "slug": "ucl-psg1-liv1-2026-04-08-psg1",
+        "timestamp": 1775638859,
+        "title": "Will Paris Saint-Germain FC win on 2026-04-08?",
+        "trade_id": "8f31bdf0bd6b8c2a03b0abe5bc4c2dbef11fc2357927e5e4efff14a3f415aa85",
+        "transaction_hash": "0xfc609fbe6f770df09b6a86289b9195e14c9d9c49f2d277ae865003223efadac8"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/ucl-psg1-liv1-2026-04-08-psg1",
+      "wallet_stats": {
+        "avg_notional_7d": 289053.7836486386,
+        "first_seen_ts": 1775328139,
+        "proxy_wallet": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "trades_7d": 5,
+        "trades_total": 5,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x4c5701bcde0b8fb7d7f48c8e9d20245a6caa58c61a77f981fad98f2bfa0b1bc7",
         "liquidity_num": 174057.03935,
         "outcome_prices": [
@@ -8368,9 +8442,9 @@
       }
     }
   ],
-  "generated_at": 1775616004,
+  "generated_at": 1775656629,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24114748171",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24114748171"
+  "workflow_run_id": "24139279234",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24139279234"
 }
