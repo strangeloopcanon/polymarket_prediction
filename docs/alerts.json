@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x442822463c308ce1a89a2ce93b1602420a83b6ca773ba6e75bde665911550d7d",
+        "liquidity_num": 139746.8232,
+        "outcome_prices": [
+          0.035,
+          0.965
+        ],
+        "outcomes": [
+          "Joao Fonseca",
+          "Alexander Zverev"
+        ],
+        "question": "Rolex Monte Carlo Masters: Joao Fonseca vs Alexander Zverev",
+        "slug": "atp-fonseca-zverev-2026-04-10",
+        "volume24hr": 1518123.9411480036
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 67729.53397347272,
+        "price_range_accum_window": 0.3578991382308148,
+        "price_range_fast_window": 0.36,
+        "top_net_wallet_accum_window": "0x647e8333632690e3e48dc3b40295589b417bdd9b",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 42732.6691824,
+        "top_net_wallet_share_of_market_accum_window": 0.6675003311119914,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x647e8333632690e3e48dc3b40295589b417bdd9b",
+        "top_wallet_notional_accum_window": 42732.6691824,
+        "top_wallet_share_accum_window": 0.6675003311119914,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 67729.53397347272,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 10,
+      "trade": {
+        "asset": "55579421322628678387662374935494774520951878706827222817845539249180961127024",
+        "condition_id": "0x442822463c308ce1a89a2ce93b1602420a83b6ca773ba6e75bde665911550d7d",
+        "event_slug": "atp-fonseca-zverev-2026-04-10",
+        "name": "ACEE123",
+        "outcome": "Alexander Zverev",
+        "outcome_index": 1,
+        "price": 0.97,
+        "proxy_wallet": "0xcc8f0e3bd33b98eb19a0c122397b6ce69cffa7bb",
+        "pseudonym": "Empty-Beetle",
+        "side": "BUY",
+        "size": 15666.4475,
+        "slug": "atp-fonseca-zverev-2026-04-10",
+        "timestamp": 1775821765,
+        "title": "Rolex Monte Carlo Masters: Joao Fonseca vs Alexander Zverev",
+        "trade_id": "fe79927c5c3b61c6c105b9009ac99a3fa549dd241a6de2f620a59687a67f747f",
+        "transaction_hash": "0x0db6510388b77e8b0555bf4defddcf5d21be7f91d3f4f822fc6ae41ea50edfc5"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/atp-fonseca-zverev-2026-04-10",
+      "wallet_stats": {
+        "avg_notional_7d": 11919.8460925,
+        "first_seen_ts": 1775316549,
+        "proxy_wallet": "0xcc8f0e3bd33b98eb19a0c122397b6ce69cffa7bb",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x1c16b60c7e7ddb559964cd64c8f7d5c33adc83c3fbd0fd124587a8adc1ded8dd",
         "liquidity_num": 1180543.6858,
         "outcome_prices": [
@@ -8515,9 +8587,9 @@
       }
     }
   ],
-  "generated_at": 1775789197,
+  "generated_at": 1775827040,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24223762768",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24223762768"
+  "workflow_run_id": "24244843470",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24244843470"
 }
