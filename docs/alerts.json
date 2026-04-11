@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x0ba8ddd51735dcff009c71a803e875f204c191f9b3b53d50bad6edf01b6152b4",
+        "liquidity_num": 370463.3417,
+        "outcome_prices": [
+          0.415,
+          0.585
+        ],
+        "outcomes": [
+          "Pittsburgh Pirates",
+          "Chicago Cubs"
+        ],
+        "question": "Pittsburgh Pirates vs. Chicago Cubs",
+        "slug": "mlb-pit-chc-2026-04-10",
+        "volume24hr": 367496.56080299994
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 97344.829114,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.010000000000000009,
+        "top_net_wallet_accum_window": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 94039.72622319999,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "top_wallet_notional_accum_window": 94039.72622319999,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 94039.72622319999,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "5144956057357119855711798915403647972383468747682270694225635373233067803800",
+        "condition_id": "0x0ba8ddd51735dcff009c71a803e875f204c191f9b3b53d50bad6edf01b6152b4",
+        "event_slug": "mlb-pit-chc-2026-04-10",
+        "name": "Latina",
+        "outcome": "Chicago Cubs",
+        "outcome_index": 1,
+        "price": 0.59,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "pseudonym": "Impractical-Fondue",
+        "side": "BUY",
+        "size": 110004.36648,
+        "slug": "mlb-pit-chc-2026-04-10",
+        "timestamp": 1775843439,
+        "title": "Pittsburgh Pirates vs. Chicago Cubs",
+        "trade_id": "b6977a4bb875ee642b3a8f3fd12f1d467fcec418f83813b4a7d553783813bb54",
+        "transaction_hash": "0x9443850c825197698c8aab373d64e6840600ceabab69344f394715a316f48d24"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/mlb-pit-chc-2026-04-10",
+      "wallet_stats": {
+        "avg_notional_7d": 47019.863111599996,
+        "first_seen_ts": 1768348602,
+        "proxy_wallet": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+        "trades_7d": 2,
+        "trades_total": 6,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 6
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x442822463c308ce1a89a2ce93b1602420a83b6ca773ba6e75bde665911550d7d",
         "liquidity_num": 139746.8232,
         "outcome_prices": [
@@ -8587,9 +8660,9 @@
       }
     }
   ],
-  "generated_at": 1775827040,
+  "generated_at": 1775874671,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24244843470",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24244843470"
+  "workflow_run_id": "24272637239",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24272637239"
 }
