@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x77b309057318e75f9857fe52af07e16a1fe2ce4186da9886299ad1d6282605a9",
+        "liquidity_num": 1528107.2904,
+        "outcome_prices": [
+          0.095,
+          0.905
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Manchester United FC win on 2026-04-13?",
+        "slug": "epl-mun-lee-2026-04-13-mun",
+        "volume24hr": 2330985.089982999
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 29389.306240900005,
+        "price_range_accum_window": 0.5296751466666667,
+        "price_range_fast_window": 0.5296751466666667,
+        "top_net_wallet_accum_window": "0x0dcf5b49627c5194805bd1af846fd0bd3388c556",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 13645.1272,
+        "top_net_wallet_share_of_market_accum_window": 0.4642888501059812,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x0dcf5b49627c5194805bd1af846fd0bd3388c556",
+        "top_wallet_notional_accum_window": 13645.1272,
+        "top_wallet_share_accum_window": 0.4642888501059812,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 29389.306240900005,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "concentrated_activity_7d"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "92183001100969550650058777898178371067934627396185823372952534144914720370041",
+        "condition_id": "0x77b309057318e75f9857fe52af07e16a1fe2ce4186da9886299ad1d6282605a9",
+        "event_slug": "epl-mun-lee-2026-04-13",
+        "name": "0x0dcf5B49627C5194805bD1AF846Fd0bd3388c556-1769755919166",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.9096751466666667,
+        "proxy_wallet": "0x0dcf5b49627c5194805bd1af846fd0bd3388c556",
+        "pseudonym": "Insignificant-Wrestler",
+        "side": "SELL",
+        "size": 15000.0,
+        "slug": "epl-mun-lee-2026-04-13-mun",
+        "timestamp": 1776110603,
+        "title": "Will Manchester United FC win on 2026-04-13?",
+        "trade_id": "e231f44572852373c8e791b830e2be1fb7f179ee2b16ed1bf4dfeac6b3fd3a79",
+        "transaction_hash": "0xa9085c0bd176ba6439975b51d235e5a227e4279f7fd999af31ed265ba847b934"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-mun-lee-2026-04-13-mun",
+      "wallet_stats": {
+        "avg_notional_7d": 8005.872434033333,
+        "first_seen_ts": 1776019831,
+        "proxy_wallet": "0x0dcf5b49627c5194805bd1af846fd0bd3388c556",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 3,
+        "unique_markets_total": 3
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xb1a0c0e3c5ebe6fcd3fb541efabc01bdc977d6938a2e6112b3a7514538383a5a",
         "liquidity_num": 107494.83211,
         "outcome_prices": [
@@ -9021,9 +9093,9 @@
       }
     }
   ],
-  "generated_at": 1776081908,
+  "generated_at": 1776134878,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24342378856",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24342378856"
+  "workflow_run_id": "24378264755",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24378264755"
 }
