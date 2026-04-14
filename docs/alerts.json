@@ -2,6 +2,152 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xfc3a576c85609c4a0789addf3f68fd9c447cd7b5bc5ad66e71b6eb73e65d5505",
+        "liquidity_num": 276858.9857,
+        "outcome_prices": [
+          0.705,
+          0.295
+        ],
+        "outcomes": [
+          "Vitality",
+          "G2"
+        ],
+        "question": "Counter-Strike: Vitality vs G2 (BO3) - IEM Rio Group A",
+        "slug": "cs2-vit-g2-2026-04-14",
+        "volume24hr": 1129830.6321500007
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 72574.7770215905,
+        "price_range_accum_window": 0.03764595557802397,
+        "price_range_fast_window": 0.03764595557802397,
+        "top_net_wallet_accum_window": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 52624.3170215905,
+        "top_net_wallet_share_of_market_accum_window": 0.725104770296919,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
+        "top_wallet_notional_accum_window": 52624.3170215905,
+        "top_wallet_share_accum_window": 0.725104770296919,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 52624.3170215905,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 12,
+      "trade": {
+        "asset": "31170201325755115376255590256356636569660810603388344551480411196004741413999",
+        "condition_id": "0xfc3a576c85609c4a0789addf3f68fd9c447cd7b5bc5ad66e71b6eb73e65d5505",
+        "event_slug": "cs2-vit-g2-2026-04-14",
+        "name": "0x1a5c09d9a082aAF2A543b1Fc7bCE36c41dD8a375-1774116788380",
+        "outcome": "G2",
+        "outcome_index": 1,
+        "price": 0.327645955578024,
+        "proxy_wallet": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
+        "pseudonym": "Easy-Proposal",
+        "side": "BUY",
+        "size": 15234.103029999998,
+        "slug": "cs2-vit-g2-2026-04-14",
+        "timestamp": 1776174185,
+        "title": "Counter-Strike: Vitality vs G2 (BO3) - IEM Rio Group A",
+        "trade_id": "9346312d214c7f7e3e950a2d04616ef96cc04b5db04d0405f078e4065c7622c0",
+        "transaction_hash": "0x32b4ce596ca7ea78612ccbcbf48cd7f2a3613cdae2aa28024acc9e9ae42d07f6"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cs2-vit-g2-2026-04-14",
+      "wallet_stats": {
+        "avg_notional_7d": 26312.15851079525,
+        "first_seen_ts": 1776174163,
+        "proxy_wallet": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xf00f73d648bb725a610509707d4f3b2054d84e14d168d40deb015c6e654d10a3",
+        "liquidity_num": 94128.1797,
+        "outcome_prices": [
+          0.49,
+          0.51
+        ],
+        "outcomes": [
+          "Ilya Ivashka",
+          "Dane Sweeny"
+        ],
+        "question": "Busan: Ilya Ivashka vs Dane Sweeny",
+        "slug": "atp-ivashka-sweeny-2026-04-12",
+        "volume24hr": 829556.6450220002
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 327597.74583818857,
+        "price_range_accum_window": 0.15000000000000002,
+        "price_range_fast_window": 0.15000000000000002,
+        "top_net_wallet_accum_window": "0x5d58e38cd0a7e6f5fa67b7f9c2f70dd70df09a15",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 325378.03263038857,
+        "top_net_wallet_share_of_market_accum_window": 0.9932242720348375,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x5d58e38cd0a7e6f5fa67b7f9c2f70dd70df09a15",
+        "top_wallet_notional_accum_window": 325378.03263038857,
+        "top_wallet_share_accum_window": 0.9932242720348375,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 327597.74583818857,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h"
+      ],
+      "score": 18,
+      "trade": {
+        "asset": "103285235036754403300398823634627477136468875752346060093619778939886025714379",
+        "condition_id": "0xf00f73d648bb725a610509707d4f3b2054d84e14d168d40deb015c6e654d10a3",
+        "event_slug": "atp-ivashka-sweeny-2026-04-12",
+        "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+        "outcome": "Ilya Ivashka",
+        "outcome_index": 0,
+        "price": 0.66,
+        "proxy_wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "pseudonym": "Dishonest-Bloom",
+        "side": "BUY",
+        "size": 3363.20183,
+        "slug": "atp-ivashka-sweeny-2026-04-12",
+        "timestamp": 1776152907,
+        "title": "Busan: Ilya Ivashka vs Dane Sweeny",
+        "trade_id": "ddaf3f3f79a93389b894318b51c40db900bc67ff230c92a666257bc7da972fb8",
+        "transaction_hash": "0xaf9b32baf4c9ef811fc5670ffbde8d8ac4597f4952dca8f1d93c43726c6ead05"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/atp-ivashka-sweeny-2026-04-12",
+      "wallet_stats": {
+        "avg_notional_7d": 7724.067331432755,
+        "first_seen_ts": 1772513153,
+        "proxy_wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "trades_7d": 4,
+        "trades_total": 26,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 25
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x77b309057318e75f9857fe52af07e16a1fe2ce4186da9886299ad1d6282605a9",
         "liquidity_num": 1528107.2904,
         "outcome_prices": [
@@ -9093,9 +9239,9 @@
       }
     }
   ],
-  "generated_at": 1776134878,
-  "new_alerts": 0,
+  "generated_at": 1776174468,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24378264755",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24378264755"
+  "workflow_run_id": "24402621144",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24402621144"
 }
