@@ -18,57 +18,58 @@
       },
       "metrics": {
         "accum_window_s": 21600,
-        "event_type": "accumulation",
+        "event_type": "fast_move",
         "fast_window_s": 86400,
-        "notional_fast_window": 72574.7770215905,
-        "price_range_accum_window": 0.03764595557802397,
-        "price_range_fast_window": 0.03764595557802397,
+        "notional_fast_window": 76601.6920215905,
+        "price_range_accum_window": 0.13764595557802406,
+        "price_range_fast_window": 0.13764595557802406,
         "top_net_wallet_accum_window": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
         "top_net_wallet_direction_accum_window": "anti0",
         "top_net_wallet_notional_accum_window": 52624.3170215905,
-        "top_net_wallet_share_of_market_accum_window": 0.725104770296919,
+        "top_net_wallet_share_of_market_accum_window": 0.686986352817874,
         "top_net_wallet_share_of_wallet_accum_window": 1.0,
         "top_net_wallet_trades_accum_window": 2,
         "top_wallet_accum_window": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
         "top_wallet_notional_accum_window": 52624.3170215905,
-        "top_wallet_share_accum_window": 0.725104770296919,
+        "top_wallet_share_accum_window": 0.686986352817874,
         "top_wallet_trades_accum_window": 2,
-        "unique_wallets_fast_window": 3
+        "unique_wallets_fast_window": 4
       },
-      "notional": 52624.3170215905,
+      "notional": 76601.6920215905,
       "reasons": [
+        "market_price_move_24h",
         "market_heat_24h",
         "whale_accumulation_6h",
         "concentrated_flow_6h",
-        "quiet_price_6h"
+        "new_wallet_to_system"
       ],
-      "score": 12,
+      "score": 15,
       "trade": {
-        "asset": "31170201325755115376255590256356636569660810603388344551480411196004741413999",
+        "asset": "1727823524138298037116704967142510633162602026199046880979558467173802871892",
         "condition_id": "0xfc3a576c85609c4a0789addf3f68fd9c447cd7b5bc5ad66e71b6eb73e65d5505",
         "event_slug": "cs2-vit-g2-2026-04-14",
-        "name": "0x1a5c09d9a082aAF2A543b1Fc7bCE36c41dD8a375-1774116788380",
-        "outcome": "G2",
-        "outcome_index": 1,
-        "price": 0.327645955578024,
-        "proxy_wallet": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
-        "pseudonym": "Easy-Proposal",
+        "name": "roverpredicts",
+        "outcome": "Vitality",
+        "outcome_index": 0,
+        "price": 0.81,
+        "proxy_wallet": "0xbaac4adee9e1b1eff4097ab2e2cc5a25ba22ff10",
+        "pseudonym": "Quiet-Pancreas",
         "side": "BUY",
-        "size": 15234.103029999998,
+        "size": 4971.5,
         "slug": "cs2-vit-g2-2026-04-14",
-        "timestamp": 1776174185,
+        "timestamp": 1776179299,
         "title": "Counter-Strike: Vitality vs G2 (BO3) - IEM Rio Group A",
-        "trade_id": "9346312d214c7f7e3e950a2d04616ef96cc04b5db04d0405f078e4065c7622c0",
-        "transaction_hash": "0x32b4ce596ca7ea78612ccbcbf48cd7f2a3613cdae2aa28024acc9e9ae42d07f6"
+        "trade_id": "f67618945988983ecf1d91edbf5afbb778d3368703bb5ea6bf921b4106ac4236",
+        "transaction_hash": "0x97db8a31380dbfaa717edbc60e554e43797535bc56f8f8be725d26d1bfbe50c9"
       },
       "type": "alert",
       "url": "https://polymarket.com/market/cs2-vit-g2-2026-04-14",
       "wallet_stats": {
-        "avg_notional_7d": 26312.15851079525,
-        "first_seen_ts": 1776174163,
-        "proxy_wallet": "0x1a5c09d9a082aaf2a543b1fc7bce36c41dd8a375",
-        "trades_7d": 2,
-        "trades_total": 2,
+        "avg_notional_7d": 4026.9150000000004,
+        "first_seen_ts": 1776179299,
+        "proxy_wallet": "0xbaac4adee9e1b1eff4097ab2e2cc5a25ba22ff10",
+        "trades_7d": 1,
+        "trades_total": 1,
         "unique_markets_7d": 1,
         "unique_markets_total": 1
       }
@@ -9239,9 +9240,9 @@
       }
     }
   ],
-  "generated_at": 1776174468,
-  "new_alerts": 1,
+  "generated_at": 1776221117,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24402621144",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24402621144"
+  "workflow_run_id": "24433720013",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24433720013"
 }
