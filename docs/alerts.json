@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1161c3b9969ad118659e604b2442c858bca0f76d1564e277178e5cf628dac974",
+        "liquidity_num": 88541.59741,
+        "outcome_prices": [
+          0.991,
+          0.009
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Israel announces suspension of Lebanon offensive by April 17, 2026?",
+        "slug": "israel-announces-suspension-of-lebanon-offensive-by-april-17-2026",
+        "volume24hr": 1102950.2794300003
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 21418.99831,
+        "price_range_accum_window": 0.6072071428571428,
+        "price_range_fast_window": 0.6072071428571428,
+        "top_net_wallet_accum_window": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 19258.77331,
+        "top_net_wallet_share_of_market_accum_window": 0.8991444432305015,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
+        "top_wallet_notional_accum_window": 19258.77331,
+        "top_wallet_share_accum_window": 0.8991444432305015,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 21418.99831,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "14265362422373983131427856874471670117666217096629686204932635268560307832910",
+        "condition_id": "0x1161c3b9969ad118659e604b2442c858bca0f76d1564e277178e5cf628dac974",
+        "event_slug": "israel-announces-suspension-of-lebanon-offensive-by",
+        "name": "ScottyNooo",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.99,
+        "proxy_wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
+        "pseudonym": "Dearest-Agenda",
+        "side": "BUY",
+        "size": 14456.15,
+        "slug": "israel-announces-suspension-of-lebanon-offensive-by-april-17-2026",
+        "timestamp": 1776366750,
+        "title": "Israel announces suspension of Lebanon offensive by April 17, 2026?",
+        "trade_id": "8658204617af45757a3d9a916a459ddba5c705200b2088fd000d860c256b4f3b",
+        "transaction_hash": "0xcff3dc6fa325374699e2aae88b768307f5bf7613e27e76760a10f0e75b42666d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/israel-announces-suspension-of-lebanon-offensive-by-april-17-2026",
+      "wallet_stats": {
+        "avg_notional_7d": 9258.675125999998,
+        "first_seen_ts": 1775255449,
+        "proxy_wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
+        "trades_7d": 5,
+        "trades_total": 7,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 6
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xfc3a576c85609c4a0789addf3f68fd9c447cd7b5bc5ad66e71b6eb73e65d5505",
         "liquidity_num": 276858.9857,
         "outcome_prices": [
@@ -9240,9 +9312,9 @@
       }
     }
   ],
-  "generated_at": 1776347516,
+  "generated_at": 1776394090,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24514079683",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24514079683"
+  "workflow_run_id": "24545119305",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24545119305"
 }
