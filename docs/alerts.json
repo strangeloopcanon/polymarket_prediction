@@ -2,6 +2,225 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1132ea2c6067952ba66148aed8cb47132f5453f69bdb784abd1019e877ed8706",
+        "liquidity_num": 1777914.25792,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "Hornets",
+          "Magic"
+        ],
+        "question": "Hornets vs. Magic",
+        "slug": "nba-cha-orl-2026-04-17",
+        "volume24hr": 6314293.952771979
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 40456.84145,
+        "price_range_accum_window": 0.5790000000000001,
+        "price_range_fast_window": 0.5790000000000001,
+        "top_net_wallet_accum_window": "0x47a83fb1debcd11cc93f3bbbf5aeb3a5caeb52f9",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 28634.6,
+        "top_net_wallet_share_of_market_accum_window": 0.707781402939947,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x47a83fb1debcd11cc93f3bbbf5aeb3a5caeb52f9",
+        "top_wallet_notional_accum_window": 28634.6,
+        "top_wallet_share_accum_window": 0.707781402939947,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 40456.84145,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "96638465309631242216826819942520707644866992396599001126255428754279011645817",
+        "condition_id": "0x1132ea2c6067952ba66148aed8cb47132f5453f69bdb784abd1019e877ed8706",
+        "event_slug": "nba-cha-orl-2026-04-17",
+        "name": "TrajanCapital",
+        "outcome": "Magic",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0x6f2ef1b8338aaa8cf33e87233e6b74e1f0739d0b",
+        "pseudonym": "General-Campaign",
+        "side": "SELL",
+        "size": 3985.0,
+        "slug": "nba-cha-orl-2026-04-17",
+        "timestamp": 1776479772,
+        "title": "Hornets vs. Magic",
+        "trade_id": "e3526639a5cff607c4e3ae289d368912a374c4ff46e85e45fd97d409625efbee",
+        "transaction_hash": "0xfbb5f4ab57987221374eca278e8f5c6a54ca19ae286e8c1f9380198198d4a6f0"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-cha-orl-2026-04-17",
+      "wallet_stats": {
+        "avg_notional_7d": 3981.015,
+        "first_seen_ts": 1776479772,
+        "proxy_wallet": "0x6f2ef1b8338aaa8cf33e87233e6b74e1f0739d0b",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x70bf0d42d1b6f68f53201a414ab2a6deafd46eb1edd438a995335dfeaa3c832f",
+        "liquidity_num": 25671.59664,
+        "outcome_prices": [
+          0.9645,
+          0.0355
+        ],
+        "outcomes": [
+          "Gujarat Titans",
+          "Kolkata Knight Riders"
+        ],
+        "question": "Indian Premier League: Gujarat Titans vs Kolkata Knight Riders",
+        "slug": "cricipl-guj-kol-2026-04-17",
+        "volume24hr": 2296933.5962140085
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 25734.88703082892,
+        "price_range_accum_window": 0.24478690201594466,
+        "price_range_fast_window": 0.24478690201594466,
+        "top_net_wallet_accum_window": "0xa4b7b1814b0da33f2b61be4939976898aa476008",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 7142.3227875,
+        "top_net_wallet_share_of_market_accum_window": 0.27753464699277314,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xa4b7b1814b0da33f2b61be4939976898aa476008",
+        "top_wallet_notional_accum_window": 7142.3227875,
+        "top_wallet_share_accum_window": 0.27753464699277314,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 25734.88703082892,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "86756938096781879066393662108785975232587843395612751450960647365100859968501",
+        "condition_id": "0x70bf0d42d1b6f68f53201a414ab2a6deafd46eb1edd438a995335dfeaa3c832f",
+        "event_slug": "cricipl-guj-kol-2026-04-17",
+        "name": "SMCAOMCRL",
+        "outcome": "Gujarat Titans",
+        "outcome_index": 0,
+        "price": 0.974,
+        "proxy_wallet": "0x3b5c629f114098b0dee345fb78b7a3a013c7126e",
+        "pseudonym": "Majestic-Hyena",
+        "side": "BUY",
+        "size": 2298.206,
+        "slug": "cricipl-guj-kol-2026-04-17",
+        "timestamp": 1776448146,
+        "title": "Indian Premier League: Gujarat Titans vs Kolkata Knight Riders",
+        "trade_id": "c337b24a52809974cf358d5bec6a44892a4894380feaeeae123b7ed5fe52cf42",
+        "transaction_hash": "0x9f31d1924b848995679014a4298323ccb8dadb280bfc989ec578faae9dab3680"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cricipl-guj-kol-2026-04-17",
+      "wallet_stats": {
+        "avg_notional_7d": 4666.586384380197,
+        "first_seen_ts": 1776200002,
+        "proxy_wallet": "0x3b5c629f114098b0dee345fb78b7a3a013c7126e",
+        "trades_7d": 3,
+        "trades_total": 3,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x05ccbc3b7861349dc2fc0ce2c2bca9fd9671675171d7070abdf087ba1d7f085b",
+        "liquidity_num": 29464.60686,
+        "outcome_prices": [
+          0.894,
+          0.106
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will WTI Crude Oil (WTI) hit (LOW) $80 in April?",
+        "slug": "will-wti-crude-oil-wti-hit-low-80-in-april-167-519-314-426-955",
+        "volume24hr": 790134.202516
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 30090.915866937634,
+        "price_range_accum_window": 0.15000000000000002,
+        "price_range_fast_window": 0.15000000000000002,
+        "top_net_wallet_accum_window": "0x32b484581fc5606de9c1e43af4636b6be9bc8b21",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 18159.474366937637,
+        "top_net_wallet_share_of_market_accum_window": 0.6034869276574709,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x32b484581fc5606de9c1e43af4636b6be9bc8b21",
+        "top_wallet_notional_accum_window": 18159.474366937637,
+        "top_wallet_share_accum_window": 0.6034869276574709,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 30090.915866937634,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "98488038445619008499059850301828260406022813717073239871054047992508309215819",
+        "condition_id": "0x05ccbc3b7861349dc2fc0ce2c2bca9fd9671675171d7070abdf087ba1d7f085b",
+        "event_slug": "what-price-will-wti-hit-in-april-2026",
+        "name": "0x32b484581fc5606dE9C1e43AF4636b6Be9BC8B21-1774274303653",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.8979989800541739,
+        "proxy_wallet": "0x32b484581fc5606de9c1e43af4636b6be9bc8b21",
+        "pseudonym": "Faithful-Jazz",
+        "side": "BUY",
+        "size": 20222.15478,
+        "slug": "will-wti-crude-oil-wti-hit-low-80-in-april-167-519-314-426-955",
+        "timestamp": 1776441756,
+        "title": "Will WTI Crude Oil (WTI) hit (LOW) $80 in April?",
+        "trade_id": "55db6c55a2d896015820b809e473e3e732cb274803e5ee3bb9f1ab66515c69bd",
+        "transaction_hash": "0xfb22bf3a3dd8b492e3b0220e6eb45b4d023d9535312a6a92ea4867a238fc543d"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-wti-crude-oil-wti-hit-low-80-in-april-167-519-314-426-955",
+      "wallet_stats": {
+        "avg_notional_7d": 18159.474366937637,
+        "first_seen_ts": 1776441756,
+        "proxy_wallet": "0x32b484581fc5606de9c1e43af4636b6be9bc8b21",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x1161c3b9969ad118659e604b2442c858bca0f76d1564e277178e5cf628dac974",
         "liquidity_num": 88541.59741,
         "outcome_prices": [
@@ -9312,9 +9531,9 @@
       }
     }
   ],
-  "generated_at": 1776433923,
-  "new_alerts": 0,
+  "generated_at": 1776479915,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24568630348",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24568630348"
+  "workflow_run_id": "24595054546",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24595054546"
 }
