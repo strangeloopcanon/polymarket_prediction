@@ -2,6 +2,80 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x5ac14977f794041ac6be44032e2b2fa9960948ce9a63d3153d42ca6d00a6bccf",
+        "liquidity_num": 216488.89435,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Celtics",
+          "76ers"
+        ],
+        "question": "Spread: Celtics (-12.5)",
+        "slug": "nba-phi-bos-2026-04-19-spread-home-12pt5",
+        "volume24hr": 1036983.7227240007
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 93005.07183,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0x0eb75bf6f54794a83bd26095811f30b530161f17",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 93005.07183,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 3,
+        "top_wallet_accum_window": "0x0eb75bf6f54794a83bd26095811f30b530161f17",
+        "top_wallet_notional_accum_window": 93005.07183,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 3,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 93005.07183,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "103819699561923953037898382725493143599171731880958569214032134248023422324877",
+        "condition_id": "0x5ac14977f794041ac6be44032e2b2fa9960948ce9a63d3153d42ca6d00a6bccf",
+        "event_slug": "nba-phi-bos-2026-04-19",
+        "name": "elshark206",
+        "outcome": "Celtics",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0x0eb75bf6f54794a83bd26095811f30b530161f17",
+        "pseudonym": "Untried-Android",
+        "side": "SELL",
+        "size": 2592.0,
+        "slug": "nba-phi-bos-2026-04-19-spread-home-12pt5",
+        "timestamp": 1776627416,
+        "title": "Spread: Celtics (-12.5)",
+        "trade_id": "50d39700b7fc49b427c20433d8b950aaa6b48e9141b9f0eae22a265c69b3be47",
+        "transaction_hash": "0x1935262197d81087ab8475839d9d59d0f3c18a8cc7c1882e6595659ba1505442"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-phi-bos-2026-04-19-spread-home-12pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 19243.522112727365,
+        "first_seen_ts": 1775431635,
+        "proxy_wallet": "0x0eb75bf6f54794a83bd26095811f30b530161f17",
+        "trades_7d": 6,
+        "trades_total": 8,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 6
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x620f2c522eae638610cfa0e24189f09123a52d5914c3d3bdb3a04ee7813b7246",
         "liquidity_num": 181989.747,
         "outcome_prices": [
@@ -9677,9 +9751,9 @@
       }
     }
   ],
-  "generated_at": 1776604018,
+  "generated_at": 1776653739,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24629817914",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24629817914"
+  "workflow_run_id": "24646241417",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24646241417"
 }
