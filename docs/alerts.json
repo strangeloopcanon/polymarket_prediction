@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x70f4e79f7273a98f12f54bea2e70f4b9b98467a15dab085b9f4423f1189cac2c",
+        "liquidity_num": 579783.87434,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Over",
+          "Under"
+        ],
+        "question": "Timberwolves vs. Nuggets: O/U 231.5",
+        "slug": "nba-min-den-2026-04-20-total-231pt5",
+        "volume24hr": 421442.5858210002
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 34088.771486,
+        "price_range_accum_window": 0.489,
+        "price_range_fast_window": 0.489,
+        "top_net_wallet_accum_window": "0x5ae14dc9e0cf9df72de8d873dcea05aacb799fad",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 19706.628777500002,
+        "top_net_wallet_share_of_market_accum_window": 0.5780973592900925,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x5ae14dc9e0cf9df72de8d873dcea05aacb799fad",
+        "top_wallet_notional_accum_window": 19706.628777500002,
+        "top_wallet_share_accum_window": 0.5780973592900925,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 3
+      },
+      "notional": 34088.771486,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "14685462281105475946247090966298542337409694315932259747243615790592048484026",
+        "condition_id": "0x70f4e79f7273a98f12f54bea2e70f4b9b98467a15dab085b9f4423f1189cac2c",
+        "event_slug": "nba-min-den-2026-04-20",
+        "name": "guiyi1993",
+        "outcome": "Over",
+        "outcome_index": 0,
+        "price": 0.999,
+        "proxy_wallet": "0xe21ecfe8f6fc76c955caca1667c00be973c5f216",
+        "pseudonym": "Studious-Stealth",
+        "side": "SELL",
+        "size": 3374.63,
+        "slug": "nba-min-den-2026-04-20-total-231pt5",
+        "timestamp": 1776749162,
+        "title": "Timberwolves vs. Nuggets: O/U 231.5",
+        "trade_id": "f3c2d034927b816e85a01278a4b4d8ff7454931f001edf94cb00acc052acdc3f",
+        "transaction_hash": "0xc93fefe411899afe65f6a063ea2f13eafe3bceb49a332123fed72ddc8417cb13"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-min-den-2026-04-20-total-231pt5",
+      "wallet_stats": {
+        "avg_notional_7d": 3371.2553700000003,
+        "first_seen_ts": 1776749162,
+        "proxy_wallet": "0xe21ecfe8f6fc76c955caca1667c00be973c5f216",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xcdb1f0400949238a63d3e88243d2ada08cd9c2a71985ced9f0cfd5e66354cf90",
         "liquidity_num": 2483445.09122,
         "outcome_prices": [
@@ -9826,9 +9899,9 @@
       }
     }
   ],
-  "generated_at": 1776739757,
+  "generated_at": 1776779232,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24701417323",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24701417323"
+  "workflow_run_id": "24725981879",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24725981879"
 }
