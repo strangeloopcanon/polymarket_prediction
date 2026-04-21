@@ -2,6 +2,81 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xcdb1f0400949238a63d3e88243d2ada08cd9c2a71985ced9f0cfd5e66354cf90",
+        "liquidity_num": 2483445.09122,
+        "outcome_prices": [
+          0.0125,
+          0.9875
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will USA win the 2026 FIFA World Cup?",
+        "slug": "will-usa-win-the-2026-fifa-world-cup-467",
+        "volume24hr": 1829450.244433998
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 115425.15342999999,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0010000000000000009,
+        "top_net_wallet_accum_window": "0x257cf3bed2cd8311c976773cb985590585139e35",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 80646.99027,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 5,
+        "top_wallet_accum_window": "0x257cf3bed2cd8311c976773cb985590585139e35",
+        "top_wallet_notional_accum_window": 80646.99027,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 5,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 80646.99027,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "45270201343463663182019040935560267543606888663369415494551943549463253748361",
+        "condition_id": "0xcdb1f0400949238a63d3e88243d2ada08cd9c2a71985ced9f0cfd5e66354cf90",
+        "event_slug": "2026-fifa-world-cup-winner-595",
+        "name": null,
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.987,
+        "proxy_wallet": "0x257cf3bed2cd8311c976773cb985590585139e35",
+        "pseudonym": null,
+        "side": "SELL",
+        "size": 16305.89,
+        "slug": "will-usa-win-the-2026-fifa-world-cup-467",
+        "timestamp": 1776712574,
+        "title": "Will USA win the 2026 FIFA World Cup?",
+        "trade_id": "3a3254039718ee273421135c2c4dc96ba54bff2ce1c066a373cd7facfb91509b",
+        "transaction_hash": "0xfdd528dbb904ba41136b127645cf1ca282107b4f707e3f11878089a8d7c33778"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-usa-win-the-2026-fifa-world-cup-467",
+      "wallet_stats": {
+        "avg_notional_7d": 16129.398054,
+        "first_seen_ts": 1776712382,
+        "proxy_wallet": "0x257cf3bed2cd8311c976773cb985590585139e35",
+        "trades_7d": 5,
+        "trades_total": 5,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x5ac14977f794041ac6be44032e2b2fa9960948ce9a63d3153d42ca6d00a6bccf",
         "liquidity_num": 216488.89435,
         "outcome_prices": [
@@ -9751,9 +9826,9 @@
       }
     }
   ],
-  "generated_at": 1776686772,
+  "generated_at": 1776739757,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24665535228",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24665535228"
+  "workflow_run_id": "24701417323",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24701417323"
 }
