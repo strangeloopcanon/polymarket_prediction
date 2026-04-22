@@ -2,6 +2,78 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xd41eb0fded36a8cba2aabe8479640a31237fa34d1cbec37b055f71603454ea2c",
+        "liquidity_num": 55751.921,
+        "outcome_prices": [
+          0.765,
+          0.235
+        ],
+        "outcomes": [
+          "Sunrisers Hyderabad",
+          "Delhi Capitals"
+        ],
+        "question": "Indian Premier League: Sunrisers Hyderabad vs Delhi Capitals",
+        "slug": "cricipl-sun-del-2026-04-21",
+        "volume24hr": 1587084.1303810014
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 31174.4627445,
+        "price_range_accum_window": 0.15000000000000002,
+        "price_range_fast_window": 0.43999999999999995,
+        "top_net_wallet_accum_window": "0x986b121c40e715167dde178b8520bf132a57bdc6",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 10489.0747367,
+        "top_net_wallet_share_of_market_accum_window": 0.4279523761007372,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x986b121c40e715167dde178b8520bf132a57bdc6",
+        "top_wallet_notional_accum_window": 10489.0747367,
+        "top_wallet_share_accum_window": 0.4279523761007372,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 31174.4627445,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "97993387429885580606362120312086527159525797874512102308707305257405959881007",
+        "condition_id": "0xd41eb0fded36a8cba2aabe8479640a31237fa34d1cbec37b055f71603454ea2c",
+        "event_slug": "cricipl-sun-del-2026-04-21",
+        "name": "hd777",
+        "outcome": "Sunrisers Hyderabad",
+        "outcome_index": 0,
+        "price": 0.97,
+        "proxy_wallet": "0x986b121c40e715167dde178b8520bf132a57bdc6",
+        "pseudonym": "Grave-Coconut",
+        "side": "BUY",
+        "size": 10813.47911,
+        "slug": "cricipl-sun-del-2026-04-21",
+        "timestamp": 1776791048,
+        "title": "Indian Premier League: Sunrisers Hyderabad vs Delhi Capitals",
+        "trade_id": "c8c60e0c5b073ecdac9b67db5c2c6198f193f6f284e7595370a393c11833b7cf",
+        "transaction_hash": "0x53798bda6e7b0327beb302342ec87c2dc85e33537214d19b6f3aec9819bdef12"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/cricipl-sun-del-2026-04-21",
+      "wallet_stats": {
+        "avg_notional_7d": 6732.39578059,
+        "first_seen_ts": 1776437562,
+        "proxy_wallet": "0x986b121c40e715167dde178b8520bf132a57bdc6",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x70f4e79f7273a98f12f54bea2e70f4b9b98467a15dab085b9f4423f1189cac2c",
         "liquidity_num": 579783.87434,
         "outcome_prices": [
@@ -9899,9 +9971,9 @@
       }
     }
   ],
-  "generated_at": 1776779232,
+  "generated_at": 1776826090,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24725981879",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24725981879"
+  "workflow_run_id": "24757547801",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24757547801"
 }
