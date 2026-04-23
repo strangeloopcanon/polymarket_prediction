@@ -2,6 +2,152 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xe068813cdcbd7f933818fa8ee81b4609a99238febf2c363ab9fc0d893ca7469d",
+        "liquidity_num": 35392.525,
+        "outcome_prices": [
+          0.955,
+          0.045
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will AFC Bournemouth win on 2026-04-22?",
+        "slug": "epl-bou-lee-2026-04-22-bou",
+        "volume24hr": 1080921.0392140015
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 40544.50535137344,
+        "price_range_accum_window": 0.4680685270256061,
+        "price_range_fast_window": 0.4680685270256061,
+        "top_net_wallet_accum_window": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 38311.382019373435,
+        "top_net_wallet_share_of_market_accum_window": 0.9449216777305102,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "top_wallet_notional_accum_window": 38311.382019373435,
+        "top_wallet_share_accum_window": 0.9449216777305102,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 40544.50535137344,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "54840920599237320262677994264145087837352463836950714130750790975476640612362",
+        "condition_id": "0xe068813cdcbd7f933818fa8ee81b4609a99238febf2c363ab9fc0d893ca7469d",
+        "event_slug": "epl-bou-lee-2026-04-22",
+        "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.9580685270256061,
+        "proxy_wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "pseudonym": "Dishonest-Bloom",
+        "side": "BUY",
+        "size": 39988.14379,
+        "slug": "epl-bou-lee-2026-04-22-bou",
+        "timestamp": 1776891026,
+        "title": "Will AFC Bournemouth win on 2026-04-22?",
+        "trade_id": "eb04dee969b7c12a0639e372eb73fda73e38a377c44d7c9c57c11c101689dbe7",
+        "transaction_hash": "0x202033020e879f5a0116e3633698d714a90d6168e1b41f520aa4d489bf717a1e"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/epl-bou-lee-2026-04-22-bou",
+      "wallet_stats": {
+        "avg_notional_7d": 17816.737547343357,
+        "first_seen_ts": 1772513153,
+        "proxy_wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+        "trades_7d": 4,
+        "trades_total": 30,
+        "unique_markets_7d": 4,
+        "unique_markets_total": 29
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xb397b0688ee327cd88443c19d9172e94ba6c2c1d7bdd257fe8f41f168116d180",
+        "liquidity_num": 717196.8804,
+        "outcome_prices": [
+          0.375,
+          0.625
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Elche CF win on 2026-04-22?",
+        "slug": "lal-elc-mad-2026-04-22-elc",
+        "volume24hr": 779245.9688770048
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 123046.42990176896,
+        "price_range_accum_window": 0.009584552095885157,
+        "price_range_fast_window": 0.009584552095885157,
+        "top_net_wallet_accum_window": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 123046.42990176896,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "top_wallet_notional_accum_window": 123046.42990176896,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 123046.42990176896,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "32679464633526718518547168640078679274650561709310207248486760443467163517023",
+        "condition_id": "0xb397b0688ee327cd88443c19d9172e94ba6c2c1d7bdd257fe8f41f168116d180",
+        "event_slug": "lal-elc-mad-2026-04-22",
+        "name": "blindStaking",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.6395734262286215,
+        "proxy_wallet": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "pseudonym": "Tremendous-Bidet",
+        "side": "BUY",
+        "size": 165308.77118,
+        "slug": "lal-elc-mad-2026-04-22-elc",
+        "timestamp": 1776877098,
+        "title": "Will Elche CF win on 2026-04-22?",
+        "trade_id": "4f642ce46e377321ab604a6eceab7cee8e6efb87df43de70798db3017a42f94b",
+        "transaction_hash": "0xb252180f3457457e5e90bcf77ebf7339b1dc9a2c5a6e781b908ad6d5776f2c05"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-elc-mad-2026-04-22-elc",
+      "wallet_stats": {
+        "avg_notional_7d": 58092.25291392298,
+        "first_seen_ts": 1775328139,
+        "proxy_wallet": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
+        "trades_7d": 3,
+        "trades_total": 9,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 5
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xd41eb0fded36a8cba2aabe8479640a31237fa34d1cbec37b055f71603454ea2c",
         "liquidity_num": 55751.921,
         "outcome_prices": [
@@ -9971,9 +10117,9 @@
       }
     }
   ],
-  "generated_at": 1776865664,
+  "generated_at": 1776912648,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24781931624",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24781931624"
+  "workflow_run_id": "24814034823",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24814034823"
 }
