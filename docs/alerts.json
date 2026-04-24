@@ -2,6 +2,79 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x1b9ce832b071bc41f7ae43d14bd9d7c6eb4beea073cef4992ce37bbf55aa8a5a",
+        "liquidity_num": 678601.34943,
+        "outcome_prices": [
+          0.0005,
+          0.9995
+        ],
+        "outcomes": [
+          "BNK FEARX",
+          "KT Rolster"
+        ],
+        "question": "LoL: BNK FEARX vs KT Rolster (BO3) - LCK Rounds 1-2",
+        "slug": "lol-fox1-kt-2026-04-24",
+        "volume24hr": 690798.7922450007
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 33044.51549560156,
+        "price_range_accum_window": null,
+        "price_range_fast_window": 0.259000000015402,
+        "top_net_wallet_accum_window": "0xb6271f51af68a28c56f0eb13a8a5ef923bde2d13",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 5429.624940000001,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0xb6271f51af68a28c56f0eb13a8a5ef923bde2d13",
+        "top_wallet_notional_accum_window": 5429.624940000001,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 4
+      },
+      "notional": 33044.51549560156,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "new_wallet_to_system",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "62439513268627948649845691068313704743785458641880675133145742668622107018538",
+        "condition_id": "0x1b9ce832b071bc41f7ae43d14bd9d7c6eb4beea073cef4992ce37bbf55aa8a5a",
+        "event_slug": "lol-fox1-kt-2026-04-24",
+        "name": "0xB6271f51AF68A28c56F0eB13A8A5Ef923Bde2d13-1770507169535",
+        "outcome": "KT Rolster",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0xb6271f51af68a28c56f0eb13a8a5ef923bde2d13",
+        "pseudonym": "Informal-Tankful",
+        "side": "SELL",
+        "size": 5435.06,
+        "slug": "lol-fox1-kt-2026-04-24",
+        "timestamp": 1777025930,
+        "title": "LoL: BNK FEARX vs KT Rolster (BO3) - LCK Rounds 1-2",
+        "trade_id": "0edd0ea88d8b648e0daf2305d03f07150388ccc2bc041631284f16dd0f99e75e",
+        "transaction_hash": "0x82e9bb7f7a21be58a677fc067c439dd4f21574e57fd1a99ff8ed317e086fd735"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lol-fox1-kt-2026-04-24",
+      "wallet_stats": {
+        "avg_notional_7d": 5429.624940000001,
+        "first_seen_ts": 1777025930,
+        "proxy_wallet": "0xb6271f51af68a28c56f0eb13a8a5ef923bde2d13",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x2df83525cd89a9849a4db78f744a4d6cdbd1ea4aaa15d23a3cd8d1fd9ecd6c5a",
         "liquidity_num": 555577.2469,
         "outcome_prices": [
@@ -10335,9 +10408,9 @@
       }
     }
   ],
-  "generated_at": 1776999109,
-  "new_alerts": 1,
+  "generated_at": 1777039224,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24869717906",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24869717906"
+  "workflow_run_id": "24893479574",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24893479574"
 }
