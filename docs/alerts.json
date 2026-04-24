@@ -2,6 +2,224 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0x2df83525cd89a9849a4db78f744a4d6cdbd1ea4aaa15d23a3cd8d1fd9ecd6c5a",
+        "liquidity_num": 555577.2469,
+        "outcome_prices": [
+          0.085,
+          0.915
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Timberwolves"
+        ],
+        "question": "Nuggets vs. Timberwolves",
+        "slug": "nba-den-min-2026-04-23",
+        "volume24hr": 3281465.830523008
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 39336.266345289565,
+        "price_range_accum_window": 0.39,
+        "price_range_fast_window": 0.39,
+        "top_net_wallet_accum_window": "0x1e7792acc779a6af8304bd7991ff31d16d468c33",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 10268.195619500002,
+        "top_net_wallet_share_of_market_accum_window": 0.26103635584950724,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x1e7792acc779a6af8304bd7991ff31d16d468c33",
+        "top_wallet_notional_accum_window": 10268.195619500002,
+        "top_wallet_share_accum_window": 0.26103635584950724,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 8
+      },
+      "notional": 39336.266345289565,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h",
+        "new_wallet_to_system"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "39702598758933400781508763730883652639662767947497220910585474709790299716683",
+        "condition_id": "0x2df83525cd89a9849a4db78f744a4d6cdbd1ea4aaa15d23a3cd8d1fd9ecd6c5a",
+        "event_slug": "nba-den-min-2026-04-23",
+        "name": "THEdirkdiggler",
+        "outcome": "Timberwolves",
+        "outcome_index": 1,
+        "price": 0.91,
+        "proxy_wallet": "0x1e7792acc779a6af8304bd7991ff31d16d468c33",
+        "pseudonym": "Odd-Beggar",
+        "side": "BUY",
+        "size": 11283.731450000001,
+        "slug": "nba-den-min-2026-04-23",
+        "timestamp": 1776998912,
+        "title": "Nuggets vs. Timberwolves",
+        "trade_id": "301d4aa24f505f22c5df8ce0a046e1a2a943af0f5249839d562da95b56291502",
+        "transaction_hash": "0x4851aa14a96080d6508c37b08f15a5f899fe223486c69f37584d0a75fc3cec7e"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-min-2026-04-23",
+      "wallet_stats": {
+        "avg_notional_7d": 10268.195619500002,
+        "first_seen_ts": 1776998912,
+        "proxy_wallet": "0x1e7792acc779a6af8304bd7991ff31d16d468c33",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x7febcd6728753347be73dae0a5dd7c459a5a459cb863090891712d32b9365c5a",
+        "liquidity_num": 443917.6586,
+        "outcome_prices": [
+          0.255,
+          0.745
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will RCD Espanyol de Barcelona win on 2026-04-23?",
+        "slug": "lal-ray-esp-2026-04-23-esp",
+        "volume24hr": 1769358.3934320004
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 61418.162745925176,
+        "price_range_accum_window": 0.7199999999973105,
+        "price_range_fast_window": 0.7199999999973105,
+        "top_net_wallet_accum_window": "0x2eb10cb8596bf8c8ef409f72cfb5eb6438054ea4",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 49613.89377092518,
+        "top_net_wallet_share_of_market_accum_window": 0.807804915561673,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 3,
+        "top_wallet_accum_window": "0x2eb10cb8596bf8c8ef409f72cfb5eb6438054ea4",
+        "top_wallet_notional_accum_window": 49613.89377092518,
+        "top_wallet_share_accum_window": 0.807804915561673,
+        "top_wallet_trades_accum_window": 3,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 61418.162745925176,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h"
+      ],
+      "score": 16,
+      "trade": {
+        "asset": "12851403675167917203269362036178502355667846901843274308621662454843684996009",
+        "condition_id": "0x7febcd6728753347be73dae0a5dd7c459a5a459cb863090891712d32b9365c5a",
+        "event_slug": "lal-ray-esp-2026-04-23",
+        "name": "swisstony",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.75,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "pseudonym": "Frail-Possible",
+        "side": "BUY",
+        "size": 15739.0253,
+        "slug": "lal-ray-esp-2026-04-23-esp",
+        "timestamp": 1776971274,
+        "title": "Will RCD Espanyol de Barcelona win on 2026-04-23?",
+        "trade_id": "a3bc11f9838bbc57b4a35bdf6ad30f2604fff87ce15421263555b6e5dfbfea14",
+        "transaction_hash": "0xdd363c3d4a5dc1e110dd4a75b5e1e56ef579fbe4a22be549671869c2ef839a30"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/lal-ray-esp-2026-04-23-esp",
+      "wallet_stats": {
+        "avg_notional_7d": 3735.3136136665535,
+        "first_seen_ts": 1767559199,
+        "proxy_wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+        "trades_7d": 14,
+        "trades_total": 192,
+        "unique_markets_7d": 14,
+        "unique_markets_total": 208
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0xf52def1d379613312f2ceef8d3568b0d3eec6546df5b36cdcfc36f146317020a",
+        "liquidity_num": 191300.31965,
+        "outcome_prices": [
+          0.9995,
+          0.0005
+        ],
+        "outcomes": [
+          "Team Liquid",
+          "Team Falcons"
+        ],
+        "question": "Dota 2: Team Liquid vs Team Falcons - Game 2 Winner",
+        "slug": "dota2-liquid-flc-2026-04-23-game2",
+        "volume24hr": 753462.6928859991
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 31049.20365282261,
+        "price_range_accum_window": 0.5287842876013364,
+        "price_range_fast_window": 0.5287842876013364,
+        "top_net_wallet_accum_window": "0x64c572d3977251aaf5801f3558a5d4766a41d255",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 21190.203650718242,
+        "top_net_wallet_share_of_market_accum_window": 0.6824717273800963,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 1,
+        "top_wallet_accum_window": "0x64c572d3977251aaf5801f3558a5d4766a41d255",
+        "top_wallet_notional_accum_window": 21190.203650718242,
+        "top_wallet_share_accum_window": 0.6824717273800963,
+        "top_wallet_trades_accum_window": 1,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 31049.20365282261,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "extreme_price"
+      ],
+      "score": 8,
+      "trade": {
+        "asset": "21418461967787583552367173612110313760348507559517790536643724761023449726990",
+        "condition_id": "0xf52def1d379613312f2ceef8d3568b0d3eec6546df5b36cdcfc36f146317020a",
+        "event_slug": "dota2-liquid-flc-2026-04-23",
+        "name": "DonLorenzo",
+        "outcome": "Team Liquid",
+        "outcome_index": 0,
+        "price": 0.9987842876177665,
+        "proxy_wallet": "0x64c572d3977251aaf5801f3558a5d4766a41d255",
+        "pseudonym": "Oval-Mustard",
+        "side": "BUY",
+        "size": 21215.9962,
+        "slug": "dota2-liquid-flc-2026-04-23-game2",
+        "timestamp": 1776959434,
+        "title": "Dota 2: Team Liquid vs Team Falcons - Game 2 Winner",
+        "trade_id": "2c7d94d462b6850d6ee79268ed74daf40fcee88df57ca1d0929262a728ac1be7",
+        "transaction_hash": "0x6f86efde3bfae4132f3182af61464873c4eaf6dfd82e442ff5855aaedee889f5"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/dota2-liquid-flc-2026-04-23-game2",
+      "wallet_stats": {
+        "avg_notional_7d": 13850.655248124121,
+        "first_seen_ts": 1776533602,
+        "proxy_wallet": "0x64c572d3977251aaf5801f3558a5d4766a41d255",
+        "trades_7d": 2,
+        "trades_total": 2,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xe068813cdcbd7f933818fa8ee81b4609a99238febf2c363ab9fc0d893ca7469d",
         "liquidity_num": 35392.525,
         "outcome_prices": [
@@ -10117,9 +10335,9 @@
       }
     }
   ],
-  "generated_at": 1776952203,
-  "new_alerts": 0,
+  "generated_at": 1776999109,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24839046014",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24839046014"
+  "workflow_run_id": "24869717906",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24869717906"
 }
