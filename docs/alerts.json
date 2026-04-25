@@ -2,75 +2,74 @@
   "alerts": [
     {
       "market": {
-        "condition_id": "0xd72622d154dfe65b9c019d6afcfe75a55717e5c502db611f555b101aafbf6ec5",
-        "liquidity_num": 10153256.12718,
+        "condition_id": "0xf752c3ec9526de39530718246fcf9a69c4bc883191c8fc994eb4d43990c49030",
+        "liquidity_num": 2022118.6626,
         "outcome_prices": [
-          0.0015,
-          0.9985
+          0.775,
+          0.225
         ],
         "outcomes": [
-          "Yes",
-          "No"
+          "Thunder",
+          "Suns"
         ],
-        "question": "Will the Fed decrease interest rates by 50+ bps after the April 2026 meeting?",
-        "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-april-2026-meeting",
-        "volume24hr": 2321768.5699999994
+        "question": "Thunder vs. Suns",
+        "slug": "nba-okc-phx-2026-04-25",
+        "volume24hr": 157159.6859030003
       },
       "metrics": {
         "accum_window_s": 21600,
         "event_type": "accumulation",
         "fast_window_s": 86400,
-        "notional_fast_window": 71828.1,
+        "notional_fast_window": 193652.6467824,
         "price_range_accum_window": 0.0,
         "price_range_fast_window": 0.0,
-        "top_net_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 71828.1,
+        "top_net_wallet_accum_window": "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 193652.6467824,
         "top_net_wallet_share_of_market_accum_window": 1.0,
         "top_net_wallet_share_of_wallet_accum_window": 1.0,
         "top_net_wallet_trades_accum_window": 2,
-        "top_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "top_wallet_notional_accum_window": 71828.1,
+        "top_wallet_accum_window": "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e",
+        "top_wallet_notional_accum_window": 193652.6467824,
         "top_wallet_share_accum_window": 1.0,
         "top_wallet_trades_accum_window": 2,
         "unique_wallets_fast_window": 1
       },
-      "notional": 71828.1,
+      "notional": 193652.6467824,
       "reasons": [
         "market_heat_24h",
         "whale_accumulation_6h",
         "concentrated_flow_6h",
         "quiet_price_6h",
-        "concentrated_activity_7d",
-        "extreme_price"
+        "concentrated_activity_7d"
       ],
       "score": 13,
       "trade": {
-        "asset": "44217754360633979680316989769899520588351517398269898942558308875588541304698",
-        "condition_id": "0xd72622d154dfe65b9c019d6afcfe75a55717e5c502db611f555b101aafbf6ec5",
-        "event_slug": "fed-decision-in-april",
-        "name": "Oddn",
-        "outcome": "No",
-        "outcome_index": 1,
-        "price": 0.999,
-        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "pseudonym": "Trustworthy-Sort",
+        "asset": "22334377791140002056209089209804890592803004640771654906225350516509539158966",
+        "condition_id": "0xf752c3ec9526de39530718246fcf9a69c4bc883191c8fc994eb4d43990c49030",
+        "event_slug": "nba-okc-phx-2026-04-25",
+        "name": "Lakersfan111",
+        "outcome": "Thunder",
+        "outcome_index": 0,
+        "price": 0.78,
+        "proxy_wallet": "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e",
+        "pseudonym": "Rosy-Trinket",
         "side": "BUY",
-        "size": 35000.0,
-        "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-april-2026-meeting",
-        "timestamp": 1777084562,
-        "title": "Will the Fed decrease interest rates by 50+ bps after the April 2026 meeting?",
-        "trade_id": "4aff54ce980051eb900df5cd9e064be97c63f941340710fa4febd37165f14ad3",
-        "transaction_hash": "0xe2c5b54fb8a4a6b9d5cbb1c644bdf8a8804959a212e913371dd8ac03f223a3bc"
+        "size": 26854.29412,
+        "slug": "nba-okc-phx-2026-04-25",
+        "timestamp": 1777117012,
+        "title": "Thunder vs. Suns",
+        "trade_id": "b0f1be3daf9d4b73e972587b07e9987114326dae0888d2c12feb3f521bf0deb8",
+        "transaction_hash": "0x5c61742b36bd929c7dc728f2d27942058d04791dbca3c8e4c072b3ab6b8c8958"
       },
       "type": "alert",
-      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-april-2026-meeting",
+      "url": "https://polymarket.com/market/nba-okc-phx-2026-04-25",
       "wallet_stats": {
-        "avg_notional_7d": 36062.14,
-        "first_seen_ts": 1777084238,
-        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "trades_7d": 5,
-        "trades_total": 5,
+        "avg_notional_7d": 70668.12304746667,
+        "first_seen_ts": 1777070080,
+        "proxy_wallet": "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e",
+        "trades_7d": 3,
+        "trades_total": 3,
         "unique_markets_7d": 2,
         "unique_markets_total": 2
       }
@@ -10558,9 +10557,9 @@
       }
     }
   ],
-  "generated_at": 1777084837,
-  "new_alerts": 2,
+  "generated_at": 1777122619,
+  "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24920652838",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24920652838"
+  "workflow_run_id": "24931656057",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24931656057"
 }
