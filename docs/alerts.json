@@ -2,6 +2,156 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xd72622d154dfe65b9c019d6afcfe75a55717e5c502db611f555b101aafbf6ec5",
+        "liquidity_num": 10153256.12718,
+        "outcome_prices": [
+          0.0015,
+          0.9985
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will the Fed decrease interest rates by 50+ bps after the April 2026 meeting?",
+        "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-april-2026-meeting",
+        "volume24hr": 2321768.5699999994
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 71828.1,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 71828.1,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "top_wallet_notional_accum_window": 71828.1,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 71828.1,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "44217754360633979680316989769899520588351517398269898942558308875588541304698",
+        "condition_id": "0xd72622d154dfe65b9c019d6afcfe75a55717e5c502db611f555b101aafbf6ec5",
+        "event_slug": "fed-decision-in-april",
+        "name": "Oddn",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.999,
+        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "pseudonym": "Trustworthy-Sort",
+        "side": "BUY",
+        "size": 35000.0,
+        "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-april-2026-meeting",
+        "timestamp": 1777084562,
+        "title": "Will the Fed decrease interest rates by 50+ bps after the April 2026 meeting?",
+        "trade_id": "4aff54ce980051eb900df5cd9e064be97c63f941340710fa4febd37165f14ad3",
+        "transaction_hash": "0xe2c5b54fb8a4a6b9d5cbb1c644bdf8a8804959a212e913371dd8ac03f223a3bc"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-april-2026-meeting",
+      "wallet_stats": {
+        "avg_notional_7d": 36062.14,
+        "first_seen_ts": 1777084238,
+        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "trades_7d": 5,
+        "trades_total": 5,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+        "liquidity_num": 1965146.45624,
+        "outcome_prices": [
+          0.0025,
+          0.9975
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+        "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-april-2026-meeting",
+        "volume24hr": 3111395.091968
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 108482.6,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 108482.6,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 3,
+        "top_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "top_wallet_notional_accum_window": 108482.6,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 3,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 108482.6,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d",
+        "extreme_price"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "86189905157402748775272356734086074576046362545577080735663677743589826713172",
+        "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
+        "event_slug": "fed-decision-in-april",
+        "name": "Oddn",
+        "outcome": "No",
+        "outcome_index": 1,
+        "price": 0.998,
+        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "pseudonym": "Trustworthy-Sort",
+        "side": "BUY",
+        "size": 35000.0,
+        "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-april-2026-meeting",
+        "timestamp": 1777084540,
+        "title": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
+        "trade_id": "82777aa090c057980740e3ae72bec9beb9f6132789e8cd68c7b7fcb5fc640ec1",
+        "transaction_hash": "0x15d50eca6cc0207bcb53c6393b56d7fba089af0aff647bce17f20511d4a09c11"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-25-bps-after-the-april-2026-meeting",
+      "wallet_stats": {
+        "avg_notional_7d": 36062.14,
+        "first_seen_ts": 1777084238,
+        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
+        "trades_7d": 5,
+        "trades_total": 5,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 2
+      }
+    },
+    {
+      "market": {
         "condition_id": "0x1b9ce832b071bc41f7ae43d14bd9d7c6eb4beea073cef4992ce37bbf55aa8a5a",
         "liquidity_num": 678601.34943,
         "outcome_prices": [
@@ -10408,9 +10558,9 @@
       }
     }
   ],
-  "generated_at": 1777039224,
-  "new_alerts": 0,
+  "generated_at": 1777084837,
+  "new_alerts": 2,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24893479574",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24893479574"
+  "workflow_run_id": "24920652838",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24920652838"
 }
