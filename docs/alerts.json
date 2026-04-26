@@ -2,6 +2,151 @@
   "alerts": [
     {
       "market": {
+        "condition_id": "0xeb4b5d1390278a728cea8024a464c2ed8f69c615e60325f1735ad961b0b6ed51",
+        "liquidity_num": 346753.3492,
+        "outcome_prices": [
+          0.415,
+          0.585
+        ],
+        "outcomes": [
+          "Nuggets",
+          "Timberwolves"
+        ],
+        "question": "Nuggets vs. Timberwolves",
+        "slug": "nba-den-min-2026-04-25",
+        "volume24hr": 6449293.061449013
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "fast_move",
+        "fast_window_s": 86400,
+        "notional_fast_window": 30988.19074276914,
+        "price_range_accum_window": 0.26,
+        "price_range_fast_window": 0.35,
+        "top_net_wallet_accum_window": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
+        "top_net_wallet_direction_accum_window": "anti0",
+        "top_net_wallet_notional_accum_window": 11833.64273,
+        "top_net_wallet_share_of_market_accum_window": 0.4557859055467938,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 3,
+        "top_wallet_accum_window": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
+        "top_wallet_notional_accum_window": 11833.64273,
+        "top_wallet_share_accum_window": 0.4557859055467938,
+        "top_wallet_trades_accum_window": 3,
+        "unique_wallets_fast_window": 5
+      },
+      "notional": 30988.19074276914,
+      "reasons": [
+        "market_price_move_24h",
+        "market_heat_24h",
+        "market_participation_24h"
+      ],
+      "score": 9,
+      "trade": {
+        "asset": "53638649611861071150652750089266089442369496267703885492609301019390839453186",
+        "condition_id": "0xeb4b5d1390278a728cea8024a464c2ed8f69c615e60325f1735ad961b0b6ed51",
+        "event_slug": "nba-den-min-2026-04-25",
+        "name": null,
+        "outcome": "Timberwolves",
+        "outcome_index": 1,
+        "price": 0.84,
+        "proxy_wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
+        "pseudonym": null,
+        "side": "BUY",
+        "size": 4172.8736,
+        "slug": "nba-den-min-2026-04-25",
+        "timestamp": 1777172032,
+        "title": "Nuggets vs. Timberwolves",
+        "trade_id": "5eaac16b299591221cd3f959985bc3a747c0491cbce9daa12875299724985b22",
+        "transaction_hash": "0x2a3be276ff8c7e46a7d7fcad9062cf6d04d415a962727b8d816808aea11b6fc3"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nba-den-min-2026-04-25",
+      "wallet_stats": {
+        "avg_notional_7d": 4083.2053778,
+        "first_seen_ts": 1776382420,
+        "proxy_wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
+        "trades_7d": 10,
+        "trades_total": 14,
+        "unique_markets_7d": 7,
+        "unique_markets_total": 11
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x86bcb39eab9eef6a0d9ac9fb494e8d2868dedf70154a4b976f169c197e7dbc70",
+        "liquidity_num": 573753.3305,
+        "outcome_prices": [
+          0.785,
+          0.215
+        ],
+        "outcomes": [
+          "Yes",
+          "No"
+        ],
+        "question": "Will Paris Saint-Germain FC win on 2026-04-25?",
+        "slug": "fl1-ang-psg-2026-04-25-psg",
+        "volume24hr": 1408339.415012
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 157004.6,
+        "price_range_accum_window": 0.0,
+        "price_range_fast_window": 0.0,
+        "top_net_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 157004.6,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "top_wallet_notional_accum_window": 157004.6,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 1
+      },
+      "notional": 157004.6,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "111926477559367798296728004619733177361637555152305068772770596179825109422054",
+        "condition_id": "0x86bcb39eab9eef6a0d9ac9fb494e8d2868dedf70154a4b976f169c197e7dbc70",
+        "event_slug": "fl1-ang-psg-2026-04-25",
+        "name": "beachboy4",
+        "outcome": "Yes",
+        "outcome_index": 0,
+        "price": 0.79,
+        "proxy_wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "pseudonym": "Threadbare-Skunk",
+        "side": "BUY",
+        "size": 99370.0,
+        "slug": "fl1-ang-psg-2026-04-25-psg",
+        "timestamp": 1777135342,
+        "title": "Will Paris Saint-Germain FC win on 2026-04-25?",
+        "trade_id": "29c9cb638c98c7389e531818c4457d88db8cb4570f4f6a832100ad616a0788bb",
+        "transaction_hash": "0x34ac6f8e74dd812c1ee4b3df1faa7beb4564287afe8ee4d938afb5a56ed23faa"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/fl1-ang-psg-2026-04-25-psg",
+      "wallet_stats": {
+        "avg_notional_7d": 78502.3,
+        "first_seen_ts": 1768067278,
+        "proxy_wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+        "trades_7d": 2,
+        "trades_total": 8,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 13
+      }
+    },
+    {
+      "market": {
         "condition_id": "0xf752c3ec9526de39530718246fcf9a69c4bc883191c8fc994eb4d43990c49030",
         "liquidity_num": 2022118.6626,
         "outcome_prices": [
@@ -70,81 +215,6 @@
         "proxy_wallet": "0x6ac5bb06a9eb05641fd5e82640268b92f3ab4b6e",
         "trades_7d": 3,
         "trades_total": 3,
-        "unique_markets_7d": 2,
-        "unique_markets_total": 2
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-        "liquidity_num": 1965146.45624,
-        "outcome_prices": [
-          0.0025,
-          0.9975
-        ],
-        "outcomes": [
-          "Yes",
-          "No"
-        ],
-        "question": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-        "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-april-2026-meeting",
-        "volume24hr": 3111395.091968
-      },
-      "metrics": {
-        "accum_window_s": 21600,
-        "event_type": "accumulation",
-        "fast_window_s": 86400,
-        "notional_fast_window": 108482.6,
-        "price_range_accum_window": 0.0,
-        "price_range_fast_window": 0.0,
-        "top_net_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 108482.6,
-        "top_net_wallet_share_of_market_accum_window": 1.0,
-        "top_net_wallet_share_of_wallet_accum_window": 1.0,
-        "top_net_wallet_trades_accum_window": 3,
-        "top_wallet_accum_window": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "top_wallet_notional_accum_window": 108482.6,
-        "top_wallet_share_accum_window": 1.0,
-        "top_wallet_trades_accum_window": 3,
-        "unique_wallets_fast_window": 1
-      },
-      "notional": 108482.6,
-      "reasons": [
-        "market_heat_24h",
-        "whale_accumulation_6h",
-        "concentrated_flow_6h",
-        "quiet_price_6h",
-        "concentrated_activity_7d",
-        "extreme_price"
-      ],
-      "score": 13,
-      "trade": {
-        "asset": "86189905157402748775272356734086074576046362545577080735663677743589826713172",
-        "condition_id": "0x0d14f5dc9fb3250ec888b1ac8d9fe9a0ce06f9d3ea60fdf138e8690622fea84c",
-        "event_slug": "fed-decision-in-april",
-        "name": "Oddn",
-        "outcome": "No",
-        "outcome_index": 1,
-        "price": 0.998,
-        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "pseudonym": "Trustworthy-Sort",
-        "side": "BUY",
-        "size": 35000.0,
-        "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-april-2026-meeting",
-        "timestamp": 1777084540,
-        "title": "Will the Fed decrease interest rates by 25 bps after the April 2026 meeting?",
-        "trade_id": "82777aa090c057980740e3ae72bec9beb9f6132789e8cd68c7b7fcb5fc640ec1",
-        "transaction_hash": "0x15d50eca6cc0207bcb53c6393b56d7fba089af0aff647bce17f20511d4a09c11"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-25-bps-after-the-april-2026-meeting",
-      "wallet_stats": {
-        "avg_notional_7d": 36062.14,
-        "first_seen_ts": 1777084238,
-        "proxy_wallet": "0xa53c26443fb636d8ae31ac24f62fc1d5ef8f67a5",
-        "trades_7d": 5,
-        "trades_total": 5,
         "unique_markets_7d": 2,
         "unique_markets_total": 2
       }
@@ -10557,9 +10627,9 @@
       }
     }
   ],
-  "generated_at": 1777122619,
-  "new_alerts": 0,
+  "generated_at": 1777172235,
+  "new_alerts": 1,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24931656057",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24931656057"
+  "workflow_run_id": "24946753799",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24946753799"
 }
