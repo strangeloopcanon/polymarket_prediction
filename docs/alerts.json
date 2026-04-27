@@ -2,147 +2,151 @@
   "alerts": [
     {
       "market": {
-        "condition_id": "0xf343a74580c2003e98f1fd44f76d4582225b84227277af1b0314011b6f039e6c",
-        "liquidity_num": 324528.2233,
+        "condition_id": "0x2440390e95e91783ee93bfff2de0dca19962a0dc912a11531647bcc40b51d7c0",
+        "liquidity_num": 349342.71,
         "outcome_prices": [
-          0.355,
-          0.645
+          0.475,
+          0.525
         ],
         "outcomes": [
-          "Yes",
-          "No"
+          "Sabres",
+          "Bruins"
         ],
-        "question": "Will Rayo Vallecano de Madrid win on 2026-04-26?",
-        "slug": "lal-ray-rso-2026-04-26-ray",
-        "volume24hr": 218256.7881599999
-      },
-      "metrics": {
-        "accum_window_s": 21600,
-        "event_type": "accumulation",
-        "fast_window_s": 86400,
-        "notional_fast_window": 56343.963052,
-        "price_range_accum_window": 0.0,
-        "price_range_fast_window": 0.0,
-        "top_net_wallet_accum_window": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 56343.963052,
-        "top_net_wallet_share_of_market_accum_window": 1.0,
-        "top_net_wallet_share_of_wallet_accum_window": 1.0,
-        "top_net_wallet_trades_accum_window": 2,
-        "top_wallet_accum_window": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
-        "top_wallet_notional_accum_window": 56343.963052,
-        "top_wallet_share_accum_window": 1.0,
-        "top_wallet_trades_accum_window": 2,
-        "unique_wallets_fast_window": 1
-      },
-      "notional": 56343.963052,
-      "reasons": [
-        "market_heat_24h",
-        "whale_accumulation_6h",
-        "concentrated_flow_6h",
-        "quiet_price_6h"
-      ],
-      "score": 13,
-      "trade": {
-        "asset": "92980023666048504592667050659103945386581239417997364130479998210220176897570",
-        "condition_id": "0xf343a74580c2003e98f1fd44f76d4582225b84227277af1b0314011b6f039e6c",
-        "event_slug": "lal-ray-rso-2026-04-26",
-        "name": "blindStaking",
-        "outcome": "No",
-        "outcome_index": 1,
-        "price": 0.65,
-        "proxy_wallet": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
-        "pseudonym": "Tremendous-Bidet",
-        "side": "BUY",
-        "size": 27392.77378,
-        "slug": "lal-ray-rso-2026-04-26-ray",
-        "timestamp": 1777203550,
-        "title": "Will Rayo Vallecano de Madrid win on 2026-04-26?",
-        "trade_id": "8c4b25b6ca642c4f19bf580e119aafb71f495cc4681ff07ad9e3a0c181147b9a",
-        "transaction_hash": "0xfd5d0bb192b28384dc82ebc6b29fcc2101568935d62b0db9e6f49bafb755c4e9"
-      },
-      "type": "alert",
-      "url": "https://polymarket.com/market/lal-ray-rso-2026-04-26-ray",
-      "wallet_stats": {
-        "avg_notional_7d": 30732.446695752107,
-        "first_seen_ts": 1775328139,
-        "proxy_wallet": "0x50b1db131a24a9d9450bbd0372a95d32ea88f076",
-        "trades_7d": 9,
-        "trades_total": 15,
-        "unique_markets_7d": 4,
-        "unique_markets_total": 7
-      }
-    },
-    {
-      "market": {
-        "condition_id": "0xeb4b5d1390278a728cea8024a464c2ed8f69c615e60325f1735ad961b0b6ed51",
-        "liquidity_num": 346753.3492,
-        "outcome_prices": [
-          0.415,
-          0.585
-        ],
-        "outcomes": [
-          "Nuggets",
-          "Timberwolves"
-        ],
-        "question": "Nuggets vs. Timberwolves",
-        "slug": "nba-den-min-2026-04-25",
-        "volume24hr": 6449293.061449013
+        "question": "Sabres vs. Bruins",
+        "slug": "nhl-buf-bos-2026-04-26",
+        "volume24hr": 677118.3562719999
       },
       "metrics": {
         "accum_window_s": 21600,
         "event_type": "fast_move",
         "fast_window_s": 86400,
-        "notional_fast_window": 30988.19074276914,
-        "price_range_accum_window": 0.26,
-        "price_range_fast_window": 0.35,
-        "top_net_wallet_accum_window": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
-        "top_net_wallet_direction_accum_window": "anti0",
-        "top_net_wallet_notional_accum_window": 11833.64273,
-        "top_net_wallet_share_of_market_accum_window": 0.4557859055467938,
+        "notional_fast_window": 103200.55263291587,
+        "price_range_accum_window": 0.48000423461510305,
+        "price_range_fast_window": 0.48000423461510305,
+        "top_net_wallet_accum_window": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 96353.53083494774,
+        "top_net_wallet_share_of_market_accum_window": 0.9611664778579642,
         "top_net_wallet_share_of_wallet_accum_window": 1.0,
-        "top_net_wallet_trades_accum_window": 3,
-        "top_wallet_accum_window": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
-        "top_wallet_notional_accum_window": 11833.64273,
-        "top_wallet_share_accum_window": 0.4557859055467938,
-        "top_wallet_trades_accum_window": 3,
-        "unique_wallets_fast_window": 5
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "top_wallet_notional_accum_window": 96353.53083494774,
+        "top_wallet_share_accum_window": 0.9611664778579642,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 3
       },
-      "notional": 30988.19074276914,
+      "notional": 103200.55263291587,
       "reasons": [
         "market_price_move_24h",
         "market_heat_24h",
-        "market_participation_24h"
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "new_wallet_to_system",
+        "extreme_price"
       ],
-      "score": 9,
+      "score": 18,
       "trade": {
-        "asset": "53638649611861071150652750089266089442369496267703885492609301019390839453186",
-        "condition_id": "0xeb4b5d1390278a728cea8024a464c2ed8f69c615e60325f1735ad961b0b6ed51",
-        "event_slug": "nba-den-min-2026-04-25",
-        "name": null,
-        "outcome": "Timberwolves",
-        "outcome_index": 1,
-        "price": 0.84,
-        "proxy_wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
-        "pseudonym": null,
+        "asset": "25060536549554644869444013891754060516422153047284168362447455788575389624077",
+        "condition_id": "0x2440390e95e91783ee93bfff2de0dca19962a0dc912a11531647bcc40b51d7c0",
+        "event_slug": "nhl-buf-bos-2026-04-26",
+        "name": "FaustMendez",
+        "outcome": "Sabres",
+        "outcome_index": 0,
+        "price": 0.96,
+        "proxy_wallet": "0x787f413f3499d6855f04188d2741fa9af43ed40c",
+        "pseudonym": "Impressive-Hacksaw",
         "side": "BUY",
-        "size": 4172.8736,
-        "slug": "nba-den-min-2026-04-25",
-        "timestamp": 1777172032,
-        "title": "Nuggets vs. Timberwolves",
-        "trade_id": "5eaac16b299591221cd3f959985bc3a747c0491cbce9daa12875299724985b22",
-        "transaction_hash": "0x2a3be276ff8c7e46a7d7fcad9062cf6d04d415a962727b8d816808aea11b6fc3"
+        "size": 4055.128,
+        "slug": "nhl-buf-bos-2026-04-26",
+        "timestamp": 1777229754,
+        "title": "Sabres vs. Bruins",
+        "trade_id": "d68f3afb8a2e1afd56591004e885cfbd17492ed46990b0247aceb82b151a7763",
+        "transaction_hash": "0xae26af74947fc84493a0860492812d9aeac2ec690e848c81b93f0f2f40ee87ce"
       },
       "type": "alert",
-      "url": "https://polymarket.com/market/nba-den-min-2026-04-25",
+      "url": "https://polymarket.com/market/nhl-buf-bos-2026-04-26",
       "wallet_stats": {
-        "avg_notional_7d": 4083.2053778,
-        "first_seen_ts": 1776382420,
-        "proxy_wallet": "0x53757615de1c42b83f893b79d4241a009dc2aeea",
-        "trades_7d": 10,
-        "trades_total": 14,
-        "unique_markets_7d": 7,
-        "unique_markets_total": 11
+        "avg_notional_7d": 3892.92288,
+        "first_seen_ts": 1777229754,
+        "proxy_wallet": "0x787f413f3499d6855f04188d2741fa9af43ed40c",
+        "trades_7d": 1,
+        "trades_total": 1,
+        "unique_markets_7d": 1,
+        "unique_markets_total": 1
+      }
+    },
+    {
+      "market": {
+        "condition_id": "0x2440390e95e91783ee93bfff2de0dca19962a0dc912a11531647bcc40b51d7c0",
+        "liquidity_num": 349342.71,
+        "outcome_prices": [
+          0.475,
+          0.525
+        ],
+        "outcomes": [
+          "Sabres",
+          "Bruins"
+        ],
+        "question": "Sabres vs. Bruins",
+        "slug": "nhl-buf-bos-2026-04-26",
+        "volume24hr": 677118.3562719999
+      },
+      "metrics": {
+        "accum_window_s": 21600,
+        "event_type": "accumulation",
+        "fast_window_s": 86400,
+        "notional_fast_window": 99307.62975291588,
+        "price_range_accum_window": 4.234615103071437e-06,
+        "price_range_fast_window": 0.009992180895287639,
+        "top_net_wallet_accum_window": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "top_net_wallet_direction_accum_window": "pro0",
+        "top_net_wallet_notional_accum_window": 96353.53083494774,
+        "top_net_wallet_share_of_market_accum_window": 1.0,
+        "top_net_wallet_share_of_wallet_accum_window": 1.0,
+        "top_net_wallet_trades_accum_window": 2,
+        "top_wallet_accum_window": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "top_wallet_notional_accum_window": 96353.53083494774,
+        "top_wallet_share_accum_window": 1.0,
+        "top_wallet_trades_accum_window": 2,
+        "unique_wallets_fast_window": 2
+      },
+      "notional": 96353.53083494774,
+      "reasons": [
+        "market_heat_24h",
+        "whale_accumulation_6h",
+        "concentrated_flow_6h",
+        "quiet_price_6h",
+        "concentrated_activity_7d"
+      ],
+      "score": 13,
+      "trade": {
+        "asset": "25060536549554644869444013891754060516422153047284168362447455788575389624077",
+        "condition_id": "0x2440390e95e91783ee93bfff2de0dca19962a0dc912a11531647bcc40b51d7c0",
+        "event_slug": "nhl-buf-bos-2026-04-26",
+        "name": "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+        "outcome": "Sabres",
+        "outcome_index": 0,
+        "price": 0.48,
+        "proxy_wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "pseudonym": "Multicolored-Self",
+        "side": "BUY",
+        "size": 149896.87181,
+        "slug": "nhl-buf-bos-2026-04-26",
+        "timestamp": 1777224974,
+        "title": "Sabres vs. Bruins",
+        "trade_id": "b3588b0d9a207b6eb53a2134cffb9ddb838f76bb2cebe050b9bec04950efb64d",
+        "transaction_hash": "0x41a37cc8c76a93ae0c58b919cb6afe1abcc36e71ec37d2eb78ac7403c3efa926"
+      },
+      "type": "alert",
+      "url": "https://polymarket.com/market/nhl-buf-bos-2026-04-26",
+      "wallet_stats": {
+        "avg_notional_7d": 51054.40520364925,
+        "first_seen_ts": 1771788142,
+        "proxy_wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
+        "trades_7d": 3,
+        "trades_total": 34,
+        "unique_markets_7d": 2,
+        "unique_markets_total": 31
       }
     },
     {
@@ -10700,9 +10704,9 @@
       }
     }
   ],
-  "generated_at": 1777209154,
+  "generated_at": 1777260126,
   "new_alerts": 0,
   "repo": "strangeloopcanon/polymarket_prediction",
-  "workflow_run_id": "24957477854",
-  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24957477854"
+  "workflow_run_id": "24974982103",
+  "workflow_run_url": "https://github.com/strangeloopcanon/polymarket_prediction/actions/runs/24974982103"
 }
